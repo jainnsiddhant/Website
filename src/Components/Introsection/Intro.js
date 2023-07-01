@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import img1 from "../../images/andrea-de-santis-_kAOOTC4MQA-unsplash.jpg"
 import img2 from "../../images/sabrina-mazzeo-g-krQzQo9mI-unsplash.jpg"
 import img3 from "../../images/tetiana-shyshkina-doz4m12DDig-unsplash.jpg"
@@ -7,11 +7,63 @@ import { FaUnlockAlt, FaHandHoldingUsd } from "react-icons/fa";
 import { RiNodeTree } from "react-icons/ri";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { SiHiveBlockchain } from "react-icons/si";
-import { HiClipboardDocumentCheck } from "react-icons/hi2"
-const Intro = () => { 
+import { HiClipboardDocumentCheck } from "react-icons/hi2" 
+const Intro = () => {
+  const [selectedtab, setselectedtab] = useState(0);
+  const [Managementdata, setManagementdata] = useState([]);
+  const [Sciencedata, setSciencedata] = useState([]);
 
+  const retriveuniversitydata = async () => {
+    let headersList = {
+      "Accept": "*/*",
+    }
 
-  
+    let response = await fetch(`${process.env.REACT_APP_API_URL}/university`, {
+      method: "GET",
+      headers: headersList
+    });
+
+    if (response.ok) {
+      let data = await response.text();
+      data = JSON.parse(data);
+      const management = data.filter(item => {
+        return item.courses.some(course => course.CourseTag === "Management");
+      });
+      const science = data.filter(item => {
+        return item.courses.some(course => course.CourseTag === "Science")
+      })
+
+      science.sort((a, b) => {
+        const qsRankA = parseInt(a.rankings.qs_ranking);
+        const qsRankB = parseInt(b.rankings.qs_ranking);
+
+        if (qsRankA === qsRankB) {
+          const guardianRankA = parseInt(a.rankings.guardian_ranking);
+          const guardianRankB = parseInt(b.rankings.guardian_ranking);
+          return guardianRankA - guardianRankB;
+        } else {
+          return qsRankA - qsRankB;
+        }
+      });
+      management.sort((a, b) => {
+        const qsRankA = parseInt(a.rankings.qs_ranking);
+        const qsRankB = parseInt(b.rankings.qs_ranking);
+
+        if (qsRankA === qsRankB) {
+          const guardianRankA = parseInt(a.rankings.guardian_ranking);
+          const guardianRankB = parseInt(b.rankings.guardian_ranking);
+          return guardianRankA - guardianRankB;
+        } else {
+          return qsRankA - qsRankB;
+        }
+      });
+      setManagementdata(management);
+      setSciencedata(science);
+    }
+  }
+  useEffect(() => {
+    retriveuniversitydata();
+  }, [, selectedtab]);
   return (
     <>
       <div className="">
@@ -65,8 +117,12 @@ const Intro = () => {
                 <p className="text-gray-500 sm:text-xl dark:text-gray-400 text-center">
                   <label for="Toggle3" className="inline-flex items-center p-2 rounded-md cursor-pointer dark:text-gray-800">
                     <input id="Toggle3" type="checkbox" className="hidden peer" />
-                    <span className="px-4 py-2 rounded-l-md dark:bg-violet-400 peer-checked:dark:bg-gray-300">Management</span>
-                    <span className="px-4 py-2 rounded-r-md dark:bg-gray-300 peer-checked:dark:bg-violet-400">Science</span>
+                    <span onClick={() => {
+                      setselectedtab(0);
+                    }} className="px-4 py-2 rounded-l-md dark:bg-violet-400 peer-checked:dark:bg-gray-300">Management</span>
+                    <span onClick={() => {
+                      setselectedtab(1);
+                    }} className="px-4 py-2 rounded-r-md dark:bg-gray-300 peer-checked:dark:bg-violet-400">Science</span>
                   </label>
                 </p>
               </div>
@@ -84,48 +140,39 @@ const Intro = () => {
                     </colgroup>
                     <thead className="">
                       <tr className="">
-                        <th className="p-3">Ranking</th>
-                        <th className="p-3">University</th>
-                        <th className="p-3">Rating *</th>
-                        <th className="p-3">Status</th>
+                        <th className="p-3">Qs Ranking</th>
+                        <th className="p-3">Guardian Rank</th>
+                        <th className="p-3">University Name</th>
+                        <th className="p-3">Link</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-b border-opacity-20">
-                        <td className="p-3">
-                          <p>1</p>
-                        </td>
-                        <td className="p-3">
-                          <p>Microsoft Corporation</p>
-                        </td>
-                        <td className="p-3">
-                          <p>2*</p>
-                        </td>
-                        <td className="p-3">
-                          <span className="px-3 py-1 font-semibold rounded-md dark:bg-violet-400">
-                            <span>View</span>
-                          </span>
-                        </td>
-                      </tr>
-                      <tr className="border-b border-opacity-20">
-                        <td className="p-3">
-                          <p>3</p>
-                        </td>
-                        <td className="p-3">
-                          <p>Microsoft Corporation</p>
-                        </td>
-                        <td className="p-3">
-                          <p>3*</p>
-                        </td>
-                        <td className="p-3">
-                          <span className="px-3 py-1 font-semibold rounded-md dark:bg-violet-400">
-                            <span>View</span>
-                          </span>
-                        </td>
-                      </tr>
+                      {
+                        (selectedtab === 0 ? Managementdata : Sciencedata).map((item, idx) => {
+                          return (
+                            <tr key={idx} className="border-b border-opacity-20">
+                              <td className="p-3">
+                                <p>{item.rankings.qs_ranking}</p>
+                              </td>
+                              <td className="p-3">
+                                <p>{item.rankings.guardian_ranking}</p>
+                              </td>
+                              <td className="p-3">
+                                <p>{item.university_name}</p>
+                              </td>
+                              <td className="p-3">
+                                <span className="px-3 py-1 font-semibold rounded-md dark:bg-violet-400">
+                                  <a href={item.university_website}>View</a>
+                                </span>
+                              </td>
+                            </tr>
+                          )
+                        })
+
+                      }
                     </tbody>
-                  </table> 
-                  <small className='text-[0.7rem]'>* All ratings are Out of 10</small>
+                  </table>
+                  <small className='text-[0.7rem]'>* All rakings are shown from official reports</small>
                 </div>
               </div>
             </div>

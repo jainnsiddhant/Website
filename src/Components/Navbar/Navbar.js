@@ -13,7 +13,41 @@ const Navbar = () => {
             setmobilestyle("mobile-menu text-center hidden md:hidden bg-black text-white rounded-2xl p-6");
         }
 
-    }, [window.innerWidth, toogle])
+    }, [window.innerWidth, toogle]);
+
+    // const primaryNavItems = [
+    //     {label: 'Courses', link: '/Courses'},
+    //     {label: 'About Us', link: '/about'},
+    //     {label: 'Resume', link: '/Resume'},
+    //     {label: 'Blog', link: '/Blog'},
+    //     {label: 'Scholarship', link: '/Scholarship'},
+    //     {label: 'Page4', link: '/Page4'},
+    //     {label: 'Page5', link: '/Page5'},
+    // ];
+
+    // const renderPrimaryNavItems = () => {
+    //     const sublistItems = primaryNavItems.reduce((result,item,index) => {
+    //         if(index%2==0) {
+    //             const sublist=primaryNavItems.slice(index,index+2);
+    //             result.push(sublist);
+    //         }
+    //         return result;
+    //     }, []);
+
+    //     return sublistItems.map((sublist,index) => (
+    //         <div key={index} className="flex space-x-1">
+    //             {sublist.map((item,subIndex) => (
+    //                 <Link 
+    //                 key={subIndex}
+    //                 to={item.link}
+    //                 className="py-5 px-3 text-black hover:text-gray-900">
+    //                 {item.label}
+    //                 </Link>
+    //             ))}
+    //         </div>
+    //     ));
+    // };
+
     return (
         <>
             <nav className="p-6">
@@ -55,6 +89,15 @@ const Navbar = () => {
                                 </Link>
                                 <Link to={"/Blog"} className="py-5 px-3 text-black hover:text-gray-900">
                                     Blog
+                                </Link>
+                                <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Scholarship
+                                </Link>
+                                <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Page4
+                                </Link>
+                                <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Page5
                                 </Link>
                             </div>
                         </div>

@@ -5,7 +5,7 @@ export const Footer = () => {
         <>
             <>
                 {/* component */}
-                <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+                <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 mt-5">
                     <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             <div>
@@ -161,23 +161,6 @@ export const Footer = () => {
                                     </nav>
                                 </div>
                                 <div>
-                                    <p className="font-medium">Helpful Links</p>
-                                    <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                                        <a className="hover:opacity-75" href="">
-                                            {" "}
-                                            Contact{" "}
-                                        </a>
-                                        <a className="hover:opacity-75" href="">
-                                            {" "}
-                                            FAQs{" "}
-                                        </a>
-                                        <a className="hover:opacity-75" href="">
-                                            {" "}
-                                            Live Chat{" "}
-                                        </a>
-                                    </nav>
-                                </div>
-                                <div>
                                     <p className="font-medium">Legal</p>
                                     <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                                         <a className="hover:opacity-75" href="">
@@ -195,6 +178,23 @@ export const Footer = () => {
                                         <a className="hover:opacity-75" href="">
                                             {" "}
                                             Accessibility{" "}
+                                        </a>
+                                    </nav>
+                                </div>
+                                <div>
+                                    <p className="font-medium">Contact Us</p>
+                                    <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                        <a className="hover:opacity-75" href="">
+                                            {" "}
+                                            123456789{" "}
+                                        </a>
+                                        <a className="hover:opacity-75" href="">
+                                            {" "}
+                                            abc@gmail.com{" "}
+                                        </a>
+                                        <a className="hover:opacity-75" href="">
+                                            {" "}
+                                            Live Chat{" "}
                                         </a>
                                     </nav>
                                 </div>
