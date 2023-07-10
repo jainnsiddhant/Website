@@ -5,12 +5,7 @@ import img3 from "../../images/4261198.jpg"
 import img4 from "../../images/4204968.jpg" 
 import img5 from "../../images/4133580.jpg"  
 import img6 from "../../images/5_communication01.jpg"  
-// import { motion } from 'framer-motion';
-// import { FaUnlockAlt, FaHandHoldingUsd } from "react-icons/fa";
-// import { RiNodeTree } from "react-icons/ri";
-// import { AiOutlineSafetyCertificate } from "react-icons/ai";
-// import { SiHiveBlockchain } from "react-icons/si";
-// import { HiClipboardDocumentCheck } from "react-icons/hi2"
+import { Link } from 'react-router-dom'
 const Intro = () => {
   const [selectedtab, setselectedtab] = useState(0);
   const [Managementdata, setManagementdata] = useState([]);
@@ -214,7 +209,7 @@ const Intro = () => {
                 Discover a world of opportunities through our Courses and Scholarship section, where students can explore a diverse range of educational programs and funding options.
               </p>
               <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
-                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'><Link to={"/scholarship"}>Explore<em className='font-bold'>↗</em></Link></button>
               </div>
             </div>
             <div className="md:max-w-[50vw] order-1 md:order-2 md:justify-end h-auto md:flex">
@@ -231,7 +226,7 @@ const Intro = () => {
                 Find your perfect accommodation with our curated list of trusted housing websites, ensuring a comfortable and hassle-free stay. Additionally, discover the top banks in the UK for convenient financial services, along with a comprehensive packing list to ensure you're well-prepared for your relocation. Don't forget to check our recommended forex card list for efficient currency exchange during your stay
               </p>
               <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
-                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'><Link to={"/Page4"}>Explore<em className='font-bold'>↗</em></Link></button>
               </div>
             </div>
             <div className="md:max-w-[50vw] order-1 md:order-1 md:justify-end h-auto md:flex">
@@ -248,7 +243,7 @@ const Intro = () => {
                 Comprehensive list of reliable WiFi providers, ensuring you have fast and reliable internet access wherever you go. Discover smart ways to save money with our expert tips and advice,Explore our recommended job agencies.Stay on top of your tax obligations with our user-friendly tax calculator
               </p>
               <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
-                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'><Link to={"/Page5"}>Explore<em className='font-bold'>↗</em></Link></button>
               </div>
             </div>
             <div className="md:max-w-[50vw] order-1 md:order-2 md:justify-end h-auto md:flex">
@@ -265,7 +260,7 @@ const Intro = () => {
                 Your one-stop destination for crafting a professional and impactful resume,Discover our comprehensive collection of resume templates, designed to suit various industries and career levels. and developed your skills exploring some courses
               </p>
               <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
-                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'><Link to={"/resume"}>Explore<em className='font-bold'>↗</em></Link></button>
               </div>
             </div>
             <div className="md:max-w-[50vw] order-1 md:order-1 md:justify-end h-auto md:flex">
@@ -282,7 +277,7 @@ const Intro = () => {
                 Your gateway to building connections and accessing support in your university journey, connect university ambassadors who  are experienced students and have already been through the admission process and are eager to share their knowledge and expertise
               </p>
               <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
-                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'><Link to={"/blog"}>Explore<em className='font-bold'>↗</em></Link></button>
               </div>
             </div>
             <div className="md:max-w-[50vw] order-1 md:order-2 md:justify-end h-auto md:flex">
