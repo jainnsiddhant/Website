@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import img1 from "../../images/6180780.jpg" 
+import img1 from "../../images/6180780.jpg"
 import img2 from "../../images/7449742.jpg"
-import img3 from "../../images/4261198.jpg" 
-import img4 from "../../images/4204968.jpg" 
-import img5 from "../../images/4133580.jpg"  
-import img6 from "../../images/5_communication01.jpg"  
+import img3 from "../../images/4261198.jpg"
+import img4 from "../../images/4204968.jpg"
+import img5 from "../../images/4133580.jpg"
+import img6 from "../../images/5_communication01.jpg"
 import { Link } from 'react-router-dom'
 const Intro = () => {
   const [selectedtab, setselectedtab] = useState(0);
@@ -57,6 +57,8 @@ const Intro = () => {
       });
       setManagementdata(management);
       setSciencedata(science);
+    } else {
+      alert("Error while retriving data");
     }
   }
   useEffect(() => {

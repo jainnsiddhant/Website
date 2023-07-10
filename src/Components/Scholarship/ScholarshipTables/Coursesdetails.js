@@ -62,7 +62,7 @@ const Coursesdetails = () => {
                                                 <p>{item.UnivName}</p>
                                             </td>
                                             <td className="p-3">
-                                                <p>{item.Avgfees}</p>
+                                                <p>{`${item.Avgfees}${item.currency}`}</p>
                                             </td>
                                             <td className="p-3">
                                                 <p>{item.Qs_rank}</p>
