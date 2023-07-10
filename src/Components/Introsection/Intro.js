@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import img1 from "../../images/andrea-de-santis-_kAOOTC4MQA-unsplash.jpg"
-import img2 from "../../images/sabrina-mazzeo-g-krQzQo9mI-unsplash.jpg"
-import img3 from "../../images/tetiana-shyshkina-doz4m12DDig-unsplash.jpg"
-import { motion } from 'framer-motion';
-import { FaUnlockAlt, FaHandHoldingUsd } from "react-icons/fa";
-import { RiNodeTree } from "react-icons/ri";
-import { AiOutlineSafetyCertificate } from "react-icons/ai";
-import { SiHiveBlockchain } from "react-icons/si";
-import { HiClipboardDocumentCheck } from "react-icons/hi2" 
+import img1 from "../../images/6180780.jpg" 
+import img2 from "../../images/7449742.jpg"
+import img3 from "../../images/4261198.jpg" 
+import img4 from "../../images/4204968.jpg" 
+import img5 from "../../images/4133580.jpg"  
+import img6 from "../../images/5_communication01.jpg"  
+// import { motion } from 'framer-motion';
+// import { FaUnlockAlt, FaHandHoldingUsd } from "react-icons/fa";
+// import { RiNodeTree } from "react-icons/ri";
+// import { AiOutlineSafetyCertificate } from "react-icons/ai";
+// import { SiHiveBlockchain } from "react-icons/si";
+// import { HiClipboardDocumentCheck } from "react-icons/hi2"
 const Intro = () => {
   const [selectedtab, setselectedtab] = useState(0);
   const [Managementdata, setManagementdata] = useState([]);
@@ -69,18 +72,18 @@ const Intro = () => {
       <div className="">
         <div className="max-w-[100vw] md:p-8 flex justify-between">
           <div className="md:w-[100vw] content">
-            <h1 className='md:text-7xl md:pl-5 md:pr-5 hidden md:block specialfont'>Discover <br /> Colleges, Courses <br /> <em className='mytext'>& Scholarships</em><br /></h1>
+            <h1 className='md:text-7xl font-bold md:pl-5 md:pr-5 hidden md:block specialfont'>Discover <br /> Colleges, Courses <br /> <em className='mytext'>& Scholarships</em><br /></h1>
             <h1 className="text-4xl md:hidden md:w-[100vw] h-[30vh]  items-center text-center flex blinkingcursor mytext specialfont">Discover Colleges, Courses & Scholarships </h1>
             <p className="md:w-[30vw] w-[100vw]  md:pt-[5vh] text-center md:text-left md:pl-5">
               The Next Generation Way to find The Best College and Course at one place.
             </p>
-            <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
+            {/* <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
               <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore</button>
               <button className='border-[1px] border-white rounded-full text-xl pl-3 pr-3'>Colleges</button>
-            </div>
+            </div> */}
           </div>
           <div className="max-w-[50vw] justify-end hidden h-auto md:flex">
-            <div className="w-[18vw]">
+            {/* <div className="w-[18vw]">
               <div className="h-[70%] rounded-2xl">
                 <img src={img1} alt="" className="h-[100%] z-50 transform-img" />
               </div>
@@ -100,7 +103,8 @@ const Intro = () => {
               </div>
               <div className="h-[40%] rounded-2xl glasseffect mt-[-5rem]">
               </div>
-            </div>
+            </div> */}
+            <img src={img1} alt="" className="h-[100%] z-50 transform-img" />
           </div>
         </div>
 
@@ -114,6 +118,31 @@ const Intro = () => {
                 <h2 className="mb-4 text-center text-3xl tracking-tight font-bold text-gray-900">
                   University Rankings
                 </h2>
+                <p className="text-lg text-center md:text-left">
+                  University rankings order institutions in higher education based on factors that vary depending on the ranking. Some rankings evaluate institutions within a single country, while others assess institutions worldwide. Rankings are typically conducted by magazines, newspapers, websites, governments, or academics.
+                </p>
+                <p className="text-xl font-bold mt-4 mb-4 text-center md:text-left">
+                  Major international rankings
+                </p>
+                <ul className="text-center md:text-left">
+                  <div className="m-2">
+                    <li className='font-semibold'>
+                      <a href="https://www.qs.com/" target='_blank' className="text-blue-500">QS World University Rankings</a>
+                    </li>
+                    <p className="m-4">
+                      The QS World University Rankings are a ranking of the world's top universities produced by Quacquarelli Symonds published annually since 2004.These rankings use some of the same criteria as the World University Rankings but they use other measures, such as incoming and outgoing exchange students as well. As the criteria and their weightings are different, the QS World university rankings and the QS Asian University rankings released in the same academic year are different. QS published global universities ranking by different major in different countries, which has special reference value for international students, like Statistics & Operational Research program in China.
+                    </p>
+                  </div>
+                  <div className="m-1">
+                    <li className='font-semibold'>
+                      <a href="https://www.theguardian.com/international" target='_blank' className="text-blue-500">The Guardian</a>
+                    </li>
+                    <p className="m-4">
+                      The Guardian's ranking uses nine different criteria, each weighted between 5 and 15 per cent. Unlike other annual rankings of British universities, the criteria do not include a measure of research output. A "value-added" factor is included which compares students' degree results with their entry qualifications, described by the newspaper as being "based upon a sophisticated indexing methodology that tracks students from enrolment to graduation, qualifications upon entry are compared with the award that a student receives at the end of their studies".Tables are drawn up for subjects, with the overall ranking being based on an average across the subjects rather than on institutional level statistics.
+                    </p>
+                  </div>
+                </ul>
+
                 <p className="text-gray-500 sm:text-xl dark:text-gray-400 text-center">
                   <label for="Toggle3" className="inline-flex items-center p-2 rounded-md cursor-pointer dark:text-gray-800">
                     <input id="Toggle3" type="checkbox" className="hidden peer" />
@@ -178,9 +207,92 @@ const Intro = () => {
             </div>
           </section>
 
+          <div className="max-w-[100vw] md:p-8 flex flex-col md:flex-row md:justify-between mt-8 mb-8">
+            <div className="md:w-[100vw] order-2 md:order-1 content my-auto">
+              <h1 className='text-3xl font-bold md:pl-5 md:pr-5 text-center md:text-left specialfont'>Courses and Scholarship</h1>
+              <p className="md:w-[30vw] w-[100vw]  md:pt-[5vh] text-center md:text-left md:pl-5">
+                Discover a world of opportunities through our Courses and Scholarship section, where students can explore a diverse range of educational programs and funding options.
+              </p>
+              <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+              </div>
+            </div>
+            <div className="md:max-w-[50vw] order-1 md:order-2 md:justify-end h-auto md:flex">
+              <img src={img6} alt="" className="h-[100%] md:z-50 md:transform-img" />
+            </div>
+          </div>
+
+
+
+          <div className="max-w-[100vw] md:p-8 flex flex-col md:flex-row md:justify-between mt-8 mb-8">
+            <div className="md:w-[100vw] order-2 md:order-2 content my-auto">
+              <h1 className='text-3xl font-bold md:pl-5 md:pr-5 text-center md:text-left specialfont'>Want to Settel in UK</h1>
+              <p className="md:w-[30vw] w-[100vw]  md:pt-[5vh] text-center md:text-left md:pl-5">
+                Find your perfect accommodation with our curated list of trusted housing websites, ensuring a comfortable and hassle-free stay. Additionally, discover the top banks in the UK for convenient financial services, along with a comprehensive packing list to ensure you're well-prepared for your relocation. Don't forget to check our recommended forex card list for efficient currency exchange during your stay
+              </p>
+              <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+              </div>
+            </div>
+            <div className="md:max-w-[50vw] order-1 md:order-1 md:justify-end h-auto md:flex">
+              <img src={img5} alt="" className="h-[100%] md:z-50 md:transform-img" />
+            </div>
+          </div>
+
+
+
+          <div className="max-w-[100vw] md:p-8 flex flex-col md:flex-row md:justify-between mt-8 mb-8">
+            <div className="md:w-[100vw] order-2 md:order-1 content my-auto">
+              <h1 className='text-3xl font-bold md:pl-5 md:pr-5 text-center md:text-left specialfont'>Already in UK</h1>
+              <p className="md:w-[30vw] w-[100vw]  md:pt-[5vh] text-center md:text-left md:pl-5">
+                Comprehensive list of reliable WiFi providers, ensuring you have fast and reliable internet access wherever you go. Discover smart ways to save money with our expert tips and advice,Explore our recommended job agencies.Stay on top of your tax obligations with our user-friendly tax calculator
+              </p>
+              <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+              </div>
+            </div>
+            <div className="md:max-w-[50vw] order-1 md:order-2 md:justify-end h-auto md:flex">
+              <img src={img2} alt="" className="h-[100%] md:z-50 md:transform-img" />
+            </div>
+          </div>
+
+
+
+          <div className="max-w-[100vw] md:p-8 flex flex-col md:flex-row md:justify-between mt-8 mb-8">
+            <div className="md:w-[100vw] order-2 md:order-2 content my-auto">
+              <h1 className='text-3xl font-bold md:pl-5 md:pr-5 text-center md:text-left specialfont'>Buid Your Resume</h1>
+              <p className="md:w-[30vw] w-[100vw]  md:pt-[5vh] text-center md:text-left md:pl-5">
+                Your one-stop destination for crafting a professional and impactful resume,Discover our comprehensive collection of resume templates, designed to suit various industries and career levels. and developed your skills exploring some courses
+              </p>
+              <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+              </div>
+            </div>
+            <div className="md:max-w-[50vw] order-1 md:order-1 md:justify-end h-auto md:flex">
+              <img src={img3} alt="" className="h-[100%] md:z-50 md:transform-img" />
+            </div>
+          </div>
+
+
+
+          <div className="max-w-[100vw] md:p-8 flex flex-col md:flex-row md:justify-between mt-8 mb-8">
+            <div className="md:w-[100vw] order-2 md:order-1 content my-auto">
+              <h1 className='text-3xl font-bold md:pl-5 md:pr-5 text-center md:text-left specialfont'>Connect With Peoples</h1>
+              <p className="md:w-[30vw] w-[100vw]  md:pt-[5vh] text-center md:text-left md:pl-5">
+                Your gateway to building connections and accessing support in your university journey, connect university ambassadors who  are experienced students and have already been through the admission process and are eager to share their knowledge and expertise
+              </p>
+              <div className="flex space-x-5 md:justify-start justify-center pt-[5vh] md:pl-5">
+                <button className='bg-black hover:text-black hover:bg-white text-white text-2xl rounded-full pl-3 pr-3 border-2 transition duration-300 border-black'>Explore<em className='font-bold'>↗</em></button>
+              </div>
+            </div>
+            <div className="md:max-w-[50vw] order-1 md:order-2 md:justify-end h-auto md:flex">
+              <img src={img4} alt="" className="h-[100%] md:z-50 md:transform-img" />
+            </div>
+          </div>
+
         </div>
 
-        <div className='features mt-10 md:w-[80vw] mx-auto'>
+        {/* <div className='features mt-10 md:w-[80vw] mx-auto'>
           <section className="rounded-xl">
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="mb-8 lg:mb-16">
@@ -289,7 +401,7 @@ const Intro = () => {
               </div>
             </div>
           </section>
-        </div>
+        </div> */}
 
 
 

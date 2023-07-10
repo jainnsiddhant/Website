@@ -25,15 +25,17 @@ const ScholarshipTables = () => {
         let headersList = {
             "Accept": "*/*"
         }
-
         let response = await fetch(`${process.env.REACT_APP_API_URL}/courses`, {
             method: "GET",
             headers: headersList
         });
 
-        let data = await response.text();
-        data = JSON.parse(data);
-        setcoursedata(data);
+        if (response.ok) {
+            let data = await response.text();
+            data = JSON.parse(data); 
+            console.log(data);
+            setcoursedata(data);
+        }
     }
 
 

@@ -56,7 +56,7 @@ const Navbar = () => {
                         <div className="flex space-x-[8rem]">
                             <div>
                                 <Link
-                                    to={"/"}                                    
+                                    to={"/"}
                                     className="flex items-center py-5 px-2 text-black"
                                 >
                                     <svg
@@ -78,33 +78,30 @@ const Navbar = () => {
                             </div>
                             {/* primary nav */}
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
-                                <Link to={"/Courses"} className="py-5 px-3 text-black hover:text-gray-900">
-                                    Courses
+                                <Link to={"/Resume"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Resume Builder
+                                </Link>
+                                <Link to={"/Blog"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Connect
+                                </Link>
+                                <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Scholarship and Courses
+                                </Link>
+                                <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Settel in Uk
+                                </Link>
+                                <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900">
+                                    Already in Uk
                                 </Link>
                                 <Link to={"/about"} className="py-5 px-3 text-black hover:text-gray-900">
                                     About Us
-                                </Link>
-                                <Link to={"/Resume"} className="py-5 px-3 text-black hover:text-gray-900">
-                                    Resume
-                                </Link>
-                                <Link to={"/Blog"} className="py-5 px-3 text-black hover:text-gray-900">
-                                    Blog
-                                </Link>
-                                <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900">
-                                    Scholarship
-                                </Link>
-                                <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900">
-                                    Page4
-                                </Link>
-                                <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900">
-                                    Page5
                                 </Link>
                             </div>
                         </div>
                         {/* secondary nav */}
                         <div className="hidden md:flex items-center space-x-1">
                             <Link
-                               to={"/contact"}
+                                to={"/contact"}
                                 className="py-2 px-3 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full  border-2 border-black transition duration-300"
                             >
                                 Contact Us
@@ -137,15 +134,24 @@ const Navbar = () => {
                 </div>
                 {/* mobile menu */}
                 <div className={mobilestyle}>
-                    <a href="#" className="block py-2 px-4 text-lg hover:bg-blue-600">
-                        Explore
-                    </a>
-                    <a href="#" className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/Resume"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                        Resume Builder
+                    </Link>
+                    <Link to={"/Blog"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                        Connect
+                    </Link>
+                    <Link to={"/Scholarship"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                        Scholarship and Courses
+                    </Link>
+                    <Link to={"/Page4"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                        Settel in Uk
+                    </Link>
+                    <Link to={"/Page5"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                        Already in Uk
+                    </Link>
+                    <Link to={"/about"} className="block py-2 px-4 text-lg hover:bg-blue-600">
                         About Us
-                    </a>
-                    <a href="#" className="block py-2 px-4 text-lg hover:bg-blue-600">
-                        How it Works
-                    </a>
+                    </Link>
                 </div>
                 <hr className='border-1 border-black' />
             </nav>

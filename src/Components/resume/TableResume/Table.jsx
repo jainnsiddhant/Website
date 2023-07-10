@@ -5,8 +5,10 @@ const Table = () => {
   return (
     <>
     
-<div class="relative overflow-x-auto table w-[90%] mx-auto">
-    <table class="w-full text-sm text-left text-gray-500">
+<div id="resume_table" class="relative overflow-x-auto table w-[90%] mx-auto">
+<h1 className='text-7xl text-center specialfont'>Enhance {/* <em className='mytext'>your</em> */}
+ Resume<br /></h1>
+    <table class="w-full text-sm text-left text-gray-500 mt-10">
         <thead class="text-xs text-white uppercase bg-blue-700 h-[30%]">
             <tr>
                 <th scope="col" class="px-6 py-3">
@@ -52,7 +54,7 @@ const Table = () => {
                     $1999
                 </td>
             </tr>
-            <tr class="bg-white">
+            <tr class="bg-white border-b">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                     Magic Mouse 2
                 </th>

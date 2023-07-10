@@ -21,8 +21,8 @@ const Coursesdetails = () => {
         if (response.ok) {
             let data = await response.text();
             data = JSON.parse(data);
-            setcoursedata(data);
-            console.log(data);
+            setcoursedata(data.course_list);
+            console.log(data.course_list);
         }
     }
     useEffect(() => {
@@ -55,7 +55,7 @@ const Coursesdetails = () => {
                         </thead>
                         <tbody>
                             {
-                                coursedata.course_list.map((item, idx) => {
+                                coursedata.map((item, idx) => {
                                     return (
                                         <tr className="border-b border-opacity-20">
                                             <td className="p-3">
