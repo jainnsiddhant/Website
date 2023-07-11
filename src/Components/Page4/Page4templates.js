@@ -1,22 +1,22 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { FaHome} from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { BsFillPersonVcardFill } from 'react-icons/bs';
-import { AiFillBank , AiOutlineFilePdf} from "react-icons/ai";
+import { AiFillBank, AiOutlineFilePdf } from "react-icons/ai";
 
 const Page4templates = () => {
   return (
     <>
-    <div className='features mt-10 md:w-[90vw] mx-auto'>
-          <section className="rounded-xl">
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-              <div className="mb-8 lg:mb-16">
-            <h1 className='text-7xl text-center specialfont'>Settle <em className='mytext'>in UK!</em><br /></h1>
-            <p className="w-[85vw] text-center text-gray-500 text-xl">
-            Just follow these basic instructions.
-            </p>
-              </div>
-              <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
+      <div className='features mt-10 md:w-[90vw] mx-auto'>
+        <section className="rounded-xl">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div className="mb-8 lg:mb-16">
+              <h1 className='text-7xl text-center specialfont'>Settle <em className='mytext'>in UK!</em><br /></h1>
+              <p className="w-[85vw] text-center mt-5 mb-5 text-gray-500 text-xl">
+                Welcome to our comprehensive guide on settling in the UK! Whether you're a student, a professional, or someone seeking a new life in the United Kingdom, we've got you covered.
+              </p>
+            </div>
+            <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
               <a href="#forexcards">
                 <motion.div
                   whileHover={
@@ -33,8 +33,8 @@ const Page4templates = () => {
 
                   </p>
                 </motion.div>
-                </a>
-                <a href="#packinglist">
+              </a>
+              <a href="#packinglist">
                 <motion.div
                   whileHover={
                     {
@@ -46,14 +46,14 @@ const Page4templates = () => {
                     <AiOutlineFilePdf className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-black" />
                   </div>
                   <h3 className="mb-2 text-xl font-bold text-white">
-                  Packing List doc file
+                    Packing List doc file
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
 
                   </p>
                 </motion.div>
-                </a>
-                <a href="#bankstoopen">
+              </a>
+              <a href="#bankstoopen">
                 <motion.div
                   whileHover={
                     {
@@ -68,8 +68,8 @@ const Page4templates = () => {
                   <p className="text-gray-500 dark:text-gray-400">
                   </p>
                 </motion.div>
-                </a>
-                <a href="#housingwebsite">
+              </a>
+              <a href="#housingwebsite">
                 <motion.div
                   whileHover={
                     {
@@ -84,13 +84,13 @@ const Page4templates = () => {
                   <p className="text-gray-500 dark:text-gray-400">
                   </p>
                 </motion.div>
-                </a>
-              </div>
+              </a>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
     </>
   )
 }
 
-export default Page4templates
+export default Page4templates;

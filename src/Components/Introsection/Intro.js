@@ -65,7 +65,7 @@ const Intro = () => {
   }
   useEffect(() => {
     retriveuniversitydata();
-  }, [, selectedtab]);
+  }, []);
   return (
     <>
       <div className="">
