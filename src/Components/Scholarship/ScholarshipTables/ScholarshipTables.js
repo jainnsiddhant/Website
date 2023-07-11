@@ -5,9 +5,11 @@ import img6 from "../../../images/5_communication01.jpg"
 const ScholarshipTables = () => {
 
     const [scholarshipdata, setscholarshipdata] = useState([1]);
-    const [coursedata, setcoursedata] = useState([1]);
     const [loading1, setloading1] = useState(true);
     const [loading2, setloading2] = useState(true);
+    const [Managementdata, setManagementdata] = useState([]);
+    const [Sciencedata, setSciencedata] = useState([]);
+    const [selectedtab, setselectedtab] = useState(0);
 
     const retrivescholarshipdata = async () => {
         setloading1(true);
@@ -40,8 +42,14 @@ const ScholarshipTables = () => {
         if (response.ok) {
             let data = await response.text();
             data = JSON.parse(data);
-            console.log(data);
-            setcoursedata(data);
+            const management = data.filter(item => {
+                return item.course_tag === "Management"
+            });
+            const science = data.filter(item => {
+                return item.course_tag === "Science"
+            })
+            setManagementdata(management);
+            setSciencedata(science);
             setloading2(false);
         } else {
             alert("while retriving course data");
@@ -134,7 +142,18 @@ const ScholarshipTables = () => {
                 </div>
             </div>
 
-            <h1 class="text-5xl font-extrabold my-10 mx-auto text-center">Courses<span class="bg-blue-100 text-blue-700 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded ml-2">PRO</span></h1>
+            {/* <h1 class="text-5xl font-extrabold my-10 mx-auto text-center">Courses<span class="bg-blue-100 text-blue-700 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded ml-2">PRO</span></h1> */}
+            <p className="text-gray-500 sm:text-xl dark:text-gray-400 text-center">
+                <label for="Toggle3" className="inline-flex items-center p-2 rounded-md cursor-pointer dark:text-gray-800">
+                    <input id="Toggle3" type="checkbox" className="hidden peer" />
+                    <span onClick={() => {
+                        setselectedtab(0);
+                    }} className="px-4 py-2 rounded-l-md dark:bg-violet-400 peer-checked:dark:bg-gray-300">Management</span>
+                    <span onClick={() => {
+                        setselectedtab(1);
+                    }} className="px-4 py-2 rounded-r-md dark:bg-gray-300 peer-checked:dark:bg-violet-400">Science</span>
+                </label>
+            </p>
             <div className="container p-4 sm:p-4 border rounded-xl mx-auto">
                 <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2>
                 <div className="overflow-x-auto mx-auto">
@@ -166,7 +185,7 @@ const ScholarshipTables = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                        coursedata.map((item, idx) => {
+                                        (selectedtab === 0 ? Managementdata : Sciencedata).map((item, idx) => {
                                             return (
                                                 <tr className="border-b border-opacity-20">
                                                     <td className="p-3">

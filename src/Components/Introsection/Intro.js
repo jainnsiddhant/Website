@@ -106,11 +106,7 @@ const Intro = () => {
             <img src={img1} alt="" className="h-[100%] z-50 transform-img" />
           </div>
         </div>
-
-
-
         <div className="UniversityRankings  md:w-[80vw] mx-auto">
-
           <section className="rounded-xl">
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="mb-8 lg:mb-16">
