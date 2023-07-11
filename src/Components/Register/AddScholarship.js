@@ -18,16 +18,14 @@ const AddScholarship = () => {
             "Content-Type": "application/json"
         }
 
-
-        setprice(`${price} + ${currency}`);
-
         let bodyContent = JSON.stringify({
             "scholarship_name": Scholarship,
             "price_money": price,
             "details": details,
             "link": ScholarshipLink,
             "start_time": starttime,
-            "end_time": endtime
+            "end_time": endtime,
+            "currency":currency
         });
 
         let response = await fetch(`${process.env.REACT_APP_API_URL}/scholarship`, {
