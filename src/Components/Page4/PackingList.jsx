@@ -1,100 +1,63 @@
-import React from 'react'
+
+
+
+import React from 'react';
+import { FaGift } from 'react-icons/fa';
+import { BiLinkExternal } from 'react-icons/bi';
 
 const PackingList = () => {
   return (
     <>
-    {/* Packing list ms doc file TABLE */}
-    <div id="packinglist" className="Packing List MS Doc File  md:w-[80vw] mx-auto">
-          <section className="rounded-xl">
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-              <div className="mb-8 lg:mb-16">
-                <h2 className="mb-4 text-center text-3xl tracking-tight font-bold text-gray-900">
+      {/* Packing list ms doc file TABLE */}
+      <div id="packinglist" className="Packing List MS Doc File md:w-[80vw] mx-auto">
+        <section className="rounded-xl">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div className="mb-8 lg:mb-8">
+              <h2 className="mb-8 text-center text-3xl tracking-tight font-bold text-gray-900">
                 Packing List MS Doc File
-                </h2>
-              </div>
-              <div className="container p-4 sm:p-4 border rounded-xl">
-                <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2>
-                <div className="overflow-x-auto mx-auto">
-                  <table className="min-w-full text-sm mx-auto text-right">
-                    <colgroup>
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col />
-                      <col className="w-24" />
-                    </colgroup>
-                    <thead className="">
-                      <tr className="">
-                        <th className="p-3">Name</th>
-                        <th className="p-3">Location</th>
-                        <th className="p-3">Contact</th>
-                        <th className="p-3">Link</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {
-                        <>
-                            <tr className="border-b border-opacity-20">
-                              <td className="p-3">
-                                <p>name 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
-                                <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                  <a href="#">View</a>
-                                </span>
-                              </td>
-                            </tr>
-                            <tr className="border-b border-opacity-20">
-                              <td className="p-3">
-                                <p>name 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
-                                <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                  <a href="#">View</a>
-                                </span>
-                              </td>
-                            </tr>
-                            <tr className="border-b border-opacity-20">
-                              <td className="p-3">
-                                <p>name 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
-                                <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                  <a href="#">View</a>
-                                </span>
-                              </td>
-                            </tr>
-                        </>
-                      }
-                    </tbody>
-                  </table>
-                  <small className='text-[0.7rem]'>* All rakings are shown from official reports</small>
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 my-6 mx-auto main mt-24">
+                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+                  <FaGift
+                    className="text-blue-700 mb-3" size={30}
+                  />
+                  <a href="#">
+                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+                      Need help to settle?
+                    </h5>
+                  </a>
+                  <p className="mb-3 font-normal text-gray-500">
+                    Go to this step-by-step guideline process on how to certify for your weekly steps:
+                  </p>
+                  <p className="inline-flex items-center text-blue-600 hover:underline">
+                    <a href="#">See our guideline</a>
+                    <a><BiLinkExternal className="text-blue-700" size={20} /></a>
+                  </p>
+                </div>
+                <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+                  <FaGift
+                    className="text-blue-700 mb-3" size={30}
+                  />
+                  <a href="#">
+                    <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+                      Need help to settle?
+                    </h5>
+                  </a>
+                  <p className="mb-3 font-normal text-gray-500">
+                    Go to this step-by-step guideline process on how to certify for your weekly steps:
+                  </p>
+                  <p className="inline-flex items-center text-blue-600 hover:underline">
+                    <a href="#">See our guideline</a>
+                    <a><BiLinkExternal className="text-blue-700" size={20} /></a>
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default PackingList
+export default PackingList;

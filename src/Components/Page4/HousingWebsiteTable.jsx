@@ -27,8 +27,6 @@ const HousingWebsiteTable = () => {
                     <thead className="">
                       <tr className="">
                         <th className="p-3">Name</th>
-                        <th className="p-3">Location</th>
-                        <th className="p-3">Contact</th>
                         <th className="p-3">Link</th>
                       </tr>
                     </thead>
@@ -40,12 +38,6 @@ const HousingWebsiteTable = () => {
                                 <p>name 1</p>
                               </td>
                               <td className="p-3">
-                                <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
                                 <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
                                   <a href="#">View</a>
                                 </span>
@@ -56,12 +48,6 @@ const HousingWebsiteTable = () => {
                                 <p>name 1</p>
                               </td>
                               <td className="p-3">
-                                <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
                                 <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
                                   <a href="#">View</a>
                                 </span>
@@ -70,12 +56,6 @@ const HousingWebsiteTable = () => {
                             <tr className="border-b border-opacity-20">
                               <td className="p-3">
                                 <p>name 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
                               </td>
                               <td className="p-3">
                                 <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">

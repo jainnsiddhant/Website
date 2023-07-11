@@ -14,8 +14,8 @@ const Page5templates = () => {
             We will help you settle down .
             </p>
               </div>
-              <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
-              <a href="#wifi">
+              <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-5 md:gap-12 md:space-y-0">
+              <a href="#instruction">
                 <motion.div
                   whileHover={
                     {
@@ -26,7 +26,7 @@ const Page5templates = () => {
                   <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                     <FaWifi className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-black" />
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-white">WIFI</h3>
+                  <h3 className="mb-2 text-xl font-bold text-white">INSTRUCTION</h3>
                   <p className="text-gray-500 dark:text-gray-400">
 
                   </p>
@@ -49,6 +49,40 @@ const Page5templates = () => {
                   </p>
                 </motion.div>
                 </a>
+              <a href="#jobagencies">
+                <motion.div
+                  whileHover={
+                    {
+                      scale: 0.75
+                    }
+                  }
+                  className='px-5 py-6 rounded-xl bg-blue-600  shadow-xl shadow-gray-800'>
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    <FaClipboardList className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-black" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-white">Job Agencies</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+
+                  </p>
+                </motion.div>
+                </a>
+                <a href='#wifi'>
+                <motion.div
+                  whileHover={
+                    {
+                      scale: 0.75
+                    }
+                  }
+                  className='px-5 py-6 rounded-xl bg-white shadow-xl shadow-gray-800'>
+                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    <FaWifi className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-black" />
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-black">WIFI</h3>
+                  <p className="text-gray-500 dark:text-gray-400">
+
+                  </p>
+                </motion.div>
+                </a>
                 <a href='#taxcalculate'>
                 <motion.div
                   whileHover={
@@ -63,23 +97,6 @@ const Page5templates = () => {
                   <h3 className="mb-2 text-xl font-bold text-white">
                   Tax Calculator
                   </h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-
-                  </p>
-                </motion.div>
-                </a>
-                <a href='#jobagencies'>
-                <motion.div
-                  whileHover={
-                    {
-                      scale: 0.75
-                    }
-                  }
-                  className='px-5 py-6 rounded-xl bg-white shadow-xl shadow-gray-800'>
-                  <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                    <FaClipboardList className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 text-black" />
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold text-black">Job Agencies</h3>
                   <p className="text-gray-500 dark:text-gray-400">
 
                   </p>

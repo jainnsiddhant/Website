@@ -1,16 +1,16 @@
 import React from 'react';
-import HousingWebsiteTable from './HousingWebsiteTable';
-import ListofBanks from './ListOFbanks';
 import PackingList from './PackingList';
+import ListofBanks from './ListOFbanks';
+import HousingWebsiteTable from './HousingWebsiteTable';
 import ListofForexCard from './ListForexCards';
 
 const Page4Table = () => { 
     return (
         <>
-        <HousingWebsiteTable />
-        <ListofBanks />
-        <PackingList />
         <ListofForexCard />
+        <PackingList />
+        <ListofBanks />
+        <HousingWebsiteTable />
         </>
     )
 }

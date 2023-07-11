@@ -28,7 +28,6 @@ const ListofForexCard = () => {
                       <tr className="">
                         <th className="p-3">Name</th>
                         <th className="p-3">Location</th>
-                        <th className="p-3">Contact</th>
                         <th className="p-3">Link</th>
                       </tr>
                     </thead>
@@ -43,9 +42,6 @@ const ListofForexCard = () => {
                                 <p>location 1</p>
                               </td>
                               <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
                                 <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
                                   <a href="#">View</a>
                                 </span>
@@ -59,9 +55,6 @@ const ListofForexCard = () => {
                                 <p>location 1</p>
                               </td>
                               <td className="p-3">
-                                <p>contact 1</p>
-                              </td>
-                              <td className="p-3">
                                 <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
                                   <a href="#">View</a>
                                 </span>
@@ -73,9 +66,6 @@ const ListofForexCard = () => {
                               </td>
                               <td className="p-3">
                                 <p>location 1</p>
-                              </td>
-                              <td className="p-3">
-                                <p>contact 1</p>
                               </td>
                               <td className="p-3">
                                 <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">

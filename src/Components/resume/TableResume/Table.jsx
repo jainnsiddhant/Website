@@ -8,110 +8,83 @@ const Table = () => {
 <div id="resume_table" class="relative overflow-x-auto table w-[90%] mx-auto">
 <h1 className='text-7xl text-center specialfont'>Enhance {/* <em className='mytext'>your</em> */}
  Resume<br /></h1>
-    <table class="w-full text-sm text-left text-gray-500 mt-10">
-        <thead class="text-xs text-white uppercase bg-blue-700 h-[30%]">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Product name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Category
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bg-white border-b h-[10]">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-            </tr>
-            <tr class="bg-white border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Microsoft Surface Pro
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-            </tr>
-            <tr class="bg-white border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Magic Mouse 2
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-            </tr>
-            <tr class="bg-white border-b h-[10]">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple MacBook Pro 17"
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-            </tr>
-            <tr class="bg-white border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Microsoft Surface Pro
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-            </tr>
-            <tr class="bg-white">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Magic Mouse 2
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    </div>
+              <div className="container p-4 sm:p-4 border rounded-xl">
+                <div className="overflow-x-auto mx-auto">
+                  <table className="min-w-full text-sm mx-auto text-center">
+                    <colgroup>
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col />
+                      <col className="w-24" />
+                    </colgroup>
+                    <thead className="">
+                      <tr className="">
+                        <th className="p-3">Product name</th>
+                        <th className="p-3">Color</th>
+                        <th className="p-3">Category</th>
+                        <th className="p-3">Link</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {
+                        <>
+                            <tr className="border-b border-opacity-20">
+                              <td className="p-3">
+                                <p>name 1</p>
+                              </td>
+                              <td className="p-3">
+                                <p>color 1</p>
+                              </td>
+                              <td className="p-3">
+                                <p>category 1</p>
+                              </td>
+                              <td className="p-3">
+                                <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
+                                  <a href="#">View</a>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr className="border-b border-opacity-20">
+                              <td className="p-3">
+                                <p>name 1</p>
+                              </td>
+                              <td className="p-3">
+                                <p>color 1</p>
+                              </td>
+                              <td className="p-3">
+                                <p>category 1</p>
+                              </td>
+                              <td className="p-3">
+                                <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
+                                  <a href="#">View</a>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr className="border-b border-opacity-20">
+                              <td className="p-3">
+                                <p>name 1</p>
+                              </td>
+                              <td className="p-3">
+                                <p>color 1</p>
+                              </td>
+                              <td className="p-3">
+                                <p>category 1</p>
+                              </td>
+                              <td className="p-3">
+                                <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
+                                  <a href="#">View</a>
+                                </span>
+                              </td>
+                            </tr>
+                        </>
+                      }
+                    </tbody>
+                  </table>
+                  <small className='text-[0.7rem]'>* All rakings are shown from official reports</small>
+                </div>
 </div>
 
     </>
@@ -119,3 +92,7 @@ const Table = () => {
 };
 
 export default Table;
+
+
+
+

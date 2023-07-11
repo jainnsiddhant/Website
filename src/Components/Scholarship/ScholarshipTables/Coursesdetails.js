@@ -31,7 +31,7 @@ const Coursesdetails = () => {
     return (
         <>
             <Navbar />
-            <h1 class="flex items-center text-5xl font-extrabold my-10 w-[20%] mx-auto">Courses</h1>
+            <h1 class="text-5xl font-extrabold my-10 mx-auto text-center">Courses</h1>
             <div className="container p-4 sm:p-4 border rounded-xl mx-auto">
                 <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2>
                 <div className="overflow-x-auto mx-auto">
