@@ -3,7 +3,11 @@ import homebg from '../../images/homebg.jpg'
  import harvard from '../../images/harvard.jpg'
  import oxford from '../../images/oxford.jpg'
  import goldmansachs from '../../images/GoldmanSachs.jpg'
+ import princeton from '../../images/princeton.jpg'
 import interview from '../../images/interview.jpg'
+import resume from '../../images/resume.jpg'
+import essay from '../../images/essay.jpg'
+import profile from '../../images/profile.jpg'
 
 const NewIntro = () => {
     return (
@@ -41,7 +45,7 @@ const NewIntro = () => {
 
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={harvard} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover	" src={harvard} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
@@ -53,37 +57,37 @@ const NewIntro = () => {
 
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={harvard} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover" src={oxford} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Harvard</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Oxford</h5>
       </a>
-      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">United States</p>
+      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">England</p>
     </div>
   </div>
   
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={harvard} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={goldmansachs} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Harvard</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">GoldmanSachs</h5>
       </a>
-      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">United States</p>
+      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">New York City</p>
     </div>
   </div>
 
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={harvard} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={princeton} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Harvard</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Princeton</h5>
       </a>
-      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">United States</p>
+      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">New Jersey</p>
     </div>
   </div>
   {/* Repeat the above card structure for other cards */}
@@ -111,7 +115,7 @@ const NewIntro = () => {
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Interview</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Interview Training</h5>
       </a>
       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Get ready for your big day.</p>
     </div>
@@ -119,37 +123,37 @@ const NewIntro = () => {
 
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={interview} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={resume} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Interview</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Resume Writing</h5>
       </a>
-      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Get ready for your big day.</p>
+      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Make your resume stand out.</p>
     </div>
   </div>
   
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={interview} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={essay} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Interview</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Essay Review</h5>
       </a>
-      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Get ready for your big day.</p>
+      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Perfect for your admissions.</p>
     </div>
   </div>
 
   <div className="max-w-xs bg-white">
     <a href="#">
-      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={interview} alt="" />
+      <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={profile} alt="" />
     </a>
     <div className="p-4">
       <a href="#">
-        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Interview</h5>
+        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Profile Building</h5>
       </a>
-      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Get ready for your big day.</p>
+      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Enhance your profile.</p>
     </div>
   </div>
   {/* Repeat the above card structure for other cards */}

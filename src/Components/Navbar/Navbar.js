@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import logoORG from '../../images/logoORG.jpg'
+import './Navbar.css';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
 
@@ -12,6 +14,7 @@ const Navbar = () => {
         } else {
             setmobilestyle("mobile-menu text-center hidden md:hidden bg-black text-white rounded-2xl p-6");
         }
+
     }, [window.innerWidth, toogle]);
 
     // const primaryNavItems = [
@@ -72,27 +75,28 @@ const Navbar = () => {
                                             d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                                         />
                                     </svg>
-                                    <span className="font-bold text-2xl">College</span>
+                                    {/* <img src={logoORG} className="h-12 w-20 mr-1 text-blue-400 mix-blend-color" /> */}
+                                    <span className="font-bold text-2xl navfont">FindMyUni</span>
                                 </Link>
                             </div>
                             {/* primary nav */}
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
-                                <Link to={"/Resume"} className="py-5 px-3 text-black hover:text-gray-900">
+                                <Link to={"/Resume"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Resume Builder
                                 </Link>
-                                <Link to={"/Blog"} className="py-5 px-3 text-black hover:text-gray-900">
+                                <Link to={"/Blog"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Connect
                                 </Link>
-                                <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900">
+                                <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Scholarship and Courses
                                 </Link>
-                                <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900">
+                                <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Settel in Uk
                                 </Link>
-                                <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900">
+                                <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Already in Uk
                                 </Link>
-                                <Link to={"/about"} className="py-5 px-3 text-black hover:text-gray-900">
+                                <Link to={"/about"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     About Us
                                 </Link>
                             </div>
@@ -101,7 +105,7 @@ const Navbar = () => {
                         <div className="hidden md:flex items-center space-x-1">
                             <Link
                                 to={"/contact"}
-                                className="py-2 px-3 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full  border-2 border-black transition duration-300"
+                                className="py-2 px-3 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full  border-2 border-black transition duration-300 navfont"
                             >
                                 Contact Us
                             </Link>
@@ -133,22 +137,22 @@ const Navbar = () => {
                 </div>
                 {/* mobile menu */}
                 <div className={mobilestyle}>
-                    <Link to={"/Resume"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/Resume"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Resume Builder
                     </Link>
-                    <Link to={"/Blog"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/Blog"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Connect
                     </Link>
-                    <Link to={"/Scholarship"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/Scholarship"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Scholarship and Courses
                     </Link>
-                    <Link to={"/Page4"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/Page4"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Settel in Uk
                     </Link>
-                    <Link to={"/Page5"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/Page5"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Already in Uk
                     </Link>
-                    <Link to={"/about"} className="block py-2 px-4 text-lg hover:bg-blue-600">
+                    <Link to={"/about"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         About Us
                     </Link>
                 </div>
