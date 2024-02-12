@@ -54,11 +54,11 @@ const NewFooter = () => {
                             Designed by <a href="#" className='text-blue-500'>TailwindCss</a>
                         </div>
                     </div>
-                    <div className='text-center text-xl text-white'>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1'><FaTwitter /></a>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1'><FaInstagram /></a>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1'><FaFacebook /></a>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1'><FaLinkedin /></a>
+                    <div className='text-center text-xl text-white flex'>
+                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaTwitter /></a>
+                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaInstagram /></a>
+                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaFacebook /></a>
+                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaLinkedin /></a>
                     </div>
                 </div>
             </div>

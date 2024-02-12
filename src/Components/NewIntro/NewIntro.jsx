@@ -10,7 +10,7 @@ const NewIntro = () => {
         <>
         <section className='relative'>
   {/* Enlarged Image */}
-  <img src={homebg} alt="background" className="inset-0 w-[90%] h-[80%] m-auto object-cover rounded-lg shadow-lg" />
+  <img src={homebg} alt="background" className="inset-0 sm:w-32 h-80 md:w-[90%] md:h-1/4 m-auto object-cover rounded-lg shadow-lg" />
 
   {/* Content */}
   <div className="absolute top-0 text-white inset-0 flex flex-col justify-center items-center z-10">
@@ -19,7 +19,7 @@ const NewIntro = () => {
     
     {/* Search Bar */}
     <div className="max-w-lg mx-auto">
-      <input type="text" placeholder="Search..." className="w-full py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring focus:border-primaryColor" />
+      <input type="text" placeholder="Search..." className="w-full py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring focus:border-primaryColor text-black" />
     </div>
   </div>
 </section>
