@@ -19,6 +19,7 @@ import EditUnivdetails from "./Components/Register/EditUnivdetails";
 import AddCourses from "./Components/Register/AddCourses";
 import EditCourses from "./Components/Register/EditCourses";
 import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesdetails";
+import University from "./Components/University/University";
 
 function App() {
   return (
@@ -39,8 +40,9 @@ function App() {
           <Route path="/editschodetails/:name" element={<Editscholarship />}></Route>
           <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route> */}
           <Route path="/data" element={<Alldetails />}></Route>
-          <Route path="/addcourses" element={<AddCourses />}></Route>
-          <Route path="/course/:name" element={<Coursesdetails/>}></Route>
+          <Route path="/addcourses" element={<AddCourses />}></Route> */}
+          <Route path="/course/:name" element={<Coursesdetails />}></Route>
+          <Route path="/university" element={<University />}></Route>
         </Routes>
       </Router>
     </>

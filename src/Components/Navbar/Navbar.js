@@ -12,7 +12,6 @@ const Navbar = () => {
         } else {
             setmobilestyle("mobile-menu text-center hidden md:hidden bg-black text-white rounded-2xl p-6");
         }
-
     }, [window.innerWidth, toogle]);
 
     // const primaryNavItems = [
