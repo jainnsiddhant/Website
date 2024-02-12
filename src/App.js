@@ -10,11 +10,12 @@ import Scholarship from "./Pages/Scholarship/Scholarship";
 import Page4 from "./Pages/Page4/Page4";
 import Page5 from "./Pages/Page5/Page5";
 import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesdetails";
+import University from "./Components/University/University";
 
 function App() {
   return (
     <>
-      <Router>c:\Users\prish\OneDrive\Desktop\internship_siddhant\Website\src\Pages\NewHome
+      <Router>
         <Routes>
           <Route path="/" element={<NewHome />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
@@ -27,7 +28,8 @@ function App() {
           {/* <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route>
           <Route path="/data" element={<Alldetails />}></Route>
           <Route path="/addcourses" element={<AddCourses />}></Route> */}
-          <Route path="/course/:name" element={<Coursesdetails/>}></Route>
+          <Route path="/course/:name" element={<Coursesdetails />}></Route>
+          <Route path="/university" element={<University />}></Route>
         </Routes>
       </Router>
     </>
