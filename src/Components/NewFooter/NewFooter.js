@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaChevronRight , FaTwitter , FaInstagram ,FaFacebook , FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const NewFooter = () => {
     return (
@@ -28,7 +29,7 @@ const NewFooter = () => {
                         <div className='mb-5'>
                             <h4 className='pb-4'>Our Services</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Find University</a></li>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><Link to={"/university"} className='hover:text-blue-600'>Find University</Link></li>
                                 <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Connect with ambassador</a></li>
                                 <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Enhance resume</a></li>
                             </ul>
@@ -55,10 +56,10 @@ const NewFooter = () => {
                         </div>
                     </div>
                     <div className='text-center text-xl text-white flex'>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaTwitter /></a>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaInstagram /></a>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaFacebook /></a>
-                        <a href="#" className='w-10 h-10 rounded-full bg-blue-500 bg-blue-600 mx-1 inline-block pt-1 items-center justify-center flex'><FaLinkedin /></a>
+                        <a href="#" className='w-10 h-10 rounded-full  bg-blue-600 mx-1 pt-1 items-center justify-center flex'><FaTwitter /></a>
+                        <a href="#" className='w-10 h-10 rounded-full  bg-blue-600 mx-1 pt-1 items-center justify-center flex'><FaInstagram /></a>
+                        <a href="#" className='w-10 h-10 rounded-full  bg-blue-600 mx-1 pt-1 items-center justify-center flex'><FaFacebook /></a>
+                        <a href="#" className='w-10 h-10 rounded-full  bg-blue-600 mx-1 pt-1 items-center justify-center flex'><FaLinkedin /></a>
                     </div>
                 </div>
             </div>
