@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
+import NewHome from "./Pages/NewHome/NewHome";
 import Resume from "./Pages/Resume/Resume";
 import About from "./Components/About/About";
 import Blog from "./Components/Blog/Blog";
@@ -13,9 +14,9 @@ import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesde
 function App() {
   return (
     <>
-      <Router>
+      <Router>c:\Users\prish\OneDrive\Desktop\internship_siddhant\Website\src\Pages\NewHome
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<NewHome />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
@@ -23,9 +24,9 @@ function App() {
           <Route path="/Page4" element={<Page4 />}></Route>
           <Route path="/Page5" element={<Page5 />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
-          <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route>
+          {/* <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route>
           <Route path="/data" element={<Alldetails />}></Route>
-          <Route path="/addcourses" element={<AddCourses />}></Route>
+          <Route path="/addcourses" element={<AddCourses />}></Route> */}
           <Route path="/course/:name" element={<Coursesdetails/>}></Route>
         </Routes>
       </Router>
