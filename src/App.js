@@ -9,6 +9,7 @@ import Ambassador from "./Pages/Ambassador/Ambassador";
 import Contactus from "./Components/Contactus/Contactus";
 import Register from "./Components/Register/Register";
 import Scholarship from "./Pages/Scholarship/Scholarship";
+import NewScholarPg from "./Pages/NewScholar/NewScholarPg";
 import AddScholarship from "./Components/Register/AddScholarship";
 import Page4 from "./Pages/Page4/Page4";
 import SettleInPg from "./Pages/SettleInPg/SettleInPg";
@@ -19,7 +20,6 @@ import EditUnivdetails from "./Components/Register/EditUnivdetails";
 import AddCourses from "./Components/Register/AddCourses";
 import EditCourses from "./Components/Register/EditCourses";
 import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesdetails";
-import University from "./Components/University/University";
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route path="/resume" element={<Resume />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<Ambassador />}></Route>
-          <Route path="/scholarship" element={<Scholarship />}></Route>
+          <Route path="/scholarship" element={<NewScholarPg />}></Route>
           <Route path="/Page4" element={<SettleInPg />}></Route>
           <Route path="/Page5" element={<Page5 />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
@@ -41,8 +41,7 @@ function App() {
           <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route> */}
           <Route path="/data" element={<Alldetails />}></Route>
           <Route path="/addcourses" element={<AddCourses />}></Route>
-          <Route path="/course/:name" element={<Coursesdetails />}></Route>
-          <Route path="/university" element={<University />}></Route>
+          <Route path="/course/:name" element={<Coursesdetails/>}></Route>
         </Routes>
       </Router>
     </>
