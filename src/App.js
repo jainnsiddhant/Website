@@ -11,7 +11,7 @@ import Register from "./Components/Register/Register";
 import Scholarship from "./Pages/Scholarship/Scholarship";
 import AddScholarship from "./Components/Register/AddScholarship";
 import Page4 from "./Pages/Page4/Page4";
-import NewSettle from "./Pages/NewSettle/NewSettle";
+import SettleInPg from "./Pages/SettleInPg/SettleInPg";
 import Page5 from "./Pages/Page5/Page5";
 import Alldetails from "./Components/Register/Alldetails";
 import Editscholarship from "./Components/Register/Editscholarship";
@@ -31,7 +31,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<Ambassador />}></Route>
           <Route path="/scholarship" element={<Scholarship />}></Route>
-          <Route path="/Page4" element={<NewSettle />}></Route>
+          <Route path="/Page4" element={<SettleInPg />}></Route>
           <Route path="/Page5" element={<Page5 />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="/addunivdetails" element={<Register />}></Route>
