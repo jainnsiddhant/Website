@@ -47,7 +47,26 @@ const University = () => {
                       : "inline-block p-4  border-b-2 hover:cursor-pointer text-blue-600 border-blue-600 rounded-t-lg active"
                   }`}
                 >
-                  Category
+                  <label for="underline_select" class="sr-only">
+                    Underline select
+                  </label>
+                  <select
+                    id="underline_select"
+                    class="px-0 w-full text-sm text-gray-500   border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200"
+                  >
+                    <option selected>Choose option</option>
+                    <option value="US">Accounting</option>
+                    <option value="CA">Finance</option>
+                    <option value="FR">Business and management</option>
+                    <option value="DE">Computer science information</option>
+                    <option value="DE">Economics</option>
+                    <option value="DE">English</option>
+                    <option value="DE">International relations</option>
+                    <option value="DE">Marketing</option>
+                    <option value="DE">Mechanical</option>
+                    <option value="DE">Pharmaceutical</option>
+                    <option value="DE">Psychology</option>
+                  </select>
                 </span>
               </li>
             </ul>
@@ -56,7 +75,7 @@ const University = () => {
         <ul
           className={`${
             !selectedtab
-              ? "flex space-y-2 flex-wrap text-sm font-bold text-center text-gray-500"
+              ? "hidden space-y-2 flex-wrap text-sm font-bold text-center text-gray-500"
               : "hidden"
           }`}
         >
@@ -148,7 +167,7 @@ const University = () => {
                   <td className="px-6 py-4">{item.Qsranking}</td>
                   <td className="px-6 py-4">{item.Guardianranking}</td>
                   <td className="px-6 py-4">
-                    <a 
+                    <a
                       target="_blank"
                       href={`${item.website}`}
                       className="font-medium text-blue-600 hover:underline"

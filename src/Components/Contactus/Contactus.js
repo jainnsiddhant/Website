@@ -55,9 +55,6 @@ const Contactus = () => {
                     </div>
                     <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
                         <div className="flex flex-col text-white">
-                            <h1 className="font-bold uppercase text-4xl my-4">
-                                Drop in our office
-                            </h1>
                             <p className="text-gray-400">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                                 tincidunt arcu diam, eu feugiat felis fermentum id. Curabitur vitae

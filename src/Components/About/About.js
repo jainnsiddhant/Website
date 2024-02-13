@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
-import kartikey from "../../images/Kartikey.jpg";
-import siddhant from "../../images/sidhanth.jpeg";
-import prisha from "../../images/prisha.jpg";
-import monika from "../../images/monika.jpeg";
+import kartikey from "../../images/Kartikey.png";
+import siddhant from "../../images/sidhanth-Photoroom.png-Photoroom.png";
+import prisha from "../../images/prisha-Photoroom.png-Photoroom.png";
+import monika from "../../images/monika-Photoroom.png-Photoroom.png";
 import manoj from "../../images/manoj.jpeg";
-import khushi from "../../images/khushi.jpeg";
+import khushi from "../../images/khushi-Photoroom.png-Photoroom.png";
 import NewFooter from "../NewFooter/NewFooter";
 const About = () => {
   return (
@@ -26,18 +26,33 @@ const About = () => {
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                Meet Our dynamic team
+                Why Us?
               </h2>
               <p className="mt-6 text-gray-600">
-                Welcome to{" "}
-                <i>
-                  <b>Find My Uni</b>
-                </i>
-                , your ultimate destination for exploring the rankings of top
-                universities worldwide, deciphering the differences between
-                universities based on QS and Guardian rankings, and assisting
-                students in finding scholarships and much more. Allow us to
-                introduce the dedicated team behind this initiative:
+                Welcome to Find My Uni, your ultimate guide to pursuing
+                higher education abroad! We stand out from the crowd with our
+                unique approach to assisting aspiring students in their journey
+                towards academic excellence and personal growth. Why choose us?
+                Personalized Guidance: We believe in evaluating your true
+                potential and aspirations, providing tailored advice to help you
+                choose the best course and university that aligns with your
+                goals. Comprehensive Resources: Our website offers a one-stop
+                solution, from exploring top universities and courses to
+                enhancing your resume for better prospects, ensuring a holistic
+                approach to your overseas education journey. Global Network:
+                Connect with student ambassadors who share their experiences,
+                making it easier for you to envision your life abroad and get
+                firsthand insights into the student community. Settlement
+                Support: We go beyond admission by offering information and
+                support for settling down in a new country. From accommodation
+                to local tips, we've got you covered. Unbiased Recommendations:
+                Unlike others in the market, we don't have exclusive tie-ups
+                that compromise your potential. We value your achievements and
+                focus on finding the best fit for your academic and career
+                aspirations. Choose Find My Uni for a transformative
+                overseas education experience that goes beyond conventional
+                norms, empowering you to make informed decisions and thrive in
+                your academic journey.
               </p>
             </div>
           </div>
@@ -52,7 +67,7 @@ const About = () => {
               We have the best equipment
             </h2>
             <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
-              Check our awesome team members
+              Meet Our Dynamic Team
             </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
