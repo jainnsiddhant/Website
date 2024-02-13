@@ -90,10 +90,10 @@ const Navbar = () => {
                                 <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Scholarship and Courses
                                 </Link>
-                                <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
+                                <Link to={"/SettleinUK"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Settel in UK
                                 </Link>
-                                <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
+                                <Link to={"/AlreadyinUk"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Already in UK
                                 </Link>
                                 <Link to={"/about"} className="py-5 px-3 text-black hover:text-gray-900 navfont">

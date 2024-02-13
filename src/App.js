@@ -31,8 +31,8 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<Ambassador />}></Route>
           <Route path="/scholarship" element={<NewScholarPg />}></Route>
-          <Route path="/Page4" element={<SettleInPg />}></Route>
-          <Route path="/Page5" element={<Page5 />}></Route>
+          <Route path="/SettleinUK" element={<SettleInPg />}></Route>
+          <Route path="/AlreadyinUk" element={<Page5 />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="/addunivdetails" element={<Register />}></Route>
           {/* <Route path="/addschodetails" element={<AddScholarship />}></Route>
