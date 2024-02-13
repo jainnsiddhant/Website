@@ -29,10 +29,10 @@ const About = () => {
                 Why Us?
               </h2>
               <p className="mt-6 text-gray-600">
-                Welcome to Find My Uni, your ultimate guide to pursuing
-                higher education abroad! We stand out from the crowd with our
-                unique approach to assisting aspiring students in their journey
-                towards academic excellence and personal growth. Why choose us?
+                Welcome to Find My Uni, your ultimate guide to pursuing higher
+                education abroad! We stand out from the crowd with our unique
+                approach to assisting aspiring students in their journey towards
+                academic excellence and personal growth. Why choose us?
                 Personalized Guidance: We believe in evaluating your true
                 potential and aspirations, providing tailored advice to help you
                 choose the best course and university that aligns with your
@@ -49,10 +49,10 @@ const About = () => {
                 Unlike others in the market, we don't have exclusive tie-ups
                 that compromise your potential. We value your achievements and
                 focus on finding the best fit for your academic and career
-                aspirations. Choose Find My Uni for a transformative
-                overseas education experience that goes beyond conventional
-                norms, empowering you to make informed decisions and thrive in
-                your academic journey.
+                aspirations. Choose Find My Uni for a transformative overseas
+                education experience that goes beyond conventional norms,
+                empowering you to make informed decisions and thrive in your
+                academic journey.
               </p>
             </div>
           </div>
@@ -83,9 +83,7 @@ const About = () => {
                 <p className="text-xl text-gray-700 font-bold mb-2">
                   Mr. Siddhant Jain
                 </p>
-                <p className="text-base text-gray-400 font-normal">
-                  Founder and CEO
-                </p>
+                <p className="text-base text-gray-400 font-normal">Founder</p>
               </div>
             </div>
             <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
@@ -101,7 +99,7 @@ const About = () => {
                   Mr. Kartikey Bhardwaj
                 </p>
                 <p className="text-base text-gray-400 font-normal">
-                  Founding Team Member, Lead Backend devloper
+                  Lead Backend devloper
                 </p>
               </div>
             </div>
@@ -118,7 +116,7 @@ const About = () => {
                   Miss. Prisha Thapar
                 </p>
                 <p className="text-base text-gray-400 font-normal">
-                  Founding Team Member, Lead Frontend devloper
+                  Lead Frontend devloper
                 </p>
               </div>
             </div>
@@ -134,9 +132,7 @@ const About = () => {
                 <p className="text-xl text-gray-700 font-bold mb-2">
                   Mr. Manoj Jain
                 </p>
-                <p className="text-base text-gray-400 font-normal">
-                  Company Advisor
-                </p>
+                <p className="text-base text-gray-400 font-normal">Advisor</p>
               </div>
             </div>
             <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
@@ -151,9 +147,7 @@ const About = () => {
                 <p className="text-xl text-gray-700 font-bold mb-2">
                   Mrs. Monika Jain
                 </p>
-                <p className="text-base text-gray-400 font-normal">
-                  Company Advisor
-                </p>
+                <p className="text-base text-gray-400 font-normal">Advisor</p>
               </div>
             </div>
             <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
@@ -168,9 +162,7 @@ const About = () => {
                 <p className="text-xl text-gray-700 font-bold mb-2">
                   Miss. Khushi Jain
                 </p>
-                <p className="text-base text-gray-400 font-normal">
-                  Company Advisor
-                </p>
+                <p className="text-base text-gray-400 font-normal">Advisor</p>
               </div>
             </div>
           </div>
