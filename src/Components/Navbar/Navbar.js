@@ -91,10 +91,10 @@ const Navbar = () => {
                                     Scholarship and Courses
                                 </Link>
                                 <Link to={"/Page4"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Settel in Uk
+                                    Settel in UK
                                 </Link>
                                 <Link to={"/Page5"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Already in Uk
+                                    Already in UK
                                 </Link>
                                 <Link to={"/about"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     About Us
