@@ -9,6 +9,8 @@ import resume from "../../images/resume.jpg";
 import essay from "../../images/essay.jpg";
 import profile from "../../images/profile.jpg";
 import resumebuilder from "../../images/resumebuilder.jpg";
+import scho from "../../images/scho.jpg";
+import uk from "../../images/uk.jpg";
 import { Link } from "react-router-dom";
 const NewIntro = () => {
   return (
@@ -54,7 +56,7 @@ const NewIntro = () => {
                 <Link to={"/university"}>
                   <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                      Top universities subject wise 
+                      Top universities subject wise
                     </h5>
                     <p className="font-normal text-gray-700">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -87,12 +89,12 @@ const NewIntro = () => {
                 <div className="p-6 my-auto">
                   <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                      Noteworthy technology acquisitions 2021
+                      Build Your Resume
                     </h5>
                   </a>
                   <p className="mb-3 font-normal text-gray-700 ">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    Get top handpicks resume templates and other usefull links
+                    to boost the chance of your selection
                   </p>
                   <a
                     href="#"
@@ -123,7 +125,7 @@ const NewIntro = () => {
               <div className="relative mx-auto mt-12 flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[60rem] flex-row">
                 <div className="relative order-2 w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
                   <img
-                    src={resumebuilder}
+                    src={scho}
                     alt="card-image"
                     className="object-cover w-full h-full"
                   />
@@ -131,15 +133,15 @@ const NewIntro = () => {
                 <div className="p-6 order-1 my-auto">
                   <div>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                      Noteworthy technology acquisitions 2021
+                      Explore Scholarship
                     </h5>
                   </div>
                   <p className="mb-3 font-normal text-gray-700 ">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    Here's a compilation of the top 10 scholarships offering
+                    reductions in tuition fees for students to apply to.
                   </p>
-                  <a
-                    href="#"
+                  <Link
+                    to={"/scholarship"}
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
                   >
                     Read more
@@ -158,7 +160,7 @@ const NewIntro = () => {
                         d="M1 5h12m0 0L9 1m4 4L9 9"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -167,7 +169,7 @@ const NewIntro = () => {
               <div className="relative mx-auto mt-12 flex bg-clip-border rounded-xl bg-white text-gray-700 shadow-md w-full max-w-[60rem] flex-row">
                 <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
                   <img
-                    src={resumebuilder}
+                    src={uk}
                     alt="card-image"
                     className="object-cover w-full h-full"
                   />
@@ -175,12 +177,12 @@ const NewIntro = () => {
                 <div className="p-6 my-auto">
                   <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                      Noteworthy technology acquisitions 2021
+                      Settel in UK
                     </h5>
                   </a>
                   <p className="mb-3 font-normal text-gray-700 ">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    Here is the important things to have for settel in UK to
+                    ensure a smooth transition and comfortable living.
                   </p>
                   <a
                     href="#"
