@@ -91,7 +91,7 @@ const Navbar = () => {
                                     Scholarship and Courses
                                 </Link>
                                 <Link to={"/SettleinUK"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Settel in UK
+                                    Settle in UK
                                 </Link>
                                 <Link to={"/AlreadyinUk"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Already in UK
