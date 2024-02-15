@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import Bank from '../../images/Bank.jpg'
 import forex from '../../images/forex.jpg'
 import packlist from '../../images/packlist.jpg'
@@ -30,7 +31,12 @@ const SettleIn = () => {
                 {/* <button type="button" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none mt-4">View all Universities</button> */}
 
                 <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0 mt-5 w-[80%] mx-auto">
-
+                <motion.div
+                  whileHover={
+                    {
+                      scale: 1.5
+                    }
+                  }>
                    <div className="max-w-xs bg-white">
                      <a href="#forexcards">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover" src={forex} alt="" />
@@ -42,7 +48,14 @@ const SettleIn = () => {
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
                      </div>
                    </div>
+                   </motion.div>
 
+                   <motion.div
+                  whileHover={
+                    {
+                      scale: 1.5
+                    }
+                  }>
                    <div className="max-w-xs bg-white">
                      <a href="#packlists">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover" src={packlist} alt="" />
@@ -54,7 +67,14 @@ const SettleIn = () => {
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
                      </div>
                    </div>
+                  </motion.div>
 
+                   <motion.div
+                  whileHover={
+                    {
+                      scale: 1.5
+                    }
+                  }>
                    <div className="max-w-xs bg-white">
                      <a href="#bankstoopen">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover" src={Bank} alt="" />
@@ -66,7 +86,14 @@ const SettleIn = () => {
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
                      </div>
                    </div>
+                  </motion.div>
 
+                   <motion.div
+                  whileHover={
+                    {
+                      scale: 1.5
+                    }
+                  }>
                    <div className="max-w-xs bg-white">
                      <a href="#housingwebsites">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover" src={house} alt="" />
@@ -78,6 +105,7 @@ const SettleIn = () => {
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
                      </div>
                    </div>
+                  </motion.div>
 
                 </div>
 
