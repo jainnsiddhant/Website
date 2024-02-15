@@ -1,9 +1,11 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import Bank from '../../images/Bank.jpg'
 import hdfc from '../../images/hdfc.jpg'
 import axis from '../../images/axis.jpg'
 import sbi from '../../images/sbi.jpg'
 import icici from '../../images/icici.jpg'
+import DownloadPDF from "../Download/DownloadPDF";
 
 const Packlist = () => {
     return(
@@ -12,9 +14,9 @@ const Packlist = () => {
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         Packing List
                     </h2>
-                    <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    {/* <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
                         Recommendation only, consult banks before puchasing.
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="md:w-[80vw] mx-auto -mt-10">
@@ -29,6 +31,7 @@ const Packlist = () => {
                             <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-sm">
                                 <li>Large 75cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
                                 <li>Medium 55cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
+                                {/* <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a> */}
                            </ol>
                         </li>
                        <li className="text-lg">
@@ -37,7 +40,7 @@ const Packlist = () => {
                                 <li>Knife and Peeler (Set of 5)</li>
                                 <li>Cooker 3 litre (Amazon Choice)</li>
                                 <li>Induction and Gas compatible cookware set of 3.</li>
-                                <li>Non: stick cooking and serving spoons (3)</li>
+                                {/* <li>Non: stick cooking and serving spoons (3)</li>
                                 <li>Individual Pan</li>
                                 <li>Can/tin opener</li>
                                 <li>Microwave friendly plate (3) and bowl set (3)</li>
@@ -51,25 +54,27 @@ const Packlist = () => {
                                 <li>Sandwich Maker</li>
                                 <li>Coffee maker</li>
                                 <li>Tea Stainer/Channi</li>
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a> */}
                            </ol>
                         </li>
                         <li className="text-lg">
                         Electronics
                             <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-sm">
                             <li>UK adaptor</li>
-                                <li> Extension Board</li>
+                                <li>Extension Board</li>
                                 <li>External Hard drive</li>
-                                <li>USB Drive (HP)</li>
-                                <li>Power Bank</li>
+                                <li>USB Drive (HP) <span className="text-blue-500">...</span> </li>
+                                {/* <li>Power Bank</li>
                                 <li>Door Jammer safety alarm</li>
                                 <li> Shaving Tools for men</li>
                                 <li>Digital luggage weighing scale</li>
                                 <li>Thermometer</li>
                                 <li>Batteries</li>
-                                <li> Laptop + Phone + Chargers</li>
+                                <li> Laptop + Phone + Chargers</li> */}
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the complete file ...</a>
                            </ol>
                         </li>
-                        <li className="text-lg">
+                        {/* <li className="text-lg">
                         CLOTHES
                             <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside text-sm">
                                 <li>Hanging shelf organizer (recommended)</li>
@@ -77,6 +82,7 @@ const Packlist = () => {
                                 <li> Gloves (-5 degree)</li>
                                 <li>Socks underwear</li>
                                 <li>3-piece Suit, Blazer</li>
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a>
                             </ul>
                         </li>
                         <li className="text-lg">
@@ -85,6 +91,7 @@ const Packlist = () => {
                                 <li>PEN, PENCIL, ETC.</li>
                                 <li>Notebooks and Registers</li>
                                 <li>Folders and scissor, tape etc</li>
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a>
                             </ul>
                         </li>
                         <li className="text-lg">
@@ -94,6 +101,7 @@ const Packlist = () => {
                                 <li>Dishwasher sponge detergent</li>
                                 <li>Sewing kit</li>
                                 <li>Oil, cream, Towel, Napkin</li>
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a>
                             </ul>
                         </li>
                         <li className="text-lg">
@@ -104,6 +112,7 @@ const Packlist = () => {
                                 <li>Bag locks</li>
                                 <li>Umbrella</li>
                                 <li>Pillow bedsheet quilt (With Covers)</li>
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a>
                             </ul>
                         </li>
                         <li className="text-lg">
@@ -118,15 +127,35 @@ const Packlist = () => {
                                 <li>Nasal Spray: Otrivian</li>
                                 <li>Diarrhea: LopaMide</li>
                                 <li>Teeth Pain: Dentone</li>
+                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                     </p>
                 </div>
               </div>
+            {/* <div className="w-[80%] mx-auto">
+                                <button 
+                                    id="dwnld"
+                                    type="button" 
+                                    className="bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 w-full mt-3 flex justify-center" 
+                                    onClick={() => window.open('www.google.com', '_blank')}
+                                    >
+                                    Download File
+                                </button>
+            </div> */}
+            <motion.div
+                  whileHover={
+                    {
+                      scale: 1.25
+                    }
+                  }>
+            <DownloadPDF />
+            </motion.div>
             </div>
           </section>
         </div>
+
                 
             </section>
     )

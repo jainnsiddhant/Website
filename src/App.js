@@ -14,6 +14,7 @@ import AddScholarship from "./Components/Register/AddScholarship";
 import Page4 from "./Pages/Page4/Page4";
 import SettleInPg from "./Pages/SettleInPg/SettleInPg";
 import Page5 from "./Pages/Page5/Page5";
+import AlreadyInPg from "./Pages/AlreadyInPg/AlreadyInPg";
 import Alldetails from "./Components/Register/Alldetails";
 import Editscholarship from "./Components/Register/Editscholarship";
 import EditUnivdetails from "./Components/Register/EditUnivdetails";
@@ -33,7 +34,7 @@ function App() {
           <Route path="/blog" element={<Ambassador />}></Route>
           <Route path="/scholarship" element={<NewScholarPg />}></Route>
           <Route path="/SettleinUK" element={<SettleInPg />}></Route>
-          <Route path="/AlreadyinUk" element={<Page5 />}></Route>
+          <Route path="/AlreadyinUk" element={<AlreadyInPg />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="/addunivdetails" element={<Register />}></Route>
           {/* <Route path="/addschodetails" element={<AddScholarship />}></Route>
