@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logoORG from '../../images/logoORG.jpg'
+import logoORG from '../../images/logo.jpg'
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
@@ -61,20 +61,12 @@ const Navbar = () => {
                                     to={"/"}
                                     className="flex items-center py-5 px-2 text-black"
                                 >
-                                    <svg
-                                        className="h-6 w-6 mr-1 text-blue-400"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
+                                    <img
+                                        className="h-6 w-6 mr-1 text-blue-400" 
+                                        alt='icon'
+                                        src={logoORG}
                                     >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                                        />
-                                    </svg>
+                                    </img>
                                     {/* <img src={logoORG} className="h-12 w-20 mr-1 text-blue-400 mix-blend-color" /> */}
                                     <span className="font-bold text-2xl navfont">FindMyUni</span>
                                 </Link>
