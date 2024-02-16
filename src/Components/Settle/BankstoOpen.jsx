@@ -13,7 +13,7 @@ const BanksToOpen = () => {
                         Banks To Open
                     </h2>
                     <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                        Online Banks/Wallets - other than Major banks.
+                        Online Banks/Wallets - Other than Major banks.
                     </p>
                 </div>
 

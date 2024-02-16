@@ -5,6 +5,9 @@ import hdfc from '../../images/hdfc.jpg'
 import axis from '../../images/axis.jpg'
 import sbi from '../../images/sbi.jpg'
 import icici from '../../images/icici.jpg'
+import luggage from "../../images/luggage.jpg"
+import kitchen from "../../images/kitchen.jpg"
+import electronics from "../../images/electronics.jpg"
 import DownloadPDF from "../Download/DownloadPDF";
 
 const Packlist = () => {
@@ -29,17 +32,30 @@ const Packlist = () => {
                        <li className="text-lg">
                        Luggage
                             <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-sm">
-                                <li>Large 75cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
-                                <li>Medium 55cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
+                                {/* <li>Large 75cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
+                                <li>Medium 55cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li> */}
                                 {/* <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a> */}
+                                <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-4 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="w-full md:w-1/2 flex flex-col gap-x-3">
+                             <li>Large 75cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
+                                <li>Medium 55cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={luggage} alt="universityimage" className="h-20 w-20 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
                            </ol>
                         </li>
                        <li className="text-lg">
                        Kitchen
                             <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-sm">
-                                <li>Knife and Peeler (Set of 5)</li>
+                                {/* <li>Knife and Peeler (Set of 5)</li>
                                 <li>Cooker 3 litre (Amazon Choice)</li>
-                                <li>Induction and Gas compatible cookware set of 3.</li>
+                                <li>Induction and Gas compatible cookware (set of 3). <span className="text-blue-500">... more</span></li> */}
                                 {/* <li>Non: stick cooking and serving spoons (3)</li>
                                 <li>Individual Pan</li>
                                 <li>Can/tin opener</li>
@@ -55,15 +71,29 @@ const Packlist = () => {
                                 <li>Coffee maker</li>
                                 <li>Tea Stainer/Channi</li>
                                 <a href="#dwnld" className="text-blue-500 hover:underline">Download the file to see more ...</a> */}
+                                <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-4 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="w-full md:w-1/2 flex flex-col gap-x-3">
+                             <li>Knife and Peeler (Set of 5)</li>
+                                <li>Cooker 3 litre (Amazon Choice)</li>
+                                <li>Induction and Gas compatible cookware (set of 3). <span className="text-blue-500">... more</span></li>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={kitchen} alt="universityimage" className="h-20 w-20 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
                            </ol>
                         </li>
                         <li className="text-lg">
                         Electronics
                             <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside text-sm">
-                            <li>UK adaptor</li>
+                            {/* <li>UK adaptor</li>
                                 <li>Extension Board</li>
                                 <li>External Hard drive</li>
-                                <li>USB Drive (HP) <span className="text-blue-500">...</span> </li>
+                                <li>USB Drive (HP) <span className="text-blue-500">... more</span> </li> */}
                                 {/* <li>Power Bank</li>
                                 <li>Door Jammer safety alarm</li>
                                 <li> Shaving Tools for men</li>
@@ -71,7 +101,21 @@ const Packlist = () => {
                                 <li>Thermometer</li>
                                 <li>Batteries</li>
                                 <li> Laptop + Phone + Chargers</li> */}
-                                <a href="#dwnld" className="text-blue-500 hover:underline">Download the complete file ...</a>
+                                {/* <a href="#dwnld" className="text-blue-500 hover:underline">Download the complete file ...</a> */}
+                                <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-4 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="w-full md:w-1/2 flex flex-col gap-x-3">
+                             <li>Extension Board</li>
+                                <li>External Hard drive</li>
+                                <li>USB Drive (HP) <span className="text-blue-500">... more</span> </li>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={electronics} alt="universityimage" className="h-20 w-20 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
                            </ol>
                         </li>
                         {/* <li className="text-lg">

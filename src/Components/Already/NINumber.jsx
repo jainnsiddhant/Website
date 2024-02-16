@@ -29,7 +29,7 @@ Northern Ireland.
                                     className="bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
                                     onClick={() => window.open('https://www.gov.uk/apply-national-insurance-number/how-to-apply', '_blank')}
                                     >
-                                    View More
+                                    Official Govt. Page
                                 </button>
                                 </motion.div>
                              </div>

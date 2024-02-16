@@ -21,7 +21,7 @@ const SettleIn = () => {
             <section>
                 <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
-                        Popular Settling Down Guidelines
+                        Settling Down Guidelines
                     </h2>
                     <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
                         Welcome to our comprehensive guide on settling in the UK!
@@ -45,7 +45,7 @@ const SettleIn = () => {
                        <a href="#forexcards">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Forex Cards</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Unlock seamless currency exchange and hassle-free transactions with our cutting-edge Forex Cards.</p>
                      </div>
                    </div>
                    </motion.div>
@@ -64,7 +64,7 @@ const SettleIn = () => {
                        <a href="#packlists">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Pack List doc file</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Prepare for your journey with comprehensive Packlist document, ensuring you have all you need for travels.</p>
                      </div>
                    </div>
                   </motion.div>
@@ -83,7 +83,7 @@ const SettleIn = () => {
                        <a href="#bankstoopen">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Banks to Open</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Unlock your financial possibilities with our comprehensive guide to opening banks.</p>
                      </div>
                    </div>
                   </motion.div>
@@ -102,7 +102,7 @@ const SettleIn = () => {
                        <a href="#housingwebsites">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Housing Websites</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Step-by-Step guide for international students</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Explore our curated collection of top housing websites for all your property needs.</p>
                      </div>
                    </div>
                   </motion.div>

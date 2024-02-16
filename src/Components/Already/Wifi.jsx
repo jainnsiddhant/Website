@@ -1,5 +1,11 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import bt from "../../images/bt.png"
+import ee from "../../images/ee.png"
+import now from "../../images/now.png"
+import sky from "../../images/sky.png"
+import virginmedia from "../../images/virginmedia.jpg"
+import vodafone from "../../images/vodafone.png"
 
 const Wifi = () => {
     return(
@@ -8,44 +14,189 @@ const Wifi = () => {
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         WIFI Providers
                     </h2>
-                    {/* <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                        Recommendation only, consult banks before puchasing.
-                    </p> */}
-                </div>
-
-                <div className="md:w-[80vw] mx-auto -mt-10">
-          <section className="rounded-xl">
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-              <div className="container p-4 sm:p-4 border rounded-xl">
-                <div className="overflow-x-auto mx-auto">
-                    <p>
-                    <ul class="space-y-4 list-disc list-inside text-center">
-                       <li className="text-md">
-                       BT Broadband
-                        </li>
-                       <li className="text-md">
-                       EE Unlimited
-                        </li>
-                       <li className="text-md">
-                       NOW Broadband
-                        </li>
-                       <li className="text-md">
-                       Sky Broadband
-                        </li>
-                       <li className="text-md">
-                       Virgin Media
-                        </li>
-                       <li className="text-md">
-                       Vodafone
-                        </li>
-                    </ul>
+                    <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    Explore the Best WiFi Providers for Seamless Connectivity.
                     </p>
                 </div>
-              </div>
-            
-            </div>
-          </section>
-          <div className="w-[80%] mx-auto">
+
+                <div className="md:w-[80vw] mx-auto">
+                
+                <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-0 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
+                                <h1 className="text-md font-bold">BT Broadband</h1>
+                                 {/* <a target="_blank" href="https://uk.linkedin.com/jobs" className="text-sm mt-3">https://uk.linkedin.com/jobs</a> */}
+                                 <motion.div
+                                   whileHover={
+                                     {
+                                       scale: 1.25
+                                     }
+                                   }>
+                                 <button 
+                                    type="button"
+                                    style={{ backgroundColor: '#8A2BE2' }} 
+                                    className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
+                                    onClick={() => window.open('https://www.bt.com/', '_blank')}
+                                    >
+                                    View More
+                                </button>
+                                </motion.div>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={bt} alt="universityimage" className="h-24 w-24 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+
+                     <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-0 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
+                                <h1 className="text-md font-bold">Virgin Media</h1>
+                                 {/* <a target="_blank" href="https://uk.linkedin.com/jobs" className="text-sm mt-3">https://uk.linkedin.com/jobs</a> */}
+                                 <motion.div
+                                   whileHover={
+                                     {
+                                       scale: 1.25
+                                     }
+                                   }>
+                                 <button 
+                                    type="button"
+                                    style={{ backgroundColor: '#8A2BE2' }} 
+                                    className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
+                                    onClick={() => window.open('https://www.virginmedia.com/', '_blank')}
+                                    >
+                                    View More
+                                </button>
+                                </motion.div>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={virginmedia} alt="universityimage" className="h-24 w-24 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
+
+                     <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-0 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
+                                <h1 className="text-md font-bold">EE Unlimited</h1>
+                                 {/* <a target="_blank" href="https://uk.linkedin.com/jobs" className="text-sm mt-3">https://uk.linkedin.com/jobs</a> */}
+                                 <motion.div
+                                   whileHover={
+                                     {
+                                       scale: 1.25
+                                     }
+                                   }>
+                                 <button 
+                                    type="button"
+                                    style={{ backgroundColor: '#8A2BE2' }} 
+                                    className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
+                                    onClick={() => window.open('https://ee.co.uk', '_blank')}
+                                    >
+                                    View More
+                                </button>
+                                </motion.div>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={ee} alt="universityimage" className="h-24 w-24 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
+
+                     <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-0 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
+                                <h1 className="text-md font-bold">Sky Broadband</h1>
+                                 {/* <a target="_blank" href="https://uk.linkedin.com/jobs" className="text-sm mt-3">https://uk.linkedin.com/jobs</a> */}
+                                 <motion.div
+                                   whileHover={
+                                     {
+                                       scale: 1.25
+                                     }
+                                   }>
+                                 <button 
+                                    type="button"
+                                    style={{ backgroundColor: '#8A2BE2' }} 
+                                    className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
+                                    onClick={() => window.open('https://sky.broadband-finder.co.uk', '_blank')}
+                                    >
+                                    View More
+                                </button>
+                                </motion.div>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={sky} alt="universityimage" className="h-24 w-24 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
+
+                     <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-0 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
+                                <h1 className="text-md font-bold">Vodafone</h1>
+                                 {/* <a target="_blank" href="https://uk.linkedin.com/jobs" className="text-sm mt-3">https://uk.linkedin.com/jobs</a> */}
+                                 <motion.div
+                                   whileHover={
+                                     {
+                                       scale: 1.25
+                                     }
+                                   }>
+                                 <button 
+                                    type="button"
+                                    style={{ backgroundColor: '#8A2BE2' }} 
+                                    className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
+                                    onClick={() => window.open('https://www.vodafone.co.uk/broadband', '_blank')}
+                                    >
+                                    View More
+                                </button>
+                                </motion.div>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={vodafone} alt="universityimage" className="h-24 w-24 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
+
+                     <div className="container mx-auto px-4">
+                     <div className="flex flex-col mt-0 items-center">
+                         <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
+                                <h1 className="text-md font-bold">NOW Broadband</h1>
+                                 {/* <a target="_blank" href="https://uk.linkedin.com/jobs" className="text-sm mt-3">https://uk.linkedin.com/jobs</a> */}
+                                 <motion.div
+                                   whileHover={
+                                     {
+                                       scale: 1.25
+                                     }
+                                   }>
+                                 <button 
+                                    type="button"
+                                    style={{ backgroundColor: '#8A2BE2' }} 
+                                    className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center" 
+                                    onClick={() => window.open('https://www.nowtv.com/broadband', '_blank')}
+                                    >
+                                    View More
+                                </button>
+                                </motion.div>
+                             </div>
+                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={now} alt="universityimage" className="h-24 w-24 rounded-full" />
+                             </div>
+                         </div>
+                     </div>
+               </div>
+
+
+               </div>
+          <div className="w-[80%] mx-auto mt-10">
                     <motion.div
                       whileHover={
                       {
