@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import NewHome from "./Pages/NewHome/NewHome";
 import Resume from "./Pages/Resume/Resume";
+import NewResumePg from "./Pages/NewResumePg/NewResumePg";
 import About from "./Components/About/About";
 import Blog from "./Components/Blog/Blog";
 import Ambassador from "./Pages/Ambassador/Ambassador";
+import NewConnectPg from "./Pages/NewConnectPg/NewConnectPg";
 import Contactus from "./Components/Contactus/Contactus";
 import Register from "./Components/Register/Register";
 import Scholarship from "./Pages/Scholarship/Scholarship";
@@ -29,9 +31,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<NewHome />}></Route>
-          <Route path="/resume" element={<Resume />}></Route>
+          <Route path="/resume" element={<NewResumePg />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/blog" element={<Ambassador />}></Route>
+          <Route path="/blog" element={<NewConnectPg />}></Route>
           <Route path="/scholarship" element={<NewScholarPg />}></Route>
           <Route path="/SettleinUK" element={<SettleInPg />}></Route>
           <Route path="/AlreadyinUk" element={<AlreadyInPg />}></Route>
