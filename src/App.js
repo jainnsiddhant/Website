@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import NewHome from "./Pages/NewHome/NewHome";
+import NewHome2 from "./Pages/NewHome2/NewHome2";
 import Resume from "./Pages/Resume/Resume";
 import NewResumePg from "./Pages/NewResumePg/NewResumePg";
 import About from "./Components/About/About";
@@ -30,7 +31,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<NewHome />}></Route>
+          <Route path="/" element={<NewHome2 />}></Route>
           <Route path="/resume" element={<NewResumePg />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<NewConnectPg />}></Route>

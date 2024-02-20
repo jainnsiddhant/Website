@@ -26,9 +26,9 @@ const Templates = () => {
                       scale: 1.5
                     }
                   }>
-                   <div className="max-w-xs bg-white">
+                   <div className="max-w-xs bg-white mx-auto justify-center items-center text-center">
                      <a href="#">
-                       <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={harvard} alt="" />
+                       <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 mx-auto" src={harvard} alt="" />
                      </a>
                      <div className="p-4">
                        <a href="#">
@@ -46,9 +46,9 @@ const Templates = () => {
                       scale: 1.5
                     }
                   }>
-                   <div className="max-w-xs bg-white">
+                   <div className="max-w-xs bg-white mx-auto justify-center items-center text-center">
                      <a href="#">
-                       <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={goldmansachs} alt="" />
+                       <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 mx-auto" src={goldmansachs} alt="" />
                      </a>
                      <div className="p-4">
                        <a href="#">
@@ -66,9 +66,9 @@ const Templates = () => {
                       scale: 1.5
                     }
                   }>
-                   <div className="max-w-xs bg-white">
+                   <div className="max-w-xs bg-white mx-auto justify-center items-center text-center">
                      <a href="#">
-                       <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2" src={resume} alt="" />
+                       <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 mx-auto" src={resume} alt="" />
                      </a>
                      <div className="p-4">
                        <a href="#">

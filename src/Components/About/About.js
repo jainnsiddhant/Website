@@ -8,14 +8,24 @@ import monika from "../../images/monika-Photoroom.png-Photoroom.png";
 import manoj from "../../images/manoj.jpeg";
 import khushi from "../../images/khushi-Photoroom.png-Photoroom.png";
 import NewFooter from "../NewFooter/NewFooter";
+import Cards from "./Cards";
 const About = () => {
   return (
     <>
-      <Navbar /> 
+      <Navbar />
       <div className="py-16 bg-white">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-          <div className="space-y-6 md:space-y-0 md:flex md:gap-6 p-10 lg:items-center lg:gap-12">
-            <div className="">
+          <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            {/* <div className="md:5/12 lg:w-5/12">
+              <img
+                src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+                alt="image"
+                loading="lazy"
+                width=""
+                height=""
+              />
+            </div> */}
+            <div className="w-[80%]  mx-auto text-center">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
                 Why Us?
               </h2>
@@ -24,42 +34,12 @@ const About = () => {
                 education abroad! We stand out from the crowd with our unique
                 approach to assisting aspiring students in their journey towards
                 academic excellence and personal growth. Why choose us?
-                <ol>
-                  <li>
-                    Personalized Guidance: We believe in evaluating your true
-                    potential and aspirations, providing tailored advice to help
-                    you choose the best course and university that aligns with
-                    your goals.
-                  </li>
-                  <li>
-                    Comprehensive Resources: Our website offers a one-stop
-                    solution, from exploring top universities and courses to
-                    enhancing your resume for better prospects, ensuring a
-                    holistic approach to your overseas education journey.
-                  </li>
-                  <li>
-                    Global Network: Connect with student ambassadors who share
-                    their experiences, making it easier for you to envision your
-                    life abroad and get firsthand insights into the student
-                    community.
-                  </li>
-                  <li>
-                    Settlement Support: We go beyond admission by offering
-                    information and support for settling down in a new country.
-                    From accommodation to local tips, we've got you covered.
-                    Unbiased
-                  </li>
-                  <li>
-                    Recommendations: Unlike others in the market, we don't have
-                    exclusive tie-ups that compromise your potential. We value
-                    your achievements and focus on finding the best fit for your
-                    academic and career aspirations.
-                  </li>
-                </ol>
-                Choose Find My Uni for a transformative overseas education
-                experience that goes beyond conventional norms, empowering you
-                to make informed decisions and thrive in your academic journey.
+                  Choose Find My Uni for a transformative overseas
+                education experience that goes beyond conventional norms,
+                empowering you to make informed decisions and thrive in your
+                academic journey.
               </p>
+              <Cards />
             </div>
           </div>
         </div>
