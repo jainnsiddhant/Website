@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import { Footer } from '../Footer/Footer'
+import siddhant from "../../images/sidhanth-Photoroom.png-Photoroom.png";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Contactus = () => {
     return (
         <>
         <Navbar/>
-            <div className="flex justify-center items-center w-screen  bg-white">
+            <div className="flex flex-row justify-center items-center w-screen  bg-white">
                 {/* COMPONENT CODE */}
-                <div className="md:mt-[3rem] mx-auto my-4 px-4 lg:px-20">
+                <div className="flex flex:row md:mt-[3rem] mx-auto my-4 px-4 lg:px-20">
                     <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                         <div className="flex">
                             <h1 className="font-bold uppercase text-5xl">
@@ -53,13 +56,21 @@ const Contactus = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
+
+
+
+
+                    <div className="w-full lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
                         <div className="flex flex-col text-white">
-                            <p className="text-gray-400">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                tincidunt arcu diam, eu feugiat felis fermentum id. Curabitur vitae
-                                nibh viverra, auctor turpis sed, scelerisque ex.
-                            </p>
+                                
+<div class="flex items-center gap-4">
+    <img class="w-20 h-20 rounded-full" src={siddhant} alt="" />
+    <div class="font-medium">
+        <div>Mr. Siddhant Jain</div>
+        <div class="text-sm text-gray-400">Founder</div>
+    </div>
+</div>
+
                             <div className="flex my-4 w-2/3 lg:w-1/2">
                                 <div className="flex flex-col">
                                     <i className="fas fa-map-marker-alt pt-2 pr-2"></i>
@@ -80,13 +91,37 @@ const Contactus = () => {
                                     </div>
                                     <i className="fas fa-phone-alt pt-2 pr-2">
                                         <div className="flex flex-col">
-                                            <h2 className="text-2xl">Call Us</h2>
-                                            <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
-                                            <p className="text-gray-400">Fax: xxx-xxx-xxx</p>
+                                            <h2 className="text-2xl">Connect</h2>
+                                            <div className='flex flex-row gap-x-2'>
+                                            <button type="button" class="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center me-2">
+                                            <FaLinkedin />LinkedIn
+                                            </button>
+                                            <button type="button" class="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center me-2">
+                                            <MdEmail />Email
+                                            </button>
+                                            </div>
                                         </div>
                                     </i>
                                 </div>
-                                <i className="fas fa-phone-alt pt-2 pr-2">
+                                <div className="flex my-4 w-2/3 lg:w-1/2">
+                                    <div className="flex flex-col">
+                                        <i className="fas fa-phone-alt pt-2 pr-2"></i>
+                                    </div>
+                                    <i className="fas fa-phone-alt pt-2 pr-2">
+                                        <div className="flex flex-col">
+                                            <h2 className="text-2xl">Call Us</h2>
+                                            <div className="text-gray-400 flex flex-row gap-x-2">
+                                                <p>Telephone:</p>
+                                                <p>1234567890</p>
+                                            </div>
+                                            <div className="text-gray-400 flex flex-row gap-x-2">
+                                                <p>Fax:</p>
+                                                <p>1234567890</p>
+                                            </div>
+                                        </div>
+                                    </i>
+                                </div>
+                                {/* <i className="fas fa-phone-alt pt-2 pr-2">
                                     <div className="flex my-4 w-2/3 lg:w-1/2">
                                         <a
                                             href="https://www.facebook.com/ENLIGHTENEERING/"
@@ -111,17 +146,21 @@ const Contactus = () => {
                                     <i className="fab fa-facebook-f text-blue-900">
                                         <i className="fab fa-linkedin-in text-blue-900"></i>
                                     </i>
-                                </i>
+                                </i> */}
                             </i>
                         </div>
-                        <i className="fas fa-map-marker-alt pt-2 pr-2">
+                        {/* <i className="fas fa-map-marker-alt pt-2 pr-2">
                             <i className="fas fa-phone-alt pt-2 pr-2">
                                 <i className="fab fa-facebook-f text-blue-900">
                                     <i className="fab fa-linkedin-in text-blue-900"></i>
                                 </i>
                             </i>
-                        </i>
+                        </i> */}
                     </div>
+
+
+
+
                     <i className="fas fa-map-marker-alt pt-2 pr-2">
                         <i className="fas fa-phone-alt pt-2 pr-2">
                             <i className="fab fa-facebook-f text-blue-900">

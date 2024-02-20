@@ -11,7 +11,7 @@ const Template = () => {
                 <div className="container mx-auto px-4">
                      <div className="flex flex-col mt-10 items-center">
                          <div className="flex flex-row w-[80%] mt-2 mb-2">
-                             <div className="justify-center items-center text-center w-2/3 md:w-1/2 flex flex-col gap-x-3">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
                                 <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">Harvard CV Resume</h1>
                                 <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
                                 Official Harvard instructions on creating a perfect CV & cover letter.
@@ -32,8 +32,8 @@ const Template = () => {
                                 </button>
                                 </motion.div>
                              </div>
-                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
-                                 <img src={harvard} alt="universityimage" className="rounded-full h-40 w-40" />
+                             <div className="w-2/3 md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={harvard} alt="universityimage" className="rounded-full" style={{height:200 , width:200}} />
                              </div>
                          </div>
                      </div>
@@ -43,10 +43,10 @@ const Template = () => {
                 <div className="container mx-auto px-4">
                      <div className="flex flex-col mt-10 items-center">
                          <div className="flex flex-row w-[80%] mt-2 mb-2">
-                         <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
-                                 <img src={GoldmanSachs} alt="universityimage" className="rounded-full h-40 w-40" />
+                         <div className="w-2/3 md:w-1/2 flex justify-center mt-3 md:mt-0">
+                                 <img src={GoldmanSachs} alt="universityimage" className="rounded-full" style={{height:200 , width:200}} />
                              </div>
-                             <div className="justify-center items-center text-center w-2/3 md:w-1/2 flex flex-col gap-x-3">
+                             <div className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
                                 <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">GoldmanSachs one page Template</h1>
                                 <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
                                 Best one page CV Template.
@@ -97,7 +97,7 @@ const Template = () => {
                                 </motion.div>
                              </div>
                              <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
-                                 <img src={resume} alt="universityimage" className="rounded-full h-40 w-40" />
+                                 <img src={resume} alt="universityimage" className="rounded-full" style={{height:200 , width:200}} />
                              </div>
                          </div>
                      </div>
