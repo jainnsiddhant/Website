@@ -23,21 +23,8 @@ const University = () => {
         <div className="p-6">
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px">
-              <li className="me-2">
-                <span
-                  onClick={() => {
-                    setselectedtab(1);
-                    settab("");
-                    setProducts(data);
-                  }}
-                  className={`${
-                    selectedtab
-                      ? "inline-block p-4  border-b-2 hover:cursor-pointer text-blue-600 border-blue-600 rounded-t-lg active"
-                      : "inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:cursor-pointer hover:border-gray-300 "
-                  }`}
-                >
-                  All
-                </span>
+              <li className="me-2 my-auto">
+                Choose The Subject
               </li>
               <li className="me-2">
                 <span
@@ -60,7 +47,7 @@ const University = () => {
                     id="underline_select"
                     class="px-0 w-full text-sm text-gray-500   border-gray-200  focus:outline-none focus:ring-0 focus:border-gray-200"
                   >
-                    <option selected>Choose option</option>
+                    <option selected>Main Table</option>
                     <option value="US">Accounting</option>
                     <option value="CA">Finance</option>
                     <option value="FR">Business and management</option>
