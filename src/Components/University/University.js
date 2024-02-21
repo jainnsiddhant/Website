@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import NewFooter from "../NewFooter/NewFooter";
+import { DataTable } from "primereact/datatable";
+import { Column } from "primereact/column";
 import data from "./data";
+import data2 from "./Accounts_finnace";
 const University = () => {
+  const [products, setProducts] = useState(data);
   const [selectedtab, setselectedtab] = useState(1);
+  const [tab, settab] = useState("");
   useEffect(() => {
-    data.sort((a, b) => {
-      // First, compare Guardian rankings
-      if (a.Guardianranking !== b.Guardianranking) {
-        return a.Guardianranking - b.Guardianranking;
-      }
-      // If Guardian rankings are the same, compare QS rankings
-      return a.Qsranking - b.Qsranking;
-    });
-  }, []);
+    setProducts(data);
+    if (tab == "US") {
+      setProducts(data2);
+    }
+  }, [selectedtab, tab]);
   return (
     <>
       <Navbar />
@@ -22,19 +23,8 @@ const University = () => {
         <div className="p-6">
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px">
-              <li className="me-2">
-                <span
-                  onClick={() => {
-                    setselectedtab(1);
-                  }}
-                  className={`${
-                    selectedtab
-                      ? "inline-block p-4  border-b-2 hover:cursor-pointer text-blue-600 border-blue-600 rounded-t-lg active"
-                      : "inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:cursor-pointer hover:border-gray-300 "
-                  }`}
-                >
-                  All
-                </span>
+              <li className="me-2 my-auto">
+                Choose The Subject
               </li>
               <li className="me-2">
                 <span
@@ -51,10 +41,13 @@ const University = () => {
                     Underline select
                   </label>
                   <select
+                    onClick={(e) => {
+                      settab(e.target.value);
+                    }}
                     id="underline_select"
-                    class="px-0 w-full text-sm text-gray-500   border-gray-200 appearance-none focus:outline-none focus:ring-0 focus:border-gray-200"
+                    class="px-0 w-full text-sm text-gray-500   border-gray-200  focus:outline-none focus:ring-0 focus:border-gray-200"
                   >
-                    <option selected>Choose option</option>
+                    <option selected>Main Table</option>
                     <option value="US">Accounting</option>
                     <option value="CA">Finance</option>
                     <option value="FR">Business and management</option>
@@ -72,72 +65,9 @@ const University = () => {
             </ul>
           </div>
         </div>
-        <ul
-          className={`${
-            !selectedtab
-              ? "hidden space-y-2 flex-wrap text-sm font-bold text-center text-gray-500"
-              : "hidden"
-          }`}
-        >
-          <li className="me-2 mt-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Accounting
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Finance
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Business and management
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Computer science information
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px]">
-              Economics
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              English
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              International relations
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Marketing
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Mechanical
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Pharmaceutical
-            </span>
-          </li>
-          <li className="me-2">
-            <span className="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 border-[1px] ">
-              Psychology
-            </span>
-          </li>
-        </ul>
       </div>
       <div className="relative mb-12 max-w-5xl mx-auto mt-8 overflow-x-auto shadow-md sm:rounded-lg">
-        <table className="w-full text-sm text-left rtl:text-right text-gray-500">
+        {/* <table className="w-full text-sm text-left rtl:text-right text-gray-500">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
               <th scope="col" className="px-6 py-3">
@@ -179,7 +109,61 @@ const University = () => {
               );
             })}
           </tbody>
-        </table>
+        </table> */}
+
+        <div className="card">
+          <DataTable value={products} tableStyle={{ minWidth: "50rem" }}>
+            <Column
+              field="name"
+              header="Name"
+              sortable
+              style={{ width: "25%" }}
+            ></Column>
+            <Column
+              field="Qsranking"
+              header="Qs Ranking"
+              sortable
+              style={{ width: "25%" }}
+            ></Column>
+            <Column
+              field="Guardianranking"
+              header="Guardian Ranking"
+              sortable
+              style={{ width: "25%" }}
+            ></Column>
+            <Column
+              field="website"
+              header="View" 
+              style={{ width: "25%" }}
+              body={(rowData) => {
+                return (
+                  <div
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <a
+                      style={{
+                        color: "#3F00FF",
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                        "&:hover": {
+                          color: "black",
+                        },
+                      }}
+                      href={rowData.website}
+                    >
+                      {"View"}
+                    </a>
+                  </div>
+                );
+              }}
+            ></Column>
+            ;
+          </DataTable>
+        </div>
       </div>
       <NewFooter />
     </>

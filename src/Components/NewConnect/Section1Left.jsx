@@ -163,6 +163,7 @@ export default function Section1Left() {
             <DataTable value={customers} paginator rows={10} dataKey="id" filters={filters} filterDisplay="row" loading={loading}
                     globalFilterFields={['name', 'country.name', 'representative.name', 'status']} header={header} emptyMessage="No customers found.">
                 <Column field="name" style={{ minWidth: '12rem' , marginTop: '1px'}} />
+                <Column field="name" style={{ minWidth: '12rem' , marginTop: '1px'}} />
             </DataTable>
         </div>
     );
