@@ -1,4 +1,5 @@
 import React from "react";
+import instructionlist from "../../images/instructionlist.jpg"
 
 const Instruction = () => {
     return(
@@ -12,7 +13,8 @@ const Instruction = () => {
                     </p> */}
                 </div>
 
-                <div className="md:w-[80vw] mx-auto -mt-10">
+                <div className="md:w-[80vw] mx-auto -mt-10 flex">
+                <img src={instructionlist} alt="instructionlist" className="my-auto h-40 w-40" />
           <section className="rounded-xl">
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="container p-4 sm:p-4 border rounded-xl">
