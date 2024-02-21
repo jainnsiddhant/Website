@@ -218,7 +218,7 @@ mentioned below
                                 </motion.div>
                              </div>
                              <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
-                                 <img src={grad} alt="universityimage" className="h-40 w-40 rounded-full" />
+                                 <img src={grad} alt="universityimage" className="h-24 w-24 rounded-full" />
                              </div>
                          </div>
                      </div>

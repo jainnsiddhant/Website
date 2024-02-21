@@ -14,7 +14,7 @@ const UniBuddy = () => {
                          <div className="flex w-[80%] mt-2 mb-2">
                          <div className="w-full flex flex-col justify-center mt-3 md:mt-0">
                                  <img src={UnibuddyLogo} alt="universityimage" style={{height: '50%', width: '66.67%'}} className="mx-auto mb-2" />
-                                 <p className="mt-2 mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                                 <p className="mt-2 mb-3 text-lg font-normal text-gray-500 justify-normal flex">
                                 Unibuddy is a platform that connects prospective students with current university students, allowing them to gain insights and advice about university life, courses, and campuses. Through peer-to-peer interactions, Unibuddy enables prospective students to make informed decisions about their higher education journey, fostering a sense of community and support throughout the application process. The platform facilitates meaningful connections and empowers students to explore their educational options with confidence.
                                 </p>
                                 <div className="flex space-x-2 mx-auto">
