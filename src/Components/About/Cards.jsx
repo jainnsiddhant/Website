@@ -1,10 +1,9 @@
 import React from "react";
-import resumehome from "../../images/resumehome.jpg";
-import scholarhome from "../../images/scholarhome.jpg";
-import coursehome from "../../images/coursehome.jpg";
-import connecthome from "../../images/connecthome.jpg";
-import settlehome from "../../images/settlehome.jpg";
-import alreadyhome from "../../images/alreadyhome.jpg";
+import resource from "../../images/resource.jpg";
+import guide from "../../images/guide.jpg";
+import network from "../../images/network.jpg";
+import settle from "../../images/settle.jpg";
+import recommend from "../../images/recommend.jpg";
 
 export default function Cards() {
   return (
@@ -15,7 +14,7 @@ export default function Cards() {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${coursehome})` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
@@ -32,7 +31,7 @@ export default function Cards() {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${resumehome}) ` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: `url(${resource}) ` , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
@@ -52,7 +51,7 @@ export default function Cards() {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${connecthome})` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: `url(${network})` , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
@@ -72,7 +71,7 @@ export default function Cards() {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${settlehome})` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: `url(${settle})` , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
@@ -92,7 +91,7 @@ export default function Cards() {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${alreadyhome})` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: `url(${recommend})` , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>

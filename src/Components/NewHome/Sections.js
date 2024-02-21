@@ -8,6 +8,7 @@ const Sections = () => {
     return (
         <>
             <div className="mt-16">
+            
             <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-5">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         Improve your resume
