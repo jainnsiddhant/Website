@@ -4,9 +4,9 @@ import NewFooter from "../NewFooter/NewFooter";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import data from "./data";
-import data2 from "./Accounts_finnace";
-import data3 from "./Computer";
-import data4 from "./English"
+import accountsdata from "./Accounts_finnace";
+import computerdata from "./Computer"; 
+import englishdata from "./English"
 const University = () => {
   const [products, setProducts] = useState(data);
   const [selectedtab, setselectedtab] = useState(1);
@@ -14,13 +14,11 @@ const University = () => {
   useEffect(() => {
     setProducts(data);
     if (tab == "account") {
-      setProducts(data2);
-    }
-    else if (tab == "computer") {
-      setProducts(data3);
-    }
-    else if (tab == "english") {
-      setProducts(data4);
+      setProducts(accountsdata);
+    } else if (tab == "computer") {
+      setProducts(computerdata);
+    } else if (tab == "english") {
+      setProducts(englishdata);
     }
   }, [selectedtab, tab]);
   return (
@@ -31,9 +29,7 @@ const University = () => {
         <div className="p-6">
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px">
-              <li className="me-2 my-auto">
-                Choose The Subject
-              </li>
+              <li className="me-2 my-auto">Choose The Subject</li>
               <li className="me-2">
                 <span
                   onClick={() => {
@@ -56,17 +52,20 @@ const University = () => {
                     class="px-0 w-full text-sm text-gray-500   border-gray-200  focus:outline-none focus:ring-0 focus:border-gray-200"
                   >
                     <option selected>Main Table</option>
-                    <option value="account">Accounting</option>
-                    <option value="finance">Finance</option>
-                    <option value="FR">Business and management</option>
-                    <option value="computer">Computer science information</option>
-                    <option value="DE">Economics</option>
+                    <option value="account">Accounting and Finance</option>
+                    <option value="buisness">Business and management</option>
+                    <option value="computer">
+                      Computer science information
+                    </option>
+                    <option value="economics">Economics</option>
                     <option value="english">English</option>
-                    <option value="DE">International relations</option>
-                    <option value="DE">Marketing</option>
-                    <option value="DE">Mechanical</option>
-                    <option value="DE">Pharmaceutical</option>
-                    <option value="DE">Psychology</option>
+                    <option value="international">
+                      International relations
+                    </option>
+                    <option value="marketing">Marketing</option>
+                    <option value="mechanical">Mechanical</option>
+                    <option value="pharmaceutical">Pharmaceutical</option>
+                    <option value="psychology">Psychology</option>
                   </select>
                 </span>
               </li>
@@ -141,7 +140,7 @@ const University = () => {
             ></Column>
             <Column
               field="website"
-              header="View" 
+              header="View"
               style={{ width: "25%" }}
               body={(rowData) => {
                 return (

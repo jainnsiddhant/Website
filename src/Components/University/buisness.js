@@ -1,13 +1,25 @@
-const computerdata = [
+const buisnessdata = [
   {
     _id: "65c8f6f70c83d10491afb1f4",
     name: "University of Oxford",
     country: "United Kingdom",
     city: "Scotland",
     address: "St Andrews KY16 9AJ, United Kingdom",
-    Qsranking: 5,
+    Qsranking: 9,
     Guardianranking: 1,
     website: "https://www.ox.ac.uk/",
+    coursesOffered: [],
+    __v: 0,
+  },
+  {
+    _id: "65c8f7920c83d10491afb1f7",
+    name: "University of St Andrews",
+    country: "United Kingdom",
+    city: "England",
+    address: "Wellington Square, Oxford OX1 2JD, United Kingdom",
+    Qsranking: 301,
+    Guardianranking: 2,
+    website: "https://www.st-andrews.ac.uk/",
     coursesOffered: [],
     __v: 0,
   },
@@ -18,20 +30,8 @@ const computerdata = [
     city: "England",
     address: "The Old Schools, Trinity Ln, Cambridge CB2 1TN, United Kingdom",
     Qsranking: 7,
-    Guardianranking: 2,
-    website: "https://www.cam.ac.uk/",
-    coursesOffered: [],
-    __v: 0,
-  },
-  {
-    _id: "65c8f7920c83d10491afb1f7",
-    name: "University of St Andrews",
-    country: "United Kingdom",
-    city: "England",
-    address: "Wellington Square, Oxford OX1 2JD, United Kingdom",
-    Qsranking: 351,
     Guardianranking: 3,
-    website: "https://www.st-andrews.ac.uk/",
+    website: "https://www.cam.ac.uk/",
     coursesOffered: [],
     __v: 0,
   },
@@ -122,4 +122,4 @@ const computerdata = [
   },
 ];
 
-export default computerdata;
+export default buisnessdata;

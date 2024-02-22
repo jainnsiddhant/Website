@@ -1,4 +1,4 @@
-const data2 = [
+const accountsdata = [
     {
         "_id": "65c8f8f60c83d10491afb1fd",
         "name": "Imperial College",
@@ -109,4 +109,4 @@ const data2 = [
     }
 ] 
 
-export default data2;
+export default accountsdata;
