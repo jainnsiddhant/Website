@@ -7,7 +7,7 @@ import recommend from "../../images/recommend.jpg";
 
 export default function Cards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
 
         <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"

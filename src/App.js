@@ -14,6 +14,7 @@ import Register from "./Components/Register/Register";
 import Scholarship from "./Pages/Scholarship/Scholarship";
 import NewScholarPg from "./Pages/NewScholar/NewScholarPg";
 import AddScholarship from "./Components/Register/AddScholarship";
+import CoursePg from "./Pages/CoursePg/CoursePg";
 import Page4 from "./Pages/Page4/Page4";
 import SettleInPg from "./Pages/SettleInPg/SettleInPg";
 import Page5 from "./Pages/Page5/Page5";
@@ -36,6 +37,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/blog" element={<NewConnectPg />}></Route>
           <Route path="/scholarship" element={<NewScholarPg />}></Route>
+          <Route path="/course" element={<CoursePg />}></Route>
           <Route path="/SettleinUK" element={<SettleInPg />}></Route>
           <Route path="/AlreadyinUk" element={<AlreadyInPg />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>

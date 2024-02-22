@@ -25,12 +25,12 @@ const About = () => {
                 height=""
               />
             </div> */}
-            <div className="w-[80%]  mx-auto text-center">
-              <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                Why Us?
-              </h2>
-              <p className="mt-6 text-gray-600">
-                Welcome to Find My Uni, your ultimate guide to pursuing higher
+              <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 -mt-20">
+                    <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
+                    Why Us?
+                    </h2>
+                    <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    Welcome to Find My Uni, your ultimate guide to pursuing higher
                 education abroad! We stand out from the crowd with our unique
                 approach to assisting aspiring students in their journey towards
                 academic excellence and personal growth. Why choose us?
@@ -38,7 +38,7 @@ const About = () => {
                 education experience that goes beyond conventional norms,
                 empowering you to make informed decisions and thrive in your
                 academic journey.
-              </p>
+                    </p>
               <Cards />
             </div>
           </div>
