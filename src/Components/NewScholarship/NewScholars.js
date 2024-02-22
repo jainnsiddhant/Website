@@ -200,11 +200,11 @@ export default function NewScholars() {
       <div className="py-4 px-4">
         <h2
           data-aos="fade-right"
-          className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+          className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900"
         >
           All Scholarships
         </h2>
-        <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+        <p className="mb-3 text-lg font-normal text-gray-500">
           <div className="space-x-3">
             <button
               type="button"

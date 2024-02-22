@@ -4,18 +4,23 @@ import NewFooter from "../NewFooter/NewFooter";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import data from "./data";
-import data2 from "./Accounts_finnace"; 
-import data3 from "./computerScinence";
+import data2 from "./Accounts_finnace";
+import data3 from "./Computer";
+import data4 from "./English"
 const University = () => {
   const [products, setProducts] = useState(data);
   const [selectedtab, setselectedtab] = useState(1);
   const [tab, settab] = useState("");
   useEffect(() => {
     setProducts(data);
-    if (tab == "Accounts") {
+    if (tab == "account") {
       setProducts(data2);
-    }else if(tab=="Finnace"){
-      setProducts(data3)
+    }
+    else if (tab == "computer") {
+      setProducts(data3);
+    }
+    else if (tab == "english") {
+      setProducts(data4);
     }
   }, [selectedtab, tab]);
   return (
@@ -51,12 +56,12 @@ const University = () => {
                     class="px-0 w-full text-sm text-gray-500   border-gray-200  focus:outline-none focus:ring-0 focus:border-gray-200"
                   >
                     <option selected>Main Table</option>
-                    <option value="Accounts">Accounting</option>
-                    <option value="Finnace">Finance</option>
+                    <option value="account">Accounting</option>
+                    <option value="finance">Finance</option>
                     <option value="FR">Business and management</option>
-                    <option value="DE">Computer science information</option>
+                    <option value="computer">Computer science information</option>
                     <option value="DE">Economics</option>
-                    <option value="DE">English</option>
+                    <option value="english">English</option>
                     <option value="DE">International relations</option>
                     <option value="DE">Marketing</option>
                     <option value="DE">Mechanical</option>

@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaChevronRight , FaTwitter , FaInstagram ,FaFacebook , FaLinkedin } from "react-icons/fa";
+import logo from "../../images/logo.jpg"
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -9,10 +12,25 @@ export const Footer = () => {
                     <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             <div>
-                                <img src="#" className="mr-5 h-6 sm:h-9" alt="logo" />
+                            <div>
+                                <Link
+                                    to={"/"}
+                                    className="flex items-center py-5 px-2 text-black"
+                                >
+                                    <img
+                                        className="h-6 w-6 mr-1 text-blue-400" 
+                                        alt='icon'
+                                        src={logo}
+                                    >
+                                    </img>
+                                    {/* <img src={logoORG} className="h-12 w-20 mr-1 text-blue-400 mix-blend-color" /> */}
+                                    <span className="font-bold text-2xl navfont">FindMyUni</span>
+                                </Link>
+                            </div>
                                 <p className="max-w-xs mt-4 text-sm text-gray-600">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-                                    accusantium.
+                                Find your university.<br/>
+                                Connect with student ambassador.<br/>
+                                Enhance resume
                                 </p>
                                 <div className="flex mt-8 space-x-6 text-gray-600">
                                     <a
@@ -113,9 +131,33 @@ export const Footer = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3">
                                 <div>
-                                    <p className="font-medium">Company</p>
+
+
+                                <div className='mb-5'>
+                            <h4 className='pb-4'>Useful Links</h4>
+                            <ul className='text-gray-500'>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Home</a></li>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>About Us</a></li>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Services</a></li>
+                            </ul>
+                        </div>
+
+                        </div>
+                        <div>
+
+                        <div className='mb-5'>
+                            <h4 className='pb-4'>Our Services</h4>
+                            <ul className='text-gray-500'>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><Link to={"/university"} className='hover:text-blue-600'>Find University</Link></li>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Connect with ambassador</a></li>
+                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Enhance resume</a></li>
+                            </ul>
+                        </div>
+
+
+                                    {/* <p className="font-medium">Company</p>
                                     <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                                         <a className="hover:opacity-75" href="">
                                             {" "}
@@ -133,9 +175,9 @@ export const Footer = () => {
                                             {" "}
                                             Careers{" "}
                                         </a>
-                                    </nav>
+                                    </nav> */}
                                 </div>
-                                <div>
+                                {/* <div>
                                     <p className="font-medium">Services</p>
                                     <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                                         <a className="hover:opacity-75" href="">
@@ -180,7 +222,7 @@ export const Footer = () => {
                                             Accessibility{" "}
                                         </a>
                                     </nav>
-                                </div>
+                                </div> */}
                                 <div>
                                     <p className="font-medium">Contact Us</p>
                                     <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
