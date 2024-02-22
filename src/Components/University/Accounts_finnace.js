@@ -73,7 +73,7 @@ const accountsdata = [
     },
     {
         "_id": "65c8fa7e0c83d10491afb203",
-        "name": "Warwick",
+        "name": "University of Warwick",
         "country": "United Kingdom",
         "city": "England",
         "address": "University of Warwick, Coventry CV4 7AL, UK",
