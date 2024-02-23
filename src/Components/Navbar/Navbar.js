@@ -80,7 +80,10 @@ const Navbar = () => {
                                     Connect
                                 </Link>
                                 <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Scholarship and Courses
+                                    Scholarships
+                                </Link>
+                                <Link to={"/course"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
+                                    Courses
                                 </Link>
                                 <Link to={"/SettleinUK"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
                                     Settle in UK
@@ -136,12 +139,15 @@ const Navbar = () => {
                         Connect
                     </Link>
                     <Link to={"/Scholarship"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Scholarship and Courses
+                        Scholarships
                     </Link>
-                    <Link to={"/Page4"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
+                    <Link to={"/course"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
+                        Courses
+                    </Link>
+                    <Link to={"/SettleinUK"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Settel in Uk
                     </Link>
-                    <Link to={"/Page5"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
+                    <Link to={"/AlreadyinUk"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         Already in Uk
                     </Link>
                     <Link to={"/about"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">

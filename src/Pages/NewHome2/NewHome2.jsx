@@ -9,7 +9,7 @@ const NewHome2 = () => {
         <>
             <Navbar />
             <NewHome />
-            <NewFooter />
+            <Footer />
         </>
     )
 }

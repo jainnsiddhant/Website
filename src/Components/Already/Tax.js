@@ -42,7 +42,7 @@ const Tax = () => {
               <img
                 src={tax}
                 alt="universityimage"
-                className="h-40 w-60 rounded-full"
+                className="rounded-full"
               />
             </div>
           </div>

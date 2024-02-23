@@ -53,10 +53,10 @@ const NewHome = () => {
                     data-aos="fade-right"
                     className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
                   >
-                    Top Universitites
+                    Explore universities in united kingdom
                   </h2>
                   <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                    Best universities to pursue education abroad.
+                  check out top courses and most reputed universities in the world
                   </p>
                 </div>
 
