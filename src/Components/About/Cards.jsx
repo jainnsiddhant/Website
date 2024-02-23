@@ -36,7 +36,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Comprehensive Resources:</h2>
+            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Comprehens Resource:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
              Our website offers a one-stop
                 solution, from exploring top universities and courses to

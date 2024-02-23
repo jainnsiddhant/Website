@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from 'framer-motion';
 import resume from "../../images/resume.jpg";
 import instructionlist from "../../images/instructionlist.jpg"
+import guide from "../../images/guide.jpg"
 
 const Sections = () => {
     return (
@@ -14,8 +15,9 @@ const Sections = () => {
                     {
                       scale: 1.5
                     }
-                  }>
-
+                  }
+                  className="relative">
+                  
 
 <div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
     <div class="items-center justify-between mb-4">
