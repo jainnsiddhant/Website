@@ -53,20 +53,20 @@ const NewHome = () => {
                     data-aos="fade-right"
                     className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
                   >
-                    Explore universities in united kingdom
+                    Explore universities in <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">United Kingdom</span>
                   </h2>
                   <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
                   check out top courses and most reputed universities in the world
                   </p>
                 </div>
 
-                <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[80%] mx-auto">
+                <div className="space-y-6 max-w-5xl md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[80%] mx-auto">
                   <motion.div
                     whileHover={{
                       scale: 1.5,
                     }}
                   >
-                    <div className="w-[80%] bg-white">
+                    <div className="w-[2xl] bg-white">
                       <a href="#forexcards">
                         <img
                           className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover"
@@ -93,7 +93,7 @@ const NewHome = () => {
                       scale: 1.5,
                     }}
                   >
-                    <div className="w-[80%] bg-white">
+                    <div className="w-[2xl] bg-white">
                       <a href="#packlists">
                         <img
                           className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover"
@@ -120,7 +120,7 @@ const NewHome = () => {
                       scale: 1.5,
                     }}
                   >
-                    <div className="w-[80%] bg-white">
+                    <div className="w-[2xl] bg-white">
                       <a href="#bankstoopen">
                         <img
                           className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover"

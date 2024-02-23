@@ -29,7 +29,7 @@ import University from "./Components/University/University";
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<NewHome2 />}></Route>
@@ -48,11 +48,11 @@ function App() {
           <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route> */}
           <Route path="/data" element={<Alldetails />}></Route>
           <Route path="/addcourses" element={<AddCourses />}></Route>
-          <Route path="/course/:name" element={<Coursesdetails/>}></Route>
-          <Route path="/university" element={<University/>}></Route>
+          <Route path="/course/:name" element={<Coursesdetails />}></Route>
+          <Route path="/university" element={<University />}></Route>
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

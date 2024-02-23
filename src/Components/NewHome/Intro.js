@@ -1,9 +1,9 @@
 import React from "react";
 
 const Intro = () => {
-    return (
-        <>
-          <div className="relative">
+  return (
+    <>
+      <div className="relative">
         <div
           aria-hidden="true"
           className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
@@ -25,11 +25,11 @@ const Intro = () => {
                 Best Place for finding the stuff for you
               </p>
             </div>
-            </div>
-            </div>
-            </div>
-        </>
-    )
-}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Intro
+export default Intro;

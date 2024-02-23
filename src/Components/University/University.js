@@ -23,10 +23,11 @@ const University = () => {
   }, [selectedtab, tab]);
   return (
     <>
-      <Navbar />
-      <div className="md:max-w-5xl md:mx-auto ">
+      <Navbar /> 
+      
+      <div className="md:max-w-5xl md:mx-auto "> 
         <h1 className="font-bold text-xl p-4">Explore University</h1>
-        <div className="p-6">
+        <div className="p-6"> 
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px">
               <li className="me-2 my-auto">Choose The Subject</li>

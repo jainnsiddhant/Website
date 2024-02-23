@@ -32,9 +32,9 @@ export default function Cards() {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mb-10">
+          <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mb-10">
             <div className="flex gap-2 md:gap-4 items-center">
-              <img src={research} alt="research-image" style={{height:150 , width:150}} className="my-auto" />
+              <img src={research} alt="research-image" style={{height:150 , width:150}} className="hidden md:flex my-auto" />
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
 
                 {/* Resume Card */}
@@ -81,12 +81,12 @@ export default function Cards() {
               </div>
             </div>
 
-            <img src={search} alt="search-image" style={{height:100 , width:100}} className="hidden lg:block" />
+            <img src={search} alt="search-image" style={{height:100 , width:100}} className="hidden md:block" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
             <div className="flex gap-2 md:gap-4 items-center">
-              <img src={working} alt="working-image" style={{height:150 , width:150}} className="my-auto" />
+              <img src={working} alt="working-image" style={{height:150 , width:150}} className="my-auto hidden md:flex" />
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
 
                 {/* Connect Card */}
@@ -119,7 +119,7 @@ export default function Cards() {
 
                 {/* Already Card */}
                 <motion.div whileHover={{ scale: 1.25 }}>
-                  <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
+                  <div className="relative  flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
@@ -133,7 +133,7 @@ export default function Cards() {
               </div>
             </div>
 
-            <img src={atjob} alt="atjob-image" style={{height:100 , width:100}} className="hidden lg:block" />
+            <img src={atjob} alt="atjob-image" style={{height:100 , width:100}} className="hidden md:block" />
           </div>
         </motion.div>
       </section>
