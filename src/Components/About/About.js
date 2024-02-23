@@ -75,7 +75,7 @@ const About = () => {
             <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
-                  className="object-center object-cover rounded-full h-36 w-36"
+                  className="object-center  object-cover rounded-full h-36 w-36"
                   src={kartikey}
                   alt="photo"
                 />
@@ -85,7 +85,7 @@ const About = () => {
                   Mr. Kartikey Bhardwaj
                 </p>
                 <p className="text-base text-gray-400 font-normal">
-                  Lead Backend devloper
+                  Backend devloper
                 </p>
               </div>
             </div>
@@ -102,7 +102,7 @@ const About = () => {
                   Miss. Prisha Thapar
                 </p>
                 <p className="text-base text-gray-400 font-normal">
-                  Lead Frontend devloper
+                  Frontend devloper
                 </p>
               </div>
             </div>
