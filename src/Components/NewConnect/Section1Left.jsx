@@ -84,7 +84,7 @@ export default function Section1Left() {
 
     const renderHeader = () => {
         return (
-            <CustomSearchBox value={globalFilterValue} onChange={onGlobalFilterChange} />
+            <CustomSearchBox value={globalFilterValue} onChange={onGlobalFilterChange} className="mb-0" />
         );
     };
     
