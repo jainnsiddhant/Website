@@ -7,8 +7,8 @@ const Tax = () => {
     <section id="taxcalc">
       <div className="container mx-auto px-4 mb-5">
         <div className="flex flex-col mt-4 items-center">
-          <div className="flex flex-row w-[80%] mt-2 mb-2">
-            <div className="justify-center items-center text-center w-2/3 md:w-1/2 flex flex-col gap-x-3">
+          <div className="flex flex-col md:flex-row  w-[80%] mt-2 mb-2">
+            <div className="justify-center mx-auto items-center text-center  md:w-1/2 flex flex-col md:gap-x-3">
               <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
                 Tax Calculator
               </h1>

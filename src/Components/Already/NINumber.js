@@ -7,12 +7,12 @@ const NINumber = () => {
     <section id="ninumber">
       <div className="container mx-auto px-4">
         <div className="flex flex-col mt-4 items-center">
-          <div className="flex flex-row w-[80%] mt-2 mb-2">
-            <div className="justify-center items-center text-center w-2/3 md:w-1/2 flex flex-col gap-x-3">
+          <div className="flex flex-col md:flex-row  md:w-[80%] mt-2 mb-2">
+            <div className="justify-center mx-auto items-center text-center md:w-1/2 flex flex-col md:gap-x-3">
               <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
                 NI Number
               </h1>
-              <p className="mb-3 text-lg text-justify font-normal text-gray-500">
+              <p className="mb-3 text-lg mx-auto text-justify font-normal text-gray-500">
                 A National Insurance number (NINO) is used to uniquely identify
                 you in the UK system. It also ensures that the National
                 Insurance contributions (NIC) or taxes you pay are properly

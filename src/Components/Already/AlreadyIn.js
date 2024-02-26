@@ -38,7 +38,7 @@ const AlreadyIn = () => {
                   }>
                    <div className="max-w-xs bg-white">
                      <a href="#instructions">
-                       <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover" src={instruction} alt="" />
+                       <img className="px-5 py-6 rounded-xl mx-auto bg-white shadow-gray-800 border-2 object-cover" src={instruction} alt="" />
                      </a>
                      <div className="p-4">
                        <a href="#instructions">

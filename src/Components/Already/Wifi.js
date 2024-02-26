@@ -206,7 +206,7 @@ const Wifi = () => {
                     <button 
                         type="button" 
                         style={{ backgroundColor: '#FFA500' }}
-                        className="text-white font-medium rounded-lg text-sm px-5 py-2.5 w-1/4 mx-auto flex justify-center -mt-10" 
+                        className="text-white font-medium rounded-lg text-sm px-5 py-2.5 md:w-1/4 mx-auto flex justify-center -mt-10" 
                         onClick={() => window.open('https://www.telegraph.co.uk/recommended/tech/best-broadband/', '_blank')}
                         >
                         Click for more Information
