@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 import kartikey from "../../images/Kartikey.png";
 import siddhant from "../../images/sidhanth-Photoroom.png-Photoroom.png";
-import prisha from "../../images/prisha-Photoroom.png-Photoroom.png";
+import prisha from "../../images/prisha.png";
 import monika from "../../images/monika-Photoroom.png-Photoroom.png";
 import manoj from "../../images/manoj.jpeg";
 import khushi from "../../images/khushi-Photoroom.png-Photoroom.png";

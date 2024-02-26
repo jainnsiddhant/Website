@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ambassador from '../../images/ambassador.jpg'
 import Kartikey from '../../images/Kartikey.jpg'
-import Prisha from '../../images/PrishaThapar (1).jpg'
+import Prisha from '../../images/prisha.png'
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
