@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from 'framer-motion';
 import resume from "../../images/resume.jpg";
 import instructionlist from "../../images/instructionlist.jpg"
+import guide from "../../images/guide.jpg"
 
 const Sections = () => {
     return (
@@ -14,12 +15,21 @@ const Sections = () => {
                     {
                       scale: 1.5
                     }
-                  }>
-
-
-<div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                  }
+                  className="relative">
+                  <div
+          className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
+  backgroundSize: 'cover'}}
+          ></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
+          <div className="relative p-6 mt-10">
+          <div class="w-full max-w-md p-4 border border-gray-200 rounded-lg shadow sm:p-8">
     <div class="items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900 text-center">Computer Science</h5>
+        <h5 class="text-xl font-bold leading-none text-white text-center">Computer Science</h5>
         {/* <a href="#" class="text-sm font-medium text-blue-600 hover:underline">
             View all
         </a> */}
@@ -32,16 +42,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Artificial Intelligence
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         1
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -50,16 +60,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Data Science
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         2
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -68,16 +78,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Cyber Security
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         3
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -86,16 +96,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Data Structures
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         4
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="pt-3 pb-0 sm:pt-4">
@@ -104,21 +114,25 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Machine Learning
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         5
-                    </div>
+                    </div> */}
                 </div>
             </li>
         </ul>
    </div>
 </div>
+          </div>
+        </div>
+
+
 <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm mt-2">
     <figure class="flex flex-col items-center justify-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500">
@@ -135,17 +149,27 @@ const Sections = () => {
     </figure>
 </div>
             </motion.div>
+            
             <motion.div
                   whileHover={
                     {
                       scale: 1.5
                     }
-                  }>
-
-
-<div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                  }
+                  className="relative">
+                  <div
+          className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
+  backgroundSize: 'cover'}}
+          ></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
+          <div className="relative p-6 mt-10">
+          <div class="w-full max-w-md p-4 border border-gray-200 rounded-lg shadow sm:p-8">
     <div class="items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900 text-center">Computer Science</h5>
+        <h5 class="text-xl font-bold leading-none text-white text-center">Computer Science</h5>
         {/* <a href="#" class="text-sm font-medium text-blue-600 hover:underline">
             View all
         </a> */}
@@ -158,16 +182,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Artificial Intelligence
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         1
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -176,16 +200,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Data Science
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         2
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -194,16 +218,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Cyber Security
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         3
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -212,16 +236,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Data Structures
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         4
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="pt-3 pb-0 sm:pt-4">
@@ -230,21 +254,25 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Machine Learning
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         5
-                    </div>
+                    </div> */}
                 </div>
             </li>
         </ul>
    </div>
 </div>
+          </div>
+        </div>
+
+
 <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm mt-2">
     <figure class="flex flex-col items-center justify-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500">
@@ -261,17 +289,27 @@ const Sections = () => {
     </figure>
 </div>
             </motion.div>
+            
             <motion.div
                   whileHover={
                     {
                       scale: 1.5
                     }
-                  }>
-
-
-<div class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                  }
+                  className="relative">
+                  <div
+          className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
+  backgroundSize: 'cover'}}
+          ></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
+          <div className="relative p-6 mt-10">
+          <div class="w-full max-w-md p-4 border border-gray-200 rounded-lg shadow sm:p-8">
     <div class="items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-gray-900 text-center">Computer Science</h5>
+        <h5 class="text-xl font-bold leading-none text-white text-center">Computer Science</h5>
         {/* <a href="#" class="text-sm font-medium text-blue-600 hover:underline">
             View all
         </a> */}
@@ -284,16 +322,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Artificial Intelligence
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         1
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -302,16 +340,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Data Science
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         2
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -320,16 +358,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Cyber Security
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         3
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="py-3 sm:py-4">
@@ -338,16 +376,16 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Data Structures
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         4
-                    </div>
+                    </div> */}
                 </div>
             </li>
             <li class="pt-3 pb-0 sm:pt-4">
@@ -356,21 +394,25 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-gray-900 truncate">
+                        <p class="text-sm font-medium text-white truncate">
                             Machine Learning
                         </p>
-                        <p class="text-sm text-gray-500 truncate">
+                        <p class="text-sm text-gray-300 truncate">
                             email@windster.com
                         </p>
                     </div>
-                    <div class="inline-flex items-center text-base font-semibold text-gray-900">
+                    {/* <div class="inline-flex items-center text-base font-semibold text-gray-900">
                         5
-                    </div>
+                    </div> */}
                 </div>
             </li>
         </ul>
    </div>
 </div>
+          </div>
+        </div>
+
+
 <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm mt-2">
     <figure class="flex flex-col items-center justify-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
         <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500">
@@ -387,6 +429,8 @@ const Sections = () => {
     </figure>
 </div>
             </motion.div>
+            
+            
             </div>
 
             </section>
