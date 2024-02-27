@@ -38,6 +38,7 @@ export default function Cards() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
 
                 {/* Resume Card */}
+                <a href="/resume">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${resumehome})` }}></div>
@@ -50,8 +51,10 @@ export default function Cards() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
 
                 {/* Scholars Card */}
+                <a href="/scholarship">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                   <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
@@ -64,8 +67,10 @@ export default function Cards() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
 
                 {/* Courses Card */}
+                <a href="/course">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${coursehome})` }}></div>
@@ -78,6 +83,7 @@ export default function Cards() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
               </div>
             </div>
 
@@ -90,6 +96,7 @@ export default function Cards() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
 
                 {/* Connect Card */}
+                <a href="/blog">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${connecthome})` }}></div>
@@ -102,8 +109,10 @@ export default function Cards() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
 
                 {/* Settle Card */}
+                <a href="/SettleinUK">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${settlehome})` }}></div>
@@ -116,8 +125,10 @@ export default function Cards() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
 
                 {/* Already Card */}
+                <a href="/AlreadyinUk">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative  flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
@@ -130,6 +141,7 @@ export default function Cards() {
                     </div>
                   </div>
                 </motion.div>
+                </a>
               </div>
             </div>
 

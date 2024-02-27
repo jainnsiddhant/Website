@@ -12,6 +12,7 @@ export default function Table() {
 
     return (
         <>
+                <section id="table">
                 <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         Ranking Table
@@ -30,6 +31,7 @@ export default function Table() {
             </DataTable>
             </div>
             </div>
+                </section>
         </>
     );
 }

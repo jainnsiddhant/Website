@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import resource from "../../images/resource.jpg";
 import guide from "../../images/guide.jpg";
 import network from "../../images/network.jpg";
@@ -9,9 +10,11 @@ export default function Cards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
 
-        <div
+                <motion.div
+          whileHover={{ scale: 1.25 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
+
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
@@ -24,11 +27,13 @@ export default function Cards() {
              We believe in evaluating your true potential and aspirations, providing tailored advice to help you choose the best course and university that aligns with your goals. 
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+                <motion.div
+          whileHover={{ scale: 1.25 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
+
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${resource}) ` , backgroundRepeat: 'no-repeat', 
@@ -36,7 +41,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Comprehens Resource:</h2>
+            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Comprehensive Resource:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
              Our website offers a one-stop
                 solution, from exploring top universities and courses to
@@ -44,11 +49,13 @@ export default function Cards() {
                 approach to your overseas education journey. 
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+                <motion.div
+          whileHover={{ scale: 1.25 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
+
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${network})` , backgroundRepeat: 'no-repeat', 
@@ -64,11 +71,13 @@ export default function Cards() {
                 firsthand insights into the student community.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+                <motion.div
+          whileHover={{ scale: 1.25 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
+
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${settle})` , backgroundRepeat: 'no-repeat', 
@@ -84,11 +93,13 @@ export default function Cards() {
                 to local tips, we've got you covered.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+                <motion.div
+          whileHover={{ scale: 1.25 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
+
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${recommend})` , backgroundRepeat: 'no-repeat', 
@@ -104,7 +115,7 @@ export default function Cards() {
                 aspirations.
             </p>
           </div>
-        </div>
+        </motion.div>
 
     </div>
   );
