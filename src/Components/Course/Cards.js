@@ -8,6 +8,7 @@ const Cards = () => {
     <>
       <section id="cards">
         <div className="flex md:flex-row flex-col md:space-x-4 mt-5 w-[80%] mx-auto">
+        <a href="#sections">
           <motion.div
             whileHover={{
               scale: 1.5,
@@ -33,13 +34,15 @@ const Cards = () => {
               </div>
             </div>
           </motion.div>
+          </a>
+          <a href="#table">
           <motion.div
             whileHover={{
               scale: 1.5,
             }}
           >
             <a
-              href="#"
+              href="#table"
               class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
             >
               <img
@@ -59,6 +62,7 @@ const Cards = () => {
               </div>
             </a>
           </motion.div>
+          </a>
         </div>
       </section>
     </>

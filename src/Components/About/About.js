@@ -29,7 +29,7 @@ const About = () => {
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                     Why <span className=" bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent">FindMyUni?</span>
                     </h2>
-                    <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
                     Welcome to Find My Uni, your ultimate guide to pursuing higher
                 education abroad! We stand out from the crowd with our unique
                 approach to assisting aspiring students in their journey towards
