@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import resume from "../../images/resume.jpg";
-import instructionlist from "../../images/instructionlist.jpg"
 import guide from "../../images/guide.jpg"
 
 const Sections = () => {
@@ -11,12 +9,12 @@ const Sections = () => {
                 
             <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[80%] mx-auto">
             <motion.div
-                  whileHover={
-                    {
-                      scale: 1.5
-                    }
-                  }
-                  className="relative">
+            whileHover={{
+                scale:1.1,
+                textShadow:"0px 0px 8px rgb(255,255,255",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+>
                   <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
@@ -150,13 +148,13 @@ const Sections = () => {
 </div>
             </motion.div>
             
-            <motion.div
-                  whileHover={
-                    {
-                      scale: 1.5
-                    }
-                  }
-                  className="relative">
+ <motion.div
+            whileHover={{
+                scale:1.1,
+                textShadow:"0px 0px 8px rgb(255,255,255",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+>
                   <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
@@ -290,13 +288,13 @@ const Sections = () => {
 </div>
             </motion.div>
             
-            <motion.div
-                  whileHover={
-                    {
-                      scale: 1.5
-                    }
-                  }
-                  className="relative">
+ <motion.div
+            whileHover={{
+                scale:1.1,
+                textShadow:"0px 0px 8px rgb(255,255,255",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+>
                   <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >

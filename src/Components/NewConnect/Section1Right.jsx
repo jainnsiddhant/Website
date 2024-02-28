@@ -160,14 +160,7 @@ export default function Section1Right() {
 
     return (
         <div className="card w-[80%] mx-auto">
-       <div className="py-4 px-4">
-                    <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl text-center'>
-                        Student Ambassadors
-                    </h2>   
-                    <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-center w-full">
-                        Welcome to our comprehensive guide!
-                    </p>      
-        </div>
+       
             <DataTable value={customers} paginator rows={10} dataKey="id" filters={filters} filterDisplay="row" loading={loading}
                     globalFilterFields={['name', 'country.name', 'representative.name', 'status']} header={header} emptyMessage="No customers found.">
                 <Column header="University" filterField="representative" showFilterMenu={false} filterMenuStyle={{ width: '14rem' }} style={{ minWidth: '14rem' }}

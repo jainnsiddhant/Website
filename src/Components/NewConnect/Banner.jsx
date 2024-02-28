@@ -3,7 +3,7 @@ import connectbg from "../../images/connectbg.jpg";
 
 export default function Banner() {
     return (
-        <div className='h-full w-[80%] mx-auto bg-cover bg-center p-20' style={{ backgroundImage: `url(${connectbg})` , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover'}}>
+        <div className='h-full w-[80%] mx-auto bg-cover bg-center p-20' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${connectbg})` , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover', backdropFilter: 'blur(10px)'}}>
             <div className="flex flex-col items-center justify-center">
                 <h1 className="mt-10 text-4xl font-bold text-center text-white">
                     Connect and Read Blogs

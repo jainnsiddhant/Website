@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Template = () => {
   return (
     <>
-      <section>
+      <section id="template">
         <div className="container mx-auto px-4">
           <div className="flex flex-col mt-10 items-center">
             <div className="flex flex-col md:flex-row w-[80%] mt-2 mb-2">

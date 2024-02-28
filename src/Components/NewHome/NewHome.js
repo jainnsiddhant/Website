@@ -30,7 +30,7 @@ const NewHome = () => {
             >
               <div className="lg:w-2/3 text-center mx-auto">
                 <h1 className="text-gray-900  font-bold text-4xl md:text-6xl xl:text-6xl">
-                  Ready to take Admission in{" "}
+                  Begin your journey in{" "}
                   <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
                     UK
                   </span>
@@ -48,7 +48,7 @@ const NewHome = () => {
                 viewport={{ once: true, amount: 0.4 }}
                 transition={{ staggerChildren: 0.5 }}
               >
-                <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-10">
+                <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-10" id="topuni">
                   <h2
                     data-aos="fade-right"
                     className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
@@ -67,7 +67,7 @@ const NewHome = () => {
                     }}
                   >
                     <div className="w-[2xl] bg-white">
-                      <a href="#forexcards">
+                      <a href="/course">
                         <img
                           className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover"
                           src={oxford}
@@ -76,7 +76,7 @@ const NewHome = () => {
                         />
                       </a>
                       <div className="p-4">
-                        <a href="#forexcards">
+                        <a href="/course">
                           <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900 text-center">
                             Top 10 Universities
                           </h5>
@@ -94,7 +94,7 @@ const NewHome = () => {
                     }}
                   >
                     <div className="w-[2xl] bg-white">
-                      <a href="#packlists">
+                      <a href="/course">
                         <img
                           className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover"
                           src={GoldmanSachs}
@@ -103,7 +103,7 @@ const NewHome = () => {
                         />
                       </a>
                       <div className="p-4">
-                        <a href="#packlists">
+                        <a href="/course">
                           <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900 text-center">
                             Subject Wise List
                           </h5>
@@ -121,7 +121,7 @@ const NewHome = () => {
                     }}
                   >
                     <div className="w-[2xl] bg-white">
-                      <a href="#bankstoopen">
+                      <a href="/course">
                         <img
                           className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover"
                           src={harvard}
@@ -130,7 +130,7 @@ const NewHome = () => {
                         />
                       </a>
                       <div className="p-4">
-                        <a href="#bankstoopen">
+                        <a href="/course">
                           <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900 text-center">
                             Top Courses
                           </h5>

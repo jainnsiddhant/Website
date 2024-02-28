@@ -15,7 +15,7 @@ import atjob from "../../images/atjob.jpg"
 export default function Cards() {
   return (
     <>
-      <section className="w-full mx-auto">
+      <section className="w-full mx-auto" id="features">
         <motion.div
           variants={textAnimation}
           initial={"offscreen"}
@@ -24,7 +24,7 @@ export default function Cards() {
           transition={{ staggerChildren: 0.5 }}
         >
           <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-            <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
+            <h2 data-aos='fade-right' className='mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
               Our Features
             </h2>
             <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
@@ -44,7 +44,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${resumehome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-4xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -60,7 +60,7 @@ export default function Cards() {
                   <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-4xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Scholars</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Scholars</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -76,7 +76,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${coursehome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-4xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Courses</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Courses</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -102,7 +102,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${connecthome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-4xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Connect</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Connect</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -118,7 +118,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${settlehome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-4xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settle</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settle in UK</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -134,7 +134,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-4xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Already</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Already in UK</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
