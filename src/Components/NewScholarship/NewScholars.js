@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
+import { textAnimation } from "../Animation/Animation";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import "primereact/resources/themes/saga-blue/theme.css";
@@ -48,6 +50,13 @@ export default function NewScholars() {
   };
 
   return (
+    <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
     <div className="card w-[80%] mx-auto">
       <div className="py-4 px-4">
         <h2
@@ -161,6 +170,7 @@ export default function NewScholars() {
         ></Column>
       </DataTable>
     </div>
+    </motion.div>
   );
 }
 
