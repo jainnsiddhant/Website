@@ -21,7 +21,8 @@ const CustomerData = [
         startTime:"12 SEPTEMBER 2023",
         endTime:"7 NOVEMBER 2023",
         price:"",
-        action:"https://www.chevening.org/scholarship/india/"
+        action:"https://www.chevening.org/scholarship/india/",
+        status:"active"
     } ,
     {
         id: 2,
@@ -29,7 +30,8 @@ const CustomerData = [
         startTime:"Varies (typically in the fall)",
         endTime:"Varies (typically in the fall)",
         price:"",
-        action:"https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/"
+        action:"https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/",
+        status:"archive"
     } ,
     {
         id: 3,
@@ -37,7 +39,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific program)",
         price:"",
-        action:"https://eacea.ec.europa.eu/erasmus-plus/scholarships_en"
+        action:"https://eacea.ec.europa.eu/erasmus-plus/scholarships_en",
+        status:"active"
     } ,
     {
         id: 4,
@@ -45,7 +48,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific country)",
         price:"",
-        action:"https://cscuk.fcdo.gov.uk/scholarships/"
+        action:"https://cscuk.fcdo.gov.uk/scholarships/",
+        status:"archive"
     },
     {
         id: 4,
@@ -53,7 +57,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific country)",
         price:"",
-        action:"https://cscuk.fcdo.gov.uk/scholarships/"
+        action:"https://cscuk.fcdo.gov.uk/scholarships/",
+        status:"active"
     },
     {
         id: 5,
@@ -61,7 +66,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the spring)",
         endTime:"Varies (depends on the specific country)",
         price:"",
-        action:"https://study-uk.britishcouncil.org/options/scholarships-financial-support/great-scholarships"
+        action:"https://study-uk.britishcouncil.org/options/scholarships-financial-support/great-scholarships",
+        status:"archive"
     }, 
     {
         id: 6,
@@ -69,7 +75,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific program)",
         price:"",
-        action:"https://www.scotland.org/study/saltire-scholarships"
+        action:"https://www.scotland.org/study/saltire-scholarships",
+        status:"active"
     },
     {
         id: 7,
@@ -77,7 +84,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific program)",
         price:"",
-        action:"http://www.wallace-trusts.org.uk/india/"
+        action:"http://www.wallace-trusts.org.uk/india/",
+        status:"archive"
     },
     {
         id: 8,
@@ -85,7 +93,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific program)",
         price:"",
-        action:"https://www.teachingenglish.org.uk/hornby-educational-trust"
+        action:"https://www.teachingenglish.org.uk/hornby-educational-trust",
+        status:"active"
     },
     {
         id: 9,
@@ -93,7 +102,8 @@ const CustomerData = [
         startTime:"Varies (typically opens in the fall)",
         endTime:"Varies (depends on the specific program)",
         price:"",
-        action:"https://www.inlaksfoundation.org/"
+        action:"https://www.inlaksfoundation.org/",
+        status:"archive"
     }
     // Add more customer data objects as needed
   ];

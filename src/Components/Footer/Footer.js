@@ -4,6 +4,7 @@ import logo from "../../images/logo.jpg"
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+
     return (
         <>
             <>
@@ -129,7 +130,7 @@ export const Footer = () => {
                                     </a> */}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                            <div className="grid grid-cols-2 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
                                 <div>
 
 
@@ -318,8 +319,11 @@ export const Footer = () => {
                                         </a>
                                     </nav>
                                 </div> */}
+                                
                             </div>
+                            
                         </div>
+                        
                         {/* <p className="mt-8 text-xs text-gray-800">© 2022 Comany Name</p> */}
                     </div>
                 </footer>

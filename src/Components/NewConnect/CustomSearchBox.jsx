@@ -3,7 +3,7 @@ import { InputText } from 'primereact/inputtext';
 
 export default function CustomSearchBox({ value, onChange }) {
     return (
-        <div className="mb-10">
+        <div className="">
             <form>
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                 <div className="relative">
