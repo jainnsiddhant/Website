@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import { textAnimation } from "../Animation/Animation";
 import ninum from "../../images/ninum.jpg"
 import gp from "../../images/gp.jpg"
 import job from "../../images/job.jpg"
@@ -19,6 +20,13 @@ import reload from "../../images/reload.jpg"
 const AlreadyIn = () => {
     return(
         <>
+           <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <section>
                 <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
@@ -184,14 +192,77 @@ const AlreadyIn = () => {
                    </motion.div>
                 </div>
             </section>
-
+            </motion.div>
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <Instruction />
+        </motion.div>
+            
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <SaveMoney />
+        </motion.div>
+            
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <JobPortals />
+        </motion.div>
+            
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <GpSurgeries />
+        </motion.div>
+            
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <NINumber />
+        </motion.div>
+            
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <Wifi />
+        </motion.div>
+            
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <Tax />
+        </motion.div>
+            
         </>
     )
 }

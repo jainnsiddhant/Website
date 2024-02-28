@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import { textAnimation } from "../Animation/Animation";
 import Bank from '../../images/Bank.jpg'
 import forex from '../../images/forex.jpg'
 import packlist from '../../images/packlist.jpg'
@@ -17,7 +18,13 @@ const SettleIn = () => {
                <p className="text-lg mb-8">Welcome to our comprehensive guide on settling in the UK! Whether you're a student, a professional, or someone seeking a new life in the United Kingdom, we've got you covered.</p>
             </div> */}
 
-
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <section>
                 <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
@@ -111,12 +118,44 @@ const SettleIn = () => {
 
 
             </section>
-
-
+            </motion.div>
+<motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <ForexCard />
+            </motion.div>
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <PackList />
+            </motion.div>
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <BanksToOpen />
+            </motion.div>
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
             <HousingWebsites />
+            </motion.div>
+
         </>
     )
 }
