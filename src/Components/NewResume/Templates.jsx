@@ -27,11 +27,11 @@ const Templates = () => {
                     }
                   }>
                    <div className="max-w-xs bg-white mx-auto justify-center items-center text-center">
-                     <a href="#">
+                     <a href="#harvard">
                        <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 mx-auto" src={harvard} alt="" />
                      </a>
                      <div className="p-4">
-                       <a href="#">
+                       <a href="#harvard">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Harvard CV & Cover Letter Document</h5>
                        </a>
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Official Harvard instructions on creating a perfect CV & cover letter.</p>
@@ -47,11 +47,11 @@ const Templates = () => {
                     }
                   }>
                    <div className="max-w-xs bg-white mx-auto justify-center items-center text-center">
-                     <a href="#">
+                     <a href="#goldmansachs">
                        <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 mx-auto" src={goldmansachs} alt="" />
                      </a>
                      <div className="p-4">
-                       <a href="#">
+                       <a href="#goldmansachs">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">GoldmanSachs one page Template</h5>
                        </a>
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Best one page CV Template.</p>
@@ -67,11 +67,11 @@ const Templates = () => {
                     }
                   }>
                    <div className="max-w-xs bg-white mx-auto justify-center items-center text-center">
-                     <a href="#">
+                     <a href="#table">
                        <img style={{height:200, width:200}} className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 mx-auto" src={resume} alt="" />
                      </a>
                      <div className="p-4">
-                       <a href="#">
+                       <a href="#table">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Enhance your Resume</h5>
                        </a>
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">IIT/IIM free certifications offered by there clubs.</p>
