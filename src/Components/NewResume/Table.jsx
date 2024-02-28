@@ -34,7 +34,7 @@ const actionBodyTemplate = (rowData) => {
     
 
     return (
-        <div className="card w-[80%] mx-auto mt-10">
+        <div id="table" className="card w-[80%] mx-auto mt-10">
        <div className="py-4 px-4">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl text-center'>
                         Enhance Resume
@@ -45,7 +45,7 @@ const actionBodyTemplate = (rowData) => {
         </div>
             <DataTable value={customers} paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} tableStyle={{ minWidth: '50rem' }}>
                 <Column field="name" header={<p className="text-lg">Name</p>} style={{ width: '25%' }}></Column>
-                <Column field="chat" header={<p className="text-lg">Chat</p>} style={{ width: '25%' }}></Column>
+                <Column field="chat" header={<p className="text-lg">Specialization</p>} style={{ width: '25%' }}></Column>
                 <Column header={<p className="text-lg">Official website</p>} body={actionBodyTemplate} style={{ width: '15%' }}></Column>
             </DataTable>
         </div>

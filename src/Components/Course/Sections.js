@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import resume from "../../images/resume.jpg";
-import instructionlist from "../../images/instructionlist.jpg"
+import { a } from 'react-router-dom';
 import guide from "../../images/guide.jpg"
 
 const Sections = () => {
@@ -10,13 +9,14 @@ const Sections = () => {
             <section id="sections" className="mt-20">
                 
             <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[80%] mx-auto">
-            <motion.div
-                  whileHover={
-                    {
-                      scale: 1.5
-                    }
-                  }
-                  className="relative">
+            <div>
+                <motion.div
+            whileHover={{
+                scale:1.1,
+                textShadow:"0px 0px 8px rgb(255,255,255",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+>
                   <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
@@ -133,30 +133,23 @@ const Sections = () => {
         </div>
 
 
-<div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm mt-2">
-    <figure class="flex flex-col items-center justify-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500">
-            <h3 class="text-lg font-semibold text-gray-900">Checkout</h3>
-            <p class="my-4">subject wise university ranking</p>
-        </blockquote>
-        {/* <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
-            <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-                <div>Data Science</div>
-                <div class="text-sm text-gray-500">Developer at Open AI</div>
-            </div>
-        </figcaption>     */}
-    </figure>
-</div>
             </motion.div>
+            <div className="flex mx-auto items-center justify-center mt-5">
+                <a href="#table">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">View More</button>
+                </a>
+            </div>
+
+            </div>
             
-            <motion.div
-                  whileHover={
-                    {
-                      scale: 1.5
-                    }
-                  }
-                  className="relative">
+ <div>
+    <motion.div
+            whileHover={{
+                scale:1.1,
+                textShadow:"0px 0px 8px rgb(255,255,255",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+>
                   <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
@@ -273,30 +266,23 @@ const Sections = () => {
         </div>
 
 
-<div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm mt-2">
-    <figure class="flex flex-col items-center justify-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500">
-            <h3 class="text-lg font-semibold text-gray-900">Checkout</h3>
-            <p class="my-4">subject wise university ranking</p>
-        </blockquote>
-        {/* <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
-            <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-                <div>Data Science</div>
-                <div class="text-sm text-gray-500">Developer at Open AI</div>
-            </div>
-        </figcaption>     */}
-    </figure>
-</div>
             </motion.div>
+            <div className="flex mx-auto items-center justify-center mt-5">
+                <a href="#table">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">View More</button>
+                </a>
+            </div>
+
+ </div>
             
-            <motion.div
-                  whileHover={
-                    {
-                      scale: 1.5
-                    }
-                  }
-                  className="relative">
+ <div>
+    <motion.div
+            whileHover={{
+                scale:1.1,
+                textShadow:"0px 0px 8px rgb(255,255,255",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+>
                   <div
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
@@ -413,22 +399,14 @@ const Sections = () => {
         </div>
 
 
-<div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm mt-2">
-    <figure class="flex flex-col items-center justify-center text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
-        <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500">
-            <h3 class="text-lg font-semibold text-gray-900">Checkout</h3>
-            <p class="my-4">subject wise university ranking</p>
-        </blockquote>
-        {/* <figcaption class="flex items-center justify-center ">
-            <img class="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
-            <div class="space-y-0.5 font-medium text-left rtl:text-right ms-3">
-                <div>Data Science</div>
-                <div class="text-sm text-gray-500">Developer at Open AI</div>
-            </div>
-        </figcaption>     */}
-    </figure>
-</div>
             </motion.div>
+            <div className="flex mx-auto items-center justify-center mt-5">
+                <a href="#table">
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">View More</button>
+                </a>
+            </div>
+
+ </div>
             
             
             </div>

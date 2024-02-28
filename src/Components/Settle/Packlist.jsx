@@ -8,7 +8,7 @@ import icici from '../../images/icici.jpg'
 import luggage from "../../images/luggage.jpg"
 import kitchen from "../../images/kitchen.jpg"
 import electronics from "../../images/electronics.jpg"
-import DownloadPDF from "../Download/DownloadPDF";
+import DownloadPDF1 from "../Download/DownloadPDF1";
 
 const Packlist = () => {
     return(
@@ -194,7 +194,7 @@ const Packlist = () => {
                       scale: 1.25
                     }
                   }>
-            <DownloadPDF />
+            <DownloadPDF1 />
             </motion.div>
             </div>
           </section>

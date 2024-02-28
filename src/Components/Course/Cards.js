@@ -11,7 +11,7 @@ const Cards = () => {
         <a href="#sections">
           <motion.div
             whileHover={{
-              scale: 1.5,
+              scale: 1.25,
             }}
           >
             <div
@@ -38,7 +38,7 @@ const Cards = () => {
           <a href="#table">
           <motion.div
             whileHover={{
-              scale: 1.5,
+              scale: 1.25,
             }}
           >
             <a

@@ -5,6 +5,7 @@ import guide from "../../images/guide.jpg";
 import network from "../../images/network.jpg";
 import settle from "../../images/settle.jpg";
 import recommend from "../../images/recommend.jpg";
+import reload from "../../images/reload.jpg";
 
 export default function Cards() {
   return (
@@ -22,7 +23,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Personalized Guidance:</h2>
+            <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Personalized Guidance:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
              We believe in evaluating your true potential and aspirations, providing tailored advice to help you choose the best course and university that aligns with your goals. 
             </p>
@@ -41,7 +42,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Comprehensive Resource:</h2>
+            <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Comprehensive Resource:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
              Our website offers a one-stop
                 solution, from exploring top universities and courses to
@@ -63,7 +64,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Global Network:</h2>
+            <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Global Network:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
             
                 Connect with student ambassadors who share their experiences,
@@ -85,7 +86,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settlement
+            <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settlement
                 Support: </h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
             We go beyond admission by offering information and
@@ -107,7 +108,7 @@ export default function Cards() {
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
           <div className="relative p-6 mt-10">
-            <h2 className="text-4xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Unbias Recommend:</h2>
+            <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Unbias Recommend:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                 Unlike others in the market, we don't have exclusive tie-ups
                 that compromise your potential. We value your achievements and
@@ -115,6 +116,28 @@ export default function Cards() {
                 aspirations.
             </p>
           </div>
+        </motion.div>
+
+                <motion.div
+          whileHover={{ scale: 1.25 }}
+          className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
+        >
+
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${reload})` , backgroundRepeat: 'no-repeat', 
+  backgroundSize: 'cover'}}
+          ></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
+          {/* <div className="relative p-6 mt-10">
+            <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Unbias Recommend:</h2>
+            <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                Unlike others in the market, we don't have exclusive tie-ups
+                that compromise your potential. We value your achievements and
+                focus on finding the best fit for your academic and career
+                aspirations.
+            </p>
+          </div> */}
         </motion.div>
 
     </div>

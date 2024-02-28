@@ -153,6 +153,9 @@ const Navbar = () => {
                     <Link to={"/about"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
                         About Us
                     </Link>
+                    <Link to={"/contact"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
+                        Contact Us
+                    </Link>
                 </div>
                 <hr className='border-1 border-black' />
             </nav>
