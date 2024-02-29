@@ -60,7 +60,7 @@ const NewHome = () => {
                   </p>
                 </div>
 
-                <div className="space-y-6 max-w-5xl md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[80%] mx-auto">
+                <div className="space-y-6 max-w-5xl md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[90%] mx-auto">
                   <motion.div
                     whileHover={{
                       scale: 1.5,
@@ -144,7 +144,7 @@ const NewHome = () => {
                 </div>
               </motion.div>
 
-              <div className="md:flex p-6 md:flex-row space-y-7 md:space-y-0 justify-between mt-10">
+              <div className="md:flex p-6 md:flex-row space-y-7 md:space-y-0 justify-between">
                 <Cards />
               </div>
             </div>

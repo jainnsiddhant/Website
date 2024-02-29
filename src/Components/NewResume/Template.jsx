@@ -15,7 +15,7 @@ const Template = () => {
             <div className="flex flex-col md:flex-row w-[80%] mt-2 mb-2">
               <div id="harvard" className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
                 <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900">
-                  Harvard CV Resume
+                Harvard CV & Cover Letter Document
                 </h1>
                 <p className="mb-3 text-lg font-normal text-gray-500">
                   Official Harvard instructions on creating a perfect CV & cover

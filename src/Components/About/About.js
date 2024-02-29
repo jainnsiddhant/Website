@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from 'framer-motion';
-import { textAnimation } from "../Animation/Animation";
 import Navbar from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 import kartikey from "../../images/Kartikey.png";
@@ -28,13 +26,7 @@ const About = () => {
               />
             </div> */}
               <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 -mt-20">
-              <motion.div
-          variants={textAnimation}
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ staggerChildren: 0.5 }}
-        >
+              
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                     Why <span className=" bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent">FindMyUni?</span>
                     </h2>
@@ -48,7 +40,7 @@ const About = () => {
                 empowering you to make informed decisions and thrive in your
                 academic journey.
                     </p>
-                    </motion.div>
+                    
               <Cards />
             </div>
           </div>
@@ -57,13 +49,7 @@ const About = () => {
 
       <>
         {/* component */}
-        <motion.div
-          variants={textAnimation}
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ staggerChildren: 0.5 }}
-        >
+        
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
           <div className="text-center pb-12">
             <h2 className="text-base font-bold text-indigo-600">
@@ -170,7 +156,6 @@ const About = () => {
             </div>
           </div>
         </section>
-        </motion.div>
       </>
       <Footer />
     </>

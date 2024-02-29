@@ -45,7 +45,7 @@ const actionBodyTemplate = (rowData) => {
         </div>
             <DataTable value={customers} paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} tableStyle={{ minWidth: '50rem' }}>
                 <Column field="name" header={<p className="text-lg">Name</p>} style={{ width: '25%' }}></Column>
-                <Column field="chat" header={<p className="text-lg">Specialization</p>} style={{ width: '25%' }}></Column>
+                <Column field="chat" header={<p className="text-lg">Specialisation</p>} style={{ width: '25%' }}></Column>
                 <Column header={<p className="text-lg">Official website</p>} body={actionBodyTemplate} style={{ width: '15%' }}></Column>
             </DataTable>
         </div>

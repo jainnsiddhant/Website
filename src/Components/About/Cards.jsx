@@ -126,7 +126,7 @@ export default function Cards() {
           </div>
         </motion.div>
 
-                <motion.div
+                {/* <motion.div
           whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
@@ -137,7 +137,7 @@ export default function Cards() {
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
-          {/* <div className="relative p-6 mt-10">
+          <div className="relative p-6 mt-10">
             <h2 className="text-3xl font-semibold text-white mb-4 text-left"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Unbias Recommend:</h2>
             <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                 Unlike others in the market, we don't have exclusive tie-ups
@@ -145,8 +145,8 @@ export default function Cards() {
                 focus on finding the best fit for your academic and career
                 aspirations.
             </p>
-          </div> */}
-        </motion.div>
+          </div>
+        </motion.div> */}
 
     </div>
     </motion.div>
