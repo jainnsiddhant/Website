@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import { textAnimation } from "../Animation/Animation";
 import resource from "../../images/resource.jpg";
 import guide from "../../images/guide.jpg";
 import network from "../../images/network.jpg";
@@ -9,10 +10,17 @@ import reload from "../../images/reload.jpg";
 
 export default function Cards() {
   return (
+    <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
 
                 <motion.div
-          whileHover={{ scale: 1.25 }}
+          whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
 
@@ -31,7 +39,7 @@ export default function Cards() {
         </motion.div>
 
                 <motion.div
-          whileHover={{ scale: 1.25 }}
+          whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
 
@@ -53,7 +61,7 @@ export default function Cards() {
         </motion.div>
 
                 <motion.div
-          whileHover={{ scale: 1.25 }}
+          whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
 
@@ -75,7 +83,7 @@ export default function Cards() {
         </motion.div>
 
                 <motion.div
-          whileHover={{ scale: 1.25 }}
+          whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
 
@@ -97,7 +105,7 @@ export default function Cards() {
         </motion.div>
 
                 <motion.div
-          whileHover={{ scale: 1.25 }}
+          whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
 
@@ -119,7 +127,7 @@ export default function Cards() {
         </motion.div>
 
                 <motion.div
-          whileHover={{ scale: 1.25 }}
+          whileHover={{ scale: 1.15 }}
           className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
         >
 
@@ -141,5 +149,6 @@ export default function Cards() {
         </motion.div>
 
     </div>
+    </motion.div>
   );
 }
