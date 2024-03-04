@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import { a } from 'react-router-dom';
 import guide from "../../images/guide.jpg"
 
 const Sections = () => {
@@ -13,39 +12,32 @@ const Sections = () => {
                 <motion.div
             whileHover={{
                 scale:1.1,
-                textShadow:"0px 0px 8px rgb(255,255,255",
+                textShadow:"0px 0px 8px rgb(255,255,255)",
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
             }}
 >
-                  <div
-          className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center"
-        >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
-  backgroundSize: 'cover'}}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
-          <div className="relative p-6 mt-10">
-          <div class="w-full max-w-md p-4 border border-gray-200 rounded-lg shadow sm:p-8">
-    <div class="items-center justify-between mb-4">
-        <h5 class="text-xl font-bold leading-none text-white text-center">Computer Science</h5>
-        {/* <a href="#" class="text-sm font-medium text-blue-600 hover:underline">
-            View all
-        </a> */}
-   </div>
-   <div class="flow-root">
-        <ul role="list" class="divide-y divide-gray-200">
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+    <a href="#">
+        <img class="rounded-t-lg" src={guide} alt="" />
+    </a>
+    <div class="p-5 bg-slate-300">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Computer Science</h5>
+        </a>
+        {/* <p class="mb-3 font-normal text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+        <ul role="list" class="divide-y divide-gray-500">
             <li class="py-3 sm:py-4">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-white truncate">
+                        <p class="text-sm font-medium truncate">
                             Artificial Intelligence
                         </p>
-                        <p class="text-sm text-gray-300 truncate">
+                        <p class="text-sm text-gray-500 truncate">
                             email@windster.com
                         </p>
                     </div>
@@ -60,10 +52,10 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-white truncate">
+                        <p class="text-sm font-medium truncate">
                             Data Science
                         </p>
-                        <p class="text-sm text-gray-300 truncate">
+                        <p class="text-sm text-gray-500 truncate">
                             email@windster.com
                         </p>
                     </div>
@@ -78,10 +70,10 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-white truncate">
+                        <p class="text-sm font-medium truncate">
                             Cyber Security
                         </p>
-                        <p class="text-sm text-gray-300 truncate">
+                        <p class="text-sm text-gray-500 truncate">
                             email@windster.com
                         </p>
                     </div>
@@ -96,10 +88,10 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-white truncate">
+                        <p class="text-sm font-medium truncate">
                             Data Structures
                         </p>
-                        <p class="text-sm text-gray-300 truncate">
+                        <p class="text-sm text-gray-500 truncate">
                             email@windster.com
                         </p>
                     </div>
@@ -114,10 +106,10 @@ const Sections = () => {
                         {/* <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image" /> */}
                     </div>
                     <div class="flex-1 min-w-0 ms-4">
-                        <p class="text-sm font-medium text-white truncate">
+                        <p class="text-sm font-medium truncate">
                             Machine Learning
                         </p>
-                        <p class="text-sm text-gray-300 truncate">
+                        <p class="text-sm text-gray-500 truncate">
                             email@windster.com
                         </p>
                     </div>
@@ -127,10 +119,9 @@ const Sections = () => {
                 </div>
             </li>
         </ul>
-   </div>
+        
+    </div>
 </div>
-          </div>
-        </div>
 
 
             </motion.div>
@@ -155,7 +146,7 @@ const Sections = () => {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: url(${guide}) , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
@@ -288,7 +279,7 @@ const Sections = () => {
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${guide})` , backgroundRepeat: 'no-repeat', 
+            style={{ backgroundImage: url(${guide}) , backgroundRepeat: 'no-repeat', 
   backgroundSize: 'cover'}}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
