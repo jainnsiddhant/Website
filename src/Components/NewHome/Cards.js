@@ -25,7 +25,7 @@ export default function Cards() {
         >
           <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h2 data-aos='fade-right' className='mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
-              Our Features
+              What we Offer
             </h2>
             <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
               Welcome to our comprehensive guide on settling in the UK!
@@ -44,7 +44,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${resumehome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume Build</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -60,7 +60,7 @@ export default function Cards() {
                   <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
-                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Scholars</h2>
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Scholarship</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
                       </p>
@@ -119,7 +119,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settle in 
-                      <span className="text-black  bg-gradient-to-r from-green-300 to-yellow-300 bg-clip-text text-transparent text-3xl"> UK</span>
+                      <span className="text-black  bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
@@ -137,7 +137,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Already in 
-                      <span className="text-black  bg-gradient-to-r from-green-300 to-yellow-300 bg-clip-text text-transparent text-3xl"> UK</span>
+                      <span className="text-black  bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.

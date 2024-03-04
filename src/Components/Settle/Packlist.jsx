@@ -1,10 +1,5 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import Bank from '../../images/Bank.jpg'
-import hdfc from '../../images/hdfc.jpg'
-import axis from '../../images/axis.jpg'
-import sbi from '../../images/sbi.jpg'
-import icici from '../../images/icici.jpg'
 import luggage from "../../images/luggage.jpg"
 import kitchen from "../../images/kitchen.jpg"
 import electronics from "../../images/electronics.jpg"
@@ -17,9 +12,9 @@ const Packlist = () => {
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         Packing List
                     </h2>
-                    {/* <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                        Recommendation only, consult banks before puchasing.
-                    </p> */}
+                    <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    Prepare for your UK academic adventure with our comprehensive packing list tailored for students aiming for higher studies!
+                    </p>
                 </div>
 
                 <div className="md:w-[80vw] mx-auto -mt-10">
@@ -38,11 +33,11 @@ const Packlist = () => {
                                 <div className="container mx-auto px-4">
                      <div className="flex flex-col mt-4 items-center">
                          <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
-                             <div className="w-full md:w-1/2 flex flex-col gap-x-3">
+                             <div className="w-full md:w-1/2 flex flex-col gap-x-0">
                              <li>Large 75cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
                                 <li>Medium 55cms Luggage Bag (Durable Brand: Samsonite, Delsey)</li>
                              </div>
-                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                             <div className="w-full md:w-1/2 flex justify-end mt-3 md:mt-0">
                                  <img src={luggage} alt="universityimage" className="h-20 w-20 rounded-full" />
                              </div>
                          </div>
@@ -74,12 +69,12 @@ const Packlist = () => {
                                 <div className="container mx-auto px-4">
                      <div className="flex flex-col mt-4 items-center">
                          <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
-                             <div className="w-full md:w-1/2 flex flex-col gap-x-3">
+                             <div className="w-full md:w-1/2 flex flex-col gap-x-0">
                              <li>Knife and Peeler (Set of 5)</li>
                                 <li>Cooker 3 litre (Amazon Choice)</li>
                                 <li>Induction and Gas compatible cookware (set of 3). <span className="text-blue-500">... more</span></li>
                              </div>
-                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                             <div className="w-full md:w-1/2 flex justify-end mt-3 md:mt-0">
                                  <img src={kitchen} alt="universityimage" className="h-20 w-20 rounded-full" />
                              </div>
                          </div>
@@ -105,12 +100,12 @@ const Packlist = () => {
                                 <div className="container mx-auto px-4">
                      <div className="flex flex-col mt-4 items-center">
                          <div className="flex flex-row w-full md:w-[80%] mt-2 mb-2">
-                             <div className="w-full md:w-1/2 flex flex-col gap-x-3">
+                             <div className="w-full md:w-1/2 flex flex-col gap-x-0">
                              <li>Extension Board</li>
                                 <li>External Hard drive</li>
                                 <li>USB Drive (HP) <span className="text-blue-500">... more</span> </li>
                              </div>
-                             <div className="w-full md:w-1/2 flex justify-center mt-3 md:mt-0">
+                             <div className="w-full md:w-1/2 flex justify-end mt-3 md:mt-0">
                                  <img src={electronics} alt="universityimage" className="h-20 w-20 rounded-full" />
                              </div>
                          </div>
