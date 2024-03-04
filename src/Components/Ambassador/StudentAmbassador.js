@@ -11,7 +11,6 @@ import harvard from '../../images/harvard.jpg'
 
 const StudentAmbassador = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
