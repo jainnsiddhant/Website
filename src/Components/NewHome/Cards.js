@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef , useEffect, useState } from "react";
 import { motion } from 'framer-motion';
 import { textAnimation } from "../Animation/Animation";
 import resumehome from "../../images/resumehome.jpg";
@@ -12,16 +12,52 @@ import working from "../../images/working.jpg"
 import search from "../../images/search.jpg"
 import atjob from "../../images/atjob.jpg"
 
+const useIntersectionObserver = (ref) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Adjust threshold as needed
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref]);
+
+  return isVisible;
+};
+
 export default function Cards() {
+  const cardsRef = useRef(null);
+  const sectionsRef = useRef(null);
+  const tableRef = useRef(null);
+
+  const cardsVisible = useIntersectionObserver(cardsRef);
+  const sectionsVisible = useIntersectionObserver(sectionsRef);
+  const tableVisible = useIntersectionObserver(tableRef);
+
   return (
+    
     <>
       <section className="w-full mx-auto" id="features">
         <motion.div
-          variants={textAnimation}
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ staggerChildren: 0.5 }}
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0, scale: cardsVisible ? 1 : 0.5 }}
+          transition={{ duration: 0.8 }}
+          ref={cardsRef}
         >
           <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h2 data-aos='fade-right' className='mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>

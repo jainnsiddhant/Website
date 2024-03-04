@@ -3,7 +3,7 @@ import template from "../../images/template.jpg";
 
 export default function Template() {
     return (
-        <div className='h-full w-[80%] mx-auto bg-cover bg-center p-20 rounded-md' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${template})` , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover', backdropFilter: 'blur(10px)'}}>
+        <div id="temp" className='h-full w-[80%] mx-auto bg-cover bg-center p-20 rounded-md' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${template})` , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover', backdropFilter: 'blur(10px)'}}>
             <div className="flex flex-col items-center justify-center">
                 <h1 className="mt-10 text-4xl font-bold text-center text-white">
                     Template to send connect request

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef , useEffect, useState } from "react";
 import { motion } from 'framer-motion';
 import { textAnimation } from "../Animation/Animation";
 import { DataTable } from "primereact/datatable";
@@ -6,6 +6,34 @@ import { Column } from "primereact/column";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primeicons/primeicons.css";
 import CustomerData from "./CustomerData"; // Import CustomerData
+
+
+const useIntersectionObserver = (ref) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Adjust threshold as needed
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref]);
+
+  return isVisible;
+};
 
 export default function NewScholars() {
   const [customers, setCustomers] = useState([]);
@@ -49,13 +77,19 @@ export default function NewScholars() {
     );
   };
 
+  const cardsRef = useRef(null);
+
+  const cardsVisible = useIntersectionObserver(cardsRef);
+
+  
   return (
+    <>
     <motion.div
-          variants={textAnimation}
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ staggerChildren: 0.5 }}
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0, scale: cardsVisible ? 1 : 0.5 }}
+          transition={{ duration: 0.8 }}
+          ref={cardsRef}
         >
     <div className="card w-[80%] mx-auto">
       <div className="py-4 px-4">
@@ -171,6 +205,7 @@ export default function NewScholars() {
       </DataTable>
     </div>
     </motion.div>
+    </>
   );
 }
 

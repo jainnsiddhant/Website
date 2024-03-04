@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef , useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { textAnimation } from "../Animation/Animation";
 import Cards from "./Cards";
@@ -7,7 +7,43 @@ import harvard from "../../images/4133580.jpg";
 import GoldmanSachs from "../../images/4204968.jpg";
 import oxford from "../../images/4261198.jpg";
 
+const useIntersectionObserver = (ref) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Adjust threshold as needed
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref]);
+
+  return isVisible;
+};
+
 const NewHome = () => {
+
+  const cardsRef = useRef(null);
+  const sectionsRef = useRef(null);
+  const tableRef = useRef(null);
+
+  const cardsVisible = useIntersectionObserver(cardsRef);
+  const sectionsVisible = useIntersectionObserver(sectionsRef);
+  const tableVisible = useIntersectionObserver(tableRef);
+
   return (
     <>
       <div className="relative">
@@ -20,7 +56,7 @@ const NewHome = () => {
         </div>
 
         <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-          <div className="relative pt-36 ml-auto">
+          <div className="relative pt-20 ml-auto">
             <motion.div
               variants={textAnimation}
               initial={"offscreen"}
@@ -35,18 +71,18 @@ const NewHome = () => {
                     UK
                   </span>
                 </h1>
-                <p className="mt-8 text-gray-700 ">
+                <p className="mt-5 text-gray-700 ">
                   Best Place for finding the stuff for you
                 </p>
               </div>
             </motion.div>
             <div className="">
               <motion.div
-                variants={textAnimation}
-                initial={"offscreen"}
-                whileInView={"onscreen"}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ staggerChildren: 0.5 }}
+                className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0, scale: cardsVisible ? 1 : 0.5 }}
+          transition={{ duration: 0.8 }}
+          ref={cardsRef}
               >
                 <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-10" id="topuni">
                   <h2
