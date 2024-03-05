@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import course from "../../images/course.jpg";
 import rank from "../../images/rank.jpg";
 
+
 const Cards = () => {
   return (
     <>

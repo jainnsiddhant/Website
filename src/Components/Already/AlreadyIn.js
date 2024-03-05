@@ -24,11 +24,11 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <section>
-                <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+                <div className="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         Already In UK
                     </h2>

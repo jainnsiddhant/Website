@@ -8,6 +8,34 @@ import Blog from "./Blogs";
 import Template from "./Template";
 import Example from "../NewTable/Table";
 
+const useIntersectionObserver = (ref) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Adjust threshold as needed
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref]);
+
+  return isVisible;
+};
+
+
 const NewConnect = () => {
   return (
     <>
