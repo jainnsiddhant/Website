@@ -13,7 +13,7 @@ export default function Table() {
 
   return (
     <>
-      {/* <section id="table">
+      <section id="table">
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
             data-aos="fade-right"
@@ -59,8 +59,8 @@ export default function Table() {
             </DataTable>
           </div>
         </div>
-      </section> */}
-      <Example />
+      </section>
+      {/* <Example /> */}
     </>
   );
 }

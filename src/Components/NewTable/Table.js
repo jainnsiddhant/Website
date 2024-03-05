@@ -8,7 +8,7 @@ const Example = () => {
       {
         accessorFn: (originalRow) => (originalRow.isActive ? 'true' : 'false'), //must be strings
         id: 'isActive',
-        header: 'Account Status',
+        header: 'Profile Photo',
         Cell: ({ cell }) =>
           cell.getValue() === 'true' ? 'Active' : 'Inactive',
         size: 220,
@@ -57,7 +57,7 @@ const Example = () => {
     //   },
       {
         accessorKey: 'city',
-        header: 'City',
+        header: 'University',
         filterVariant: 'select',
         mantineFilterSelectProps: {
           data: citiesList,
@@ -65,7 +65,7 @@ const Example = () => {
       },
       {
         accessorKey: 'state',
-        header: 'State', 
+        header: 'Link', 
         filterVariant: 'multi-select',
         mantineFilterMultiSelectProps: {
           data: usStateList,
@@ -82,7 +82,7 @@ const Example = () => {
   });
 
   return (
-    <div className='p-14 mt-14'>
+    <div className='p-4 md:p-6 mt-5'>
     <MantineReactTable globalFilterFn={()=>{}}  table={table} />
     </div>
   )
