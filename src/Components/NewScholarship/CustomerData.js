@@ -27,8 +27,8 @@ const CustomerData = [
     {
         id: 2,
         name:"Rhodes Scholarships",
-        startTime:"Varies (typically in the fall)",
-        endTime:"Varies (typically in the fall)",
+        startTime:"June 2024",
+        endTime:"October 2024",
         price:"",
         action:"https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/",
         status:"archive"
@@ -36,8 +36,8 @@ const CustomerData = [
     {
         id: 3,
         name:"Erasmus Mundus",
-        startTime:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
+        startTime:"October",
+        endTime:"January",
         price:"",
         action:"https://eacea.ec.europa.eu/erasmus-plus/scholarships_en",
         status:"active"
@@ -45,25 +45,16 @@ const CustomerData = [
     {
         id: 4,
         name:"Commonwealth Scholarship and Fellowship",
-        startTime:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific country)",
+        startTime:"September 2024",
+        endTime:"October 2024",
         price:"",
         action:"https://cscuk.fcdo.gov.uk/scholarships/",
         status:"archive"
     },
     {
-        id: 4,
-        name:"Commonwealth Scholarship and Fellowship",
-        startTime:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific country)",
-        price:"",
-        action:"https://cscuk.fcdo.gov.uk/scholarships/",
-        status:"active"
-    },
-    {
         id: 5,
         name:"GREAT Scholarships",
-        startTime:"Varies (typically opens in the spring)",
+        startTime:"September",
         endTime:"Varies (depends on the specific country)",
         price:"",
         action:"https://study-uk.britishcouncil.org/options/scholarships-financial-support/great-scholarships",
@@ -72,8 +63,8 @@ const CustomerData = [
     {
         id: 6,
         name:"Scotland's Saltire Scholarships",
-        startTime:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
+        startTime:"July 2024",
+        endTime:"Varies (depends on the specific program) Expected December",
         price:"",
         action:"https://www.scotland.org/study/saltire-scholarships",
         status:"active"
@@ -81,7 +72,7 @@ const CustomerData = [
     {
         id: 7,
         name:"Charles Wallace India Trust Scholarships",
-        startTime:"Varies (typically opens in the fall)",
+        startTime:"October",
         endTime:"Varies (depends on the specific program)",
         price:"",
         action:"http://www.wallace-trusts.org.uk/india/",
@@ -90,8 +81,8 @@ const CustomerData = [
     {
         id: 8,
         name:"Hornby Scholarships",
-        startTime:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
+        startTime:"September",
+        endTime:"March",
         price:"",
         action:"https://www.teachingenglish.org.uk/hornby-educational-trust",
         status:"active"
@@ -99,8 +90,8 @@ const CustomerData = [
     {
         id: 9,
         name:"Inlaks Scholarships",
-        startTime:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
+        startTime:"February 6",
+        endTime:"March 30",
         price:"",
         action:"https://www.inlaksfoundation.org/",
         status:"archive"

@@ -1,56 +1,72 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar";
-import NewFooter from "../NewFooter/NewFooter";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import data from "./data";
 import accountsdata from "./Accounts_finnace";
-import computerdata from "./Computer"; 
-import englishdata from "./English"
+import computerdata from "./Computer";
+import englishdata from "./English";
+import buisnessdata from "./buisness";
+import Internationaldata from "./International_relations";
+import Economicsdata from "./Economics";
+import Mechnicaldata from "./Mechanical";
+import Psychologydata from "./Psychology";
+import Pharmaceuticaldata from "./Pharmaceutical";
+import Marketingdata from "./Marketing";
+
 const University = () => {
   const [products, setProducts] = useState(data);
-  const [selectedtab, setselectedtab] = useState(1);
-  const [tab, settab] = useState("");
+  const [selectedtab, setSelectedTab] = useState("main");
+  const [tab, setTab] = useState("");
+
   useEffect(() => {
-    setProducts(data);
-    if (tab == "account") {
+    if (tab === "account") {
       setProducts(accountsdata);
-    } else if (tab == "computer") {
+    } else if (tab === "computer") {
       setProducts(computerdata);
-    } else if (tab == "english") {
+    } else if (tab === "english") {
       setProducts(englishdata);
+    } else if (tab === "economics") {
+      setProducts(Economicsdata);
+    } else if (tab === "buisness") {
+      setProducts(buisnessdata);
+    } else if (tab === "international") {
+      setProducts(Internationaldata);
+    } else if (tab === "marketing") { 
+      setProducts(Marketingdata);
+    } else if (tab === "mechanical") { 
+      setProducts(Mechnicaldata);
+    } else if (tab === "pharmaceutical") { 
+      setProducts(Pharmaceuticaldata);
+    } else if (tab === "psychology") { 
+      setProducts(Psychologydata);
+    } else {
+      setProducts(data); // default to main data
     }
-  }, [selectedtab, tab]);
+  }, [tab]);
+
   return (
     <>
-      <Navbar /> 
-      
-      <div className="md:max-w-5xl md:mx-auto "> 
-        <h1 className="font-bold text-xl p-4">Explore University</h1>
-        <div className="p-6"> 
+      <div className="md:max-w-5xl md:mx-auto ">
+        <div className="p-6">
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px">
               <li className="me-2 my-auto">Choose The Subject</li>
               <li className="me-2">
                 <span
-                  onClick={() => {
-                    setselectedtab(0);
-                  }}
+                  onClick={() => setSelectedTab("main")}
                   className={`${
-                    selectedtab
+                    selectedtab === "main"
                       ? "inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:cursor-pointer hover:border-gray-300 "
                       : "inline-block p-4  border-b-2 hover:cursor-pointer text-blue-600 border-blue-600 rounded-t-lg active"
                   }`}
                 >
-                  <label for="underline_select" class="sr-only">
+                  <label htmlFor="underline_select" className="sr-only">
                     Underline select
                   </label>
                   <select
-                    onClick={(e) => {
-                      settab(e.target.value);
-                    }}
+                    onClick={(e) => setTab(e.target.value)}
                     id="underline_select"
-                    class="px-0 w-full text-sm text-gray-500   border-gray-200  focus:outline-none focus:ring-0 focus:border-gray-200"
+                    className="px-0 w-full text-sm text-gray-500   border-gray-200  focus:outline-none focus:ring-0 focus:border-gray-200"
                   >
                     <option selected>Main Table</option>
                     <option value="account">Accounting and Finance</option>
@@ -75,78 +91,41 @@ const University = () => {
         </div>
       </div>
       <div className="relative mb-12 max-w-5xl mx-auto mt-8 overflow-x-auto shadow-md sm:rounded-lg">
-        {/* <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50">
-            <tr>
-              <th scope="col" className="px-6 py-3">
-                Name
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Qs Rank
-              </th>
-              <th scope="col" className="px-6 py-3">
-                Guardian Rank
-              </th>
-              <th scope="col" className="px-6 py-3">
-                View
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item) => {
-              return (
-                <tr className="bg-white border-b ">
-                  <th
-                    scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
-                  >
-                    {item.name}
-                  </th>
-                  <td className="px-6 py-4">{item.Qsranking}</td>
-                  <td className="px-6 py-4">{item.Guardianranking}</td>
-                  <td className="px-6 py-4">
-                    <a
-                      target="_blank"
-                      href={`${item.website}`}
-                      className="font-medium text-blue-600 hover:underline"
-                    >
-                      Edit
-                    </a>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table> */}
-
         <div className="card">
-          <DataTable value={products} tableStyle={{ minWidth: "50rem" }}>
+          <DataTable
+            value={products}
+            tableStyle={{ minWidth: "50rem", justifyContent: "center" }}
+          >
             <Column
               field="name"
               header="Name"
               sortable
-              style={{ width: "25%" }}
+              style={{
+                width: "30%",
+                justifyContent: "center",
+                alignContent: "center",
+              }}
             ></Column>
             <Column
               field="Qsranking"
               header="Qs Ranking"
               sortable
-              style={{ width: "25%" }}
+              style={{ width: "30%" }}
             ></Column>
             <Column
               field="Guardianranking"
               header="Guardian Ranking"
               sortable
-              style={{ width: "25%" }}
+              style={{ width: "30%" }}
             ></Column>
             <Column
               field="website"
               header="View"
-              style={{ width: "25%" }}
+              style={{ width: "30%" }}
               body={(rowData) => {
                 return (
                   <div
-                    sx={{
+                    style={{
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
@@ -169,12 +148,11 @@ const University = () => {
                 );
               }}
             ></Column>
-            ;
           </DataTable>
         </div>
       </div>
-      <NewFooter />
     </>
   );
 };
+
 export default University;

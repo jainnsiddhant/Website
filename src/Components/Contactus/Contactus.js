@@ -66,19 +66,19 @@ const Contactus = () => {
                   <div class="text-sm text-gray-400">Founder</div>
                 </div>
               </div>
-
+              <div className="flex flex-col">
+                <p className="text-gray-400 mt-3">
+                  We believe in evaluating your true potential and aspirations,
+                  providing tailored advice to help you choose the best course
+                  and university that aligns with your goals.
+                </p>
+              </div>
               <div className="flex my-4 w-2/3 lg:w-1/2">
                 <div className="flex flex-col">
                   <i className="fas fa-map-marker-alt pt-2 pr-2"></i>
                 </div>
-                <i className="fas fa-map-marker-alt pt-2 pr-2">
-                  <div className="flex flex-col">
-                    <h2 className="text-2xl">Main Office</h2>
-                    <p className="text-gray-400">
-                      5555 Tailwind RD, Pleasant Grove, UT 73533
-                    </p>
-                  </div>
-                </i>
+
+                <i className="fas fa-map-marker-alt pt-2 pr-2"></i>
               </div>
               <i className="fas fa-map-marker-alt pt-2 pr-2">
                 <div className="flex my-4 w-2/3 lg:w-1/2">
@@ -113,7 +113,7 @@ const Contactus = () => {
                   </div>
                   <i className="fas fa-phone-alt pt-2 pr-2">
                     <div className="flex flex-col">
-                      <h2 className="text-2xl">Call Us</h2>
+                      {/* <h2 className="text-2xl">Call Us</h2>
                       <div className="text-gray-400 flex flex-row gap-x-2">
                         <p>Telephone:</p>
                         <p>1234567890</p>
@@ -121,7 +121,7 @@ const Contactus = () => {
                       <div className="text-gray-400 flex flex-row gap-x-2">
                         <p>Fax:</p>
                         <p>1234567890</p>
-                      </div>
+                      </div> */}
                     </div>
                   </i>
                 </div>
