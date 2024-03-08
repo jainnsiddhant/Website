@@ -4,10 +4,9 @@ import Cards from "./Cards";
 import Sections from "./Sections";
 import Table from "./Table";
 import University from "../University/University";
-
+import data from "../University/data"
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -36,7 +35,7 @@ const Course = () => {
   const cardsRef = useRef(null);
   const sectionsRef = useRef(null);
   const tableRef = useRef(null);
-
+  const [changeUniv,setUniv] = useState(data);
   const cardsVisible = useIntersectionObserver(cardsRef);
   const sectionsVisible = useIntersectionObserver(sectionsRef);
   const tableVisible = useIntersectionObserver(tableRef);
@@ -81,7 +80,7 @@ const Course = () => {
           transition={{ duration: 0.8 }}
           ref={sectionsRef}
         >
-          <Sections />
+          <Sections Univ={changeUniv} setchnageUniv={setUniv} />
         </motion.div>
 
         <motion.div
@@ -94,7 +93,7 @@ const Course = () => {
           transition={{ duration: 0.8 }}
           ref={tableRef}
         >
-          <University/>
+          <University univdata={changeUniv}/>
         </motion.div>
       </section>
     </>

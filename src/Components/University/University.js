@@ -13,10 +13,10 @@ import Psychologydata from "./Psychology";
 import Pharmaceuticaldata from "./Pharmaceutical";
 import Marketingdata from "./Marketing";
 
-const University = () => {
-  const [products, setProducts] = useState(data);
+const University = ({univdata}) => {
+  const [products, setProducts] = useState(univdata);
   const [selectedtab, setSelectedTab] = useState("main");
-  const [tab, setTab] = useState("");
+  const [tab, setTab] = useState("main"); 
 
   useEffect(() => {
     if (tab === "account") {
