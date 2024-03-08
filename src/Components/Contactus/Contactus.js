@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
-import siddhant from "../../images/sidhanth-Photoroom.png-Photoroom.png";
+import siddhant from "../../images/siddhant2.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 

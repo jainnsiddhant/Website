@@ -8,7 +8,7 @@ const Example = () => {
       {
         accessorKey: 'logo',
         header: 'Profile Photo',  
-        Cell: ({ cell }) => <img src={cell} />,
+        Cell: ({ cell }) => <img className='w-20 h-10 rounded-full' src={cell.getValue()} />,
       },
       {
         accessorKey: 'university',
@@ -22,7 +22,8 @@ const Example = () => {
       },
       {
         accessorKey: 'view',
-        header: 'View'
+        header: 'View',
+        Cell: ({ cell }) => <a className='text-blue-500 underline' target='_blank' href={cell.getValue()} >Link</a>,
       }
     ],
     [],

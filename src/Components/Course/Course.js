@@ -39,7 +39,6 @@ const Course = () => {
   const cardsVisible = useIntersectionObserver(cardsRef);
   const sectionsVisible = useIntersectionObserver(sectionsRef);
   const tableVisible = useIntersectionObserver(tableRef);
-
   return (
     <>
       <section id="course">
@@ -80,7 +79,7 @@ const Course = () => {
           transition={{ duration: 0.8 }}
           ref={sectionsRef}
         >
-          <Sections Univ={changeUniv} setchnageUniv={setUniv} />
+          <Sections Univ={changeUniv} setUniv={setUniv} />
         </motion.div>
 
         <motion.div
