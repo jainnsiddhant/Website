@@ -8,7 +8,8 @@ const Cards = () => {
   return (
     <>
       <section id="cards">
-        <div className="flex md:flex-row flex-col md:space-x-4 mt-5 w-[80%] mx-auto">
+      
+        <div className="flex md:flex-row flex-col md:space-x-8 md:space-y-0 space-y-5 mt-5 w-[80%] mx-auto items-center justify-center align-middle">
         <a href="#sections">
           <motion.div
             whileHover={{
@@ -29,8 +30,8 @@ const Cards = () => {
                   Top Course
                 </h5>
                 <p class="mb-3 font-normal text-gray-700">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                  
+Discover our top courses curated to enhance your skills and advance your career. Explore cutting-edge content and expert instruction tailored to your professional development goals.
                 </p>
               </div>
             </div>
@@ -57,8 +58,7 @@ const Cards = () => {
                   Ranking
                 </h5>
                 <p class="mb-3 font-normal text-gray-700">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
+                Explore our comprehensive rankings to discover top performers across various categories, guiding you towards informed decisions and superior choices
                 </p>
               </div>
             </a>

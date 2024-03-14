@@ -60,7 +60,7 @@ const Course = () => {
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{
-            opacity: cardsVisible ? 1 : 0,
+            opacity: cardsVisible ? 1 : 0.8,
             scale: cardsVisible ? 1 : 0.5,
           }}
           transition={{ duration: 0.8 }}
@@ -73,8 +73,8 @@ const Course = () => {
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{
-            opacity: sectionsVisible ? 1 : 0,
-            scale: sectionsVisible ? 1 : 0.5,
+            opacity: sectionsVisible ? 1 : 0.95,
+            scale: sectionsVisible ? 1 : 0.85,
           }}
           transition={{ duration: 0.8 }}
           ref={sectionsRef}
@@ -86,7 +86,7 @@ const Course = () => {
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{
-            opacity: tableVisible ? 1 : 0,
+            opacity: tableVisible ? 1 : 0.8,
             scale: tableVisible ? 1 : 0.5,
           }}
           transition={{ duration: 0.8 }}

@@ -24,7 +24,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <section>
@@ -197,7 +197,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <Instruction />
@@ -207,7 +207,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <SaveMoney />
@@ -217,7 +217,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <JobPortals />
@@ -227,7 +227,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <GpSurgeries />
@@ -237,7 +237,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <NINumber />
@@ -247,7 +247,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <Wifi />
@@ -257,7 +257,7 @@ const AlreadyIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <Tax />

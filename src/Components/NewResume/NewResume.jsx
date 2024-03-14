@@ -52,7 +52,7 @@ const NewResume = () => {
         <motion.div
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: cardsVisible ? 1 : 0, scale: cardsVisible ? 1 : 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0.8, scale: cardsVisible ? 1 : 0.5 }}
           transition={{ duration: 0.8 }}
           ref={bannerRef}
         >
@@ -61,7 +61,7 @@ const NewResume = () => {
             <motion.div
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: sectionsVisible ? 1 : 0, scale: sectionsVisible ? 1 : 0.5 }}
+          animate={{ opacity: sectionsVisible ? 1 : 0.8, scale: sectionsVisible ? 1 : 0.5 }}
           transition={{ duration: 0.8 }}
           ref={resumebuildRef}
         >
@@ -70,7 +70,7 @@ const NewResume = () => {
             <motion.div
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: templateVisible ? 1 : 0, scale: templateVisible ? 1 : 0.5 }}
+          animate={{ opacity: templateVisible ? 1 : 0.8, scale: templateVisible ? 1 : 0.5 }}
           transition={{ duration: 0.8 }}
           ref={templateRef}
         >
@@ -79,7 +79,7 @@ const NewResume = () => {
             <motion.div
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: tableVisible ? 1 : 0, scale: tableVisible ? 1 : 0.5 }}
+          animate={{ opacity: tableVisible ? 1 : 0.8, scale: tableVisible ? 1 : 0.5 }}
           transition={{ duration: 0.8 }}
           ref={tableRef}
         >

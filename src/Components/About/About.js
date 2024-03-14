@@ -50,8 +50,8 @@ const About = () => {
       <>
         {/* component */}
         
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-          <div className="text-center pb-12">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-6 -mt-10">
+          <div className="text-center pb-6">
             <h2 className="text-base font-bold text-indigo-600">
               We have the best equipment
             </h2>
@@ -60,7 +60,7 @@ const About = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+            <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
                   className="object-center object-cover rounded-full h-36 w-36"
@@ -75,7 +75,7 @@ const About = () => {
                 <p className="text-base text-gray-400 font-normal">Founder</p>
               </div>
             </div>
-            <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+            <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
                   className="object-center  object-cover rounded-full h-36 w-36"
@@ -88,11 +88,11 @@ const About = () => {
                   Mr. Kartikey Bhardwaj
                 </p>
                 <p className="text-base text-gray-400 font-normal">
-                  Backend devloper
+                  Backend developer
                 </p>
               </div>
             </div>
-            <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+            <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
                   className="object-center object-cover rounded-full h-36 w-36"
@@ -105,11 +105,11 @@ const About = () => {
                   Miss. Prisha Thapar
                 </p>
                 <p className="text-base text-gray-400 font-normal">
-                  Frontend devloper
+                  Frontend developer
                 </p>
               </div>
             </div>
-            <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+            <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
                   className="object-center object-cover rounded-full h-36 w-36"
@@ -124,7 +124,7 @@ const About = () => {
                 <p className="text-base text-gray-400 font-normal">Advisor</p>
               </div>
             </div>
-            <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+            <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
                   className="object-center object-cover rounded-full h-36 w-36"
@@ -139,7 +139,7 @@ const About = () => {
                 <p className="text-base text-gray-400 font-normal">Advisor</p>
               </div>
             </div>
-            <div className="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+            <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
               <div className="mb-8">
                 <img
                   className="object-center object-cover rounded-full h-36 w-36"

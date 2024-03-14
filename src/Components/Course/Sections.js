@@ -15,7 +15,18 @@ import psychology from "../../images/psychology.jpg";
 const Sections = (props) => {
   return (
     <>
-      <section id="sections" className="mt-20">
+      <section id="sections" className="mt-20 justify-center align-middle items-center">
+      <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+          <h2
+            data-aos="fade-right"
+            className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+          >
+            Top Course
+          </h2>
+          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+          Explore Our Top Courses for Your Next Educational Journey
+          </p>
+        </div>
         <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-5 w-[95%] mx-auto">
           <div>
             <motion.div
@@ -25,7 +36,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -47,9 +58,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Financial Accounting
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -60,9 +68,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Managerial Accounting
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -71,9 +76,6 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">Auditing</p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -82,9 +84,6 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">Taxation</p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -95,9 +94,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Corporate Finance
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -128,7 +124,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -148,9 +144,6 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">Finance</p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -159,9 +152,6 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">Marketing</p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -172,9 +162,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Human Resource Management (HRM)
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -185,9 +172,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Operations Management
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -198,9 +182,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Strategic Management
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -227,7 +208,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -249,9 +230,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Artificial Intelligence
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -262,9 +240,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Data Science
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -275,9 +250,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Cyber Security
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -288,9 +260,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Data Structures
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -301,9 +270,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Machine Learning
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -330,7 +296,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -352,9 +318,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Microeconomics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -365,9 +328,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Macroeconomics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -378,9 +338,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             International Economics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -391,9 +348,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Development Economics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -404,9 +358,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Labor Economics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -433,7 +384,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -453,9 +404,6 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">Literature</p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -466,9 +414,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Linguistics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -479,9 +424,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Creative Writing
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -492,9 +434,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Composition and Rhetoric
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -505,9 +444,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Cultural Studies
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -534,7 +470,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -556,9 +492,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Security Studies
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -569,9 +502,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             International Political Economy (IPE)
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -582,9 +512,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             International Law and Organizations
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -595,9 +522,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Diplomacy and Negotiation
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -608,9 +532,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Foreign Policy Analysis
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -637,7 +558,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -659,9 +580,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Digital Marketing
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -672,9 +590,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Brand Management
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -685,9 +600,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Market Research and Analytics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -698,9 +610,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Advertising and Promotion
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -711,9 +620,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Product Management
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -740,7 +646,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -762,9 +668,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Thermodynamics and Energy Systems
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -775,9 +678,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Mechatronics and Robotics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -788,9 +688,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Materials Science and Engineering
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -801,9 +698,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Design and Manufacturing
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -814,9 +708,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Fluid Mechanics and Aerodynamics
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -843,7 +734,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -865,9 +756,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Drug Discovery and Development
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -878,9 +766,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Pharmaceutical Manufacturing
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -891,9 +776,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Regulatory Affairs
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -904,9 +786,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Clinical Research and Trials
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -917,9 +796,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Pharmaceutical Marketing and Sales
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -946,7 +822,7 @@ const Sections = (props) => {
                 boxShadow: "0px 0px 8px rgb(255,255,255)",
               }}
             >
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  w-[90%] justify-center items-center mx-auto">
                 <a href="#">
                   <img
                     class="rounded-t-lg h-60 w-60 mx-auto"
@@ -968,9 +844,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Clinical Psychology
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -981,9 +854,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Cognitive Psychology
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -994,9 +864,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Developmental Psychology
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -1007,9 +874,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Social Psychology
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>
@@ -1020,9 +884,6 @@ const Sections = (props) => {
                           <p class="text-sm font-medium truncate">
                             Biopsychology (Neuropsychology)
                           </p>
-                          {/* <p class="text-sm text-gray-500 truncate">
-                            email@windster.com
-                          </p> */}
                         </div>
                       </div>
                     </li>

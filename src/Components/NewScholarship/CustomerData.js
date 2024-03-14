@@ -22,7 +22,7 @@ const CustomerData = [
         endTime:"7 NOVEMBER 2023",
         price:"",
         action:"https://www.chevening.org/scholarship/india/",
-        status:"active"
+        status:"Active"
     } ,
     {
         id: 2,
@@ -31,7 +31,7 @@ const CustomerData = [
         endTime:"October 2024",
         price:"",
         action:"https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/",
-        status:"archive"
+        status:"Archive"
     } ,
     {
         id: 3,
@@ -40,7 +40,7 @@ const CustomerData = [
         endTime:"January",
         price:"",
         action:"https://eacea.ec.europa.eu/erasmus-plus/scholarships_en",
-        status:"active"
+        status:"Active"
     } ,
     {
         id: 4,
@@ -49,7 +49,7 @@ const CustomerData = [
         endTime:"October 2024",
         price:"",
         action:"https://cscuk.fcdo.gov.uk/scholarships/",
-        status:"archive"
+        status:"Archive"
     },
     {
         id: 5,
@@ -58,7 +58,7 @@ const CustomerData = [
         endTime:"Varies (depends on the specific country)",
         price:"",
         action:"https://study-uk.britishcouncil.org/options/scholarships-financial-support/great-scholarships",
-        status:"archive"
+        status:"Archive"
     }, 
     {
         id: 6,
@@ -67,7 +67,7 @@ const CustomerData = [
         endTime:"Varies (depends on the specific program) Expected December",
         price:"",
         action:"https://www.scotland.org/study/saltire-scholarships",
-        status:"active"
+        status:"Active"
     },
     {
         id: 7,
@@ -76,7 +76,7 @@ const CustomerData = [
         endTime:"Varies (depends on the specific program)",
         price:"",
         action:"http://www.wallace-trusts.org.uk/india/",
-        status:"archive"
+        status:"Archive"
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ const CustomerData = [
         endTime:"March",
         price:"",
         action:"https://www.teachingenglish.org.uk/hornby-educational-trust",
-        status:"active"
+        status:"Active"
     },
     {
         id: 9,
@@ -94,7 +94,7 @@ const CustomerData = [
         endTime:"March 30",
         price:"",
         action:"https://www.inlaksfoundation.org/",
-        status:"archive"
+        status:"Archive"
     }
     // Add more customer data objects as needed
   ];

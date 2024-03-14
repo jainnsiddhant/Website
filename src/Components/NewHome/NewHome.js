@@ -17,7 +17,7 @@ const useIntersectionObserver = (ref) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 } // Adjust threshold as needed
+      { threshold: 0.1 } // Adjust threshold as needed
     );
 
     if (ref.current) {
@@ -56,7 +56,7 @@ const NewHome = () => {
         </div>
 
         <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-          <div className="relative pt-20 ml-auto">
+          <div className="relative pt-5 ml-auto">
             <motion.div
               variants={textAnimation}
               initial={"offscreen"}
@@ -66,9 +66,9 @@ const NewHome = () => {
             >
               <div className="lg:w-2/3 text-center mx-auto">
                 <h1 className="text-gray-900  font-bold text-4xl md:text-6xl xl:text-6xl">
-                  Begin your journey in{" "}
+                  Let's Begin your journey to the {" "}
                   <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
-                    UK
+                    United Kingdom
                   </span>
                 </h1>
                 <p className="mt-5 text-gray-700 ">
@@ -80,7 +80,7 @@ const NewHome = () => {
               <motion.div
                 className="box"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: cardsVisible ? 1 : 0, scale: cardsVisible ? 1 : 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0.8, scale: cardsVisible ? 1 : 0.5 }}
           transition={{ duration: 0.8 }}
           ref={cardsRef}
               >
@@ -95,7 +95,6 @@ const NewHome = () => {
                   check out top courses and most reputed universities in the world
                   </p>
                 </div>
-
                 <div className="space-y-6 max-w-5xl md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[90%] mx-auto">
                   <motion.div
                     whileHover={{

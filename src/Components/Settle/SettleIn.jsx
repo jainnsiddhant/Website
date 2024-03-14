@@ -22,7 +22,7 @@ const SettleIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <section>
@@ -123,7 +123,7 @@ const SettleIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <ForexCard />
@@ -132,7 +132,7 @@ const SettleIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <PackList />
@@ -141,7 +141,7 @@ const SettleIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <BanksToOpen />
@@ -150,7 +150,7 @@ const SettleIn = () => {
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
             <HousingWebsites />

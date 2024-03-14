@@ -6,7 +6,7 @@ import Section1 from "./Section1";
 import UniBuddy from "./Unibuddy";
 import Blog from "./Blogs";
 import Template from "./Template";
-import Example from "../NewTable/Table";
+// import Example from "../NewTable/Table";
 
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,7 +43,7 @@ const NewConnect = () => {
         variants={textAnimation}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
         <Banner />
@@ -52,17 +52,17 @@ const NewConnect = () => {
         variants={textAnimation}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
-        <Section1 />/
+        <Section1 />
         {/* <Example/> */}
       </motion.div>
       <motion.div
         variants={textAnimation}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
         <Template />
@@ -71,7 +71,7 @@ const NewConnect = () => {
         variants={textAnimation}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
         <UniBuddy />
@@ -80,7 +80,7 @@ const NewConnect = () => {
         variants={textAnimation}
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
         <Blog />

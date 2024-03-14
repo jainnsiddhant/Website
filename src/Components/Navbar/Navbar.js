@@ -1,99 +1,50 @@
-import React, { useEffect, useState } from 'react'
-import logoORG from '../../images/logo.jpg' 
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import logoORG from '../../images/logo.jpg';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
-const Navbar = () => {
 
-    const [mobilestyle, setmobilestyle] = useState("mobile-menu hidden text-center md:hidden bg-black text-white rounded-2xl p-6")
+const Navbar = () => {
+    const location = useLocation();
+    const [mobilestyle, setmobilestyle] = useState("mobile-menu hidden text-center md:hidden bg-black text-white rounded-2xl p-6");
     const [toogle, settoogle] = useState(false);
 
     useEffect(() => {
-
         if (window.innerWidth <= 768 && toogle === true) {
             setmobilestyle("mobile-menu text-center md:hidden bg-black text-white rounded-2xl p-6");
         } else {
             setmobilestyle("mobile-menu text-center hidden md:hidden bg-black text-white rounded-2xl p-6");
         }
-
     }, [window.innerWidth, toogle]);
-
-    // const primaryNavItems = [
-    //     {label: 'Courses', link: '/Courses'},
-    //     {label: 'About Us', link: '/about'},
-    //     {label: 'Resume', link: '/Resume'},
-    //     {label: 'Blog', link: '/Blog'},
-    //     {label: 'Scholarship', link: '/Scholarship'},
-    //     {label: 'Page4', link: '/Page4'},
-    //     {label: 'Page5', link: '/Page5'},
-    // ];
-
-    // const renderPrimaryNavItems = () => {
-    //     const sublistItems = primaryNavItems.reduce((result,item,index) => {
-    //         if(index%2==0) {
-    //             const sublist=primaryNavItems.slice(index,index+2);
-    //             result.push(sublist);
-    //         }
-    //         return result;
-    //     }, []);
-
-    //     return sublistItems.map((sublist,index) => (
-    //         <div key={index} className="flex space-x-1">
-    //             {sublist.map((item,subIndex) => (
-    //                 <Link 
-    //                 key={subIndex}
-    //                 to={item.link}
-    //                 className="py-5 px-3 text-black hover:text-gray-900">
-    //                 {item.label}
-    //                 </Link>
-    //             ))}
-    //         </div>
-    //     ));
-    // };
 
     return (
         <>
             <nav className="p-6">
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="flex justify-between">
-                        <div className="flex space-x-[8rem]">
+                        <div className="flex space-x-[4rem]">
                             <div>
                                 <Link
                                     to={"/"}
                                     className="flex items-center py-5 px-2 text-black"
                                 >
                                     <img
-                                        className="h-6 w-6 mr-1 text-blue-400" 
+                                        className="h-12 w-12 mr-1 text-blue-400"
                                         alt='icon'
                                         src={logoORG}
                                     >
                                     </img>
-                                    {/* <img src={logoORG} className="h-12 w-20 mr-1 text-blue-400 mix-blend-color" /> */}
-                                    <span className="font-bold text-2xl navfont">FindMyUni</span>
+                                    <span className="font-bold text-3xl navfont">FindMyUni</span>
                                 </Link>
                             </div>
                             {/* primary nav */}
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
-                                <Link to={"/Resume"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Resume Builder
-                                </Link>
-                                <Link to={"/Blog"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Connect
-                                </Link>
-                                <Link to={"/Scholarship"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Scholarships
-                                </Link>
-                                <Link to={"/course"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Courses
-                                </Link>
-                                <Link to={"/SettleinUK"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Settle in UK
-                                </Link>
-                                <Link to={"/AlreadyinUk"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    Already in UK
-                                </Link>
-                                <Link to={"/about"} className="py-5 px-3 text-black hover:text-gray-900 navfont">
-                                    About Us
-                                </Link>
+                                <NavLink to={"/Resume"}>Resume Builder</NavLink>
+                                <NavLink to={"/Blog"}>Connect</NavLink>
+                                <NavLink to={"/Scholarship"}>Scholarships</NavLink>
+                                <NavLink to={"/course"}>Courses</NavLink>
+                                <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
+                                <NavLink to={"/AlreadyinUk"}>Already in UK</NavLink>
+                                <NavLink to={"/about"}>About Us</NavLink>
                             </div>
                         </div>
                         {/* secondary nav */}
@@ -132,35 +83,33 @@ const Navbar = () => {
                 </div>
                 {/* mobile menu */}
                 <div className={mobilestyle}>
-                    <Link to={"/Resume"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Resume Builder
-                    </Link>
-                    <Link to={"/Blog"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Connect
-                    </Link>
-                    <Link to={"/Scholarship"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Scholarships
-                    </Link>
-                    <Link to={"/course"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Courses
-                    </Link>
-                    <Link to={"/SettleinUK"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Settel in Uk
-                    </Link>
-                    <Link to={"/AlreadyinUk"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Already in Uk
-                    </Link>
-                    <Link to={"/about"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        About Us
-                    </Link>
-                    <Link to={"/contact"} className="block py-2 px-4 text-lg hover:bg-blue-600 navfont">
-                        Contact Us
-                    </Link>
+                    <NavLink to={"/Resume"}>Resume Builder</NavLink>
+                    <NavLink to={"/Blog"}>Connect</NavLink>
+                    <NavLink to={"/Scholarship"}>Scholarships</NavLink>
+                    <NavLink to={"/course"}>Courses</NavLink>
+                    <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
+                    <NavLink to={"/AlreadyinUk"}>Already in UK</NavLink>
+                    <NavLink to={"/about"}>About Us</NavLink>
+                    <NavLink to={"/contact"}>Contact Us</NavLink>
                 </div>
                 <hr className='border-1 border-black' />
             </nav>
         </>
-    )
-}
+    );
+};
 
-export default Navbar
+// NavLink component to handle active link styling
+const NavLink = ({ to, children }) => {
+    const location = useLocation();
+
+    return (
+        <Link
+            to={to}
+            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'underline' : ''}`}
+        >
+            {children}
+        </Link>
+    );
+};
+
+export default Navbar;

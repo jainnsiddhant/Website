@@ -47,6 +47,17 @@ const University = ({univdata}) => {
   return (
     <>
       <div className="md:max-w-5xl md:mx-auto ">
+      <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+          <h2
+            data-aos="fade-right"
+            className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+          >
+            Ranking
+          </h2>
+          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+          Exploring Top Rankings: A Comprehensive Insight into Leaders and Achievers
+          </p>
+        </div>
         <div className="p-6">
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">
             <ul className="flex flex-wrap -mb-px">
@@ -120,7 +131,7 @@ const University = ({univdata}) => {
             ></Column>
             <Column
               field="website"
-              header="View"
+              header="University Website"
               style={{ width: "30%" }}
               body={(rowData) => {
                 return (
@@ -134,15 +145,22 @@ const University = ({univdata}) => {
                     <a
                       style={{
                         color: "#3F00FF",
-                        textDecoration: "underline",
+                        // textDecoration: "underline",
                         cursor: "pointer",
                         "&:hover": {
                           color: "black",
                         },
                       }}
                       href={rowData.website}
+                      target="_blank"
                     >
-                      {"View"}
+                      {/* {"View"} */}
+                      <button
+                  type="button"
+                  className="bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center"
+                >
+                  Visit Website
+                </button>
                     </a>
                   </div>
                 );

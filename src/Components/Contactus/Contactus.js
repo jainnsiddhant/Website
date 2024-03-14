@@ -63,11 +63,11 @@ const Contactus = () => {
                 <img class="w-20 h-20 rounded-full" src={siddhant} alt="" />
                 <div class="font-medium">
                   <div>Mr. Siddhant Jain</div>
-                  <div class="text-sm text-gray-400">Founder</div>
+                  <div class="text-sm text-gray-200">Founder</div>
                 </div>
               </div>
               <div className="flex flex-col">
-                <p className="text-gray-400 mt-3">
+                <p className="text-gray-200 mt-3">
                   We believe in evaluating your true potential and aspirations,
                   providing tailored advice to help you choose the best course
                   and university that aligns with your goals.
@@ -89,6 +89,7 @@ const Contactus = () => {
                     <div className="flex flex-col">
                       <h2 className="text-2xl">Connect</h2>
                       <div className="flex flex-row gap-x-2">
+                      <a href="https://www.linkedin.com/in/siddhantjainn/" target="_blank">
                         <button
                           type="button"
                           class="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center me-2"
@@ -96,6 +97,8 @@ const Contactus = () => {
                           <FaLinkedin />
                           LinkedIn
                         </button>
+                        </a>
+                      <a href="mailto:jainsiddhant214@gmail.com">
                         <button
                           type="button"
                           class="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center inline-flex items-center me-2"
@@ -103,6 +106,7 @@ const Contactus = () => {
                           <MdEmail />
                           Email
                         </button>
+                        </a>
                       </div>
                     </div>
                   </i>

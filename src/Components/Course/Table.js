@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { ProductService } from "./ProductService";
-import Example from "../NewTable/Table";
+// import Example from "../NewTable/Table";
 
 export default function Table() {
   const [products, setProducts] = useState([]);

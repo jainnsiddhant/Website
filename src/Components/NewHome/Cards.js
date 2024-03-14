@@ -22,7 +22,7 @@ const useIntersectionObserver = (ref) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 } // Adjust threshold as needed
+      { threshold: 0.1 } // Adjust threshold as needed
     );
 
     if (ref.current) {
@@ -55,7 +55,7 @@ export default function Cards() {
         <motion.div
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: cardsVisible ? 1 : 0, scale: cardsVisible ? 1 : 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0.8, scale: cardsVisible ? 1 : 0.5 }}
           transition={{ duration: 0.8 }}
           ref={cardsRef}
         >
@@ -67,6 +67,15 @@ export default function Cards() {
               Welcome to our comprehensive guide on settling in the UK!
             </p>
           </div>
+          
+          </motion.div>
+          <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: cardsVisible ? 1 : 0.8, scale: cardsVisible ? 1 : 0.5 }}
+          transition={{ duration: 0.8 }}
+          ref={cardsRef}
+        >
 
           <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mb-10">
             <div className="flex gap-2 md:gap-4 items-center">

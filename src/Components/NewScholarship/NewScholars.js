@@ -141,7 +141,7 @@ export default function NewScholars() {
                   "background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
               }}
               className="text-lg filter-btn"
-              onClick={() => handleFilterChange("active")}
+              onClick={() => handleFilterChange("Active")}
             >
               Active
             </button>
@@ -163,7 +163,7 @@ export default function NewScholars() {
                   "background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
               }}
               className="text-lg filter-btn"
-              onClick={() => handleFilterChange("archive")}
+              onClick={() => handleFilterChange("Archive")}
             >
               Archived
             </button>
