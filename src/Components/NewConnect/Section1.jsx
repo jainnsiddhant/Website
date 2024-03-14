@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Section1Left from "./Section1Left";
 import Section1Right from "./Section1Right";
-// import Example from "../NewTable/Table";
+import Example from "../NewTable/Table";
 
 const Section1 = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -37,7 +37,7 @@ const Section1 = () => {
           <Section1Right />
         </div>/
       </div> */} 
-      {/* <Example/> */}
+      <Example/>
     </section>
   );
 };
