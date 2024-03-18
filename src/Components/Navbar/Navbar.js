@@ -5,17 +5,15 @@ import './Navbar.css';
 
 const Navbar = () => {
     const location = useLocation();
-    const [mobilestyle, setmobilestyle] = useState("mobile-menu hidden text-center md:hidden bg-black text-white rounded-2xl p-6");
+    const [mobilestyle, setmobilestyle] = useState("mobile-menu hidden text-center md:hidden flex flex-col bg-black text-white rounded-2xl p-6 z-30");
     const [toogle, settoogle] = useState(false);
-
     useEffect(() => {
         if (window.innerWidth <= 768 && toogle === true) {
-            setmobilestyle("mobile-menu text-center md:hidden bg-black text-white rounded-2xl p-6");
+            setmobilestyle("mobile-menu flex flex-col text-center md:hidden  text-white rounded-2xl p-6");
         } else {
-            setmobilestyle("mobile-menu text-center hidden md:hidden bg-black text-white rounded-2xl p-6");
+            setmobilestyle("mobile-menu flex flex-col text-center hidden md:hidden  text-white rounded-2xl p-6");
         }
     }, [window.innerWidth, toogle]);
-
     return (
         <>
             <nav className="p-6">
@@ -97,7 +95,6 @@ const Navbar = () => {
         </>
     );
 };
-
 // NavLink component to handle active link styling
 const NavLink = ({ to, children }) => {
     const location = useLocation();
@@ -105,11 +102,10 @@ const NavLink = ({ to, children }) => {
     return (
         <Link
             to={to}
-            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'underline' : ''}`}
+            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black  bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
         >
             {children}
         </Link>
     );
 };
-
 export default Navbar;

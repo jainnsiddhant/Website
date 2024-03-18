@@ -1,11 +1,11 @@
-import React, { useRef , useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { textAnimation } from "../Animation/Animation";
 import Cards from "./Cards";
-import Sections from "./Sections";
 import harvard from "../../images/4133580.jpg";
 import GoldmanSachs from "../../images/4204968.jpg";
 import oxford from "../../images/4261198.jpg";
+import "./NewHome.css";
 
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,15 +34,43 @@ const useIntersectionObserver = (ref) => {
   return isVisible;
 };
 
-const NewHome = () => {
 
+const NewHome = () => {
   const cardsRef = useRef(null);
   const sectionsRef = useRef(null);
   const tableRef = useRef(null);
+  const [arrowVisible, setArrowVisible] = useState(true);
 
   const cardsVisible = useIntersectionObserver(cardsRef);
   const sectionsVisible = useIntersectionObserver(sectionsRef);
   const tableVisible = useIntersectionObserver(tableRef);
+
+  const scrollToNextSection = () => {
+    const exploreSection = document.getElementById("explore");
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: "smooth" });
+      setArrowVisible(false);
+    } else {
+      console.error("Explore section not found.");
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const exploreSection = document.getElementById("explore");
+      if (exploreSection) {
+        const rect = exploreSection.getBoundingClientRect();
+        if (rect.top <= window.innerHeight) {
+          setArrowVisible(false);
+        } else {
+          setArrowVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -65,8 +93,8 @@ const NewHome = () => {
               transition={{ staggerChildren: 0.5 }}
             >
               <div className="lg:w-2/3 text-center mx-auto">
-                <h1 className="text-gray-900  font-bold text-4xl md:text-6xl xl:text-6xl">
-                  Let's Begin your journey to the {" "}
+                <h1 className="text-gray-900 font-bold text-4xl md:text-6xl xl:text-6xl mt-20">
+                  Let's Begin your journey to the{" "}
                   <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
                     United Kingdom
                   </span>
@@ -76,7 +104,16 @@ const NewHome = () => {
                 </p>
               </div>
             </motion.div>
-            <div className="">
+
+            {arrowVisible && (
+              <div id="arrow" class="container" onClick={scrollToNextSection}>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+              </div>
+            )}
+
+            <div id="explore" className="">
               <motion.div
                 className="box"
           initial={{ opacity: 0, scale: 0.5 }}
@@ -87,12 +124,16 @@ const NewHome = () => {
                 <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-10" id="topuni">
                   <h2
                     data-aos="fade-right"
-                    className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+                    className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10"
                   >
-                    Explore universities in <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">United Kingdom</span>
+                    Explore universities in{" "}
+                    <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+                      United Kingdom
+                    </span>
                   </h2>
                   <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                  check out top courses and most reputed universities in the world
+                    Check out top courses and most reputed universities in the
+                    world
                   </p>
                 </div>
                 <div className="space-y-6 max-w-5xl md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-5 w-[90%] mx-auto">
@@ -183,7 +224,6 @@ const NewHome = () => {
                 <Cards />
               </div>
             </div>
-            {/* <Sections /> */}
           </div>
         </div>
       </div>

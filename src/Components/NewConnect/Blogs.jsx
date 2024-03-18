@@ -25,7 +25,6 @@ const Blog = () => {
             Unlock Your Path: Essential Guidance for Navigating Life in the UK.
           </p>
         </div>
-
         <div className="">
           <Carousel 
            slideInterval={2000}
