@@ -5,7 +5,6 @@ import Cards from "./Cards";
 import harvard from "../../images/4133580.jpg";
 import GoldmanSachs from "../../images/4204968.jpg";
 import oxford from "../../images/4261198.jpg";
-import "./NewHome.css";
 
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
