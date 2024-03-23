@@ -14,8 +14,8 @@ export default function Cards() {
       variants={textAnimation}
       initial={"offscreen"}
       whileInView={"onscreen"}
-      viewport={{ once: true, amount: 0.4 }}
-      transition={{ staggerChildren: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ staggerChildren: 0.2 }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
         <motion.div

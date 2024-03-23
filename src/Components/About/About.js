@@ -25,22 +25,26 @@ const About = () => {
                 height=""
               />
             </div> */}
-              <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 -mt-20">
-              
-                    <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
-                    Why <span className=" bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent">FindMyUni?</span>
-                    </h2>
-                    <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
-                    Welcome to Find My Uni, your ultimate guide to pursuing higher
+            <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 -mt-20">
+              <h2
+                data-aos="fade-right"
+                className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
+              >
+                Why{" "}
+                <span className=" bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent">
+                  FindMyUni?
+                </span>
+              </h2>
+              <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
+                Welcome to Find My Uni, your ultimate guide to pursuing higher
                 education abroad! We stand out from the crowd with our unique
                 approach to assisting aspiring students in their journey towards
-                academic excellence and personal growth. Why choose us?
-                  Choose Find My Uni for a transformative overseas
-                education experience that goes beyond conventional norms,
-                empowering you to make informed decisions and thrive in your
-                academic journey.
-                    </p>
-                    
+                academic excellence and personal growth. Why choose us? Choose
+                Find My Uni for a transformative overseas education experience
+                that goes beyond conventional norms, empowering you to make
+                informed decisions and thrive in your academic journey.
+              </p>
+
               <Cards />
             </div>
           </div>
@@ -49,7 +53,7 @@ const About = () => {
 
       <>
         {/* component */}
-        
+
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-6 -mt-10">
           <div className="text-center pb-6">
             <h2 className="text-base font-bold text-indigo-600">

@@ -172,24 +172,6 @@ const AlreadyIn = () => {
                    </div>
                    </motion.div>
 
-                  {/* <motion.div
-                  whileHover={
-                    {
-                      scale: 1.25
-                    }
-                  }> */}
-                   <div className="my-auto">
-                     <a href="#">
-                       <img className="px-5 py-6 rounded-xl object-cover" src={reload} alt="" />
-                     </a>
-                     {/* <div className="p-4">
-                       <a href="#">
-                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900"></h5>
-                       </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base"></p>
-                     </div> */}
-                   </div>
-                   {/* </motion.div> */}
                 </div>
             </section>
             </motion.div>

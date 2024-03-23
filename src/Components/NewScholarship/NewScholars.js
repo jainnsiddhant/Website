@@ -91,7 +91,7 @@ export default function NewScholars() {
           transition={{ duration: 0.8 }}
           ref={cardsRef}
         >
-    <div className="card w-[80%] mx-auto">
+    <div className="card w-[90%] mx-auto">
       <div className="py-4 px-4">
         <h2
           data-aos="fade-right"
@@ -100,7 +100,7 @@ export default function NewScholars() {
           All Scholarships
         </h2>
         <p className="mb-3 text-lg font-normal text-gray-500">
-          <div className="space-x-3">
+          <div className="space-x-1">
             <button
               type="button"
               style={{
@@ -110,7 +110,7 @@ export default function NewScholars() {
                   "0 0 0 1px rgba(66, 153, 225, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
                 borderRadius: "0.375rem",
                 fontSize: "0.875rem",
-                padding: "0.625rem 1.25rem",
+                padding: "0.625rem 1.05rem",
                 textAlign: "center",
                 marginRight: "0.5rem",
                 marginBottom: "0.5rem",
@@ -132,7 +132,7 @@ export default function NewScholars() {
                   "0 0 0 1px rgba(66, 153, 225, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
                 borderRadius: "0.375rem",
                 fontSize: "0.875rem",
-                padding: "0.625rem 1.25rem",
+                padding: "0.625rem 1.05rem",
                 textAlign: "center",
                 marginRight: "0.5rem",
                 marginBottom: "0.5rem",
@@ -154,7 +154,7 @@ export default function NewScholars() {
                   "0 0 0 1px rgba(66, 153, 225, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
                 borderRadius: "0.375rem",
                 fontSize: "0.875rem",
-                padding: "0.625rem 1.25rem",
+                padding: "0.625rem 1.05rem",
                 textAlign: "center",
                 marginRight: "0.5rem",
                 marginBottom: "0.5rem",
@@ -195,12 +195,12 @@ export default function NewScholars() {
         <Column
           field="status"
           header={<p className="text-lg">Status</p>}
-          style={{ width: "25%" }}
+          style={{ width: "10%" }}
         ></Column>
         <Column
           header={<p className="text-lg">Official website</p>}
           body={actionBodyTemplate}
-          style={{ width: "25%" }}
+          style={{ width: "35%" }}
         ></Column>
       </DataTable>
     </div>
@@ -265,7 +265,7 @@ export default function NewScholars() {
 //                   "0 0 0 1px rgba(66, 153, 225, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
 //                 borderRadius: "0.375rem",
 //                 fontSize: "0.875rem",
-//                 padding: "0.625rem 1.25rem",
+//                 padding: "0.625rem 1.05rem",
 //                 textAlign: "center",
 //                 marginRight: "0.5rem",
 //                 marginBottom: "0.5rem",
@@ -287,7 +287,7 @@ export default function NewScholars() {
 //                   "0 0 0 1px rgba(66, 153, 225, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
 //                 borderRadius: "0.375rem",
 //                 fontSize: "0.875rem",
-//                 padding: "0.625rem 1.25rem",
+//                 padding: "0.625rem 1.05rem",
 //                 textAlign: "center",
 //                 marginRight: "0.5rem",
 //                 marginBottom: "0.5rem",
@@ -309,7 +309,7 @@ export default function NewScholars() {
 //                   "0 0 0 1px rgba(66, 153, 225, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.05)",
 //                 borderRadius: "0.375rem",
 //                 fontSize: "0.875rem",
-//                 padding: "0.625rem 1.25rem",
+//                 padding: "0.625rem 1.05rem",
 //                 textAlign: "center",
 //                 marginRight: "0.5rem",
 //                 marginBottom: "0.5rem",

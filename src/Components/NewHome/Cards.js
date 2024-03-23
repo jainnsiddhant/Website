@@ -164,7 +164,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settle in 
-                      <span className="text-black  bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent text-3xl"> UK</span>
+                      <span className="text-black  bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.
@@ -178,11 +178,11 @@ export default function Cards() {
                 <a href="/AlreadyinUk">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative  flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
-                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome})` }}></div>
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${scholarhome}) `}}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Already in 
-                      <span className="text-black  bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent text-3xl"> UK</span>
+                      <span className="text-black  bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
                         Unlock your career potential.

@@ -92,7 +92,7 @@ const NewHome = () => {
               transition={{ staggerChildren: 0.5 }}
             >
               <div className="lg:w-2/3 text-center mx-auto">
-                <h1 className="text-gray-900 font-bold text-4xl md:text-6xl xl:text-6xl mt-20">
+                <h1 className="text-gray-900 font-bold text-4xl md:text-6xl xl:text-7xl mt-20">
                   Let's Begin your journey to the{" "}
                   <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
                     United Kingdom
