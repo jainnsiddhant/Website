@@ -20,19 +20,20 @@ export default function Table() {
   // };
 
   // Function to render the action column content as a button
-  const actionBodyTemplate = (rowData) => { 
+  const actionBodyTemplate = (rowData) => {
     // console.log(rowData.actions)
     const handleClick = (link) => {
+      console.log("hello");
       window.open(link, "_blank");
-    };  
+    };
     return rowData.actions.map((item, idx) => {
       return (
-        <button 
-        key={idx}
+        <button
+          key={idx}
           className="text-white space-x-4 bg-blue-500 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-          onClick={handleClick(item)}
+          onClick={() => handleClick(item)}
         >
-          {`Link ${idx+1}`} 
+          {`Link ${idx + 1}`}
         </button>
       );
     });
