@@ -4,7 +4,8 @@ import Cards from "./Cards";
 import Sections from "./Sections";
 import Table from "./Table";
 import University from "../University/University";
-import data from "../University/data"
+import data from "../University/data";
+import arrow from "../../images/arrow.gif";
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -32,10 +33,19 @@ const useIntersectionObserver = (ref) => {
 };
 
 const Course = () => {
+  const scrollToNextSection = () => {
+    const exploreSection = document.getElementById("box");
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: "smooth" });
+      // setArrowVisible(false);
+    } else {
+      console.error("Explore section not found.");
+    }
+  };
   const cardsRef = useRef(null);
   const sectionsRef = useRef(null);
   const tableRef = useRef(null);
-  const [changeUniv,setUniv] = useState(data);
+  const [changeUniv, setUniv] = useState(data);
   const cardsVisible = useIntersectionObserver(cardsRef);
   const sectionsVisible = useIntersectionObserver(sectionsRef);
   const tableVisible = useIntersectionObserver(tableRef);
@@ -69,7 +79,12 @@ const Course = () => {
           <Cards />
         </motion.div>
 
+        <div id="arrow" class="container" onClick={scrollToNextSection}>
+          <img src={arrow} className="w-10 mx-auto mt-14" />
+        </div>
+
         <motion.div
+          id="box"
           className="box"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{
@@ -92,7 +107,7 @@ const Course = () => {
           transition={{ duration: 0.8 }}
           ref={tableRef}
         >
-          <University univdata={changeUniv}/>
+          <University univdata={changeUniv} />
         </motion.div>
       </section>
     </>

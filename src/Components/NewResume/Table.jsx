@@ -20,19 +20,37 @@ export default function Table() {
   // };
 
   // Function to render the action column content as a button
-  const actionBodyTemplate = (rowData) => {
-    const handleClick = () => {
-      window.open(rowData.action, "_blank");
-    };
+  const actionBodyTemplate = (rowData) => { 
+    // console.log(rowData.actions)
+    const handleClick = (link) => {
+      window.open(link, "_blank");
+    };  
+    return rowData.actions.map((item, idx) => {
+      return (
+        <button 
+        key={idx}
+          className="text-white space-x-4 bg-blue-500 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+          onClick={handleClick(item)}
+        >
+          {`Link ${idx+1}`} 
+        </button>
+      );
+    });
+  };
 
-    return (
-      <button
-        className="bg-blue-500 text-white w-20 p-2 rounded-md"
-        onClick={handleClick}
-      >
-        Visit
-      </button>
-    );
+  const actionTags = (rowData) => {
+    // console.log(rowData.tags);
+    return rowData.tags.map((item, idx) => {
+      return (
+        <button
+          key={idx}
+          type="button"
+          className="text-white space-x-4 bg-blue-500 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+        >
+          {item}
+        </button>
+      );
+    });
   };
 
   return (
@@ -62,9 +80,10 @@ export default function Table() {
           style={{ width: "25%" }}
         ></Column>
         <Column
-          field="chat"
+          field="tags"
           header={<p className="text-lg">Specialisation</p>}
           style={{ width: "25%" }}
+          body={actionTags}
         ></Column>
         <Column
           header={<p className="text-lg">Official website</p>}

@@ -5,7 +5,7 @@ import Cards from "./Cards";
 import harvard from "../../images/4133580.jpg";
 import GoldmanSachs from "../../images/4204968.jpg";
 import oxford from "../../images/4261198.jpg";
-
+import arrow from "../../images/arrow.gif";
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -32,7 +32,6 @@ const useIntersectionObserver = (ref) => {
 
   return isVisible;
 };
-
 
 const NewHome = () => {
   const cardsRef = useRef(null);
@@ -104,23 +103,25 @@ const NewHome = () => {
               </div>
             </motion.div>
 
-            {arrowVisible && (
-              <div id="arrow" class="container" onClick={scrollToNextSection}>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-              </div>
-            )}
+            <div id="arrow" class="container" onClick={scrollToNextSection}>
+              <img src={arrow} className="w-10 mx-auto mt-6" />
+            </div>
 
             <div id="explore" className="">
               <motion.div
                 className="box"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: cardsVisible ? 1 : 0.8, scale: cardsVisible ? 1 : 0.5 }}
-          transition={{ duration: 0.8 }}
-          ref={cardsRef}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{
+                  opacity: cardsVisible ? 1 : 0.8,
+                  scale: cardsVisible ? 1 : 0.5,
+                }}
+                transition={{ duration: 0.8 }}
+                ref={cardsRef}
               >
-                <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-10" id="topuni">
+                <div
+                  className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16 mt-10"
+                  id="topuni"
+                >
                   <h2
                     data-aos="fade-right"
                     className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10"

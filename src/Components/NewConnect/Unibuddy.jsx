@@ -18,7 +18,7 @@ const UniBuddy = () => {
               <img
                 src={UnibuddyLogo}
                 alt="universityimage"
-                className="mx-auto mb-2 h-[50%] w-[66.67%] sm:w-full"
+                className="mx-auto mb-2 h-[50%] w-[100%] sm:w-full"
               />
               <p className="mt-2 mb-3 text-lg font-normal text-gray-500 text-justify">
                 Unibuddy is a platform that connects prospective students with

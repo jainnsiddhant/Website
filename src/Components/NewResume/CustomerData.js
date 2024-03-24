@@ -1,102 +1,149 @@
 // CustomerData.js
 
 const CustomerData = [
-    // { 
-    //   id: 1,
-    //   name: 'John Doe',
-    //   country: { name: 'USA' },
-    //   company: 'ABC Company',
-    //   representative: { name: 'Jane Smith' }
-    // },
-    // { 
-    //   id: 2,
-    //   name: 'Alice Johnson',
-    //   country: { name: 'Canada' },
-    //   company: 'XYZ Corporation',
-    //   representative: { name: 'Bob Johnson' }
-    // },
-    {
-        id: 1,
-        name:"Consulting & Analytics Club, IIT Guwahat",
-        chat:"We aim to facilitate a seamless transition from graduate school to a career in management consulting and data analytics through awareness, skill building, and networking.",
-        endTime:"7 NOVEMBER 2023",
-        price:"",
-        action:"https://www.caciitg.com/"
-    } ,
-    {
-        id: 2,
-        name:"Rhodes Scholarships",
-        chat:"Varies (typically in the fall)",
-        endTime:"Varies (typically in the fall)",
-        price:"",
-        action:"https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/"
-    } ,
-    {
-        id: 3,
-        name:"Erasmus Mundus",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
-        price:"",
-        action:"https://eacea.ec.europa.eu/erasmus-plus/scholarships_en"
-    } ,
-    {
-        id: 4,
-        name:"Commonwealth Scholarship and Fellowship",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific country)",
-        price:"",
-        action:"https://cscuk.fcdo.gov.uk/scholarships/"
-    },
-    {
-        id: 4,
-        name:"Commonwealth Scholarship and Fellowship",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific country)",
-        price:"",
-        action:"https://cscuk.fcdo.gov.uk/scholarships/"
-    },
-    {
-        id: 5,
-        name:"GREAT Scholarships",
-        chat:"Varies (typically opens in the spring)",
-        endTime:"Varies (depends on the specific country)",
-        price:"",
-        action:"https://study-uk.britishcouncil.org/options/scholarships-financial-support/great-scholarships"
-    }, 
-    {
-        id: 6,
-        name:"Scotland's Saltire Scholarships",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
-        price:"",
-        action:"https://www.scotland.org/study/saltire-scholarships"
-    },
-    {
-        id: 7,
-        name:"Charles Wallace India Trust Scholarships",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
-        price:"",
-        action:"http://www.wallace-trusts.org.uk/india/"
-    },
-    {
-        id: 8,
-        name:"Hornby Scholarships",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
-        price:"",
-        action:"https://www.teachingenglish.org.uk/hornby-educational-trust"
-    },
-    {
-        id: 9,
-        name:"Inlaks Scholarships",
-        chat:"Varies (typically opens in the fall)",
-        endTime:"Varies (depends on the specific program)",
-        price:"",
-        action:"https://www.inlaksfoundation.org/"
-    }
-    // Add more customer data objects as needed
-  ];
-  
-  export default CustomerData;
-  
+  {
+    id: 1,
+    name: "Consulting & Analytics Club, IIT Guwahati",
+    chat: "We aim to facilitate a seamless transition from graduate school to a career in management consulting and data analytics through awareness, skill building, and networking.",
+    tags: [
+      "Career Transition",
+      "Management Consulting",
+      "Data Analytics",
+      "Networking",
+    ],
+    endTime: "7 NOVEMBER 2023",
+    price: "",
+    actions: ["https://www.caciitg.com/"],
+  },
+  {
+    id: 2,
+    name: "Coding Club, IIT Guwahati",
+    chat: "Varies (typically in the fall)",
+    tags: [
+      "Programming Culture",
+      "Development Culture",
+      "Education Vision",
+      "Community Outreach",
+    ],
+    endTime: "Varies (typically in the fall)",
+    price: "",
+    actions: [
+      "https://linktr.ee/codingclubiitg",
+      "https://www.linkedin.com/company/coding-club-iitg/",
+    ],
+  },
+  {
+    id: 3,
+    name: "The Entrepreneurship Cell, IIT Bombay",
+    chat: "Varies (typically opens in the fall)",
+    tags: ["entrepreneurship"],
+    endTime: "Varies (depends on the specific program)",
+    price: "",
+    actions: ["https://www.ecell.in/mainpage/home"],
+  },
+  {
+    id: 4,
+    name: "Consulting and Strategy Club, IIM Lucknow",
+    chat: "Varies (typically opens in the fall)",
+    tags: [
+      "Consulting & Strategy Club",
+      "Management Consulting",
+      "Career Orientation",
+      "Case Preparation",
+    ],
+    endTime: "Varies (depends on the specific country)",
+    price: "",
+    actions: [
+      "https://www.linkedin.com/company/consulting-and-strategy-club-iim-lucknow/posts/?feedView=all",
+    ],
+  },
+  {
+    id: 5,
+    name: "The Consulting Club, FMS Delhi",
+    chat: "Varies (typically opens in the fall)",
+    tags: [
+      "Consulting Club",
+      "Career Preparation",
+      "Practical Experience",
+      "Strategy Games",
+    ],
+    endTime: "Varies (depends on the specific country)",
+    price: "",
+    actions: ["https://www.linkedin.com/company/conclubfms/"],
+  },
+  {
+    id: 6,
+    name: "Consult Club - IIM Calcutta",
+    chat: "Varies (typically opens in the spring)",
+    tags: [
+      "Management Consulting Education",
+      "Interview Preparation",
+      "Problem-Solving Skills",
+      "Consulting Trends",
+    ],
+    endTime: "Varies (depends on the specific country)",
+    price: "",
+    actions: ["https://www.linkedin.com/company/consult-club-iim-calcutta/"],
+  },
+  {
+    id: 7,
+    name: "ICON | The IIM Bangalore Consulting Club",
+    chat: "Varies (typically opens in the fall)",
+    tags: ["Client Service", "Student Opportunities", "Diverse Backgrounds"],
+    endTime: "Varies (depends on the specific program)",
+    price: "",
+    actions: ["https://www.linkedin.com/company/icon-iimbconsultingclub/"],
+  },
+  {
+    id: 8,
+    name: "Consult Club - IIM Ahmedabad",
+    chat: "Varies (typically opens in the fall)",
+    tags: ["Client Service", "Student Opportunities", "Diverse Backgrounds"],
+    endTime: "Varies (depends on the specific program)",
+    price: "",
+    actions: ["https://www.linkedin.com/company/consult-club-iim-ahmedabad/"],
+  },
+  {
+    id: 9,
+    name: "IITG.ai The Artificial Intelligence Community of IIT Guwahati.",
+    chat: "Varies (typically opens in the fall)",
+    tags: [
+      "AI Innovation",
+      "Open Source",
+      "Collaboration",
+      "Community Developmen",
+    ],
+    endTime: "Varies (depends on the specific program)",
+    price: "",
+    actions: ["https://www.linkedin.com/company/iitg-ai/"],
+  },
+  {
+    id: 10,
+    name: "Business Club, IIT (BHU), Varanasi",
+    chat: "Varies (typically opens in the fall)",
+    tags: ["Consulting", "Product Management", "Economics", "Finance"],
+    endTime: "Varies (depends on the specific program)",
+    price: "",
+    actions: [
+      "https://www.inlaksfoundation.org/",
+      "https://www.linkedin.com/company/businessclubiitbhu/",
+    ],
+  },
+  {
+    id: 11,
+    name: "Entrepreneurship Cell, IIT Indore",
+    chat: "Varies (typically opens in the fall)",
+    tags: [
+      "Entrepreneurship Promotion",
+      "Marketing Fiesta",
+      "E-Summit",
+      "Workshops and Talk Sessions",
+    ],
+    endTime: "Varies (depends on the specific program)",
+    price: "",
+    actions: ["http://ecell.iiti.ac.in/"],
+  },
+  // Add more customer data objects as needed
+];
+
+export default CustomerData;
