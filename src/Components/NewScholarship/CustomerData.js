@@ -22,7 +22,7 @@ const CustomerData = [
         endTime:"7 NOVEMBER 2023",
         price:"",
         action:"https://www.chevening.org/scholarship/india/",
-        status:"Active"
+        status:"Archive"
     } ,
     {
         id: 2,
@@ -40,7 +40,7 @@ const CustomerData = [
         endTime:"January",
         price:"",
         action:"https://eacea.ec.europa.eu/erasmus-plus/scholarships_en",
-        status:"Active"
+        status:"Archive"
     } ,
     {
         id: 4,
@@ -55,7 +55,7 @@ const CustomerData = [
         id: 5,
         name:"GREAT Scholarships",
         startTime:"September",
-        endTime:"Varies (depends on the specific country)",
+        endTime:"December",
         price:"",
         action:"https://study-uk.britishcouncil.org/options/scholarships-financial-support/great-scholarships",
         status:"Archive"
@@ -64,16 +64,16 @@ const CustomerData = [
         id: 6,
         name:"Scotland's Saltire Scholarships",
         startTime:"July 2024",
-        endTime:"Varies (depends on the specific program) Expected December",
+        endTime:"November",
         price:"",
         action:"https://www.scotland.org/study/saltire-scholarships",
-        status:"Active"
+        status:"Archive"
     },
     {
         id: 7,
         name:"Charles Wallace India Trust Scholarships",
         startTime:"October",
-        endTime:"Varies (depends on the specific program)",
+        endTime:"January",
         price:"",
         action:"http://www.wallace-trusts.org.uk/india/",
         status:"Archive"
@@ -85,7 +85,7 @@ const CustomerData = [
         endTime:"March",
         price:"",
         action:"https://www.teachingenglish.org.uk/hornby-educational-trust",
-        status:"Active"
+        status:"Archive"
     },
     {
         id: 9,
