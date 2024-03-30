@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Cards from "./Cards";
 import Sections from "./Sections";
 import Table from "./Table";
-import University from "../University/University";
+import University from "./University/University";
 import data from "../University/data";
 import arrow from "../../images/arrow.gif";
 const useIntersectionObserver = (ref) => {
@@ -80,7 +80,7 @@ const Course = () => {
         </motion.div>
 
         <div id="arrow" class="container" onClick={scrollToNextSection}>
-          <img src={arrow} className="w-10 mx-auto mt-14" />
+          <img src={arrow} className="w-20 h-20 mx-auto mt-6 transform -rotate-90" />
         </div>
 
         <motion.div
@@ -107,7 +107,7 @@ const Course = () => {
           transition={{ duration: 0.8 }}
           ref={tableRef}
         >
-          <University univdata={changeUniv} />
+          <University univdata={changeUniv} id="univtable"/>
         </motion.div>
       </section>
     </>

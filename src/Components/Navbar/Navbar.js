@@ -37,7 +37,7 @@ const Navbar = () => {
                             {/* primary nav */}
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
                                 <NavLink to={"/Resume"}>Resume Builder</NavLink>
-                                <NavLink to={"/Blog"}>Connect</NavLink>
+                                <NavLink to={"/Connect"}>Connect</NavLink>
                                 <NavLink to={"/Scholarship"}>Scholarships</NavLink>
                                 <NavLink to={"/course"}>Courses</NavLink>
                                 <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 {/* mobile menu */}
                 <div className={mobilestyle}>
                     <NavLink to={"/Resume"}>Resume Builder</NavLink>
-                    <NavLink to={"/Blog"}>Connect</NavLink>
+                    <NavLink to={"/Connect"}>Connect</NavLink>
                     <NavLink to={"/Scholarship"}>Scholarships</NavLink>
                     <NavLink to={"/course"}>Courses</NavLink>
                     <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>

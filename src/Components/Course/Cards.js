@@ -44,7 +44,7 @@ Discover our top courses curated to enhance your skills and advance your career.
             }}
           >
             <a
-              href="#table"
+              href="#univtable"
               class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
             >
               <img

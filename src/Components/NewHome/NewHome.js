@@ -103,8 +103,8 @@ const NewHome = () => {
               </div>
             </motion.div>
 
-            <div id="arrow" class="container" onClick={scrollToNextSection}>
-              <img src={arrow} className="w-10 mx-auto mt-6" />
+            <div id="arrow" class="bg-white text-black" onClick={scrollToNextSection}>
+              <img src={arrow} className="w-20 h-20 mx-auto mt-6 transform -rotate-90" />
             </div>
 
             <div id="explore" className="">

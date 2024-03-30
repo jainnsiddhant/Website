@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../Navbar/Navbar";
 import { Footer } from "../Footer/Footer";
 import siddhant from "../../images/siddhant2.jpg";
@@ -6,13 +6,35 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Contactus = () => {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Here you can put the logic to send the form data
+    // to your backend or any other service
+
+    // Show the popup
+    setShowPopup(true);
+
+    // Reset the form fields
+    event.target.reset();
+
+    // Hide the popup after a few seconds
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 5000); // Adjust the time as per your requirement
+  };
+
+  
   return (
     <>
       <Navbar />
-      <div className="flex flex-row sm:flex-col justify-center items-center w-screen  bg-white">
+      <div className="flex flex-row sm:flex-col justify-center items-center w-screen bg-white">
         {/* COMPONENT CODE */}
         <div className="sm:block md:flex md:flex-row md:mt-[3rem] mx-auto my-4 px-4 lg:px-20">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+          <form action="https://formspree.io/f/xyyarywl" method="POST" onSubmit={handleSubmit}>
             <div className="flex">
               <h1 className="font-bold uppercase text-5xl">
                 Send us a <br /> message
@@ -22,39 +44,56 @@ const Contactus = () => {
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
+                name="first name"
                 placeholder="First Name*"
+                autoComplete="off"
+                required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
+                name="second name"
                 placeholder="Last Name*"
+                autoComplete="off"
+                required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="email"
+                name="eamil"
                 placeholder="Email*"
+                autoComplete="off"
+                required
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="number"
+                name="number"
                 placeholder="Phone*"
+                autoComplete="off"
+                required
               />
             </div>
             <div className="my-4">
               <textarea
+                name="message"
                 placeholder="Message*"
                 className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 defaultValue={""}
+                autoComplete="off"
+                required
               />
             </div>
             <div className="my-2 w-1/2 lg:w-1/4">
               <button
+              type="submit"
                 className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
                 focus:outline-none focus:shadow-outline"
               >
                 Send Message
               </button>
             </div>
+          </form>
           </div>
 
           <div className="w-full lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
@@ -185,6 +224,11 @@ const Contactus = () => {
         </i>
       </div>
       <Footer />
+      {showPopup && (
+  <div className="fixed top-2 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-lg shadow-md">
+    <p className="text-blue-500 font-semibold">Thank you for your feedback!</p>
+  </div>
+)}
     </>
   );
 };
