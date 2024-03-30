@@ -15,11 +15,10 @@ export default function Banner() {
       >
         <div className="flex flex-col items-center justify-center">
           <h1 className="mt-10 text-4xl font-bold text-center text-white">
-            Connect and Read Blogs
+            Connect & Read Blogs
           </h1>
           <p className="text-lg text-center text-white mt-8 w-[90%]">
-            Discover vibrant connections with student ambassadors and delve into
-            captivating featured blogs on our platform.
+          Connect with student ambassadors to learn about your university and uncover insightful blogs from international students on university life
           </p>
           <div className="mt-10 mb-10 space-x-2">
             <button

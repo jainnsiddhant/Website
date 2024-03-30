@@ -64,8 +64,7 @@ export default function Table() {
           Enhance Resume
         </h2>
         <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-center">
-          Revamped resume layout with enhanced table design for optimal
-          readability and visual appeal.
+        Boost your resume with these courses offered by societies from IITs and IIMs to elevate your skillset and create a strong resume
         </p>
       </div>
       <DataTable

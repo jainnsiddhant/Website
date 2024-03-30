@@ -21,11 +21,10 @@ const Sections = (props) => {
             data-aos="fade-right"
             className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
           >
-            Top Course
+            Top Courses
           </h2>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-          Explore Our Top Courses for Your Next Educational Journey
-          </p>
+          Explore elite courses tailored to elevate your expertise and pave your ideal career path   </p>
         </div>
         <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-5 w-[95%] mx-auto">
           <div>
@@ -56,7 +55,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Financial Accounting
+                          BSc/ MSc Finance
                           </p>
                         </div>
                       </div>
@@ -66,7 +65,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Managerial Accounting
+                          MSc Finance and Accounting
                           </p>
                         </div>
                       </div>
@@ -75,7 +74,7 @@ const Sections = (props) => {
                       <div class="flex items-center">
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
-                          <p class="text-sm font-medium truncate">Auditing</p>
+                          <p class="text-sm font-medium truncate">MSc Accounting</p>
                         </div>
                       </div>
                     </li>
@@ -83,7 +82,7 @@ const Sections = (props) => {
                       <div class="flex items-center ">
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
-                          <p class="text-sm font-medium truncate">Taxation</p>
+                          <p class="text-sm font-medium truncate">MSc Auditing and Accounting</p>
                         </div>
                       </div>
                     </li>
@@ -92,7 +91,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Corporate Finance
+                            
                           </p>
                         </div>
                       </div>
@@ -143,7 +142,9 @@ const Sections = (props) => {
                       <div class="flex items-center">
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
-                          <p class="text-sm font-medium truncate">Finance</p>
+                          <p class="text-sm font-medium truncate">
+                            Master’s in Business Administration (MBA)
+                            </p>
                         </div>
                       </div>
                     </li>
@@ -151,7 +152,9 @@ const Sections = (props) => {
                       <div class="flex items-center ">
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
-                          <p class="text-sm font-medium truncate">Marketing</p>
+                          <p class="text-sm font-medium truncate">
+                          Master’s in Management (MIM)
+                          </p>
                         </div>
                       </div>
                     </li>
@@ -160,7 +163,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Human Resource Management (HRM)
+                          Master’s in Financial Analysis
                           </p>
                         </div>
                       </div>
@@ -170,7 +173,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Operations Management
+                          MSc/BSc Business Analytics
                           </p>
                         </div>
                       </div>
@@ -180,7 +183,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Strategic Management
+                            
                           </p>
                         </div>
                       </div>
@@ -219,7 +222,7 @@ const Sections = (props) => {
                 <div class="p-5 bg-slate-300">
                   <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                      Computer Science Information
+                      IT and Computer Science
                     </h5>
                   </a>
                   <ul role="list" class="divide-y divide-gray-500">
@@ -228,7 +231,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Artificial Intelligence
+                          MSc/BSc Computing Science
                           </p>
                         </div>
                       </div>
@@ -238,7 +241,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Data Science
+                          MSc/BSc Artificial Intelligence
                           </p>
                         </div>
                       </div>
@@ -248,7 +251,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Cyber Security
+                          MSc/BSc Data Science
                           </p>
                         </div>
                       </div>
@@ -258,7 +261,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Data Structures
+                          MSc/BSc Cyber Security
                           </p>
                         </div>
                       </div>
@@ -268,7 +271,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Machine Learning
+                          MSc/BSc Machine Learning
                           </p>
                         </div>
                       </div>
@@ -316,7 +319,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Microeconomics
+                           BA (Hons) Economics and Management
                           </p>
                         </div>
                       </div>
@@ -326,7 +329,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Macroeconomics
+                          BSc/MSc Economics
                           </p>
                         </div>
                       </div>
@@ -336,7 +339,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            International Economics
+                          MSc Economics and Finance
                           </p>
                         </div>
                       </div>
@@ -346,7 +349,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Development Economics
+                            MPhil Finance and Economics
                           </p>
                         </div>
                       </div>
@@ -356,7 +359,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Labor Economics
+                          MSc Data Analytics for Economics and Finance
                           </p>
                         </div>
                       </div>
@@ -403,7 +406,7 @@ const Sections = (props) => {
                       <div class="flex items-center">
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
-                          <p class="text-sm font-medium truncate">Literature</p>
+                          <p class="text-sm font-medium truncate">MA English Literature</p>
                         </div>
                       </div>
                     </li>
@@ -412,7 +415,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Linguistics
+                          MA Linguistics
                           </p>
                         </div>
                       </div>
@@ -422,7 +425,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Creative Writing
+                          MA Creative Writing
                           </p>
                         </div>
                       </div>
@@ -432,7 +435,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Composition and Rhetoric
+                          MA Writing Studies
                           </p>
                         </div>
                       </div>
@@ -442,7 +445,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Cultural Studies
+                          MA Cultural Studies
                           </p>
                         </div>
                       </div>
@@ -490,7 +493,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Security Studies
+                          MA International Relations (with a focus on Foreign Policy Analysis)
                           </p>
                         </div>
                       </div>
@@ -500,7 +503,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            International Political Economy (IPE)
+                          MA Diplomacy
                           </p>
                         </div>
                       </div>
@@ -510,7 +513,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            International Law and Organizations
+                          MA Law (specialization in International Law)
                           </p>
                         </div>
                       </div>
@@ -520,7 +523,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Diplomacy and Negotiation
+                          MA International Political Economy
                           </p>
                         </div>
                       </div>
@@ -530,7 +533,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Foreign Policy Analysis
+                          MA Security Studies
                           </p>
                         </div>
                       </div>
@@ -578,7 +581,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Digital Marketing
+                          MSc Digital Marketing
                           </p>
                         </div>
                       </div>
@@ -588,7 +591,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Brand Management
+                          MSc Brand Management
                           </p>
                         </div>
                       </div>
@@ -598,7 +601,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Market Research and Analytics
+                          MSc Marketing Research
                           </p>
                         </div>
                       </div>
@@ -608,7 +611,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Advertising and Promotion
+                          MSc Advertising
                           </p>
                         </div>
                       </div>
@@ -618,7 +621,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Product Management
+                          MSc Product Management
                           </p>
                         </div>
                       </div>
@@ -666,7 +669,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Thermodynamics and Energy Systems
+                          MSc Thermo Fluid Science and Engineering
                           </p>
                         </div>
                       </div>
@@ -676,7 +679,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Mechatronics and Robotics
+                          MSc Mechatronics Engineering
                           </p>
                         </div>
                       </div>
@@ -686,7 +689,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Materials Science and Engineering
+                          MSc Materials Science and Engineering
                           </p>
                         </div>
                       </div>
@@ -696,7 +699,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Design and Manufacturing
+                          MSc Integrated Product Design
                           </p>
                         </div>
                       </div>
@@ -706,7 +709,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Fluid Mechanics and Aerodynamics
+                          MSc Aerospace Engineering
                           </p>
                         </div>
                       </div>
@@ -754,7 +757,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Drug Discovery and Development
+                          MSc Pharmaceutical Sciences (with a focus on Drug Discovery)
                           </p>
                         </div>
                       </div>
@@ -764,7 +767,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Pharmaceutical Manufacturing
+                          MSc Pharmaceutical Engineering
                           </p>
                         </div>
                       </div>
@@ -774,7 +777,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Regulatory Affairs
+                          MSc Regulatory Affairs for Pharmaceuticals
                           </p>
                         </div>
                       </div>
@@ -784,7 +787,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Clinical Research and Trials
+                          MSc Clinical Research
                           </p>
                         </div>
                       </div>
@@ -794,7 +797,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Pharmaceutical Marketing and Sales
+                          MSc Pharmaceutical Marketing
                           </p>
                         </div>
                       </div>
@@ -842,7 +845,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Clinical Psychology
+                          Clinical Psychology (Doctorate - DClinPsy)
                           </p>
                         </div>
                       </div>
@@ -852,7 +855,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Cognitive Psychology
+                          MSc Cognitive Psychology
                           </p>
                         </div>
                       </div>
@@ -862,7 +865,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Developmental Psychology
+                          MSc Developmental Psychology
                           </p>
                         </div>
                       </div>
@@ -872,7 +875,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Social Psychology
+                          MSc Social Psychology
                           </p>
                         </div>
                       </div>
@@ -882,7 +885,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            Biopsychology (Neuropsychology)
+                          MSc Cognitive Neuroscience
                           </p>
                         </div>
                       </div>

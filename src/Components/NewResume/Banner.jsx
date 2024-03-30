@@ -9,7 +9,7 @@ export default function Banner() {
                     Resume Builder
                 </h1>
                 <p className="text-lg text-center text-white mt-5 w-[90%]">
-                Unlock your career potential effortlessly with our Resume Builder. Craft professional resumes that stand out and make a lasting impression on potential employers.
+                Unlock your career potential effortlessly with our Resume Builder. Craft professional resumes that stand out and make a lasting impression on potential employers
                 </p>
                 <div className="mt-8 mb-10">
                     <button className="px-6 py-2 text-center text-white rounded-md shadow-md" style={{backgroundColor: '#2563EB'}}>

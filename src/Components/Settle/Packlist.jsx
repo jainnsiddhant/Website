@@ -13,7 +13,7 @@ const Packlist = () => {
                         Packing List
                     </h2>
                     <p className="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                    Prepare for your UK academic adventure with our comprehensive packing list tailored for students aiming for higher studies!
+                    Embark on your UK academic journey with our heartfelt student packing list, tailored just for you. Get ready for an exciting adventure, though, sadly, you can't pack your mom's home-cooked meals
                     </p>
                 </div>
 

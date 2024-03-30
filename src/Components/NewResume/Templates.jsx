@@ -13,7 +13,7 @@ const Templates = () => {
                         Resume Builder
                     </h2>
                     <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                    Unlock your career potential with our Resume Builder – craft professional resumes effortlessly.
+                    Unlock your career potential effortlessly with our Resume Builder. Craft professional resumes that stand out and make a lasting impression on potential employers
                     </p>
                 </div>
 
@@ -34,7 +34,7 @@ const Templates = () => {
                        <a href="#harvard">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Harvard CV & Cover Letter Document</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Official Harvard instructions on creating a perfect CV & cover letter.</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Build a Winning Application: Harvard's Guide to Creating a Perfect CV & Cover Letter.</p>
                      </div>
                    </div>
                    </motion.div>
@@ -52,9 +52,9 @@ const Templates = () => {
                      </a>
                      <div className="p-4">
                        <a href="#goldmansachs">
-                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">GoldmanSachs one page Template</h5>
+                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">GoldmanSachs One-Page Template</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Best one page CV Template.</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Streamlined One-Page CV Template.</p>
                      </div>
                    </div>
                    </motion.div>
@@ -74,15 +74,12 @@ const Templates = () => {
                        <a href="#table">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Enhance your Resume</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">IIT/IIM free certifications offered by there clubs.</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Certifications offered by IITs & IIMs</p>
                      </div>
                    </div>
                    </motion.div>
-
-
-                   
+                 
                 </div>
-
 
             </section>
         </>

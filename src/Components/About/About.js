@@ -36,13 +36,7 @@ const About = () => {
                 </span>
               </h2>
               <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
-                Welcome to Find My Uni, your ultimate guide to pursuing higher
-                education abroad! We stand out from the crowd with our unique
-                approach to assisting aspiring students in their journey towards
-                academic excellence and personal growth. Why choose us? Choose
-                Find My Uni for a transformative overseas education experience
-                that goes beyond conventional norms, empowering you to make
-                informed decisions and thrive in your academic journey.
+              Welcome to FindMyUni, a unique platform with an innovative approach to assisting aspiring students in their journey towards academic excellence and personal growth. We offer a transformative overseas education experience beyond conventional norms, empowering you to make informed decisions and thrive in your educational journey.
               </p>
 
               <Cards />
