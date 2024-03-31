@@ -13,10 +13,11 @@ export const Footer = () => {
                     <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             <div>
+                            <div className='flex flex-col'>
                             <div>
                                 <Link
                                     to={"/"}
-                                    className="flex items-center py-5 px-2 text-black"
+                                    className="flex items-center text-black"
                                 >
                                     <img
                                         className="h-6 w-6 mr-1 text-blue-400" 
@@ -27,6 +28,10 @@ export const Footer = () => {
                                     {/* <img src={logoORG} className="h-12 w-20 mr-1 text-blue-400 mix-blend-color" /> */}
                                     <span className="font-bold text-2xl navfont">FindMyUni</span>
                                 </Link>
+                            </div>
+                            <div className='text-sm'>
+                            A KD global administration product
+                            </div>
                             </div>
                                 <p className="max-w-xs mt-4 text-sm text-gray-600">
                                 Your premier guide to global education, guiding students towards academic excellence and personal growth.
@@ -130,15 +135,15 @@ export const Footer = () => {
                                     </a> */}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-2 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                            <div className="grid grid-cols-2 gap-6 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Home</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/" className='hover:text-blue-600'>Top Universities</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/" className='hover:text-blue-600'>Our Features</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/" className='hover:text-blue-600'>Top Universities</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/" className='hover:text-blue-600'>Our Features</a></li>
                             </ul>
                         </div>
 
@@ -146,12 +151,12 @@ export const Footer = () => {
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Resume Builder</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/resume" className='hover:text-blue-600'>Resumes</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/resume" className='hover:text-blue-600'>Templates</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/resume" className='hover:text-blue-600'>Enhance Resume</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/resume" className='hover:text-blue-600'>Resumes</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/resume" className='hover:text-blue-600'>Templates</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/resume" className='hover:text-blue-600'>Enhance Resume</a></li>
                             </ul>
                         </div>
 
@@ -159,13 +164,13 @@ export const Footer = () => {
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Connect</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Student Ambassador</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Template</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>UniBuddy</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Blogs</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Student Ambassador</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Template</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>UniBuddy</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Blogs</a></li>
                             </ul>
                         </div>
 
@@ -173,10 +178,10 @@ export const Footer = () => {
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Scholarship</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/scholarship" className='hover:text-blue-600'>List</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/scholarship" className='hover:text-blue-600'>List</a></li>
                             </ul>
                         </div>
 
@@ -184,11 +189,11 @@ export const Footer = () => {
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Course</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/course" className='hover:text-blue-600'>Courses</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/course" className='hover:text-blue-600'>Ranking Table</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/course" className='hover:text-blue-600'>Courses</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/course" className='hover:text-blue-600'>Ranking Table</a></li>
                             </ul>
                         </div>
 
@@ -196,13 +201,13 @@ export const Footer = () => {
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Settle</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Forex Cards</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Pack List</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Banks to Open</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Housing websites</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Forex Cards</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Pack List</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Banks to Open</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/SettleinUK" className='hover:text-blue-600'>Housing websites</a></li>
                             </ul>
                         </div>
 
@@ -210,28 +215,28 @@ export const Footer = () => {
                                 <div>
 
 
-                                <div className='mb-5'>
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Already</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Instructions</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Save Money</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Job Portals</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>GP Surgeries</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>NI Number</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>WIFI</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Tax Calculator</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Instructions</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Save Money</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Job Portals</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>GP Surgeries</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>NI Number</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>WIFI</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Tax Calculator</a></li>
                             </ul>
                         </div>
 
                         </div>
                         <div>
 
-                        <div className='mb-5'>
+                        <div className='mb-2'>
                             <h4 className='pb-4'>Our Services</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><Link to={"/university"} className='hover:text-blue-600'>Find University</Link></li>
-                                {/* <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Connect with ambassador</a></li>
-                                <li className='pb-4 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Enhance resume</a></li> */}
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><Link to={"/university"} className='hover:text-blue-600'>Find University</Link></li>
+                                {/* <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Connect with ambassador</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Enhance resume</a></li> */}
                             </ul>
                         </div>
 

@@ -26,7 +26,7 @@ const Sections = (props) => {
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
           Explore elite courses tailored to elevate your expertise and pave your ideal career path   </p>
         </div>
-        <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-5 w-[95%] mx-auto">
+        <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-2 md:space-y-0 mt-5 w-full mx-auto">
           <div>
             <motion.div
               whileHover={{
@@ -101,12 +101,8 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button 
-                  onClick={(e)=>{ 
-                    console.log("value");
-                    props.setchnageUniv(accountsdata) 
-                  }}
                   type="button"
                   className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
@@ -193,7 +189,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -281,7 +277,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -369,7 +365,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -455,7 +451,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -543,7 +539,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -631,7 +627,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -719,7 +715,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -807,7 +803,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -895,7 +891,7 @@ const Sections = (props) => {
               </div>
             </motion.div>
             <div className="flex mx-auto items-center justify-center mt-8">
-              <a href="#table">
+              <a href="#univtable">
                 <button
                   type="button"
                   class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"

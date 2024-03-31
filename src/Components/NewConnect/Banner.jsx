@@ -15,20 +15,21 @@ export default function Banner() {
       >
         <div className="flex flex-col items-center justify-center">
           <h1 className="mt-10 text-4xl font-bold text-center text-white">
-            Connect & Read Blogs
+            Connect and Read Blogs
           </h1>
-          <p className="text-lg text-center text-white mt-8 w-[90%]">
-          Connect with student ambassadors to learn about your university and uncover insightful blogs from international students on university life
+          <p className="text-lg text-center text-white mt-8 w-[80%]">
+            Discover vibrant connections with student ambassadors and delve into
+            captivating featured blogs on our platform.
           </p>
-          <div className="mt-10 mb-10 space-x-2">
+          <div className="mt-10 mb-10 space-x-2 items-center justify-center flex">
             <button
-              className="px-6 py-2 text-center text-white rounded-md shadow-md"
+              className="px-3 py-2 text-center text-white rounded-md shadow-md"
               style={{ backgroundColor: "#2563EB" }}
             >
               <a href="#connectambassador">Connect</a>
             </button>
             <button
-              className="px-6 py-2 text-center text-white rounded-md shadow-md"
+              className="px-3 py-2 text-center text-white rounded-md shadow-md"
               style={{ backgroundColor: "#2563EB" }}
             >
               {/* <a href="#resumebuild">Connect</a> */}

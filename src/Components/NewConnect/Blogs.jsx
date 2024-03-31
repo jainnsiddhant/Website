@@ -14,6 +14,7 @@ const Blog = () => {
   return (
     <>
       <section id="featuredblogs" className="mt-10">
+      
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
             data-aos="fade-right"
@@ -25,22 +26,38 @@ const Blog = () => {
           Discover students’ insights and perspectives so that you feel more confident
           </p>
         </div>
-        <div className="">
+        <div className="relative">
           <Carousel 
            slideInterval={2000}
-            leftControl={"<<"}
-            rightControl={">>"}
-            className="w-[50%]  mx-auto"
+            leftControl={
+              <button type="button" class="relative top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+            }
+            rightControl={
+              <button type="button" class="relative top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+            }
+            className="w-[80%] mx-auto"
           >
             <>
-              <div 
-              className="" 
-              >
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/26/how-to-liven-up-your-degree-with-languages/"
                   target="_blank"
                 >
-                  <div className="md:min-w-[50vw] min-w-[80vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/26/how-to-liven-up-your-degree-with-languages/"
                       target="_blank"
@@ -79,12 +96,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/12/why-is-intercultural-competence-a-great-addition-to-your-cv/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/12/why-is-intercultural-competence-a-great-addition-to-your-cv/"
                       target="_blank"
@@ -123,12 +140,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                       target="_blank"
@@ -166,12 +183,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                       target="_blank"
@@ -209,12 +226,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/12/learn-to-sign-for-inclusivity-and-employability/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/12/learn-to-sign-for-inclusivity-and-employability/"
                       target="_blank"
@@ -252,12 +269,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/06/skills-journal-what-i-learned-from-placement/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/06/skills-journal-what-i-learned-from-placement/"
                       target="_blank"
@@ -295,12 +312,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/29/how-skills-enrichment-workshops-have-helped-me-improve-my-work/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/29/how-skills-enrichment-workshops-have-helped-me-improve-my-work/"
                       target="_blank"
@@ -339,12 +356,12 @@ const Blog = () => {
               </div>
             </>
             <>
-              <div>
+              <div className="w-[50%] mx-auto">
                 <a
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/10/02/my-final-year-survival-guide/"
                   target="_blank"
                 >
-                  <div className="min-w-[50vw] bg-white">
+                  <div className="min-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/10/02/my-final-year-survival-guide/"
                       target="_blank"
