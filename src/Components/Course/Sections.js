@@ -179,7 +179,7 @@ const Sections = (props) => {
                         <div class="flex-shrink-0"></div>
                         <div class="flex-1 min-w-0 ms-4">
                           <p class="text-sm font-medium truncate">
-                            MSc Management and Finance
+                            MSc in Management and Finance
                           </p>
                         </div>
                       </div>

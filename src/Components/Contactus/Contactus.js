@@ -25,35 +25,6 @@ const Contactus = () => {
       setShowPopup(false);
     }, 5000); // Adjust the time as per your requirement
   };
-
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  
-  //   try {
-  //     const response = await fetch("https://formspree.io/f/xyyarywl", {
-  //       method: "POST",
-  //       body: new FormData(event.target),
-  //     });
-  
-  //     if (!response.ok) {
-  //       throw new Error("Failed to submit form");
-  //     }
-  
-  //     // Show the popup
-  //     setShowPopup(true);
-  
-  //     // Reset the form fields
-  //     event.target.reset();
-  
-  //     // Hide the popup after a few seconds
-  //     setTimeout(() => {
-  //       setShowPopup(false);
-  //     }, 5000); // Adjust the time as per your requirement
-  //   } catch (error) {
-  //     console.error("Form submission error:", error);
-  //     // Handle error (e.g., display error message to the user)
-  //   }
-  // };
   
 
   
