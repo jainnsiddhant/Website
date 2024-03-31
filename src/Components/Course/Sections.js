@@ -15,7 +15,7 @@ import psychology from "../../images/psychology.jpg";
 const Sections = (props) => {
   return (
     <>
-      <section id="sections" className="mt-20 justify-center align-middle items-center">
+      <section id="sections" className="-mt-10 justify-center align-middle items-center">
       <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
             data-aos="fade-right"

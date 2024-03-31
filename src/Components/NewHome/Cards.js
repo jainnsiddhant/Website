@@ -90,7 +90,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume Build</h2>
-                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Create Your Winning Resume
                       </p>
                     </div>
@@ -106,7 +106,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Scholarship</h2>
-                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Find information regarding Scholarships
                       </p>
                     </div>
@@ -122,7 +122,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Courses</h2>
-                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Tailored Course Selection
 
                       </p>
@@ -131,9 +131,9 @@ export default function Cards() {
                 </motion.div>
                 </a>
               </div>
+            <img src={search} alt="search-image" style={{height:100 , width:100}} className="hidden md:block" />
             </div>
 
-            <img src={search} alt="search-image" style={{height:100 , width:100}} className="hidden md:block" />
           </div>
 
           <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
@@ -149,7 +149,7 @@ export default function Cards() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Connect</h2>
-                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Build Your Network
 
                       </p>
@@ -168,7 +168,7 @@ export default function Cards() {
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Settle in 
                       <span className="text-black  bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
-                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Your UK Relocation Guide
 
                       </p>
@@ -187,7 +187,7 @@ export default function Cards() {
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Already in 
                       <span className="text-black  bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
-                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Navigating UK Living
                       
                       </p>
@@ -196,9 +196,9 @@ export default function Cards() {
                 </motion.div>
                 </a>
               </div>
+            <img src={atjob} alt="atjob-image" style={{height:100 , width:100}} className="hidden md:block" />
             </div>
 
-            <img src={atjob} alt="atjob-image" style={{height:100 , width:100}} className="hidden md:block" />
           </div>
         </motion.div>
       </section>

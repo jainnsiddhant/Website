@@ -66,10 +66,10 @@ const Course = () => {
 
         <motion.div
           className="box"
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0.5, scale: 0.99 }}
           animate={{
-            opacity: cardsVisible ? 1 : 0.8,
-            scale: cardsVisible ? 1 : 0.5,
+            opacity: cardsVisible ? 1 : 0.99,
+            scale: cardsVisible ? 1 : 0.99,
           }}
           transition={{ duration: 0.8 }}
           ref={cardsRef}
@@ -77,8 +77,8 @@ const Course = () => {
           <Cards />
         </motion.div>
 
-        <div id="arrow" class="container" onClick={scrollToNextSection}>
-          <img src={arrow} className="w-20 h-20 mx-auto mt-6 transform -rotate-90" />
+        <div id="arrow" class="" onClick={scrollToNextSection}>
+          <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform" />
         </div>
 
         <motion.div
