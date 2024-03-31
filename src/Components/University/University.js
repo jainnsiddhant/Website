@@ -60,6 +60,10 @@ const University = ({univdata}) => {
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
           NOTE: By default, all rankings are sorted by Guardian Ranking.                    
           </p>
+          <div>
+          <a type="button" href="https://www.topuniversities.com/university-rankings" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">QS Ranking</a>
+          <a type="button" href="https://www.theguardian.com/education/ng-interactive/2023/sep/09/the-guardian-university-guide-2024-the-rankings" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Guardian Ranking</a>
+          </div>
         </div>
         <div className="p-6">
           <div className="text-lg font-bold text-center text-black border-b border-gray-200">

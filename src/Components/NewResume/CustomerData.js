@@ -36,7 +36,7 @@ const CustomerData = [
     id: 3,
     name: "The Entrepreneurship Cell, IIT Bombay",
     chat: "Varies (typically opens in the fall)",
-    tags: ["entrepreneurship"],
+    tags: ["Entrepreneurship"],
     endTime: "Varies (depends on the specific program)",
     price: "",
     actions: ["https://www.ecell.in/mainpage/home"],

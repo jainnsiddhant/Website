@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
+import { FaLinkedin } from 'react-icons/fa';
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primeicons/primeicons.css";
 import CustomerData from "./CustomerData"; // Import CustomerData
@@ -19,40 +20,56 @@ export default function Table() {
   //     );
   // };
 
-  // Function to render the action column content as a button
-  const actionBodyTemplate = (rowData) => {
-    // console.log(rowData.actions)
+
+// Function to render the action column content as a button
+const actionBodyTemplate = (rowData) => {
     const handleClick = (link) => {
-      console.log("hello");
-      window.open(link, "_blank");
+        console.log("hello");
+        window.open(link, "_blank");
     };
-    return rowData.actions.map((item, idx) => {
-      return (
-        <button
-          key={idx}
-          className="text-white space-x-4 bg-blue-500 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-          onClick={() => handleClick(item)}
-        >
-          {`Link ${idx + 1}`}
-        </button>
-      );
+
+    return rowData.actions.map((link, idx) => {
+        const isLinkedIn = link.includes("linkedin");
+
+        return (
+            <button
+                key={idx}
+                className={`text-white space-x-4 font-medium rounded-lg text-sm px-2 py-1.5 me-2 mb-1 ${
+                    isLinkedIn ? 'bg-blue-500 hover:bg-blue-600' : 'bg-cyan-500 hover:bg-cyan-600'
+                }`}
+                onClick={() => handleClick(link)}
+            >
+                {isLinkedIn ? (
+                    <>
+                        <FaLinkedin className="inline mr-2" /> LINKEDIN
+                    </>
+                ) : (
+                    "WEBSITE"
+                )}
+            </button>
+        );
     });
-  };
+};
+
+
 
   const actionTags = (rowData) => {
     // console.log(rowData.tags);
     return rowData.tags.map((item, idx) => {
       return (
-        <button
-          key={idx}
-          type="button"
-          className="text-white space-x-4 bg-blue-500 hover:bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-        >
-          {item}
-        </button>
+        <React.Fragment key={idx}>
+          <button
+            type="button"
+            className="font-medium text-sm py-1 mb-2"
+          >
+            {item}
+          </button>
+          {idx !== rowData.tags.length - 1 && <span>|</span>}
+        </React.Fragment>
       );
     });
-  };
+};
+
 
   return (
     <div id="table" className="card w-[80%] mx-auto mt-10">
@@ -86,7 +103,7 @@ export default function Table() {
           body={actionTags}
         ></Column>
         <Column
-          header={<p className="text-lg">Official website</p>}
+          header={<p className="text-lg">Official Pages</p>}
           body={actionBodyTemplate}
           style={{ width: "15%" }}
         ></Column>

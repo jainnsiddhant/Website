@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Cards from "./Cards";
 import Sections from "./Sections";
 import Table from "./Table";
-import University from "../University/University";
+import University from "./University/University";
 import data from "../University/data";
 import arrow from "../../images/arrow.gif";
 const useIntersectionObserver = (ref) => {
@@ -66,10 +66,10 @@ const Course = () => {
 
         <motion.div
           className="box"
-          initial={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0.5, scale: 0.99 }}
           animate={{
-            opacity: cardsVisible ? 1 : 0.8,
-            scale: cardsVisible ? 1 : 0.5,
+            opacity: cardsVisible ? 1 : 0.99,
+            scale: cardsVisible ? 1 : 0.99,
           }}
           transition={{ duration: 0.8 }}
           ref={cardsRef}
@@ -77,8 +77,8 @@ const Course = () => {
           <Cards />
         </motion.div>
 
-        <div id="arrow" class="container" onClick={scrollToNextSection}>
-          <img src={arrow} className="w-10 mx-auto mt-14" />
+        <div id="arrow" class="" onClick={scrollToNextSection}>
+          <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform filter invert" />
         </div>
 
         <motion.div
@@ -105,7 +105,7 @@ const Course = () => {
           transition={{ duration: 0.8 }}
           ref={tableRef}
         >
-          <University univdata={changeUniv} />
+          <University univdata={changeUniv} id="univtable"/>
         </motion.div>
       </section>
     </>

@@ -6,7 +6,7 @@ import Section1 from "./Section1";
 import UniBuddy from "./Unibuddy";
 import Blog from "./Blogs";
 import Template from "./Template";
-// import Example from "../NewTable/Table";
+import Example from "../NewTable/Table";
 
 const useIntersectionObserver = (ref) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,8 +54,8 @@ const NewConnect = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
-        <Section1 />
-        {/* <Example/> */}
+        {/* <Section1 /> */}
+        <Example/>
       </motion.div>
       <motion.div
         variants={textAnimation}
