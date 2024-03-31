@@ -111,19 +111,19 @@ const Contactus = () => {
                 I'm Siddhant Jain, a UK-based data scientist passionate about helping students coming to the UK. Our platform, FindMyUni, is designed to be a one-stop solution for the everyday challenges international students face. At FindMyUni, we believe in evaluating your true potential and aspirations, providing tailored advice to help you choose the best course and university that aligns with your goals. I would love to hear your feedback and encourage you to reach out if you need guidance or simply wish to chat.
                 </p>
               </div>
-              <div className="flex my-4 w-2/3 lg:w-1/2">
+              {/* <div className="flex my-4 w-2/3 lg:w-1/2">
                 <div className="flex flex-col">
                   <i className="fas fa-map-marker-alt pt-2 pr-2"></i>
                 </div>
 
                 <i className="fas fa-map-marker-alt pt-2 pr-2"></i>
-              </div>
-              <i className="fas fa-map-marker-alt pt-2 pr-2">
+              </div> */}
+              {/* <i className="fas fa-map-marker-alt pt-2 pr-2"> */}
                 <div className="flex my-4 w-2/3 lg:w-1/2">
-                  <div className="flex flex-col">
+                  {/* <div className="flex flex-col">
                     <i className="fas fa-phone-alt pt-2 pr-2"></i>
-                  </div>
-                  <i className="fas fa-phone-alt pt-2 pr-2">
+                  </div> */}
+                  {/* <i className="fas fa-phone-alt pt-2 pr-2"> */}
                     <div className="flex flex-col">
                       <h2 className="text-2xl">Connect</h2>
                       <div className="flex flex-row gap-x-2">
@@ -147,7 +147,7 @@ const Contactus = () => {
                         </a>
                       </div>
                     </div>
-                  </i>
+                  {/* </i> */}
                 </div>
                 <div className="flex my-4 w-2/3 lg:w-1/2">
                   <div className="flex flex-col">
@@ -193,7 +193,7 @@ const Contactus = () => {
                                         <i className="fab fa-linkedin-in text-blue-900"></i>
                                     </i>
                                 </i> */}
-              </i>
+              {/* </i> */}
             </div>
             {/* <i className="fas fa-map-marker-alt pt-2 pr-2">
                             <i className="fas fa-phone-alt pt-2 pr-2">
