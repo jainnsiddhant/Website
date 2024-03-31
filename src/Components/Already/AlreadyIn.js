@@ -33,7 +33,7 @@ const AlreadyIn = () => {
                         Already In UK
                     </h2>
                     <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                    Unlock Your Path: Essential Guidance for Navigating Life in the UK.
+                    Unlock Your Path: Essential Guidance for Navigating Life in the UK
                     </p>
                 </div>
 
