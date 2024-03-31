@@ -107,9 +107,7 @@ const Contactus = () => {
               </div>
               <div className="flex flex-col">
                 <p className="text-gray-200 mt-3">
-                  We believe in evaluating your true potential and aspirations,
-                  providing tailored advice to help you choose the best course
-                  and university that aligns with your goals.
+                I'm Siddhant Jain, a UK-based data scientist passionate about helping students coming to the UK. Our platform, FindMyUni, is designed to be a one-stop solution for the everyday challenges international students face. At FindMyUni, we believe in evaluating your true potential and aspirations, providing tailored advice to help you choose the best course and university that aligns with your goals. I would love to hear your feedback and encourage you to reach out if you need guidance or simply wish to chat.
                 </p>
               </div>
               <div className="flex my-4 w-2/3 lg:w-1/2">

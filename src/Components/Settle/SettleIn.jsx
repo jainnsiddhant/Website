@@ -31,7 +31,7 @@ const SettleIn = () => {
                         Settling Down Guidelines
                     </h2>
                     <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-                        Welcome to our comprehensive guide on settling in the UK!
+                    The Ultimate UK Settling-In Guide: Everything You Need to Know
                     </p>
                 </div>
 

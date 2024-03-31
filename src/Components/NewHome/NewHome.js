@@ -92,13 +92,13 @@ const NewHome = () => {
             >
               <div className="lg:w-2/3 text-center mx-auto">
                 <h1 className="text-gray-900 font-bold text-4xl md:text-6xl xl:text-7xl mt-20">
-                  Let's Begin your journey to the{" "}
+                Let's Begin Your Journey to the{" "}
                   <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
                     United Kingdom
                   </span>
                 </h1>
                 <p className="mt-5 text-gray-700 ">
-                  Best Place for finding the stuff for you
+                Your one-stop destination to help you overcome your obstacles and achieve your goals as an International student
                 </p>
               </div>
             </motion.div>
@@ -126,7 +126,7 @@ const NewHome = () => {
                     data-aos="fade-right"
                     className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10"
                   >
-                    Explore universities in{" "}
+                    Discover Top Universities and Courses in{" "}
                     <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
                       United Kingdom
                     </span>
@@ -158,7 +158,7 @@ const NewHome = () => {
                           </h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base text-center">
-                          The best University to study abroad.
+                        Hallmark of Excellence
                         </p>
                       </div>
                     </div>
@@ -181,11 +181,11 @@ const NewHome = () => {
                       <div className="p-4">
                         <a href="/course">
                           <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900 text-center">
-                            Subject Wise List
+                            Subject-Wise List
                           </h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base text-center">
-                          The best University to study abroad.
+                        Find your niche                        
                         </p>
                       </div>
                     </div>
@@ -212,7 +212,7 @@ const NewHome = () => {
                           </h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base text-center">
-                          The best University to study abroad.
+                        Shape Career Path
                         </p>
                       </div>
                     </div>

@@ -20,10 +20,10 @@ const Blog = () => {
             data-aos="fade-right"
             className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
           >
-            Features Blogs
+            Featured Blogs
           </h2>
           <p className="mb-3 text-lg font-normal text-gray-500">
-            Unlock Your Path: Essential Guidance for Navigating Life in the UK.
+          Discover students’ insights and perspectives so that you feel more confident
           </p>
         </div>
         <div className="relative">

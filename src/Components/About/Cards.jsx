@@ -107,7 +107,7 @@ export default function Cards() {
             >
               Connect with student ambassadors who share their experiences,
               making it easier for you to envision your life abroad and get
-              firsthand insights into the student community.
+              firsthand insights into the student community
             </p>
           </div>
         </motion.div>

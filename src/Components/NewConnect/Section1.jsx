@@ -20,7 +20,7 @@ const Section1 = () => {
           Student Ambassadors
         </h2>
         <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-center w-full">
-          Welcome to our comprehensive guide!
+        Meet Your Guides to Campus Life
         </p>
       </div>
       {/* <div className="flex flex-col sm:flex-row md:flex-row w-full md:w-[90%] mx-auto mb-5 mt-10">

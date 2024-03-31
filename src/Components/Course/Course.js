@@ -57,12 +57,10 @@ const Course = () => {
             data-aos="fade-right"
             className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
           >
-            Top Course
+            Top Courses
           </h2>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-            Explore the pinnacle of education with our top courses selection,
-            meticulously curated to propel your knowledge and career to new
-            heights.
+          Embark on a journey of education excellence with carefully selected top courses designed to advance your skills and career prospects
           </p>
         </div>
 

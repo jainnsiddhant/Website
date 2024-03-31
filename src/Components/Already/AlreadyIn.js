@@ -53,7 +53,7 @@ const AlreadyIn = () => {
                        <a href="#instructions">
                          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Instructions</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Important instructions for international students</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Grab these easy-to-follow instructions, essential as a to-do list, and dive into exploration</p>
                      </div>
                    </div>
                    </motion.div>
