@@ -58,7 +58,7 @@ const University = ({univdata}) => {
           Discover top university rankings for insights into academic excellence and opportunities
           </p>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-          NOTE: By default, all rankings are sorted by Guardian Ranking.
+          NOTE: By default, all rankings are sorted by Guardian Ranking.                    
           </p>
         </div>
         <div className="p-6">

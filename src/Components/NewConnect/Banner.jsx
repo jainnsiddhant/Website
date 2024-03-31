@@ -18,7 +18,7 @@ export default function Banner() {
             Connect & Read Blogs
           </h1>
           <p className="text-lg text-center text-white mt-8 w-[90%]">
-          Connect with student ambassadors to learn about your university and uncover insightful blogs from international students on university life
+          Connect with student ambassadors to learn about your university and uncover insightful blogs from international students on university life              
           </p>
           <div className="mt-10 mb-10 space-x-2">
             <button
