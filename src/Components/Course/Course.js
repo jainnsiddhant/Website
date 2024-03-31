@@ -78,7 +78,7 @@ const Course = () => {
         </motion.div>
 
         <div id="arrow" class="" onClick={scrollToNextSection}>
-          <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform" />
+          <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform filter invert" />
         </div>
 
         <motion.div
