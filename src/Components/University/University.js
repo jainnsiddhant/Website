@@ -58,7 +58,7 @@ const University = ({univdata}) => {
           Discover top university rankings for insights into academic excellence and opportunities
           </p>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-          NOTE: By default, all rankings are sorted by Guardian Ranking.
+          NOTE: By default, all rankings are sorted by Guardian Ranking.                    
           </p>
           <div>
           <a type="button" href="https://www.topuniversities.com/university-rankings" target="_blank" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">QS Ranking</a>
