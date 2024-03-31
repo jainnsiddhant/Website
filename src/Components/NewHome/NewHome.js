@@ -103,7 +103,7 @@ const NewHome = () => {
               </div>
             </motion.div>
 
-            <div id="arrow" class="" onClick={scrollToNextSection}>
+            <div id="arrow" class="mt-20" onClick={scrollToNextSection}>
               {/* <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform filter invert" /> */}
               <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform filter invert relative" />
               <div className="absolute inset-0 bg-white opacity-0 mix-blend-overlay"></div>

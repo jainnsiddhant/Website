@@ -54,8 +54,8 @@ const NewConnect = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ staggerChildren: 0.5 }}
       >
-        <Section1 />
-        {/* <Example/> */}
+        {/* <Section1 /> */}
+        <Example/>
       </motion.div>
       <motion.div
         variants={textAnimation}
