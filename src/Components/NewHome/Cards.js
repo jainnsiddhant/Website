@@ -61,10 +61,10 @@ export default function Cards() {
         >
           <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h2 data-aos='fade-right' className='mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
-              What we Offer
+              What We Offer
             </h2>
             <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-              Welcome to our comprehensive guide on settling in the UK!
+            Welcome to our complete guide to settling in the UK
             </p>
           </div>
           
@@ -91,7 +91,7 @@ export default function Cards() {
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume Build</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
-                        Unlock your career potential.
+                      Create Your Winning Resume
                       </p>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ export default function Cards() {
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Scholarship</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
-                        Unlock your career potential.
+                      Find information regarding Scholarships
                       </p>
                     </div>
                   </div>
@@ -123,7 +123,8 @@ export default function Cards() {
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Courses</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
-                        Unlock your career potential.
+                      Tailored Course Selection
+
                       </p>
                     </div>
                   </div>
@@ -149,7 +150,8 @@ export default function Cards() {
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Connect</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
-                        Unlock your career potential.
+                      Build Your Network
+
                       </p>
                     </div>
                   </div>
@@ -167,7 +169,8 @@ export default function Cards() {
                       <span className="text-black  bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
-                        Unlock your career potential.
+                      Your UK Relocation Guide
+
                       </p>
                     </div>
                   </div>
@@ -185,7 +188,8 @@ export default function Cards() {
                       <span className="text-black  bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent text-3xl"> UK</span>
                       </h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' }}>
-                        Unlock your career potential.
+                      Navigating UK Living
+                      
                       </p>
                     </div>
                   </div>

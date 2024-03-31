@@ -18,8 +18,7 @@ const Template = () => {
                 Harvard CV & Cover Letter Document
                 </h1>
                 <p className="mb-3 text-lg font-normal text-gray-500">
-                  Official Harvard instructions on creating a perfect CV & cover
-                  letter.
+                Build a Winning Application: Harvard's Guide to Creating a Perfect CV & Cover Letter
                 </p>
                 <motion.div
                   whileHover={{
@@ -60,10 +59,10 @@ const Template = () => {
               </div>
               <div id="goldmansachs" className="justify-center items-center text-center w-full md:w-1/2 flex flex-col gap-x-3">
                 <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900">
-                  GoldmanSachs one page Template
+                  GoldmanSachs One-Page Template
                 </h1>
                 <p className="mb-3 text-lg font-normal text-gray-500">
-                  Best one page CV Template.
+                Streamlined One-Page CV Template
                 </p>
                 {/* <a target="_blank" href="https://www.reed.co.uk/" className="text-sm mt-3">https://www.reed.co.uk/</a> */}
                 <motion.div
