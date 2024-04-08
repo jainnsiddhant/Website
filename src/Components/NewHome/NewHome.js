@@ -97,7 +97,7 @@ const NewHome = () => {
                     United Kingdom
                   </span>
                 </h1>
-                <p className="mt-5 text-gray-700 ">
+                <p className="mt-5 text-gray-700 text-xl">
                 Your one-stop destination to help you overcome your obstacles and achieve your goals as an International student
                 </p>
               </div>
