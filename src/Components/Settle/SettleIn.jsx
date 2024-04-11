@@ -41,7 +41,7 @@ const SettleIn = () => {
                 <motion.div
                   whileHover={
                     {
-                      scale: 1.5
+                      scale: 1.25
                     }
                   }>
                    <div className="max-w-xs bg-white">
@@ -60,7 +60,7 @@ const SettleIn = () => {
                    <motion.div
                   whileHover={
                     {
-                      scale: 1.5
+                      scale: 1.25
                     }
                   }>
                    <div className="max-w-xs bg-white">
@@ -79,7 +79,7 @@ const SettleIn = () => {
                    <motion.div
                   whileHover={
                     {
-                      scale: 1.5
+                      scale: 1.25
                     }
                   }>
                    <div className="max-w-xs bg-white">
@@ -98,7 +98,7 @@ const SettleIn = () => {
                    <motion.div
                   whileHover={
                     {
-                      scale: 1.5
+                      scale: 1.25
                     }
                   }>
                    <div className="max-w-xs bg-white">
@@ -115,7 +115,6 @@ const SettleIn = () => {
                   </motion.div>
 
                 </div>
-
 
             </section>
             </motion.div>
