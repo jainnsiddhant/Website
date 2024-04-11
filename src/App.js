@@ -19,6 +19,7 @@ import Page4 from "./Pages/Page4/Page4";
 import SettleInPg from "./Pages/SettleInPg/SettleInPg";
 import Page5 from "./Pages/Page5/Page5";
 import AlreadyInPg from "./Pages/AlreadyInPg/AlreadyInPg";
+import GRE from "./Pages/GRE/GRE";
 import Alldetails from "./Components/Register/Alldetails";
 import Editscholarship from "./Components/Register/Editscholarship";
 import EditUnivdetails from "./Components/Register/EditUnivdetails";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/course" element={<CoursePg />}></Route>
           <Route path="/SettleinUK" element={<SettleInPg />}></Route>
           <Route path="/AlreadyinUk" element={<AlreadyInPg />}></Route>
+          <Route path="/GRE" element={<GRE />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="/addunivdetails" element={<Register />}></Route>
           <Route path="/table" element={<Example />}></Route>
