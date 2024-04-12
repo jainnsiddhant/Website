@@ -7,6 +7,7 @@ import toefl from '../../images/toefl.png'
 import IeltsSection from './IeltsSection';
 import GreSection from './GreSection';
 import ToeflSection from './ToeflSection';
+import Community from './Community';
 
 const GREs = () => {
     return (
@@ -19,7 +20,18 @@ const GREs = () => {
           transition={{ staggerChildren: 0.5 }}
         >
             <section>
-                <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-5 w-[80%] mx-auto">
+
+            <div className="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+                    <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
+                        Prepare. Pursue. Prevail.
+                    </h2>
+                    <p className="mb-0 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    Unlock Your Path: Essential Guidance for Navigating Life in the UK
+                    </p>
+            </div>
+
+
+                <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-2 w-[80%] mx-auto">
 
                    <motion.div
                   whileHover={
@@ -109,6 +121,15 @@ const GREs = () => {
           transition={{ staggerChildren: 0.5 }}
         >
             <ToeflSection />
+            </motion.div>
+            <motion.div
+          variants={textAnimation}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ staggerChildren: 0.5 }}
+        >
+            <Community />
             </motion.div>
 
         </>
