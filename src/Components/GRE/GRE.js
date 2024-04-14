@@ -19,7 +19,7 @@ const GREs = () => {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
         >
-            <section>
+            <section className='items-center justify-center'>
 
             <div className="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
@@ -39,7 +39,7 @@ const GREs = () => {
                       scale: 1.15
                     }
                   }>
-                   <div className="max-w-xs bg-white">
+                   <div className="max-w-xs bg-white justify-center items-center mx-auto">
                      <a href="#ielts">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80" src={ielts} alt="" />
                      </a>
@@ -58,7 +58,7 @@ const GREs = () => {
                       scale: 1.15
                     }
                   }>
-                   <div className="max-w-xs bg-white">
+                   <div className="max-w-xs bg-white justify-center items-center mx-auto">
                      <a href="#gre">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80" src={gre} alt="" />
                      </a>
@@ -77,7 +77,7 @@ const GREs = () => {
                       scale: 1.15
                     }
                   }>
-                   <div className="max-w-xs bg-white">
+                   <div className="max-w-xs bg-white justify-center items-center mx-auto">
                      <a href="#toefl">
                        <img className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80" src={toefl} alt="" />
                      </a>
@@ -113,7 +113,7 @@ const GREs = () => {
         >
             <GreSection />
             </motion.div>
-            <motion.div
+            {/* <motion.div
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
@@ -121,7 +121,7 @@ const GREs = () => {
           transition={{ staggerChildren: 0.5 }}
         >
             <ToeflSection />
-            </motion.div>
+            </motion.div> */}
             <motion.div
           variants={textAnimation}
           initial={"offscreen"}
