@@ -71,7 +71,7 @@ const GREs = () => {
                    </div>
                    </motion.div>
 
-                   <motion.div
+                   {/* <motion.div
                   whileHover={
                     {
                       scale: 1.15
@@ -88,7 +88,36 @@ const GREs = () => {
                        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Unlock your financial possibilities with our comprehensive guide to opening banks.</p>
                      </div>
                    </div>
-                  </motion.div>
+                  </motion.div> */}
+
+                  <motion.div
+      whileHover={{ scale: 1.15 }}
+      className="max-w-xs bg-white justify-center items-center mx-auto relative"
+    >
+      <a href="#toefl">
+        <img
+          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
+          src={toefl}
+          alt=""
+        />
+      </a>
+      <div className="p-4">
+        <a href="#toefl">
+          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Banks to Open</h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
+          Unlock your financial possibilities with our comprehensive guide to opening banks.
+        </p>
+      </div>
+      <motion.div
+        className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-75 rounded-xl opacity-0"
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
+      >
+        <p className="text-white font-bold text-lg">Coming Soon</p>
+      </motion.div>
+    </motion.div>
+
 
                 </div>
 
