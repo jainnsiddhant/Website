@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import community from "../../images/community.jpg";
 
 const Community = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+      const handleResize = () => {
+          setIsMobile(window.innerWidth <= 768);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+          window.removeEventListener("resize", handleResize);
+      };
+  }, []);
+
+
     return (
         <section>
            <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
@@ -10,33 +26,46 @@ const Community = () => {
           >
                   Community
           </h2>
-          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+          <p className="mb-1 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
             Unlock your potential: Explore the Community, the gateway to countless
             academic opportunities.
           </p>
+
+          <div className="mx-auto md:w-1/2 flex justify-center">
+              <img
+                src={community}
+                alt="communityimage"
+                className="rounded-full"
+              />
+            </div>
+
+            <form class="w-full mx-auto justify-center items-center flex flex-col space-y-2">
+            <div className={`flex ${isMobile ? 'flex-col space-y-3' : 'flex-row'} space-x-3`}>
+            <div className="flex space-x-3">
+                <div className="flex space-x-3 my-auto">
+                    <input type="radio" id="gre" name="gre-ielts" value="GRE" className="mt-1" />
+                    <label htmlFor="gre">GRE</label>
+                </div>
+                <div className="flex space-x-3 my-auto">
+                    <input type="radio" id="ielts" name="gre-ielts" value="IELTS" className="mt-1" />
+                    <label htmlFor="ielts">IELTS</label>
+                </div>
+            </div>
+            {/* <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">IELTS</button>
+            <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">GRE</button> */}
+            <div className="">
+                <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="description" required />
+            </div>
+            <div className="">
+                <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name" required />
+            </div>
+        </div>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Contribute</button>
+          </form>
         </div> 
-
-<form class="w-[80%] mx-auto justify-center items-center flex space-x-3">
-<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">IELTS</button>
-<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">GRE</button>
-  <div class="">
-    {/* <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Description</label> */}
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="description" required />
-  </div>
-  <div class="">
-    {/* <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Name</label> */}
-    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name" required />
-  </div>
-  {/* <div class="flex items-start mb-5">
-    <div class="flex items-center h-5">
-      <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300" required />
-    </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900">Remember me</label>
-  </div> */}
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
-</form>
-
         </section>
+
+
     )
 }
 
