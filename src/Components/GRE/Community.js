@@ -31,7 +31,7 @@ const Community = () => {
             academic opportunities.
           </p>
 
-          <div className="mx-auto md:w-1/2 flex justify-center">
+          <div className="mx-auto md:w-1/2 flex justify-center mt-5 mb-4">
               <img
                 src={community}
                 alt="communityimage"
@@ -40,27 +40,31 @@ const Community = () => {
             </div>
 
             <form class="w-full mx-auto justify-center items-center flex flex-col space-y-2">
-            <div className={`flex ${isMobile ? 'flex-col space-y-3' : 'flex-row'} space-x-3`}>
-            <div className="flex space-x-3">
-                <div className="flex space-x-3 my-auto">
-                    <input type="radio" id="gre" name="gre-ielts" value="GRE" className="mt-1" />
-                    <label htmlFor="gre">GRE</label>
+            <div className={`flex ${isMobile ? 'flex-col space-y-5' : 'flex-row'} space-x-5`}>
+            <div className="flex space-x-5 my-auto">
+                <div className="flex space-x-3 my-auto mx-auto">
+                    <input type="checkbox" id="gre" name="gre-ielts" value="GRE" className="mt-5" />
+                    <label htmlFor="gre" className="mt-4">GRE</label>
                 </div>
-                <div className="flex space-x-3 my-auto">
-                    <input type="radio" id="ielts" name="gre-ielts" value="IELTS" className="mt-1" />
-                    <label htmlFor="ielts">IELTS</label>
+                <div className="flex space-x-3 my-auto mx-auto">
+                    <input type="checkbox" id="ielts" name="gre-ielts" value="IELTS" className="mt-5" />
+                    <label htmlFor="ielts" className="mt-4">IELTS</label>
                 </div>
             </div>
             {/* <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">IELTS</button>
             <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">GRE</button> */}
             <div className="">
-                <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="description" required />
+                Description
+                <input type="text" id="description" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-60 p-2.5" placeholder="description" required />
             </div>
             <div className="">
-                <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name" required />
+                Name
+                <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-60 p-2.5" placeholder="name" required />
             </div>
         </div>
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Contribute</button>
+            <div>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-80 px-5 py-2.5 text-center mt-5">Contribute</button>
+            </div>
           </form>
         </div> 
         </section>
