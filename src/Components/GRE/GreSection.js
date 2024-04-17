@@ -33,10 +33,10 @@ const GreSection = () => {
             data-aos="fade-right"
             className="mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl"
           >
-            Exam Pattern
+            GRE Exam Pattern
           </h2>
           <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
-            Unlock your potential: Explore the IELTS, the gateway to countless
+            Unlock your potential: Explore the GRE, the gateway to countless
             academic opportunities.
           </p>
           {/* <div>
@@ -59,331 +59,93 @@ const GreSection = () => {
           </div> */}
 
           
-
+<div className="flex justify-center">
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-20">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
                 <th scope="col" class="px-6 py-3">
-                    Product name
+                    Section
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Color
+                    Duration
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Category
+                    Description
                 </th>
-                <th scope="col" class="px-6 py-3">
-                    Accessories
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Available
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Weight
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Action
-                </th>
+                
             </tr>
         </thead>
         <tbody>
             <tr class="bg-white border-b">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple MacBook Pro 17"
+                Verbal
                 </th>
                 <td class="px-6 py-4">
-                    Silver
+                60 minutes
                 </td>
                 <td class="px-6 py-4">
-                    Laptop
+                <ul style={{ listStyleType: 'circle' }}>
+  <li> Sentence Equivalence: Understand sentence structure and vocabulary.</li>
+  <li> Text Completion: Fill in missing words in a sentence.</li>
+  <li> Reading Comprehension: Understand and analyse written passages.</li>
+</ul>
+
                 </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-                <td class="px-6 py-4">
-                    3.0 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
+                
             </tr>
             <tr class="bg-white border-b hover:bg-gray-50">
             
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Microsoft Surface Pro
+                Quantitative
                 </th>
                 <td class="px-6 py-4">
-                    White
+                70 minutes
                 </td>
                 <td class="px-6 py-4">
-                    Laptop PC
+                <ul style={{ listStyleType: 'circle' }}>
+  <li> Arithmetic: Basic operations, percentages, ratios, and proportions.</li>
+  <li> Algebra: Equations, inequalities, exponents, and functions.</li>
+  <li> Geometry: Lines, angles, triangles, circles, and polygons.</li>
+  <li> Data Analysis: Interpretation of data, statistics, and probability.</li>
+</ul>
+
                 </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-                <td class="px-6 py-4">
-                    1.0 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
+                
             </tr>
             <tr class="bg-white border-b hover:bg-gray-50">
                 
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Magic Mouse 2
+                Analytical Writing
                 </th>
                 <td class="px-6 py-4">
-                    Black
+                60 minutes
                 </td>
                 <td class="px-6 py-4">
-                    Accessories
+                <ul style={{ listStyleType: 'circle' }}>
+  <li> Analyse an Issue: Formulate and articulate a complex issue.</li>
+  <li> Analyse an Argument: Evaluate and critique a given argument.</li>
+</ul>
+
                 </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-                <td class="px-6 py-4">
-                    0.2 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
                 
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple Watch
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Watches
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    $199
-                </td>
-                <td class="px-6 py-4">
-                    0.12 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
             </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple iMac
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    PC
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-                <td class="px-6 py-4">
-                    7.0 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple AirPods
-                </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    $399
-                </td>
-                <td class="px-6 py-4">
-                    38 g
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    iPad Pro
-                </th>
-                <td class="px-6 py-4">
-                    Gold
-                </td>
-                <td class="px-6 py-4">
-                    Tablet
-                </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    $699
-                </td>
-                <td class="px-6 py-4">
-                    1.3 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Magic Keyboard
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-                <td class="px-6 py-4">
-                    453 g
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple TV 4K
-                </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    TV
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    $179
-                </td>
-                <td class="px-6 py-4">
-                    1.78 lb.
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-50">
-                
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    AirTag
-                </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    Yes
-                </td>
-                <td class="px-6 py-4">
-                    No
-                </td>
-                <td class="px-6 py-4">
-                    $29
-                </td>
-                <td class="px-6 py-4">
-                    53 g
-                </td>
-                <td class="flex items-center px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 hover:underline">Edit</a>
-                    <a href="#" class="font-medium text-red-600 hover:underline ms-3">Remove</a>
-                </td>
-            </tr>
+           
         </tbody>
     </table>
 </div>
-</div>
+</div></div>
 
+<div className="flex justify-center">
           <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h2
               data-aos="fade-right"
               className="mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl"
             >
-              Time Table
+              GRE Time Table
             </h2>
             <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
-              Unlock your potential: Explore the IELTS, the gateway to countless
+              Unlock your potential: Explore the GRE, the gateway to countless
               academic opportunities.
             </p>
 
@@ -392,119 +154,126 @@ const GreSection = () => {
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
                 <th scope="col" class="px-6 py-3">
-                    Product name
+                    Week
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Color
+                    Focus Area
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Category
+                    Hours/Day
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Price
+                    Ideal Practice Papers
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Action
+                    Study Description
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple MacBook Pro 17"
+                    1
                 </th>
                 <td class="px-6 py-4">
-                    Silver
+                Familiarisation
                 </td>
                 <td class="px-6 py-4">
-                    Laptop
+                2-3 hours
                 </td>
                 <td class="px-6 py-4">
-                    $2999
+                1
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                Get to know the GRE format and question types. Begin daily vocabulary learning (20 words/day).
                 </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Microsoft Surface Pro
+                    2
                 </th>
                 <td class="px-6 py-4">
-                    White
+                Quantitative  
                 </td>
                 <td class="px-6 py-4">
-                    Laptop PC
+                2-3 hours 
                 </td>
                 <td class="px-6 py-4">
-                    $1999
+                1-2 
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                Review basic math concepts. Continue vocabulary learning and include daily reading practice.
                 </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Magic Mouse 2
+                    3
                 </th>
                 <td class="px-6 py-4">
-                    Black
+                    Verbal
                 </td>
                 <td class="px-6 py-4">
-                    Accessories
+                2-3 hours
                 </td>
                 <td class="px-6 py-4">
-                    $99
+                1-2  
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                Focus on text completion and sentence equivalence. Maintain vocabulary and reading routine.   
                 </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Google Pixel Phone
+                4
                 </th>
                 <td class="px-6 py-4">
-                    Gray
+                Analytical Writing 
                 </td>
                 <td class="px-6 py-4">
-                    Phone
+                    2-3 hours
                 </td>
                 <td class="px-6 py-4">
-                    $799
+                    2-3
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                Practice issue and argument essays. Keep up with vocabulary and daily reading.  
                 </td>
             </tr>
             <tr>
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                    Apple Watch 5
+                    5-8
                 </th>
                 <td class="px-6 py-4">
-                    Red
+                Full-Length Tests 
                 </td>
                 <td class="px-6 py-4">
-                    Wearables
+                2-3 hours 
                 </td>
                 <td class="px-6 py-4">
-                    $999
+                3-6  
                 </td>
                 <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <ul style={{ listStyleType: 'circle' }}>
+  <li>Start taking full-length practice tests.</li>
+  <li>Analyze results to identify weak areas.</li>
+  <li>Continue vocabulary and reading.</li>
+  <li>Focus on reviewing weak areas and timed practice sections. Consistent vocabulary and reading.</li>
+  <li>Take mock tests and refine test-taking strategies. Sustain vocabulary learning and daily reading.</li>
+  <li>Final review of all sections. Focus on areas needing improvement. Continue vocabulary and reading.</li>
+</ul>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
-</div>
+</div></div>
 
           <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h2
               data-aos="fade-right"
               className="mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl"
             >
-              Resources
+              GRE Resources
             </h2>
             <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the IELTS, the gateway to countless
