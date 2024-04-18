@@ -20,7 +20,7 @@ const GreSection = () => {
           <div>
             <a
               type="button"
-              href="#"
+              href="https://www.ets.org/gre.html"
               target="_blank"
               class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
             >
@@ -276,19 +276,19 @@ const GreSection = () => {
               GRE Resources
             </h2>
             <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
-              Unlock your potential: Explore the IELTS, the gateway to countless
+              Unlock your potential: Explore the GRE, the gateway to countless
               academic opportunities.
             </p>
 
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div className="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="container p-4 sm:p-4 border rounded-xl">
                 {/* <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2> */}
                 <div className="overflow-x-auto mx-auto">
                   <table className="min-w-full text-sm mx-auto text-center">
                     <thead className="">
                       <tr className="">
-                        <th className="p-3 text-lg">Name</th>
-                        <th className="p-3 text-lg">Location</th>
+                        <th className="p-3 text-lg">Source</th>
+                        <th className="p-3 text-lg">Description</th>
                         <th className="p-3 text-lg">Link</th>
                       </tr>
                     </thead>
@@ -297,74 +297,53 @@ const GreSection = () => {
                         <>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>name 1</p>
+                              <p>Official website</p>
                             </td>
                             <td className="p-3">
-                              <p>location 1</p>
+                              <p>Free practice tests
+</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
+                                <a href="https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>name 1</p>
+                              <p> Website: Manhattan
+</p>
                             </td>
                             <td className="p-3">
-                              <p>location 1</p>
+                              <p>Free practice tests</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
+                                <a href="https://www.manhattanprep.com/gre/free-gre-practice-test/" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>name 1</p>
+                              <p>Website/App: Magoosh
+</p>
                             </td>
                             <td className="p-3">
-                              <p>location 1</p>
-                            </td>
-                            <td className="p-3">
-                              <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-opacity-20">
-                            <td className="p-3">
-                              <p>name 1</p>
-                            </td>
-                            <td className="p-3">
-                              <p>location 1</p>
+                              <p>Free practice materials and tests
+</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
+                                <a href="https://magoosh.com/gre/free-gre-study-materials/" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
-                          <tr className="border-b border-opacity-20">
-                            <td className="p-3">
-                              <p>name 1</p>
-                            </td>
-                            <td className="p-3">
-                              <p>location 1</p>
-                            </td>
-                            <td className="p-3">
-                              <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
-                              </span>
-                            </td>
-                          </tr>
+                          
                         </>
                       }
                     </tbody>
                   </table>
-                  <small className="text-[0.7rem]">* Sources</small>
+                  {/* <small className="text-[0.7rem]">* Sources</small> */}
                 </div>
               </div>
             </div>

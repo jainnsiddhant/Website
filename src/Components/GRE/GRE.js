@@ -133,15 +133,15 @@ const GREs = () => {
         >
             <IeltsSection />
             </motion.div>
-            <motion.div
+            {/* <motion.div
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
-        >
+        > */}
             <GreSection />
-            </motion.div>
+            {/* </motion.div> */}
             {/* <motion.div
           variants={textAnimation}
           initial={"offscreen"}
@@ -151,15 +151,15 @@ const GREs = () => {
         >
             <ToeflSection />
             </motion.div> */}
-            <motion.div
+            {/* <motion.div
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ staggerChildren: 0.5 }}
-        >
+        > */}
             <Community />
-            </motion.div>
+            {/* </motion.div> */}
 
         </>
     )
