@@ -369,15 +369,15 @@ const IeltsSection = () => {
               academic opportunities.
             </p>
 
-            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div className="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
               <div className="container p-4 sm:p-4 border rounded-xl">
                 {/* <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2> */}
                 <div className="overflow-x-auto mx-auto">
                   <table className="min-w-full text-sm mx-auto text-center">
                     <thead className="">
                       <tr className="">
-                        <th className="p-3 text-lg">Name</th>
-                        <th className="p-3 text-lg">Location</th>
+                        <th className="p-3 text-lg">Source</th>
+                        <th className="p-3 text-lg">Description</th>
                         <th className="p-3 text-lg">Link</th>
                       </tr>
                     </thead>
@@ -386,74 +386,53 @@ const IeltsSection = () => {
                         <>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>name 1</p>
+                              <p>YouTube
+</p>
                             </td>
                             <td className="p-3">
-                              <p>location 1</p>
+                              <p> Full 10 Hours Course by Learn with Sam and Ash
+</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
+                                <a href="https://www.youtube.com/watch?v=Jzps8q2es7c&t=67s">View</a>
                               </span>
                             </td>
                           </tr>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>name 1</p>
+                              <p>Youtube</p>
                             </td>
                             <td className="p-3">
-                              <p>location 1</p>
+                              <p> Full 10 Hours Course by IELTS Advantage
+</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
+                                <a href="https://www.youtube.com/watch?v=xGtKdsVxV8A&pp=ygURaWVsdHMgZnVsbCBjb3Vyc2U%3D">View</a>
                               </span>
                             </td>
                           </tr>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>name 1</p>
+                              <p>Official Website
+</p>
                             </td>
                             <td className="p-3">
-                              <p>location 1</p>
-                            </td>
-                            <td className="p-3">
-                              <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
-                              </span>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-opacity-20">
-                            <td className="p-3">
-                              <p>name 1</p>
-                            </td>
-                            <td className="p-3">
-                              <p>location 1</p>
+                              <p>Free study material including tests</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
+                                <a href="https://www.ieltsidpindia.com/information/online-ielts-study-material">View</a>
                               </span>
                             </td>
                           </tr>
-                          <tr className="border-b border-opacity-20">
-                            <td className="p-3">
-                              <p>name 1</p>
-                            </td>
-                            <td className="p-3">
-                              <p>location 1</p>
-                            </td>
-                            <td className="p-3">
-                              <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="#">View</a>
-                              </span>
-                            </td>
-                          </tr>
+                          
                         </>
                       }
                     </tbody>
                   </table>
-                  <small className="text-[0.7rem]">* Sources</small>
+                  {/* <small className="text-[0.7rem]">* Sources</small> */}
                 </div>
               </div>
             </div>
