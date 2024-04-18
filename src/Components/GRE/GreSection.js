@@ -20,7 +20,7 @@ const GreSection = () => {
           <div>
             <a
               type="button"
-              href="#"
+              href="https://www.ets.org/gre.html"
               target="_blank"
               class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
             >
@@ -305,7 +305,7 @@ const GreSection = () => {
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html">View</a>
+                                <a href="https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
@@ -319,7 +319,7 @@ const GreSection = () => {
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.manhattanprep.com/gre/free-gre-practice-test/">View</a>
+                                <a href="https://www.manhattanprep.com/gre/free-gre-practice-test/" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
@@ -334,7 +334,7 @@ const GreSection = () => {
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://magoosh.com/gre/free-gre-study-materials/">View</a>
+                                <a href="https://magoosh.com/gre/free-gre-study-materials/" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
