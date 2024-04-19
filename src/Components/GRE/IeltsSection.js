@@ -34,7 +34,7 @@ const IeltsSection = () => {
           <div>
           <a
               type="button"
-              href="#"
+              href="https://www.ieltsidpindia.com/"
               target="_blank"
               class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
             >
@@ -369,7 +369,7 @@ const IeltsSection = () => {
               academic opportunities.
             </p>
 
-            <div className="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="container p-4 sm:p-4 border rounded-xl">
                 {/* <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2> */}
                 <div className="overflow-x-auto mx-auto">
@@ -386,16 +386,14 @@ const IeltsSection = () => {
                         <>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>YouTube
-</p>
+                              <p>YouTube</p>
                             </td>
                             <td className="p-3">
-                              <p> Full 10 Hours Course by Learn with Sam and Ash
-</p>
+                              <p>Full 10 Hours Course by Learn with Sam and Ash</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.youtube.com/watch?v=Jzps8q2es7c&t=67s">View</a>
+                                <a href="https://www.youtube.com/watch?v=Jzps8q2es7c&t=67s" target='_blank'>View</a>
                               </span>
                             </td>
                           </tr>
@@ -404,35 +402,32 @@ const IeltsSection = () => {
                               <p>Youtube</p>
                             </td>
                             <td className="p-3">
-                              <p> Full 10 Hours Course by IELTS Advantage
-</p>
+                              <p>Full 10 Hours Course by IELTS Advantage</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.youtube.com/watch?v=xGtKdsVxV8A&pp=ygURaWVsdHMgZnVsbCBjb3Vyc2U%3D">View</a>
+                                <a href="https://www.youtube.com/watch?v=xGtKdsVxV8A&pp=ygURaWVsdHMgZnVsbCBjb3Vyc2U%3D" target='_blank'>View</a>
                               </span>
                             </td>
                           </tr>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>Official Website
-</p>
+                              <p>Official Website</p>
                             </td>
                             <td className="p-3">
                               <p>Free study material including tests</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.ieltsidpindia.com/information/online-ielts-study-material">View</a>
+                                <a href="https://www.ieltsidpindia.com/information/online-ielts-study-material" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
-                          
                         </>
                       }
                     </tbody>
                   </table>
-                  {/* <small className="text-[0.7rem]">* Sources</small> */}
+                  <small className="text-[0.7rem]">* Sources</small>
                 </div>
               </div>
             </div>

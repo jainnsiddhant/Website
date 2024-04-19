@@ -39,9 +39,12 @@ const Community = () => {
               />
             </div>
 
-            <form class="w-full mx-auto justify-center items-center flex flex-col space-y-2">
+            <form class="w-full mx-auto justify-center items-center text-center flex flex-col space-y-2">
+            <div className="justify-center items-center text-center">
             <div className={`flex ${isMobile ? 'flex-col space-y-5' : 'flex-row'} space-x-5`}>
-            <div className="flex space-x-5 my-auto">
+            <div  className="flex flex-col justify-center text-center items-center">
+              <div className="justify-center text-center items-center">Select one or both</div>
+              <div className="flex space-x-5 my-auto">
                 <div className="flex space-x-3 my-auto mx-auto">
                     <input type="checkbox" id="gre" name="gre-ielts" value="GRE" className="mt-5" />
                     <label htmlFor="gre" className="mt-4">GRE</label>
@@ -51,19 +54,21 @@ const Community = () => {
                     <label htmlFor="ielts" className="mt-4">IELTS</label>
                 </div>
             </div>
+            </div>
             {/* <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">IELTS</button>
             <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">GRE</button> */}
-            <div className="">
-                Description
-                <input type="text" id="description" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-60 p-2.5" placeholder="description" required />
+            <div className="justify-center text-center items-center">
+                Company Name / Source
+                <input type="text" id="companyname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5" placeholder="company information" required />
             </div>
-            <div className="">
-                Name
-                <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-60 p-2.5" placeholder="name" required />
+            <div className="justify-center text-center items-center">
+                Link / Contact Info
+                <input type="text" id="info" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5" placeholder="email, messages ..." required />
             </div>
         </div>
-            <div>
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-80 px-5 py-2.5 text-center mt-5">Contribute</button>
+            <div className="justify-center text-center items-center">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-80 px-5 py-2.5 text-center mt-5 justify-center items-center">Contribute</button>
+            </div>
             </div>
           </form>
         </div> 
