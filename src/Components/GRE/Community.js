@@ -27,8 +27,7 @@ const Community = () => {
                   Community
           </h2>
           <p className="mb-1 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-            Unlock your potential: Explore the Community, the gateway to countless
-            academic opportunities.
+          "Community Contributions" section encourages the sharing of study materials for GRE and IELTS exams, creating a supportive environment for students worldwide. By participating in this community, you not only enrich your own preparation but also help strengthen the global network of learners striving for academic success.
           </p>
 
           <div className="mx-auto md:w-1/2 flex justify-center mt-5 mb-4">

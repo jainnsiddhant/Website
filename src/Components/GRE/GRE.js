@@ -45,9 +45,9 @@ const GREs = () => {
                      </a>
                      <div className="p-4">
                        <a href="#ielts">
-                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Pack List doc file</h5>
+                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">IELTS</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Prepare for your journey with comprehensive Packlist document, ensuring you have all you need for travels.</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">IELTS is a standardised test for non-native speakers to communicate effectively in English for educational and professional opportunities.</p>
                      </div>
                    </div>
                   </motion.div>
@@ -64,9 +64,9 @@ const GREs = () => {
                      </a>
                      <div className="p-4">
                        <a href="#gre">
-                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Forex Cards</h5>
+                         <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">GRE</h5>
                        </a>
-                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">Unlock seamless currency exchange and hassle-free transactions with our cutting-edge Forex Cards.</p>
+                       <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">GRE assesses verbal, quantitative, and analytical writing skills for admission to graduate schools.</p>
                      </div>
                    </div>
                    </motion.div>
@@ -103,10 +103,10 @@ const GREs = () => {
       </a>
       <div className="p-4">
         <a href="#toefl">
-          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">Banks to Open</h5>
+          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">TOEFL</h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-          Unlock your financial possibilities with our comprehensive guide to opening banks.
+        TOEFL assesses English language proficiency for non-native speakers who want to study in English-speaking universities.
         </p>
       </div>
       <motion.div
