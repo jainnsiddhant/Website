@@ -28,8 +28,7 @@ const IeltsSection = () => {
                   </span>
           </h2>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-            Unlock your potential: Explore the IELTS, the gateway to countless
-            academic opportunities.
+          IELTS (International English Language Testing System): IELTS is a standardised test that measures English language proficiency for non-native English language speakers, widely recognised for immigration and academic purposes. It’s important as it serves as a key to global education and professional opportunities, ensuring participants can effectively communicate in English.
           </p>
           <div>
           <a
@@ -50,10 +49,10 @@ const IeltsSection = () => {
           >
             IELTS Exam Pattern
           </h2>
-          <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+          {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
             Unlock your potential: Explore the IELTS, the gateway to countless
             academic opportunities.
-          </p>
+          </p> */}
           <div className="mb-5">
             <button
               onClick={handleGeneralButtonClick}
@@ -263,10 +262,10 @@ const IeltsSection = () => {
             >
               IELTS Time Table
             </h2>
-            <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+            {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the IELTS, the gateway to countless
               academic opportunities.
-            </p>
+            </p> */}
 
             
 <div className='flex justify-center '>
@@ -364,10 +363,10 @@ const IeltsSection = () => {
             >
               IELTS Resources
             </h2>
-            <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+            {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the IELTS, the gateway to countless
               academic opportunities.
-            </p>
+            </p> */}
 
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="container p-4 sm:p-4 border rounded-xl">

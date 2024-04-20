@@ -14,8 +14,7 @@ const GreSection = () => {
                   </span>
           </h2>
           <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-            Unlock your potential: Explore the GRE, the gateway to countless
-            academic opportunities.
+          GRE (Graduate Record Examinations): The GRE is a comprehensive assessment required for admission to many graduate schools worldwide, evaluating verbal reasoning, quantitative ability, and analytical writing skills. Its importance lies in its role as a gateway to advanced study programs, helping institutions assess applicants’ potential for rigorous academic work.
           </p>
           <div>
             <a
@@ -35,28 +34,10 @@ const GreSection = () => {
           >
             GRE Exam Pattern
           </h2>
-          <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+          {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
             Unlock your potential: Explore the GRE, the gateway to countless
             academic opportunities.
-          </p>
-          {/* <div>
-            <a
-              type="button"
-              href="#"
-              target="_blank"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-            >
-              General
-            </a>
-            <a
-              type="button"
-              href="#"
-              target="_blank"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-            >
-              Academic
-            </a>
-          </div> */}
+          </p> */}
 
           
 <div className="flex justify-center">
@@ -144,10 +125,10 @@ const GreSection = () => {
             >
               GRE Time Table
             </h2>
-            <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+            {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the GRE, the gateway to countless
               academic opportunities.
-            </p>
+            </p> */}
 
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-20">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
@@ -275,10 +256,10 @@ const GreSection = () => {
             >
               GRE Resources
             </h2>
-            <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+            {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the IELTS, the gateway to countless
               academic opportunities.
-            </p>
+            </p> */}
 
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="container p-4 sm:p-4 border rounded-xl">
