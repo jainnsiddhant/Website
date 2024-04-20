@@ -24,7 +24,7 @@ const Community = () => {
         <div className="flex flex-col mt-4 items-center">
           <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10">
           {/* <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent"> */}
-          Community
+          Join the Community
                   {/* </span> */}
           </h1>
           <div className="flex md:w-[80%] mt-2 mb-2">
