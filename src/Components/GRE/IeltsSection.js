@@ -18,7 +18,34 @@ const IeltsSection = () => {
   return (
     <>
       <section id="ielts">
-        <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col mt-4 items-center">
+          <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10">
+          <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+                  IELTS
+                  </span>
+          </h1>
+          <div className="flex md:w-[80%] mt-2 mb-2">
+            <div className="w-full flex flex-col justify-center mt-3 md:mt-0">
+              <p className="mt-2 mb-3 text-lg font-normal text-gray-500 text-justify">
+              IELTS (International English Language Testing System): IELTS is a standardised test that measures English language proficiency for non-native English language speakers, widely recognised for immigration and academic purposes. It’s important as it serves as a key to global education and professional opportunities, ensuring participants can effectively communicate in English.
+              </p>
+              
+              </div>
+              </div>
+              <div>
+          <a
+              type="button"
+              href="https://www.ieltsidpindia.com/"
+              target="_blank"
+              class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
+            >
+              Official Website
+            </a>
+          </div>
+              </div>
+              </div>
+        {/* <div className="py-4 px-4 mx-auto text-center lg:py-16">
           <h2
             data-aos="fade-right"
             className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
@@ -27,7 +54,7 @@ const IeltsSection = () => {
                   IELTS
                   </span>
           </h2>
-          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
           IELTS (International English Language Testing System): IELTS is a standardised test that measures English language proficiency for non-native English language speakers, widely recognised for immigration and academic purposes. It’s important as it serves as a key to global education and professional opportunities, ensuring participants can effectively communicate in English.
           </p>
           <div>
@@ -40,7 +67,7 @@ const IeltsSection = () => {
               Official Website
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2

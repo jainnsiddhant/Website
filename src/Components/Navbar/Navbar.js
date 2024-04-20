@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="p-6">
-                <div className="max-w-6xl mx-auto px-4">
+                <div className="w-full mx-auto px-4">
                     <div className="flex justify-between">
                         <div className="flex space-x-[4rem]">
                             <div>
@@ -37,6 +37,7 @@ const Navbar = () => {
                             {/* primary nav */}
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
                                 <NavLink to={"/Resume"}>Resume Builder</NavLink>
+                                <NavLink to={"/Ielts-Gre"}>IELTS/GRE</NavLink>
                                 <NavLink to={"/Connect"}>Connect</NavLink>
                                 <NavLink to={"/Scholarship"}>Scholarships</NavLink>
                                 <NavLink to={"/course"}>Courses</NavLink>
@@ -49,7 +50,7 @@ const Navbar = () => {
                         <div className="hidden md:flex items-center space-x-1">
                             <Link
                                 to={"/contact"}
-                                className="py-2 px-3 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full  border-2 border-black transition duration-300 navfont"
+                                className="py-2 px-2 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full  border-2 border-black transition duration-300 navfont"
                             >
                                 Contact Us
                             </Link>
@@ -82,6 +83,7 @@ const Navbar = () => {
                 {/* mobile menu */}
                 <div className={mobilestyle}>
                     <NavLink to={"/Resume"}>Resume Builder</NavLink>
+                    <NavLink to={"/Ielts-Gre"}>IELTS/GRE</NavLink>
                     <NavLink to={"/Connect"}>Connect</NavLink>
                     <NavLink to={"/Scholarship"}>Scholarships</NavLink>
                     <NavLink to={"/course"}>Courses</NavLink>

@@ -4,7 +4,34 @@ const GreSection = () => {
   return (
     <>
       <section id="gre">
-        <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col mt-4 items-center">
+          <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10">
+          <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+                  GRE
+                  </span>
+          </h1>
+          <div className="flex md:w-[80%] mt-2 mb-2">
+            <div className="w-full flex flex-col justify-center mt-3 md:mt-0">
+              <p className="mt-2 mb-3 text-lg font-normal text-gray-500 text-justify">
+              GRE (Graduate Record Examinations): The GRE is a comprehensive assessment required for admission to many graduate schools worldwide, evaluating verbal reasoning, quantitative ability, and analytical writing skills. Its importance lies in its role as a gateway to advanced study programs, helping institutions assess applicants’ potential for rigorous academic work.
+              </p>
+              
+              </div>
+              </div>
+              <div>
+            <a
+              type="button"
+              href="https://www.ets.org/gre.html"
+              target="_blank"
+              class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
+            >
+              Official Website
+            </a>
+          </div>
+              </div>
+              </div>
+        {/* <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
             data-aos="fade-right"
             className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
@@ -26,7 +53,7 @@ const GreSection = () => {
               Official Website
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
             data-aos="fade-right"

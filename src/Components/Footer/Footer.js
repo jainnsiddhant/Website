@@ -161,6 +161,20 @@ export const Footer = () => {
                         </div>
 
                         </div>
+                        <div>
+
+
+<div className='mb-2'>
+<h4 className='pb-4'>IELTS/GRE</h4>
+<ul className='text-gray-500'>
+<li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Ielts-Gre" className='hover:text-blue-600'>IELTS</a></li>
+<li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Ielts-Gre" className='hover:text-blue-600'>GRE</a></li>
+<li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Ielts-Gre" className='hover:text-blue-600'>TOEFL</a></li>
+<li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Ielts-Gre" className='hover:text-blue-600'>Community</a></li>
+</ul>
+</div>
+
+</div>
                                 <div>
 
 
@@ -231,14 +245,12 @@ export const Footer = () => {
                         </div>
                         <div>
 
-                        <div className='mb-2'>
+                        {/* <div className='mb-2'>
                             <h4 className='pb-4'>Our Services</h4>
                             <ul className='text-gray-500'>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><Link to={"/university"} className='hover:text-blue-600'>Find University</Link></li>
-                                {/* <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Connect with ambassador</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="#" className='hover:text-blue-600'>Enhance resume</a></li> */}
                             </ul>
-                        </div>
+                        </div> */}
 
 
                                     {/* <p className="font-medium">Company</p>

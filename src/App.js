@@ -42,7 +42,7 @@ function App() {
           <Route path="/course" element={<CoursePg />}></Route>
           <Route path="/SettleinUK" element={<SettleInPg />}></Route>
           <Route path="/AlreadyinUk" element={<AlreadyInPg />}></Route>
-          <Route path="/GRE" element={<GRE />}></Route>
+          <Route path="/Ielts-Gre" element={<GRE />}></Route>
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="/addunivdetails" element={<Register />}></Route>
           <Route path="/table" element={<Example />}></Route>
