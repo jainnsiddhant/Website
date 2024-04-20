@@ -25,9 +25,9 @@ const GREs = () => {
                     <h2 data-aos='fade-right' className='mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl'>
                         Prepare. Pursue. Prevail.
                     </h2>
-                    <p className="mb-0 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+                    {/* <p className="mb-0 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
                     Unlock Your Path: Essential Guidance for Navigating Life in the UK
-                    </p>
+                    </p> */}
             </div>
 
 
