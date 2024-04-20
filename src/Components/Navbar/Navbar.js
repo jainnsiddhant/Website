@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="p-6">
-                <div className="w-full mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4">
                     <div className="flex justify-between">
                         <div className="flex space-x-[4rem]">
                             <div>
