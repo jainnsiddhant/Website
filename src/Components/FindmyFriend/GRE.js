@@ -226,12 +226,12 @@ const GREs = () => {
         <div className="text-center">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
-            width="640"
+            
             height="1655"
             frameborder="0"
             marginheight="0"
             marginwidth="0" 
-            className="flex mx-auto mt-7"
+            className="flex md:w-3/5 w-100 mx-auto mt-7"
             title="Google Form Survey"
           >
             Loading…
