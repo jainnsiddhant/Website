@@ -28,6 +28,7 @@ import EditCourses from "./Components/Register/EditCourses";
 import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesdetails";
 import University from "./Components/University/University";
 import Example from "./Components/NewTable/Table";
+import FindmyFriend from "./Pages/FindmyFriend/Findmyfriend";
 
 function App() {
   return (
@@ -54,7 +55,8 @@ function App() {
           <Route path="/addcourses" element={<AddCourses />}></Route>
           <Route path="/course/:name" element={<Coursesdetails />}></Route>
           <Route path="/university" element={<University />}></Route>
-        </Routes>
+          <Route path="/findmyfriend" element={<FindmyFriend />}></Route>
+        </Routes> 
       </Router>
     </div>
   );

@@ -12,7 +12,7 @@ import Community from './Community';
 const GREs = () => {
     return (
         <>
-            <motion.div
+          <motion.div
           variants={textAnimation}
           initial={"offscreen"}
           whileInView={"onscreen"}
