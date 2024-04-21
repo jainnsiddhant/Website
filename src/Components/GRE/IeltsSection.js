@@ -18,7 +18,34 @@ const IeltsSection = () => {
   return (
     <>
       <section id="ielts">
-        <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col mt-4 items-center">
+          <h1 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-10">
+          <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
+                  IELTS
+                  </span>
+          </h1>
+          <div className="flex md:w-[80%] mt-2 mb-2">
+            <div className="w-full flex flex-col justify-center mt-3 md:mt-0">
+              <p className="mt-2 mb-3 text-lg font-normal text-gray-500 text-justify">
+              IELTS (International English Language Testing System): IELTS is a standardised test that measures English language proficiency for non-native English language speakers, widely recognised for immigration and academic purposes. It’s important as it serves as a key to global education and professional opportunities, ensuring participants can effectively communicate in English.
+              </p>
+              
+              </div>
+              </div>
+              <div>
+          <a
+              type="button"
+              href="https://www.ieltsidpindia.com/"
+              target="_blank"
+              class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
+            >
+              Official Website
+            </a>
+          </div>
+              </div>
+              </div>
+        {/* <div className="py-4 px-4 mx-auto text-center lg:py-16">
           <h2
             data-aos="fade-right"
             className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
@@ -27,21 +54,20 @@ const IeltsSection = () => {
                   IELTS
                   </span>
           </h2>
-          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-            Unlock your potential: Explore the IELTS, the gateway to countless
-            academic opportunities.
+          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
+          IELTS (International English Language Testing System): IELTS is a standardised test that measures English language proficiency for non-native English language speakers, widely recognised for immigration and academic purposes. It’s important as it serves as a key to global education and professional opportunities, ensuring participants can effectively communicate in English.
           </p>
           <div>
           <a
               type="button"
-              href="#"
+              href="https://www.ieltsidpindia.com/"
               target="_blank"
               class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
             >
               Official Website
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
@@ -50,10 +76,10 @@ const IeltsSection = () => {
           >
             IELTS Exam Pattern
           </h2>
-          <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+          {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
             Unlock your potential: Explore the IELTS, the gateway to countless
             academic opportunities.
-          </p>
+          </p> */}
           <div className="mb-5">
             <button
               onClick={handleGeneralButtonClick}
@@ -263,10 +289,10 @@ const IeltsSection = () => {
             >
               IELTS Time Table
             </h2>
-            <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+            {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the IELTS, the gateway to countless
               academic opportunities.
-            </p>
+            </p> */}
 
             
 <div className='flex justify-center '>
@@ -364,12 +390,12 @@ const IeltsSection = () => {
             >
               IELTS Resources
             </h2>
-            <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
+            {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
               Unlock your potential: Explore the IELTS, the gateway to countless
               academic opportunities.
-            </p>
+            </p> */}
 
-            <div className="flex justify-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
               <div className="container p-4 sm:p-4 border rounded-xl">
                 {/* <h2 className="mb-4 text-xl font-semibold leading-tight">List : </h2> */}
                 <div className="overflow-x-auto mx-auto">
@@ -386,16 +412,14 @@ const IeltsSection = () => {
                         <>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>YouTube
-</p>
+                              <p>YouTube</p>
                             </td>
                             <td className="p-3">
-                              <p> Full 10 Hours Course by Learn with Sam and Ash
-</p>
+                              <p>Full 10 Hours Course by Learn with Sam and Ash</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.youtube.com/watch?v=Jzps8q2es7c&t=67s">View</a>
+                                <a href="https://www.youtube.com/watch?v=Jzps8q2es7c&t=67s" target='_blank'>View</a>
                               </span>
                             </td>
                           </tr>
@@ -404,35 +428,32 @@ const IeltsSection = () => {
                               <p>Youtube</p>
                             </td>
                             <td className="p-3">
-                              <p> Full 10 Hours Course by IELTS Advantage
-</p>
+                              <p>Full 10 Hours Course by IELTS Advantage</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.youtube.com/watch?v=xGtKdsVxV8A&pp=ygURaWVsdHMgZnVsbCBjb3Vyc2U%3D">View</a>
+                                <a href="https://www.youtube.com/watch?v=xGtKdsVxV8A&pp=ygURaWVsdHMgZnVsbCBjb3Vyc2U%3D" target='_blank'>View</a>
                               </span>
                             </td>
                           </tr>
                           <tr className="border-b border-opacity-20">
                             <td className="p-3">
-                              <p>Official Website
-</p>
+                              <p>Official Website</p>
                             </td>
                             <td className="p-3">
                               <p>Free study material including tests</p>
                             </td>
                             <td className="p-3">
                               <span className="px-3 py-1 text-blue-700 font-semibold rounded-md dark:bg-violet-400">
-                                <a href="https://www.ieltsidpindia.com/information/online-ielts-study-material">View</a>
+                                <a href="https://www.ieltsidpindia.com/information/online-ielts-study-material" target="_blank">View</a>
                               </span>
                             </td>
                           </tr>
-                          
                         </>
                       }
                     </tbody>
                   </table>
-                  {/* <small className="text-[0.7rem]">* Sources</small> */}
+                  <small className="text-[0.7rem]">* Sources</small>
                 </div>
               </div>
             </div>
