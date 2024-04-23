@@ -193,7 +193,9 @@ const GreSection = () => {
                 1
                 </td>
                 <td class="px-6 py-4">
-                Get to know the GRE format and question types. Begin daily vocabulary learning (20 words/day).
+                <ul style={{ listStyleType: 'circle' }}>
+                <li>Get to know the GRE format and question types. Begin daily vocabulary learning (20 words/day).</li>
+                </ul>
                 </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
@@ -210,7 +212,9 @@ const GreSection = () => {
                 1-2 
                 </td>
                 <td class="px-6 py-4">
-                Review basic math concepts. Continue vocabulary learning and include daily reading practice.
+                <ul style={{ listStyleType: 'circle' }}>
+  <li>  Review basic math concepts. Continue vocabulary learning and include daily reading practice.    </li>
+</ul>
                 </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
@@ -227,7 +231,9 @@ const GreSection = () => {
                 1-2  
                 </td>
                 <td class="px-6 py-4">
-                Focus on text completion and sentence equivalence. Maintain vocabulary and reading routine.   
+                <ul style={{ listStyleType: 'circle' }}>
+  <li>  Focus on text completion and sentence equivalence. Maintain vocabulary and reading routine.    </li>
+</ul>
                 </td>
             </tr>
             <tr class="odd:bg-white even:bg-gray-200 border-b border-gray-400">
@@ -244,7 +250,9 @@ const GreSection = () => {
                     2-3
                 </td>
                 <td class="px-6 py-4">
-                Practice issue and argument essays. Keep up with vocabulary and daily reading.  
+                <ul style={{ listStyleType: 'circle' }}>
+  <li>Practice issue and argument essays. Keep up with vocabulary and daily reading. </li>
+</ul>
                 </td>
             </tr>
             <tr>

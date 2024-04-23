@@ -225,8 +225,7 @@ const GREs = () => {
 
         <div className="text-center">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
-            
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"            
             height="1655"
             frameborder="0"
             marginheight="0"
