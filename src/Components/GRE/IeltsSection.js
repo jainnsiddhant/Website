@@ -45,29 +45,6 @@ const IeltsSection = () => {
           </div>
               </div>
               </div>
-        {/* <div className="py-4 px-4 mx-auto text-center lg:py-16">
-          <h2
-            data-aos="fade-right"
-            className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl"
-          >
-            <span className="text-black  bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
-                  IELTS
-                  </span>
-          </h2>
-          <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-justify">
-          IELTS (International English Language Testing System): IELTS is a standardised test that measures English language proficiency for non-native English language speakers, widely recognised for immigration and academic purposes. It’s important as it serves as a key to global education and professional opportunities, ensuring participants can effectively communicate in English.
-          </p>
-          <div>
-          <a
-              type="button"
-              href="https://www.ieltsidpindia.com/"
-              target="_blank"
-              class="text-white bg-gradient-to-r from-red-600 to-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
-            >
-              Official Website
-            </a>
-          </div>
-        </div> */}
 
         <div className="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h2
@@ -76,11 +53,7 @@ const IeltsSection = () => {
           >
             IELTS Exam Pattern
           </h2>
-          {/* <p className="mb-3 text-base font-normal text-gray-500 lg:text-lg sm:px-16 lg:px-48">
-            Unlock your potential: Explore the IELTS, the gateway to countless
-            academic opportunities.
-          </p> */}
-          <div className="mb-5">
+          <div className="mt-10">
             <button
               onClick={handleGeneralButtonClick}
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
@@ -97,7 +70,8 @@ const IeltsSection = () => {
 
 <div className='flex justify-center'>
           {showGeneralTable && (
-          <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-20">
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-10">
+          <p className='text-xl'>General Table</p>
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
@@ -190,7 +164,8 @@ const IeltsSection = () => {
 
 <div className='flex justify-center'>
           {showAcademicTable && (
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-20">
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-10">
+<p className='text-xl'>Academic Table</p>
     <table class="w-full text-sm text-left rtl:text-right text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
@@ -321,7 +296,7 @@ const IeltsSection = () => {
                 Listening
                 </td>
                 <td class="px-6 py-4">
-                <ul class="list-disc ml-4">
+                <ul class="ml-4" style={{ listStyleType: 'circle' }}>
                     <li>Familiarize with IELTS format</li>
                     <li>Take a practice test to assess current level</li>
                     <li>Practice listening to different English accents and sources</li>
@@ -337,7 +312,7 @@ const IeltsSection = () => {
                     Reading
                 </td>
                 <td class="px-6 py-4">
-                <ul class="list-disc ml-4">
+                <ul class="ml-4" style={{ listStyleType: 'circle' }}>
                     <li>Improve reading speed and comprehension</li>
                     <li>Practice reading different types of texts</li>
                     <li>Work on understanding question types</li>
@@ -353,7 +328,7 @@ const IeltsSection = () => {
                 Writing
                 </td>
                 <td class="px-6 py-4">
-                <ul class="list-disc ml-4">
+                <ul class="ml-4" style={{ listStyleType: 'circle' }}>
                     <li>Focus on task 1 and task 2 formats</li>
                     <li>Practice writing essays and reports</li>
                     <li>Get feedback on writing samples</li>
@@ -369,7 +344,7 @@ const IeltsSection = () => {
                 Speaking
                 </td>
                 <td class="px-6 py-4">
-                <ul class="list-disc ml-4">
+                <ul class="ml-4" style={{ listStyleType: 'circle' }}>
                     <li>Practice speaking on a variety of topics</li>
                     <li>Record and listen to your speaking</li>
                     <li>Engage in English conversations</li>

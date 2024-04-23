@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { textAnimation } from "../Animation/Animation";
 import gre from "../../images/gre.jpeg";
@@ -8,8 +8,47 @@ import IeltsSection from "./IeltsSection";
 import GreSection from "./GreSection";
 import ToeflSection from "./ToeflSection";
 import Community from "./Community";
+import arrow from "../../images/arrow.gif";
+
+const useIntersectionObserver = (ref) => {
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Adjust threshold as needed
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [ref]);
+
+  return isVisible;
+};
+
 
 const GREs = () => {
+
+  const scrollToNextSection = () => {
+    const exploreSection = document.getElementById("box");
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: "smooth" });
+      // setArrowVisible(false);
+    } else {
+      console.error("Explore section not found.");
+    }
+  };
+
   return (
     <>
       <motion.div
@@ -141,7 +180,12 @@ const GREs = () => {
         </section>
       </motion.div>
 
+      <div id="arrow" class="" onClick={scrollToNextSection}>
+          <img src={arrow} className="w-40 h-40 mx-auto mt-6 transform filter invert" />
+      </div>
+
       <motion.div
+        id="box"
         variants={textAnimation}
         initial={"offscreen"}
         whileInView={"onscreen"}
