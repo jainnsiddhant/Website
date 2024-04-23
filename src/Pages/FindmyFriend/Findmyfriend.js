@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import { Footer } from '../../Components/Footer/Footer'
-import GREs from '../../Components/FindmyFriend/GRE'
+import FindMyFriend from '../../Components/FindmyFriend/FindMyFriend'
 
 const FindmyFriend = () => {
     return (
         <>
             <Navbar />
-            <GREs />
+            <FindMyFriend/>
             <Footer />
         </>
     )
