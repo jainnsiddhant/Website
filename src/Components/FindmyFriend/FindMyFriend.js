@@ -8,6 +8,7 @@ import data from "../../constants/data_fmf";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import '../../App.css'
 
 
 const FindMyFriend = () => {
@@ -178,39 +179,29 @@ const FindMyFriend = () => {
         </h1>
 
         <div className="w-3/4 m-auto">
-          <div className="mt-20">
-            <Slider {...settings}>
-              {data.map((item, index) => (
-                <div key={index}>
-                  <motion.div
-                    whileHover={{ scale: 1.15 }}
-                    className="max-w-xs bg-white justify-center items-center mx-auto"
-                  >
-                    <a href={item.link}>
-                      <img className="carousel-image" src={item.image} alt="" />
-                    </a>
-                    <div className="p-4">
-                      <a href={item.link}>
-                        <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900 uppercase">
-                          {item.eventtype}
-                        </h5>
-                        <h6 className="mb-2 text-lg lg:text-xl font-bold text-gray-900 underline">
-                          {item.city}
-                        </h6>
-                      </a>
-                      <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-                        {item.description}
-                      </p>
-                      <p className="mb-3 font-normal text-red-500 text-sm lg:text-base">
-                        {item.left}
-                      </p>
-                    </div>
-                  </motion.div>
-                </div>
-              ))}
-            </Slider>
+  <div className="mt-20 flex justify-center">
+    <Slider {...settings} className="carousel-slider">
+      {data.map((item, index) => (
+        <div key={index} className="carousel-item">
+          <div className="card" style={{ backgroundImage: `url(${item.image})`, height: '400px' }}> {/* Adjust height as needed */}
+            <div className="blur-overlay"></div> {/* Add a div for the blurred overlay */}
+            <div className="card-content">
+              <h2 className="card-title">{item.eventtype}</h2>
+              <h2 className="card-title underline">{item.city}</h2>
+              <p className="card-description">{item.description}</p>
+              <p className="text-yellow-200 text-2xl">{item.left}</p>
+            </div>
           </div>
         </div>
+      ))}
+    </Slider>
+  </div>
+</div>
+
+
+
+
+
       </section>
 
       {/* FORM */}

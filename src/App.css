@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel-slider {
+  width: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.13); /* Adjust overlay color and opacity */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.card-content {
+  position: relative;
+  padding: 20px;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #ffffff;
+}
