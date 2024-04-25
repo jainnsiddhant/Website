@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { textAnimation } from "../Animation/Animation";
 import form from '../../images/form.jpg';
@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../App.css'
+import left from '../../images/left.png'
+import right from '../../images/right.png'
 
 
 const FindMyFriend = () => {
@@ -47,6 +49,17 @@ const FindMyFriend = () => {
       }
     ]
   };
+
+  const sliderRef = useRef(null);
+
+  const goToNext = () => {
+    sliderRef.current.slickNext(); // Call slickNext() method to go to the next slide
+  };
+
+  const goToPrev = () => {
+    sliderRef.current.slickPrev(); // Call slickPrev() method to go to the previous slide
+  };
+
   
 
   return (
@@ -174,33 +187,54 @@ const FindMyFriend = () => {
       {/* CAROUSEL */}
 
       <section className="text-center mb-23 mt-16">
-        <h1 className="text-2xl justify-center">
-          <span className="justify center text-2xl" style={{ fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>EVENTS HAPPENING</span>
+        <h1 className="text-2xl justify-center underline text-bold">
+          <span className="justify center text-2xl " style={{ fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}} >EVENTS HAPPENING</span>
         </h1>
 
+        
+
         <div className="w-3/4 m-auto">
-  <div className="mt-20 flex justify-center">
-    <Slider {...settings} className="carousel-slider">
-      {data.map((item, index) => (
-        <div key={index} className="carousel-item">
-          <div className="card" style={{ backgroundImage: `url(${item.image})`, height: '400px' }}> {/* Adjust height as needed */}
-            <div className="blur-overlay"></div> {/* Add a div for the blurred overlay */}
-            <div className="card-content">
-              <h2 className="card-title">{item.eventtype}</h2>
-              <h2 className="card-title underline">{item.city}</h2>
-              <p className="card-description">{item.description}</p>
-              <p className="text-yellow-200 text-2xl">{item.left}</p>
-            </div>
+          <div className="mt-16 flex justify-center">
+          <Slider {...settings} className="carousel-slider" ref={sliderRef}>
+  {data.map((item, index) => (
+    <div key={index} className="carousel-item p-4">
+      <div className="relative overflow-hidden rounded-lg shadow-lg bg-white">
+        <img
+          className="w-full h-96 object-cover"
+          src={item.image}
+          alt={`Card ${index}`}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-6">
+          <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-1">
+            {item.eventtype}
+          </h2>
+          <h2 className="text-white text-base md:text-lg lg:text-xl mb-4 underline">
+            {item.city}
+          </h2>
+          <p className="text-white text-sm md:text-base lg:text-lg">
+            {item.description}
+          </p>
+          <p className="text-red-600 text-lg md:text-xl mt-4">{item.left}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</Slider>
+
+          </div>
+          {/* Add next and previous buttons */}
+          <div className="flex justify-center mt-4 gap-16 text-xl carousel_control">
+          <button onClick={goToPrev} className="btn flex items-center">
+  <img src={left} width={20} height={20} className="mr-2" alt="Left arrow" /> Previous
+</button>
+
+            <button onClick={goToNext} className="btn flex items-center">
+  Next
+  <img src={right} width={20} height={20} className="ml-2" alt="Right arrow" />
+</button>
+
           </div>
         </div>
-      ))}
-    </Slider>
-  </div>
-</div>
-
-
-
-
 
       </section>
 
@@ -215,21 +249,21 @@ const FindMyFriend = () => {
         </h2>
 
         <div className="text-center">
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
-    height="1655"
-    frameBorder="0"
-    marginHeight="0"
-    marginWidth="0" 
-    className="flex md:w-3/5 w-100 mx-auto mt-7"
-    title="Google Form Survey"
-    style={{backgroundColor: '#94D675'}} 
-    allowfullscreen
-    loading="lazy"
-  >
-    Loading…
-  </iframe>
-</div>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
+            height="1655"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0" 
+            className="flex md:w-3/5 w-100 mx-auto mt-7"
+            title="Google Form Survey"
+            style={{backgroundColor: '#94D675'}} 
+            allowfullscreen
+            loading="lazy"
+          >
+            Loading…
+          </iframe>
+        </div>
 
 
       </section>
