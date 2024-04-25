@@ -51,11 +51,32 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
+  width: calc(100% - 40px); /* Adjust width to fit the container with some margin */
+  max-width: 400px; /* Set maximum width for larger screens */
+  height: auto; /* Let the height adjust based on content */
+  margin-bottom: 20px; /* Add some bottom margin to create space between cards */
   background-size: cover;
   background-position: center;
 }
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 400px; /* Adjust maximum width for medium-sized screens */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* You can use relative units like rem for better scalability */
+    margin-bottom: 1rem; /* Add some space between the title and description */
+  }
+
+  .card-description {
+    font-size: 1rem; /* Adjust the font size of the description */
+    line-height: 1.5; /* Increase line height for better readability */
+    color: #666; /* Optionally adjust the color for better contrast */
+  }
+}
+
+
 
 .blur-overlay {
   position: absolute;
@@ -65,6 +86,7 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.13); /* Adjust overlay color and opacity */
   z-index: 1; /* Ensure the overlay is above the background image */
+  backdrop-filter: blur(3px); /* Apply blur effect */
 }
 
 .card-content {
@@ -83,3 +105,13 @@
   font-size: 1rem;
   color: #ffffff;
 }
+
+.carousel_control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+
