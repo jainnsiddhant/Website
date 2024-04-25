@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../App.css'
+import arrow1 from "../../images/arrow1.jpg";
 
 
 const FindMyFriend = () => {
@@ -73,7 +74,7 @@ const FindMyFriend = () => {
 
           {/* STEPS */}
 
-          <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-2 w-[80%] mx-auto">
+          {/* <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-2 w-[80%] mx-auto">
             <motion.div
               whileHover={{
                 scale: 1.15,
@@ -102,7 +103,9 @@ const FindMyFriend = () => {
                 </div>
               </div>
             </motion.div>
-
+<div>
+  <img src={arrow1} />
+</div>
             <motion.div
               whileHover={{
                 scale: 1.15,
@@ -131,7 +134,9 @@ const FindMyFriend = () => {
                 </div>
               </div>
             </motion.div>
-
+<div>
+  <img src={arrow1} />
+</div>
             <motion.div
               whileHover={{
                 scale: 1.15,
@@ -160,7 +165,102 @@ const FindMyFriend = () => {
                 </div>
               </div>
             </motion.div>
-          </div>
+          </div> */}
+          <div className="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-0 md:space-y-0 mt-2 w-[90%] mx-auto">
+  <motion.div
+    whileHover={{
+      scale: 1.15,
+    }}
+  >
+    <div className="max-w-xs bg-white justify-center items-center mx-auto">
+      <div style={{textAlign: 'center'}}>
+        <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 1</span>
+      </div>
+      <a href="#form">
+        <img
+          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
+          src={form}
+          alt=""
+        />
+      </a>
+      <div className="p-4">
+        <a href="#form">
+          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
+            Fill the form
+          </h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
+          Register for events with ease! Fill out our form to secure your spot and join the excitement. Quick, simple, and hassle-free!
+        </p>
+      </div>
+    </div>
+  </motion.div>
+  <div className="flex items-center justify-center">
+    <img src={arrow1} className="h-20 w-20 rotate-90 md:rotate-0" alt="Arrow" />
+  </div>
+  <motion.div
+    whileHover={{
+      scale: 1.15,
+    }}
+  >
+    <div className="max-w-xs bg-white justify-center items-center mx-auto">
+      <div style={{textAlign: 'center'}}>
+        <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 2</span>
+      </div>
+      <a href="#payment">
+        <img
+          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
+          src={payment}
+          alt=""
+        />
+      </a>
+      <div className="p-4">
+        <a href="#payment">
+          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
+            Make the payment
+          </h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
+          Complete your event registration by making payment. Secure your spot now and get ready for an unforgettable experience!
+        </p>
+      </div>
+    </div>
+  </motion.div>
+  <div className="flex items-center justify-center">
+    <img src={arrow1} className="h-20 w-20 rotate-90 md:rotate-0" alt="Arrow" />
+  </div>
+  <motion.div
+    whileHover={{
+      scale: 1.15,
+    }}
+  >
+    <div className="max-w-xs bg-white justify-center items-center mx-auto">
+      <div style={{textAlign: 'center'}}>
+        <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 3</span>
+      </div>
+      <a href="#information">
+        <img
+          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
+          src={info}
+          alt=""
+        />
+      </a>
+      <div className="p-4">
+        <a href="#information">
+          <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
+            Grab the information
+          </h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
+          After payment confirmation, access all event details instantly. Get ready to dive into a world of excitement and make unforgettable memories!
+        </p>
+      </div>
+    </div>
+  </motion.div>
+</div>
+
+        
+
         </section>
       </motion.div>
 
