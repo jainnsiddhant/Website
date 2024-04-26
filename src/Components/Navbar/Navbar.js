@@ -17,9 +17,9 @@ const Navbar = () => {
     return (
         <>
             <nav className="p-6">
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-2">
                     <div className="flex justify-between">
-                        <div className="flex space-x-[4rem]">
+                        <div className="flex space-x-[1rem]">
                             <div>
                                 <Link
                                     to={"/"}
@@ -42,6 +42,7 @@ const Navbar = () => {
                                 <NavLink to={"/Scholarship"}>Scholarships</NavLink>
                                 <NavLink to={"/course"}>Courses</NavLink>
                                 <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
+                                <NavLink to={"/findmyfriend"}>FindMyFriend</NavLink>
                                 <NavLink to={"/AlreadyinUk"}>Already in UK</NavLink>
                                 <NavLink to={"/about"}>About Us</NavLink>
                             </div>
@@ -88,6 +89,7 @@ const Navbar = () => {
                     <NavLink to={"/Scholarship"}>Scholarships</NavLink>
                     <NavLink to={"/course"}>Courses</NavLink>
                     <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
+                    <NavLink to={"/findmyfriend"}>FindMyFriend</NavLink>
                     <NavLink to={"/AlreadyinUk"}>Already in UK</NavLink>
                     <NavLink to={"/about"}>About Us</NavLink>
                     <NavLink to={"/contact"}>Contact Us</NavLink>

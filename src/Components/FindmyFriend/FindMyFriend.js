@@ -353,21 +353,21 @@ const FindMyFriend = () => {
         </h2>
 
         <div className="text-center">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
-            height="1655"
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0" 
-            className="flex md:w-3/5 w-100 mx-auto mt-7"
-            title="Google Form Survey"
-            style={{backgroundColor: '#94D675'}} 
-            allowfullscreen
-            loading="lazy"
-          >
-            Loading…
-          </iframe>
-        </div>
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
+    height="1655"
+    frameBorder="0"
+    marginHeight="0"
+    marginWidth="0" 
+    className="flex md:w-3/5 w-100 mx-auto mt-7"
+    title="Google Form Survey"
+    style={{backgroundColor: '#94D675'}} 
+    allowfullscreen
+    loading="lazy"
+  >
+    Loading…
+  </iframe>
+</div>
 
 
       </section>
