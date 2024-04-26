@@ -114,4 +114,19 @@
   font-weight: 500;
 }
 
+.responsive-iframe{
+  width: 100%; /* Make iframe responsive to width */
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .responsive-iframe{
+    height: 100vh;
+
+  }
+}
+
+
+
 

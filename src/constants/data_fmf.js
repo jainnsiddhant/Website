@@ -1,56 +1,57 @@
+import london from '../images/london.jpg'
 const data = [
   
     {
       "index":"1",
-      "city": "London, UK",
+      "city": "London",
       "eventtype": "Walking Tour",
       "description": "Explore the historic streets of London with a knowledgeable guide. Discover hidden gems and iconic landmarks on this unforgettable journey.",
-      "left": "3 seats left!",
+      "left": "9 spots left!",
       "link": "#london",
-      "image":"https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/travel/city-guides/london.jpg"
+      "image":london
     },
     {
       "index":"2",
-      "city": "Edinburgh, UK",
+      "city": "Edinburgh",
       "eventtype": "Ghost Tour",
       "description": "Embark on a spine-chilling adventure through the haunted streets of Edinburgh. Hear tales of ghosts, witches, and eerie legends.",
-      "left": "5 seats left!",
+      "left": "8 spots left!",
       "link": "#edinburgh",
-      "image":"https://study-eu.s3.eu-west-1.amazonaws.com/uploads/image/path/251/wide_fullhd_15907480408_b9cff28270_o.jpg"
+      "image":"https://i2-prod.edinburghlive.co.uk/incoming/article15011206.ece/ALTERNATES/s1200/2_Edinburgh.jpg"
     },
     {
       "index":"3",
-      "city": "Bristol, UK",
+      "city": "Bristol",
       "eventtype": "Street Art Workshop",
       "description": "Unleash your creativity in Bristol's vibrant street art scene. Learn techniques from local artists and leave your mark on the city's walls.",
-      "left": "2 seats left!",
+      "left": "10 spots left!",
       "link": "#bristol",
       "image":"https://live.staticflickr.com/65535/53129048486_ebe5a032fa_b.jpg"
     },
     {
       "index":"4",
-      "city": "Manchester, UK",
+      "city": "Manchester",
       "eventtype": "Football Stadium Tour",
       "description": "Get behind the scenes at Manchester's iconic football stadiums. Walk in the footsteps of legends and experience the thrill of match day.",
-      "left": "4 seats left!",
+      "left": "11 spots left!",
       "link": "#manchester",
       "image":"https://media-cdn.tripadvisor.com/media/photo-c/768x250/06/3d/31/60/manchester-town-hall.jpg"
     },
     {
       "index":"5",
-      "city": "Glasgow, UK",
+      "city": "Glasgow",
       "eventtype": "Live Music Gig",
       "description": "Immerse yourself in Glasgow's vibrant music scene. Experience the energy of live performances in iconic venues across the city.",
-      "left": "6 seats left!",
+      "left": "8 spots left!",
       "link": "#glasgow",
-      "image":"https://www.whatsonnetwork.co.uk/uploads/800x600/05a15b6ae5e06abaa33d5925dec846a6.jpg"
+      "image":"https://www.curiousabout.co.uk/glasgow/Glasgow-George-Square-Hdr.jpg"
     },
     {
       "index":"6",
-      "city": "Cambridge, UK",
+      "city": "Cambridge",
       "eventtype": "Punting Tour",
       "description": "Drift along the peaceful River Cam and admire the stunning architecture of Cambridge's colleges. A serene and picturesque experience awaits.",
-      "left": "1 seat left!",
+      "left": "7 spots left!",
       "link": "#cambridge",
       "image":"https://upload.wikimedia.org/wikipedia/commons/b/b4/KingsCollegeChapelWest.jpg"
     }
