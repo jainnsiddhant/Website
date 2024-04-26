@@ -80,7 +80,7 @@ export default function Cards() {
           <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mb-10">
             <div className="flex gap-2 md:gap-4 items-center">
               <img src={research} alt="research-image" style={{height:150 , width:150}} className="hidden md:flex my-auto" />
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 px-4 lg:px-0 mx-auto">
 
                 {/* Resume Card */}
                 <a href="/resume">
@@ -92,6 +92,22 @@ export default function Cards() {
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Resume Build</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Create Your Winning Resume
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+                </a>
+
+                {/* IELTS/GRE */}
+                <a href="/Ielts-Gre">
+                <motion.div whileHover={{ scale: 1.25 }}>
+                  <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${resumehome})` }}></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
+                    <div className="relative p-6 mt-10">
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>IELTS/GRE</h2>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
+                      Excel graduation entrance exams
                       </p>
                     </div>
                   </div>
@@ -139,7 +155,7 @@ export default function Cards() {
           <div className="flex flex-col lg:flex-row justify-between gap-6 md:gap-8 px-4 lg:px-0 mx-auto mt-10">
             <div className="flex gap-2 md:gap-4 items-center">
               <img src={working} alt="working-image" style={{height:150 , width:150}} className="my-auto hidden md:flex" />
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 lg:px-0 mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 px-4 lg:px-0 mx-auto">
 
                 {/* Connect Card */}
                 <a href="/blog">
@@ -171,6 +187,22 @@ export default function Cards() {
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
                       Your UK Relocation Guide
 
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+                </a>
+
+                {/* Find My Friend */}
+                <a href="/findmyfriend">
+                <motion.div whileHover={{ scale: 1.25 }}>
+                  <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${settlehome})` }}></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
+                    <div className="relative p-6 mt-10">
+                      <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>FindMyFriend</h2>
+                      <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
+                      Your compass to make new friends
                       </p>
                     </div>
                   </div>
