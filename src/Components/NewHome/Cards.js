@@ -2,10 +2,12 @@ import React, { useRef , useEffect, useState } from "react";
 import { motion } from 'framer-motion';
 import { textAnimation } from "../Animation/Animation";
 import resumehome from "../../images/resumehome.jpg";
+import grehome from "../../images/grehome.jpg";
 import scholarhome from "../../images/scholarhome.jpg";
 import coursehome from "../../images/coursehome.jpg";
 import connecthome from "../../images/connecthome.jpg";
 import settlehome from "../../images/settlehome.jpg";
+import friendhome from "../../images/friendhome.jpg";
 import alreadyhome from "../../images/alreadyhome.jpg";
 import research from "../../images/research.jpg"
 import working from "../../images/working.jpg"
@@ -102,12 +104,12 @@ export default function Cards() {
                 <a href="/Ielts-Gre">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
-                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${resumehome})` }}></div>
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${grehome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>IELTS/GRE</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
-                      Excel graduation entrance exams
+                      Free resources and roadmap
                       </p>
                     </div>
                   </div>
@@ -197,12 +199,12 @@ export default function Cards() {
                 <a href="/findmyfriend">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
-                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${settlehome})` }}></div>
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${friendhome})` }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50"></div>
                     <div className="relative p-6 mt-10">
                       <h2 className="text-3xl font-semibold text-white mb-4 text-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>FindMyFriend</h2>
                       <p className="text-lg text-gray-100 text-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)' , height:50 , width:200}}>
-                      Your compass to make new friends
+                      Social networking events
                       </p>
                     </div>
                   </div>
