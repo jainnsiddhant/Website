@@ -85,12 +85,12 @@ const FindMyFriend = () => {
               FindMyFriend
             </h2>
             <p className="mb-0 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-              Connect with Your Community: FindMyFriend, Your Local Link!
+            Connecting Indian students across UK cities for epic events that break the ice and build community. Our gatherings are more than just parties—they're opportunities to forge lifelong friendships, grow your network, and create a supportive community in the UK
             </p>
           </div>
 
           
-          <div className="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-0 md:space-y-0 mt-2 w-[90%] mx-auto">
+          <div className="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-0 md:space-y-0 mt-2 w-[90%] mx-auto ">
   <motion.div
     whileHover={{
       scale: 1.15,
@@ -114,7 +114,7 @@ const FindMyFriend = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-        Complete a quick registration form with your details, preferences, and city of arrival, ensuring tailored event suggestions and compatible networking opportunities for Indian students in the UK.
+        Register with your details and preferences
 
         </p>
       </div>
@@ -147,7 +147,7 @@ const FindMyFriend = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-        Once the minimum of 10 spots is reached, receive a list of fellow participants via email or WhatsApp, confirming your commitment by promptly paying your share for the event costs and ensuring venue reservation and event readiness.
+        Once the 5-10 participant range is reached, make the payment (Platform or Booking fee) and receive the participant list.
 
         </p>
       </div>
@@ -180,8 +180,8 @@ const FindMyFriend = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-        Get a confirmation email once payment is received, marking your attendance and anticipation for the upcoming event where you'll meet and socialise with like-minded Indian students, fostering friendships and community in your new UK city.
-          </p>
+        Confirm and meet fellow Indian students in the UK.
+        </p>
       </div>
     </div>
   </motion.div>
@@ -190,39 +190,33 @@ const FindMyFriend = () => {
         
 
         </section>
-      </motion.div>
+      </motion.div><br></br>
 
-      <section className="text-center mb-28 mt-16" >
-  <h1 className="text-2xl justify-center">
-    <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>NOTE:</span>
-  </h1>
-  {/* <ul style={{ listStyleType:'circle', fontSize: 18, paddingLeft: 0 ,marginLeft: '200px'}}>
-    <li style={{ display: 'flex' }}>
+      <section className="text-center w-3/4 m-auto ">
+  <h1 className="text-2xl justify-center ml-2 w-2">
+    <span className="justify center text-md font-bold" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent',fontSize: '20px'}}>NOTE</span>
+  </h1><br></br>
+  <ul className='flex flex-col justify-center text-sm' style={{ listStyleType: 'circle', fontSize: '15px', paddingLeft: 0, marginLeft: 'auto', marginRight: 'auto', maxWidth: '1200px' }}>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
       <span style={{ width: '30px', marginRight: '10px' }}>1.</span>
       The event will be scheduled to take place in a restaurant.
     </li>
-    <li style={{ display: 'flex' }}>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
       <span style={{ width: '30px', marginRight: '10px' }}>2.</span>
       Please note that Free events do not include drinks or food.
     </li>
-    <li style={{ display: 'flex' }}>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
       <span style={{ width: '30px', marginRight: '10px' }}>3.</span>
       Kindly also note that any booking or platform fees are separate from the event and do not cover food or drinks.
     </li>
-    <li style={{ display: 'flex' }}>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
       <span style={{ width: '30px', marginRight: '10px' }}>4.</span>
       Should there be a need to cancel the event, rest assured that a full refund will be issued promptly.
     </li>
-    <li style={{ display: 'flex' }}>
-      <span style={{ width: '30px', marginRight: '10px' }}>5.</span>
-      Kindly be aware that refunds will not be possible in the event of individual cancellations or unavailability after booking.
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
+      <span style={{ width: '30px', marginRight: '10px' }}>5.</span> Kindly be aware that refunds will not be possible in the event of individual cancellations or unavailability after booking.
     </li>
-  </ul> */}
-
-  <p className="flex text-xl sm:text-lg m-5">The event will be scheduled to take place in a restaurant.
-Please note that Free events do not include drinks or food. Kindly also note that any booking or platform fees are separate from the event and do not cover food or drinks.
-Should there be a need to cancel the event, rest assured that a full refund will be issued promptly.
-Kindly be aware that refunds will not be possible in the event of individual cancellations or unavailability after booking.</p>
+  </ul>
 </section>
 
 
@@ -233,8 +227,8 @@ Kindly be aware that refunds will not be possible in the event of individual can
       {/* CAROUSEL */}
 
       <section className="text-center mb-23 mt-16">
-        <h1 className="text-2xl justify-center underline text-bold">
-          <span className="justify center text-2xl " style={{ fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}} >STATUS OF EVENTS</span>
+        <h1 className="text-2xl justify-center text-bold">
+          <span className="justify center text-2xl font-bold " style={{ fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}} >EVENTS AND STATUS</span>
         </h1>
 
         
@@ -250,18 +244,19 @@ Kindly be aware that refunds will not be possible in the event of individual can
           src={item.image}
           alt={`Card ${index}`}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col justify-center items-center p-6">
-          {/* <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-1">
-            {item.eventtype}
-          </h2> */}
-          <h2 className="text-white text-base md:text-lg lg:text-xl mb-4 uppercase">
-            {item.city}
-          </h2>
-          {/* <p className="text-white text-sm md:text-base lg:text-lg">
-            {item.description}
-          </p> */}
-          <p className="text-red-600 text-lg md:text-xl mt-4 font-bold">{item.left}</p>
-        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end items-start p-6">
+  {/* <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-1">
+    {item.eventtype}
+  </h2> */}
+  <h2 className="text-white text-3xl mb-2 uppercase">
+    {item.city}
+  </h2>
+  {/* <p className="text-white text-sm md:text-base lg:text-lg">
+    {item.description}
+  </p> */}
+  <p className="text-red-600 text-3xl mt-4 font-bold">{item.left}</p>
+</div>
+
       </div>
     </div>
   ))}
@@ -290,11 +285,12 @@ Kindly be aware that refunds will not be possible in the event of individual can
       <section className="text-center mb-28 mt-16">
   <h2
     data-aos="fade-right"
-    className="mb-3 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl underline justify-center"
+    className="mb-3 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl justify-center"
   >
     REGISTRATION FORM
   </h2>
-  <h3 className="justify-center">(Please Sign In using your account in case form is not visible)</h3>
+  <h3 className="justify-center">Please sign in using your account in case form is not visible</h3>
+
 
   <div className="text-center">
     <iframe
@@ -304,7 +300,7 @@ Kindly be aware that refunds will not be possible in the event of individual can
       frameBorder="0"
       marginHeight="0"
       marginWidth="0" 
-      className="flex md:w-3/5 w-100 mx-auto mt-7"
+      className="flex md:w-3/5 w-80 mx-auto mt-7"
       title="Google Form Survey"
       style={{ backgroundColor: '#94D675' }} 
       allowfullscreen

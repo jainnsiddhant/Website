@@ -230,6 +230,19 @@ export const Footer = () => {
 
 
                                 <div className='mb-2'>
+                            <h4 className='pb-4'>FindMyFriend</h4>
+                            <ul className='text-gray-500'>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/findmyfriend" className='hover:text-blue-600'>Steps</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/findmyfriend" className='hover:text-blue-600'>Events</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/findmyfriend" className='hover:text-blue-600'>Form</a></li>
+                            </ul>
+                        </div>
+
+                        </div>
+                                <div>
+
+
+                                <div className='mb-2'>
                             <h4 className='pb-4'>Already</h4>
                             <ul className='text-gray-500'>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Instructions</a></li>

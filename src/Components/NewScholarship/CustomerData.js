@@ -1,20 +1,7 @@
 // CustomerData.js
 
 const CustomerData = [
-    // { 
-    //   id: 1,
-    //   name: 'John Doe',
-    //   country: { name: 'USA' },
-    //   company: 'ABC Company',
-    //   representative: { name: 'Jane Smith' }
-    // },
-    // { 
-    //   id: 2,
-    //   name: 'Alice Johnson',
-    //   country: { name: 'Canada' },
-    //   company: 'XYZ Corporation',
-    //   representative: { name: 'Bob Johnson' }
-    // },
+    
     {
         id: 1,
         name:"Chevening Scholarships for Indian and International Students",
