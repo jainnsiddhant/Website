@@ -2,8 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { textAnimation } from "../Animation/Animation";
 import form from '../../images/form.jpg';
-import payment from '../../images/pay.avif';
-import info from '../../images/info.jpg';
+
 import data from "../../constants/data_fmf";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -14,6 +13,8 @@ import left from '../../images/left.png'
 import right from '../../images/right.png'
 
 import arrow1 from "../../images/arrow1.jpg";
+import party from '../../images/party.jpg'
+import payment from '../../images/payment.jpg'
 
 
 
@@ -84,105 +85,12 @@ const FindMyFriend = () => {
               FindMyFriend
             </h2>
             <p className="mb-0 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-              Connect with Your Community: FindMyFriend, Your Local Link!
+            Connecting Indian students across UK cities for epic events that break the ice and build community. Our gatherings are more than just parties—they're opportunities to forge lifelong friendships, grow your network, and create a supportive community in the UK
             </p>
           </div>
 
-          {/* STEPS */}
-
-          {/* <div className="space-y-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-2 w-[80%] mx-auto">
-            <motion.div
-              whileHover={{
-                scale: 1.15,
-              }}
-            >
-              <div className="max-w-xs bg-white justify-center items-center mx-auto">
-                <div style={{textAlign: 'center'}}>
-                  <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 1</span>
-                </div>
-                <a href="#form">
-                  <img
-                    className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
-                    src={form}
-                    alt=""
-                  />
-                </a>
-                <div className="p-4">
-                  <a href="#form">
-                    <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
-                      Fill the form
-                    </h5>
-                  </a>
-                  <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-                    Register for events with ease! Fill out our form to secure your spot and join the excitement. Quick, simple, and hassle-free!
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-<div>
-  <img src={arrow1} />
-</div>
-            <motion.div
-              whileHover={{
-                scale: 1.15,
-              }}
-            >
-              <div className="max-w-xs bg-white justify-center items-center mx-auto">
-                <div style={{textAlign: 'center'}}>
-                  <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 2</span>
-                </div>
-                <a href="#payment">
-                  <img
-                    className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
-                    src={payment}
-                    alt=""
-                  />
-                </a>
-                <div className="p-4">
-                  <a href="#payment">
-                    <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
-                      Make the payment
-                    </h5>
-                  </a>
-                  <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-                    Complete your event registration by making payment. Secure your spot now and get ready for an unforgettable experience!
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-<div>
-  <img src={arrow1} />
-</div>
-            <motion.div
-              whileHover={{
-                scale: 1.15,
-              }}
-            >
-              <div className="max-w-xs bg-white justify-center items-center mx-auto">
-                <div style={{textAlign: 'center'}}>
-                  <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 3</span>
-                </div>
-                <a href="#information">
-                  <img
-                    className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
-                    src={info}
-                    alt=""
-                  />
-                </a>
-                <div className="p-4">
-                  <a href="#information">
-                    <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
-                      Grab the information
-                    </h5>
-                  </a>
-                  <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-                    After payment confirmation, access all event details instantly. Get ready to dive into a world of excitement and make unforgettable memories!
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div> */}
-          <div className="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-0 md:space-y-0 mt-2 w-[90%] mx-auto">
+          
+          <div className="space-y-6 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-0 md:space-y-0 mt-2 w-[90%] mx-auto ">
   <motion.div
     whileHover={{
       scale: 1.15,
@@ -190,11 +98,11 @@ const FindMyFriend = () => {
   >
     <div className="max-w-xs bg-white justify-center items-center mx-auto">
       <div style={{textAlign: 'center'}}>
-        <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 1</span>
+        <span className="justify center text-2xl font-bold" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 1</span>
       </div>
       <a href="#form">
         <img
-          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
+          className="rounded-xl bg-white shadow-gray-800 border-2 object-cover h-70 w-80"
           src={form}
           alt=""
         />
@@ -206,7 +114,8 @@ const FindMyFriend = () => {
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-          Register for events with ease! Fill out our form to secure your spot and join the excitement. Quick, simple, and hassle-free!
+        Register with your details and preferences
+
         </p>
       </div>
     </div>
@@ -221,11 +130,11 @@ const FindMyFriend = () => {
   >
     <div className="max-w-xs bg-white justify-center items-center mx-auto">
       <div style={{textAlign: 'center'}}>
-        <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 2</span>
+        <span className="justify center text-2xl font-bold" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 2</span>
       </div>
       <a href="#payment">
         <img
-          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
+          className="rounded-xl bg-white shadow-gray-800 border-2 object-cover h-70 w-80"
           src={payment}
           alt=""
         />
@@ -233,11 +142,13 @@ const FindMyFriend = () => {
       <div className="p-4">
         <a href="#payment">
           <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
-            Make the payment
+          Share Participant List & Pay
+
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-          Complete your event registration by making payment. Secure your spot now and get ready for an unforgettable experience!
+        Once the 5-10 participant range is reached, make the payment (Platform or Booking fee) and receive the participant list.
+
         </p>
       </div>
     </div>
@@ -252,23 +163,24 @@ const FindMyFriend = () => {
   >
     <div className="max-w-xs bg-white justify-center items-center mx-auto">
       <div style={{textAlign: 'center'}}>
-        <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 3</span>
+        <span className="justify center text-2xl font-bold" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>STEP 3</span>
       </div>
       <a href="#information">
         <img
-          className="px-5 py-6 rounded-xl bg-white shadow-gray-800 border-2 object-cover h-60 w-80"
-          src={info}
+          className="rounded-xl bg-white shadow-gray-800 border-2 object-cover h-70 w-80"
+          src={party}
           alt=""
         />
       </a>
       <div className="p-4">
         <a href="#information">
           <h5 className="mb-2 text-lg lg:text-xl font-bold text-gray-900">
-            Grab the information
+          Receive Confirmation & Meet
+
           </h5>
         </a>
         <p className="mb-3 font-normal text-gray-700 text-sm lg:text-base">
-          After payment confirmation, access all event details instantly. Get ready to dive into a world of excitement and make unforgettable memories!
+        Confirm and meet fellow Indian students in the UK.
         </p>
       </div>
     </div>
@@ -278,20 +190,45 @@ const FindMyFriend = () => {
         
 
         </section>
-      </motion.div>
+      </motion.div><br></br>
 
-      <section className="text-center mb-28 mt-16">
-        <h1 className="text-2xl justify-center">
-          <span className="justify center text-2xl" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}}>NOTICE:</span><p>The amount ranges from 10Rs. to 1000Rs.</p>
-        </h1>
-      </section>
+      <section className="text-center w-3/4 m-auto ">
+  <h1 className="text-2xl justify-center ml-2 w-2">
+    <span className="justify center text-md font-bold" style={{fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d', WebkitBackgroundClip: 'text', color: 'transparent',fontSize: '20px'}}>NOTE</span>
+  </h1><br></br>
+  <ul className='flex flex-col justify-center text-sm' style={{ listStyleType: 'circle', fontSize: '15px', paddingLeft: 0, marginLeft: 'auto', marginRight: 'auto', maxWidth: '1200px' }}>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
+      <span style={{ width: '30px', marginRight: '10px' }}>1.</span>
+      The event will be scheduled to take place in a restaurant.
+    </li>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
+      <span style={{ width: '30px', marginRight: '10px' }}>2.</span>
+      Please note that Free events do not include drinks or food.
+    </li>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
+      <span style={{ width: '30px', marginRight: '10px' }}>3.</span>
+      Kindly also note that any booking or platform fees are separate from the event and do not cover food or drinks.
+    </li>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
+      <span style={{ width: '30px', marginRight: '10px' }}>4.</span>
+      Should there be a need to cancel the event, rest assured that a full refund will be issued promptly.
+    </li>
+    <li style={{ display: 'flex', marginBottom: '1rem' }}>
+      <span style={{ width: '30px', marginRight: '10px' }}>5.</span> Kindly be aware that refunds will not be possible in the event of individual cancellations or unavailability after booking.
+    </li>
+  </ul>
+</section>
+
+
+
+
 
 
       {/* CAROUSEL */}
 
       <section className="text-center mb-23 mt-16">
-        <h1 className="text-2xl justify-center underline text-bold">
-          <span className="justify center text-2xl " style={{ fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}} >EVENTS HAPPENING</span>
+        <h1 className="text-2xl justify-center text-bold">
+          <span className="justify center text-2xl font-bold " style={{ fontStyle: 'bold', backgroundImage: 'linear-gradient(to right, #6c5b7b, #355c7d)', WebkitBackgroundClip: 'text', color: 'transparent' , fontSize:30}} >EVENTS AND STATUS</span>
         </h1>
 
         
@@ -307,18 +244,19 @@ const FindMyFriend = () => {
           src={item.image}
           alt={`Card ${index}`}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-6">
-          <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-1">
-            {item.eventtype}
-          </h2>
-          <h2 className="text-white text-base md:text-lg lg:text-xl mb-4 underline">
-            {item.city}
-          </h2>
-          <p className="text-white text-sm md:text-base lg:text-lg">
-            {item.description}
-          </p>
-          <p className="text-red-600 text-lg md:text-xl mt-4">{item.left}</p>
-        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end items-start p-6">
+  {/* <h2 className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-1">
+    {item.eventtype}
+  </h2> */}
+  <h2 className="text-white text-3xl mb-2 uppercase">
+    {item.city}
+  </h2>
+  {/* <p className="text-white text-sm md:text-base lg:text-lg">
+    {item.description}
+  </p> */}
+  <p className="text-red-600 text-3xl mt-4 font-bold">{item.left}</p>
+</div>
+
       </div>
     </div>
   ))}
@@ -345,32 +283,38 @@ const FindMyFriend = () => {
       {/* FORM */}
 
       <section className="text-center mb-28 mt-16">
-        <h2
-          data-aos="fade-right"
-          className="mb-3 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl underline"
-        >
-          FindMyFriend Form
-        </h2>
-
-        <div className="text-center">
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
-    height="1655"
-    frameBorder="0"
-    marginHeight="0"
-    marginWidth="0" 
-    className="flex md:w-3/5 w-100 mx-auto mt-7"
-    title="Google Form Survey"
-    style={{backgroundColor: '#94D675'}} 
-    allowfullscreen
-    loading="lazy"
+  <h2
+    data-aos="fade-right"
+    className="mb-3 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-3xl lg:text-4xl justify-center"
   >
-    Loading…
-  </iframe>
-</div>
+    REGISTRATION FORM
+  </h2>
+  <h3 className="justify-center">Please sign in using your account in case form is not visible</h3>
 
 
-      </section>
+  <div className="text-center">
+    <iframe
+    class="responsive-iframe"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdnqiZnclqptWVQsNccOHOX0HmAemDsxMgXUxUsX8sSrEvtiA/viewform?embedded=true"
+      height="2100"
+      frameBorder="0"
+      marginHeight="0"
+      marginWidth="0" 
+      className="flex md:w-3/5 w-80 mx-auto mt-7"
+      title="Google Form Survey"
+      style={{ backgroundColor: '#94D675' }} 
+      allowfullscreen
+      loading="lazy"
+      
+      
+    >
+      Loading…
+    </iframe>
+  </div>
+  
+
+</section>
+
     </>
   );
 };
