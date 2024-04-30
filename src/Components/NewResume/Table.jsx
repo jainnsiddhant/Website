@@ -40,9 +40,11 @@ const actionBodyTemplate = (rowData) => {
                 onClick={() => handleClick(link)}
             >
                 {isLinkedIn ? (
-                    <>
-                        <FaLinkedin className="inline mr-2" /> LINKEDIN
-                    </>
+                    <div className="flex flex-row items-center justify-between">
+                    <FaLinkedin className="inline mr-2" />
+                    <span>LINKEDIN</span>
+                  </div>
+                  
                 ) : (
                     "WEBSITE"
                 )}
@@ -72,42 +74,45 @@ const actionBodyTemplate = (rowData) => {
 
 
   return (
-    <div id="table" className="card w-[80%] mx-auto mt-10">
-      <div className="py-4 px-4">
-        <h2
-          data-aos="fade-right"
-          className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl text-center"
-        >
-          Enhance Resume
-        </h2>
-        <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-center">
-        Boost your resume with these courses offered by societies from IITs and IIMs to elevate your skillset and create a strong resume
-        </p>
-      </div>
-      <DataTable
-        value={customers}
-        paginator
-        rows={5}
-        rowsPerPageOptions={[5, 10, 25, 50]}
-        tableStyle={{ minWidth: "50rem" }}
-      >
-        <Column
-          field="name"
-          header={<p className="text-lg">Name</p>}
-          style={{ width: "25%" }}
-        ></Column>
-        <Column
-          field="tags"
-          header={<p className="text-lg">Specialisation</p>}
-          style={{ width: "25%" }}
-          body={actionTags}
-        ></Column>
-        <Column
-          header={<p className="text-lg">Official Pages</p>}
-          body={actionBodyTemplate}
-          style={{ width: "15%" }}
-        ></Column>
-      </DataTable>
-    </div>
+    <div id="table" className="w-[80%] mx-auto mt-10 justify-center">
+  <div className="py-4 px-4">
+    <h2
+      data-aos="fade-right"
+      className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl text-center"
+    >
+      Enhance Resume
+    </h2>
+    <p className="mb-3 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 text-center">
+      Boost your resume with these courses offered by societies from IITs and IIMs to elevate your skillset and create a strong resume
+    </p>
+  </div>
+  <DataTable
+    value={customers}
+    paginator
+    rows={5}
+    rowsPerPageOptions={[5, 10, 25, 50]}
+  >
+    <Column
+      field="name"
+      header={<p className="text-lg">Name</p>}
+      style={{ width: "25%" }}
+      className="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6"
+    ></Column>
+    <Column
+      field="tags"
+      header={<p className="text-lg">Specialisation</p>}
+      style={{ width: "50%" }}
+      body={actionTags}
+      className="w-full  sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6 xs:w-full"
+    ></Column>
+    <Column
+      header={<p className="text-lg">Official Pages</p>}
+      body={actionBodyTemplate}
+      style={{ width: "25%" }}
+      className="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6"
+    ></Column>
+  </DataTable>
+</div>
+
   );
 }
