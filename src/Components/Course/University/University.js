@@ -108,74 +108,54 @@ const University = ({univdata}) => {
           </div>
         </div>
       </div>
-      <div className="relative mb-12 max-w-5xl mx-auto mt-8 overflow-x-auto shadow-md sm:rounded-lg">
-        <div className="card">
-          <DataTable
-            value={products}
-            tableStyle={{ minWidth: "50rem", justifyContent: "center" }}
-          >
-            <Column
-              field="name"
-              header="Name"
-              sortable
-              style={{
-                width: "30%",
-                justifyContent: "center",
-                alignContent: "center",
-              }}
-            ></Column>
-            <Column
-              field="Qsranking"
-              header="Qs Ranking"
-              sortable
-              style={{ width: "30%" }}
-            ></Column>
-            <Column
-              field="Guardianranking"
-              header="Guardian Ranking"
-              sortable
-              style={{ width: "30%" }}
-            ></Column>
-            <Column
-              field="website"
-              header="University Website"
-              style={{ width: "30%" }}
-              body={(rowData) => {
-                return (
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <a
-                      style={{
-                        color: "#3F00FF",
-                        // textDecoration: "underline",
-                        cursor: "pointer",
-                        "&:hover": {
-                          color: "black",
-                        },
-                      }}
-                      href={rowData.website}
-                      target="_blank"
-                    >
-                      {/* {"View"} */}
-                      <button
-                  type="button"
-                  className="bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 w-40 mt-3 flex justify-center"
-                >
+      <div className="relative justify-center mb-12 max-w-screen-lg mx-auto mt-8 overflow-x-auto shadow-md sm:rounded-lg">
+  <div className="overflow-x-auto">
+    <DataTable
+      value={products}
+      tableStyle={{ minWidth: "100%", justifyContent: "center" }}
+    >
+      <Column
+        field="name"
+        header="Name"
+        sortable
+        className="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6"
+      ></Column>
+      <Column
+        field="Qsranking"
+        header="Qs Ranking"
+        sortable
+        className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/12 xl:w-1/12"
+      ></Column>
+      <Column
+        field="Guardianranking"
+        header="Guardian Ranking"
+        sortable
+        className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/12 xl:w-1/12"
+      ></Column>
+      <Column
+        field="website"
+        header="University Website"
+        className="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6"
+        body={(rowData) => {
+          return (
+            <div className="flex justify-center sm:justify-start">
+              <a
+                href={rowData.website}
+                target="_blank"
+                className="text-blue-500 cursor-pointer hover:underline"
+              >
+                <button className="bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 mt-3">
                   Visit Website
                 </button>
-                    </a>
-                  </div>
-                );
-              }}
-            ></Column>
-          </DataTable>
-        </div>
-      </div>
+              </a>
+            </div>
+          );
+        }}
+      ></Column>
+    </DataTable>
+  </div>
+</div>
+
     </>
   );
 };

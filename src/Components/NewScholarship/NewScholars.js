@@ -69,7 +69,7 @@ export default function NewScholars() {
 
     return (
       <button
-        className="bg-blue-500 text-white w-20 p-2 rounded-md"
+        className="bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 mt-3"
         onClick={handleClick}
       >
         Visit
@@ -91,7 +91,7 @@ export default function NewScholars() {
           transition={{ duration: 0.8 }}
           ref={cardsRef}
         >
-      <div className="mx-auto">
+      <div className="m-10 mt-5">
         <div className="py-4 px-4 w-full">
           <h2
             data-aos="fade-right"
@@ -130,34 +130,40 @@ export default function NewScholars() {
           paginator
           rows={5}
           rowsPerPageOptions={[5, 10, 25, 50]}
-          tableStyle={{ width:'100%' }}
+          tableStyle={{ minWidth: "100%", justifyContent: "center" }}
         >
           <Column
             field="name"
             header={<p className="text-lg">Name</p>}
             style={{ width: "25%" }}
+            className="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6"
           ></Column>
           <Column
             field="startTime"
             header={<p className="text-lg">Start Date</p>}
             style={{ width: "25%" }}
+            className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/12 xl:w-1/12"
           ></Column>
           <Column
             field="endTime"
             header={<p className="text-lg">End Date</p>}
             style={{ width: "25%" }}
+            className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/12 xl:w-1/12"
           ></Column>
           <Column
             field="status"
             header={<p className="text-lg">Status</p>}
             style={{ width: "10%" }}
+            className="w-1/6 sm:w-1/6 md:w-1/6 lg:w-1/12 xl:w-1/12"
           ></Column>
           <Column
             header={<p className="text-lg">Official website</p>}
             body={actionBodyTemplate}
             style={{ width: "35%" }}
+            className="w-full sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/6"
           ></Column>
-        </DataTable>
+        </DataTable> 
+
       </div>
       </motion.div>
     </div>

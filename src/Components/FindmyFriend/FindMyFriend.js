@@ -7,8 +7,7 @@ import data from "../../constants/data_fmf";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import '../../App.css'
-
+import './findmyfriend.css'
 import left from '../../images/left.png'
 import right from '../../images/right.png'
 
