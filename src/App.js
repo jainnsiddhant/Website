@@ -29,9 +29,9 @@ import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesde
 import University from "./Components/University/University";
 import Example from "./Components/NewTable/Table";
 import FindmyFriend from "./Pages/FindmyFriend/Findmyfriend";
-
-import Signup from "./Components/Signup/Signup";
+import UniMarketHomePg from "./Pages/UniMarketHomePg/UniMarketHomePg";
 import Login from './Components/Login/Login'
+import Signup from "./Components/Login/Login";
 import Profile from './Components/Profile/Profile'
 
 function App() {
@@ -60,8 +60,9 @@ function App() {
           <Route path="/course/:name" element={<Coursesdetails />}></Route>
           <Route path="/university" element={<University />}></Route>
           <Route path="/findmyfriend" element={<FindmyFriend />}></Route>
-          <Route path='/unimarket/signup' element={<Signup/>}></Route>
+          <Route path="/unimarkethome" element={<UniMarketHomePg />}></Route>
           <Route path="/unimarket/login" element={<Login/>}></Route>
+          <Route path="/unimarket/signup" element={<Signup/>}></Route>
           <Route path="/unimarket/profile" element={<Profile/>}></Route>
         </Routes> 
       </Router>
