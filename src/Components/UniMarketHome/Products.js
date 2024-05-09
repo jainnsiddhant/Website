@@ -11,7 +11,7 @@ const Products = () => {
   return (
     <>
       <div className="flex border-t border-solid border-border-200 border-opacity-70 mt-10">
-        <aside className="hidden h-full bg-light lg:sticky xl:block xl:w-72  lg:top-22">
+        <aside className="h-full bg-light lg:sticky xl:block xl:w-72  lg:top-22">
           <div
             id="accordion-flush"
             data-accordion="collapse"
