@@ -35,7 +35,9 @@ import Chat from "./Pages/Chat/Chat";
 import AdminPg from "./Pages/AdminPg/AdminPg";
 import Product from "./Pages/ProductDetail/ProductPg";
 import UniMarketFormPg from "./Pages/UniForm/UniFormPg";
-
+import Login from './Components/Login/Login'
+import Signup from "./Components/Signup/Signup";
+import Profile from './Components/Profile/Profile'
 
 function App() {
   return (
@@ -68,6 +70,9 @@ function App() {
           <Route path="/unimarketadmin" element={<AdminPg />}></Route>
           <Route path="/unimarketproduct" element={<Product />}></Route>
           <Route path="/unimarketform" element={<UniMarketFormPg />}></Route>
+          <Route path="/unimarket/login" element={<Login/>}></Route>
+          <Route path="/unimarket/signup" element={<Signup/>}></Route>
+          <Route path="/unimarket/profile" element={<Profile/>}></Route>
         </Routes> 
       </Router>
     </div>
