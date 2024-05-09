@@ -1,4 +1,5 @@
 import React from "react";
+import { ChatEngine } from 'react-chat-engine';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import NewHome from "./Pages/NewHome/NewHome";
@@ -30,6 +31,11 @@ import University from "./Components/University/University";
 import Example from "./Components/NewTable/Table";
 import FindmyFriend from "./Pages/FindmyFriend/Findmyfriend";
 import UniMarketHomePg from "./Pages/UniMarketHomePg/UniMarketHomePg";
+import Chat from "./Pages/Chat/Chat";
+import AdminPg from "./Pages/AdminPg/AdminPg";
+import Product from "./Pages/ProductDetail/ProductPg";
+import UniMarketFormPg from "./Pages/UniForm/UniFormPg";
+
 
 function App() {
   return (
@@ -58,6 +64,10 @@ function App() {
           <Route path="/university" element={<University />}></Route>
           <Route path="/findmyfriend" element={<FindmyFriend />}></Route>
           <Route path="/unimarkethome" element={<UniMarketHomePg />}></Route>
+          <Route path="/unimarketchat" element={<Chat />}></Route>
+          <Route path="/unimarketadmin" element={<AdminPg />}></Route>
+          <Route path="/unimarketproduct" element={<Product />}></Route>
+          <Route path="/unimarketform" element={<UniMarketFormPg />}></Route>
         </Routes> 
       </Router>
     </div>

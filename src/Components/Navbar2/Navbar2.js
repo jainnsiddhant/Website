@@ -8,16 +8,17 @@ const Navbar = () => {
     const location = useLocation();
     const [mobilestyle, setmobilestyle] = useState("mobile-menu hidden text-center md:hidden flex flex-col bg-black text-white rounded-2xl p-6 z-30");
     const [toogle, settoogle] = useState(false);
+    
     useEffect(() => {
         if (window.innerWidth <= 768 && toogle === true) {
-            setmobilestyle("mobile-menu flex flex-col text-center md:hidden  text-white rounded-2xl p-6");
+            setmobilestyle("mobile-menu flex flex-col text-center md:hidden text-white rounded-2xl p-6");
         } else {
-            setmobilestyle("mobile-menu flex flex-col text-center hidden md:hidden  text-white rounded-2xl p-6");
+            setmobilestyle("mobile-menu flex flex-col text-center hidden md:hidden text-white rounded-2xl p-6");
         }
     }, [window.innerWidth, toogle]);
     return (
         <>
-            <nav className="p-6">
+            <nav className="p-6 fixed top-0 w-full bg-white shadow-lg">
                 <div className="max-w-7xl mx-auto px-2">
                     <div className="flex justify-between">
                         <div className="flex space-x-[1rem]">
@@ -41,6 +42,10 @@ const Navbar = () => {
                             {/* primary nav */}
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
                                 <NavLink to={"/unimarkethome"}>Home</NavLink>
+                                <NavLink to={"/unimarketchat"}>Chat</NavLink>
+                                <NavLink to={"/unimarketadmin"}>Admin</NavLink>
+                                <NavLink to={"/unimarketproduct"}>Product</NavLink>
+                                <NavLink to={"/unimarketform"}>Form fill</NavLink>
                             </div>
                         </div>
                         {/* secondary nav */}
@@ -80,6 +85,10 @@ const Navbar = () => {
                 {/* mobile menu */}
                 <div className={mobilestyle}>
                     <NavLink to={"/unimarkethome"}>Home</NavLink>
+                    <NavLink to={"/unimarketchat"}>Chat</NavLink>
+                    <NavLink to={"/unimarketadmin"}>Admin</NavLink>
+                    <NavLink to={"/unimarketproduct"}>Product</NavLink>
+                    <NavLink to={"/unimarketform"}>Form fill</NavLink>
                     <NavLink to={"/unimarkethome"}>My Profile</NavLink>
                 </div>
                 <hr className='border-1 border-black' />
