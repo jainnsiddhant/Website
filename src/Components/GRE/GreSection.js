@@ -354,7 +354,7 @@ const GreSection = () => {
                       }
                     </tbody>
                   </table>
-                  <small className="text-[0.7rem]">* Sources</small>
+                  <small className=" text-[0.7rem]">* Sources</small>
                 </div>
               </div>
             </div>

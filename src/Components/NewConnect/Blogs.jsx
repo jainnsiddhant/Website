@@ -49,7 +49,7 @@ const Blog = () => {
         </span>
     </button>
             }
-            className="w-[80%] mx-auto"
+            className="w-[90%] mx-auto"
           >
             <>
               <div className="w-[50%] mx-auto">
@@ -57,7 +57,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/26/how-to-liven-up-your-degree-with-languages/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/26/how-to-liven-up-your-degree-with-languages/"
                       target="_blank"
@@ -101,7 +101,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/12/why-is-intercultural-competence-a-great-addition-to-your-cv/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2024/02/12/why-is-intercultural-competence-a-great-addition-to-your-cv/"
                       target="_blank"
@@ -145,7 +145,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                       target="_blank"
@@ -188,7 +188,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/07/your-road-to-successful-public-speaking/"
                       target="_blank"
@@ -231,7 +231,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/12/learn-to-sign-for-inclusivity-and-employability/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/12/learn-to-sign-for-inclusivity-and-employability/"
                       target="_blank"
@@ -274,7 +274,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/06/skills-journal-what-i-learned-from-placement/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/12/06/skills-journal-what-i-learned-from-placement/"
                       target="_blank"
@@ -317,7 +317,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/29/how-skills-enrichment-workshops-have-helped-me-improve-my-work/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/11/29/how-skills-enrichment-workshops-have-helped-me-improve-my-work/"
                       target="_blank"
@@ -361,7 +361,7 @@ const Blog = () => {
                   href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/10/02/my-final-year-survival-guide/"
                   target="_blank"
                 >
-                  <div className="min-w-[80vw] bg-white">
+                  <div className="max-w-[80vw] bg-white">
                     <a
                       href="https://blogs.bath.ac.uk/academic-and-employability-skills/2023/10/02/my-final-year-survival-guide/"
                       target="_blank"

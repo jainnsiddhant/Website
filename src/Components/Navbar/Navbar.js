@@ -5,15 +5,24 @@ import './Navbar.css';
 
 const Navbar = () => {
     const location = useLocation();
-    const [mobilestyle, setmobilestyle] = useState("mobile-menu hidden text-center md:hidden flex flex-col bg-black text-white rounded-2xl p-6 z-30");
-    const [toogle, settoogle] = useState(false);
+    const [mobileStyle, setMobileStyle] = useState("mobile-menu hidden text-center md:hidden flex flex-col bg-black text-white rounded-2xl p-6 z-30");
+    const [toggle, setToggle] = useState(false);
+
     useEffect(() => {
-        if (window.innerWidth <= 768 && toogle === true) {
-            setmobilestyle("mobile-menu flex flex-col text-center md:hidden  text-white rounded-2xl p-6");
-        } else {
-            setmobilestyle("mobile-menu flex flex-col text-center hidden md:hidden  text-white rounded-2xl p-6");
-        }
-    }, [window.innerWidth, toogle]);
+        const handleResize = () => {
+            if (window.innerWidth <= 1312) {
+                setMobileStyle(toggle ? "mobile-menu flex flex-col text-center md:hidden text-white rounded-2xl p-6" : "mobile-menu hidden text-center md:hidden flex flex-col bg-black text-white rounded-2xl p-6 z-30");
+            } else {
+                setMobileStyle("hidden text-center md:hidden flex flex-col bg-black text-white rounded-2xl p-6 z-30");
+            }
+        };
+
+        handleResize(); // Call once to set initial state
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [toggle]);
+
     return (
         <>
             <nav className="p-6">
@@ -29,12 +38,13 @@ const Navbar = () => {
                                         className="h-12 w-12 mr-1 text-blue-400"
                                         alt='icon'
                                         src={logoORG}
-                                    >
-                                    </img>
-                                    <span className="font-bold text-3xl navfont">FindMyUni</span>
+                                    />
+                                    <span className="font-bold text-3xl navfont ">FindMyUni</span>
                                 </Link>
                             </div>
+                            
                             {/* primary nav */}
+                            
                             <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
                                 <NavLink to={"/Resume"}>Resume Builder</NavLink>
                                 <NavLink to={"/Ielts-Gre"}>IELTS/GRE</NavLink>
@@ -51,7 +61,7 @@ const Navbar = () => {
                         <div className="hidden md:flex items-center space-x-1">
                             <Link
                                 to={"/contact"}
-                                className="py-2 px-2 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full  border-2 border-black transition duration-300 navfont"
+                                className="py-2 px-2 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full border-2 border-black transition duration-300 navfont"
                             >
                                 Contact Us
                             </Link>
@@ -60,9 +70,10 @@ const Navbar = () => {
                         <div className="md:hidden flex items-center">
                             <button
                                 onClick={() => {
-                                    settoogle(!toogle);
+                                    setToggle(!toggle);
                                 }}
-                                className="mobile-menu-button">
+                                className="mobile-menu-button"
+                            >
                                 <svg
                                     className="w-6 h-6"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +93,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* mobile menu */}
-                <div className={mobilestyle}>
+                <div className={mobileStyle}>
                     <NavLink to={"/Resume"}>Resume Builder</NavLink>
                     <NavLink to={"/Ielts-Gre"}>IELTS/GRE</NavLink>
                     <NavLink to={"/Connect"}>Connect</NavLink>
@@ -99,6 +110,7 @@ const Navbar = () => {
         </>
     );
 };
+
 // NavLink component to handle active link styling
 const NavLink = ({ to, children }) => {
     const location = useLocation();
@@ -106,10 +118,11 @@ const NavLink = ({ to, children }) => {
     return (
         <Link
             to={to}
-            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black  bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
+            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
         >
             {children}
         </Link>
     );
 };
+
 export default Navbar;

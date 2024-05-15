@@ -90,6 +90,7 @@ export const data = [
     age: 27,
     salary: 90_000,
     university: "University of Bristol",
+    logo:Bristol,
     view: "https://www.linkedin.com/in/nataniachng/?trk=org-employees&originalSubdomain=uk",
   },
   {
