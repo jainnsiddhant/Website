@@ -34,6 +34,14 @@ import Coursesdetails from "./Components/Scholarship/ScholarshipTables/Coursesde
 import University from "./Components/University/University";
 import Example from "./Components/NewTable/Table";
 import FindmyFriend from "./Pages/FindmyFriend/Findmyfriend";
+import UniMarketHomePg from "./Pages/UniMarketHomePg/UniMarketHomePg";
+import Chat from "./Pages/Chat/Chat";
+import AdminPg from "./Pages/AdminPg/AdminPg";
+import Product from "./Pages/ProductDetail/ProductPg";
+import UniMarketFormPg from "./Pages/UniForm/UniFormPg";
+import Login from './Components/Login/Login'
+import Signup from "./Components/Signup/Signup";
+import Profile from './Components/Profile/Profile'
 
 
 
@@ -190,8 +198,16 @@ function App() {
           <Route path="/course/:name" element={<Coursesdetails />}></Route>
           <Route path="/university" element={<University />}></Route>
           <Route path="/findmyfriend" element={<FindmyFriend />}></Route>
+          <Route path="/unimarkethome" element={<UniMarketHomePg />}></Route>
+          <Route path="/unimarketchat" element={<Chat />}></Route>
+          <Route path="/unimarketadmin" element={<AdminPg />}></Route>
+          <Route path="/unimarketproduct" element={<Product />}></Route>
+          <Route path="/unimarketform" element={<UniMarketFormPg />}></Route>
+          <Route path="/unimarket/login" element={<Login/>}></Route>
+          <Route path="/unimarket/signup" element={<Signup/>}></Route>
+          <Route path="/unimarket/profile" element={<Profile/>}></Route>
           <Route
-            path="/unimarkethome"
+            path="/unimarketplacehome"
             element={
               data.productData.length !== 0 && (
                 <MyContext.Provider value={value}>
