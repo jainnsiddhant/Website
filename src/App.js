@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState, createContext } from 'react';
 import { ChatEngine } from 'react-chat-engine';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./Pages/Home/Home";
 import NewHome from "./Pages/NewHome/NewHome";
 import NewHome2 from "./Pages/NewHome2/NewHome2";
@@ -38,11 +39,16 @@ import UniMarketFormPg from "./Pages/UniForm/UniFormPg";
 import Login from './Components/Login/Login'
 import Signup from "./Components/Signup/Signup";
 import Profile from './Components/Profile/Profile'
+import ProductDetailPg from "./Pages/ProductDetailPg/ProductDetailPg";
+import DetailsPage from "./Pages/Detail/Detail";
+
+const MyContext = createContext();
+
 
 function App() {
   return (
     <div>
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<NewHome2 />}></Route>
           <Route path="/resume" element={<NewResumePg />}></Route>
@@ -56,10 +62,6 @@ function App() {
           <Route path="/contact" element={<Contactus />}></Route>
           <Route path="/addunivdetails" element={<Register />}></Route>
           <Route path="/table" element={<Example />}></Route>
-          {/* <Route path="/addschodetails" element={<AddScholarship />}></Route>
-          <Route path="/editunivdetails/:name" element={<EditUnivdetails />}></Route>
-          <Route path="/editschodetails/:name" element={<Editscholarship />}></Route>
-          <Route path="/editcoursedetails/:name" element={<EditCourses />}></Route> */}
           <Route path="/data" element={<Alldetails />}></Route>
           <Route path="/addcourses" element={<AddCourses />}></Route>
           <Route path="/course/:name" element={<Coursesdetails />}></Route>
@@ -70,13 +72,60 @@ function App() {
           <Route path="/unimarketadmin" element={<AdminPg />}></Route>
           <Route path="/unimarketproduct" element={<Product />}></Route>
           <Route path="/unimarketform" element={<UniMarketFormPg />}></Route>
+          <Route path="/productdetail" element={<ProductDetailPg />}></Route>
           <Route path="/unimarket/login" element={<Login/>}></Route>
           <Route path="/unimarket/signup" element={<Signup/>}></Route>
           <Route path="/unimarket/profile" element={<Profile/>}></Route>
+          <Route path="/unimarket/productdetail" element={<DetailsPage/>}></Route>
         </Routes> 
-      </Router>
+      </Router> */}
+
+      data.productData.length !== 0 &&
+    <BrowserRouter>
+      <MyContext.Provider value={value}>
+        {
+          isLoading===true && <div className='loader'><img src={Loader}/></div>
+        }
+
+        
+        <Header data={data.productData} />
+        <Routes>
+        <Route path="/" element={<NewHome2 />}></Route>
+          <Route path="/resume" element={<NewResumePg />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/Connect" element={<NewConnectPg />}></Route>
+          <Route path="/scholarship" element={<NewScholarPg />}></Route>
+          <Route path="/course" element={<CoursePg />}></Route>
+          <Route path="/SettleinUK" element={<SettleInPg />}></Route>
+          <Route path="/AlreadyinUk" element={<AlreadyInPg />}></Route>
+          <Route path="/Ielts-Gre" element={<GRE />}></Route>
+          <Route path="/contact" element={<Contactus />}></Route>
+          <Route path="/addunivdetails" element={<Register />}></Route>
+          <Route path="/table" element={<Example />}></Route>
+          <Route path="/data" element={<Alldetails />}></Route>
+          <Route path="/addcourses" element={<AddCourses />}></Route>
+          <Route path="/course/:name" element={<Coursesdetails />}></Route>
+          <Route path="/university" element={<University />}></Route>
+          <Route path="/findmyfriend" element={<FindmyFriend />}></Route>
+          <Route path="/unimarkethome" element={<UniMarketHomePg />}></Route>
+          <Route path="/unimarketchat" element={<Chat />}></Route>
+          <Route path="/unimarketadmin" element={<AdminPg />}></Route>
+          <Route path="/unimarketproduct" element={<Product />}></Route>
+          <Route path="/unimarketform" element={<UniMarketFormPg />}></Route>
+          <Route path="/productdetail" element={<ProductDetailPg />}></Route>
+          <Route path="/unimarket/login" element={<Login/>}></Route>
+          <Route path="/unimarket/signup" element={<Signup/>}></Route>
+          <Route path="/unimarket/profile" element={<Profile/>}></Route>
+          <Route path="/unimarket/productdetail" element={<DetailsPage/>}></Route>
+        </Routes>
+       <Footer/>
+      </MyContext.Provider>
+    </BrowserRouter>
+
     </div>
   );
 }
 
 export default App;
+
+export { MyContext }
