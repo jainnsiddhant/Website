@@ -6,139 +6,136 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import Slider from "react-slick";
 import { useRef } from 'react';
 import { useState } from 'react';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useEffect } from 'react';
 import { Button } from '@mui/material';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
-
 import Product from '../../Components/Product';
 import axios from 'axios';
-import { MyContext } from '../../App';
+// import { MyContext } from '../../App';
 
 
 const DetailsPage = (props) => {
 
-    const [zoomInage, setZoomImage] = useState('https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-0-202305292130.jpg');
+    // const [zoomInage, setZoomImage] = useState('https://www.jiomart.com/images/product/original/490000363/maggi-2-minute-masala-noodles-70-g-product-images-o490000363-p490000363-0-202305292130.jpg');
 
-    const [bigImageSize, setBigImageSize] = useState([1500, 1500]);
-    const [smlImageSize, setSmlImageSize] = useState([150, 150]);
+    // const [bigImageSize, setBigImageSize] = useState([1500, 1500]);
+    // const [smlImageSize, setSmlImageSize] = useState([150, 150]);
 
-    const [activeSize, setActiveSize] = useState(0);
+    // const [activeSize, setActiveSize] = useState(0);
 
-    const [inputValue, setinputValue] = useState(1);
+    // const [inputValue, setinputValue] = useState(1);
 
-    const [activeTabs, setActiveTabs] = useState(0);
+    // const [activeTabs, setActiveTabs] = useState(0);
 
-    const [currentProduct, setCurrentProduct] = useState({})
-    const [isAdded, setIsadded] = useState(false);
+    // const [currentProduct, setCurrentProduct] = useState({})
+    // const [isAdded, setIsadded] = useState(false);
 
-    const context = useContext(MyContext);
+    // const context = useContext(MyContext);
 
-    const [prodCat, setProdCat] = useState({
-        parentCat: sessionStorage.getItem('parentCat'),
-        subCatName: sessionStorage.getItem('subCatName')
-    })
+    // const [prodCat, setProdCat] = useState({
+    //     parentCat: sessionStorage.getItem('parentCat'),
+    //     subCatName: sessionStorage.getItem('subCatName')
+    // })
 
-    const [relatedProducts, setRelatedProducts] = useState([]);
+    // const [relatedProducts, setRelatedProducts] = useState([]);
 
-    const [rating, setRating] = useState(0.0);
+    // const [rating, setRating] = useState(0.0);
 
-    const [reviewsArr, setReviewsArr] = useState([]);
+    // const [reviewsArr, setReviewsArr] = useState([]);
 
-    const [isAlreadyAddedInCart, setisAlreadyAddedInCart] = useState(false);
+    // const [isAlreadyAddedInCart, setisAlreadyAddedInCart] = useState(false);
 
-    const [reviewFields, setReviewFields] = useState({
-        review: '',
-        userName: '',
-        rating: 0.0,
-        productId: 0,
-        date: ''
-    })
+    // const [reviewFields, setReviewFields] = useState({
+    //     review: '',
+    //     userName: '',
+    //     rating: 0.0,
+    //     productId: 0,
+    //     date: ''
+    // })
 
 
-    const zoomSliderBig = useRef();
-    const zoomSlider = useRef();
+    // const zoomSliderBig = useRef();
+    // const zoomSlider = useRef();
 
-    let { id } = useParams();
+    // let { id } = useParams();
 
 
-    var settings2 = {
-        dots: false,
-        infinite: false,
-        speed: 700,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: false,
-        arrows: false,
-    };
+    // var settings2 = {
+    //     dots: false,
+    //     infinite: false,
+    //     speed: 700,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     fade: false,
+    //     arrows: false,
+    // };
 
 
-    var settings = {
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        fade: false,
-        arrows: context.windowWidth > 992 ? true : false
-    };
+    // var settings = {
+    //     dots: false,
+    //     infinite: false,
+    //     speed: 500,
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     fade: false,
+    //     arrows: context.windowWidth > 992 ? true : false
+    // };
 
 
-    var related = {
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        fade: false,
-        arrows: context.windowWidth > 992 ? true : false
-    };
+    // var related = {
+    //     dots: false,
+    //     infinite: false,
+    //     speed: 500,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     fade: false,
+    //     arrows: context.windowWidth > 992 ? true : false
+    // };
 
 
-    const goto = (index) => {
+    // const goto = (index) => {
 
-        zoomSlider.current.slickGoTo(index);
-        zoomSliderBig.current.slickGoTo(index);
-    }
+    //     zoomSlider.current.slickGoTo(index);
+    //     zoomSliderBig.current.slickGoTo(index);
+    // }
 
 
-    const isActive = (index) => {
-        setActiveSize(index);
-    }
+    // const isActive = (index) => {
+    //     setActiveSize(index);
+    // }
 
 
-    const plus = () => {
-        setinputValue(inputValue + 1)
-    }
+    // const plus = () => {
+    //     setinputValue(inputValue + 1)
+    // }
 
-    const minus = () => {
-        if (inputValue !== 1) {
-            setinputValue(inputValue - 1)
-        }
-    }
+    // const minus = () => {
+    //     if (inputValue !== 1) {
+    //         setinputValue(inputValue - 1)
+    //     }
+    // }
 
 
 
 
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
+    // useEffect(() => {
+    //     window.scrollTo(0, 0)
 
-        props.data.length !== 0 &&
-            props.data.map((item) => {
-                item.items.length !== 0 &&
-                    item.items.map((item_) => {
-                        item_.products.length !== 0 &&
-                            item_.products.map((product) => {
-                                if (parseInt(product.id) === parseInt(id)) {
-                                    setCurrentProduct(product);
-                                }
-                            })
-                    })
-            })
+    //     props.data.length !== 0 &&
+    //         props.data.map((item) => {
+    //             item.items.length !== 0 &&
+    //                 item.items.map((item_) => {
+    //                     item_.products.length !== 0 &&
+    //                         item_.products.map((product) => {
+    //                             if (parseInt(product.id) === parseInt(id)) {
+    //                                 setCurrentProduct(product);
+    //                             }
+    //                         })
+    //                 })
+    //         })
 
 
 
@@ -147,142 +144,142 @@ const DetailsPage = (props) => {
 
 
 
-        //related products code
+    //     //related products code
 
-        const related_products = [];
+    //     const related_products = [];
 
-        props.data.length !== 0 &&
-            props.data.map((item) => {
-                if (prodCat.parentCat === item.cat_name) {
-                    item.items.length !== 0 &&
-                        item.items.map((item_) => {
-                            if (prodCat.subCatName === item_.cat_name) {
-                                item_.products.length !== 0 &&
-                                    item_.products.map((product, index) => {
-                                        if (product.id !== parseInt(id)) {
-                                            related_products.push(product)
-                                        }
+    //     props.data.length !== 0 &&
+    //         props.data.map((item) => {
+    //             if (prodCat.parentCat === item.cat_name) {
+    //                 item.items.length !== 0 &&
+    //                     item.items.map((item_) => {
+    //                         if (prodCat.subCatName === item_.cat_name) {
+    //                             item_.products.length !== 0 &&
+    //                                 item_.products.map((product, index) => {
+    //                                     if (product.id !== parseInt(id)) {
+    //                                         related_products.push(product)
+    //                                     }
 
-                                    })
-                            }
-                        })
-                }
+    //                                 })
+    //                         }
+    //                     })
+    //             }
 
-            })
+    //         })
 
 
-        if (related_products.length !== 0) {
-            setRelatedProducts(related_products)
-        }
+    //     if (related_products.length !== 0) {
+    //         setRelatedProducts(related_products)
+    //     }
 
 
-        showReviews();
+    //     showReviews();
 
-        getCartData("http://localhost:5000/cartItems");
+    //     getCartData("http://localhost:5000/cartItems");
 
-    }, [id]);
+    // }, [id]);
 
 
 
 
-    const changeInput = (name, value) => {
-        if (name === "rating") {
-            setRating(value);
-        }
-        setReviewFields(() => ({
-            ...reviewFields,
-            [name]: value,
-            productId: id,
-            date: new Date().toLocaleString()
-        }))
+    // const changeInput = (name, value) => {
+    //     if (name === "rating") {
+    //         setRating(value);
+    //     }
+    //     setReviewFields(() => ({
+    //         ...reviewFields,
+    //         [name]: value,
+    //         productId: id,
+    //         date: new Date().toLocaleString()
+    //     }))
 
 
 
-    }
+    // }
 
-    const reviews_Arr = [];
+    // const reviews_Arr = [];
 
-    const submitReview = async (e) => {
-        e.preventDefault();
+    // const submitReview = async (e) => {
+    //     e.preventDefault();
 
-        try {
+    //     try {
 
-            await axios.post("http://localhost:5000/productReviews", reviewFields).then((response) => {
-                reviews_Arr.push(response.data);
-                setReviewFields(() => ({
-                    review: '',
-                    userName: '',
-                    rating: 0.0,
-                    productId: 0,
-                    date: ''
-                }))
-            })
+    //         await axios.post("http://localhost:5000/productReviews", reviewFields).then((response) => {
+    //             reviews_Arr.push(response.data);
+    //             setReviewFields(() => ({
+    //                 review: '',
+    //                 userName: '',
+    //                 rating: 0.0,
+    //                 productId: 0,
+    //                 date: ''
+    //             }))
+    //         })
 
-        } catch (error) {
-            console.log(error.message);
-        }
+    //     } catch (error) {
+    //         console.log(error.message);
+    //     }
 
-        showReviews();
-    }
+    //     showReviews();
+    // }
 
-    var reviews_Arr2 = [];
-    const showReviews = async () => {
-        try {
-            await axios.get("http://localhost:5000/productReviews").then((response) => {
-                if (response.data.length !== 0) {
-                    response.data.map((item) => {
-                        if (parseInt(item.productId) === parseInt(id)) {
-                            reviews_Arr2.push(item)
-                        }
+    // var reviews_Arr2 = [];
+    // const showReviews = async () => {
+    //     try {
+    //         await axios.get("http://localhost:5000/productReviews").then((response) => {
+    //             if (response.data.length !== 0) {
+    //                 response.data.map((item) => {
+    //                     if (parseInt(item.productId) === parseInt(id)) {
+    //                         reviews_Arr2.push(item)
+    //                     }
 
-                    })
+    //                 })
 
-                }
-            })
-        } catch (error) {
-            console.log(error.message);
-        }
+    //             }
+    //         })
+    //     } catch (error) {
+    //         console.log(error.message);
+    //     }
 
-        if (reviews_Arr2.length !== 0) {
+    //     if (reviews_Arr2.length !== 0) {
 
-            setReviewsArr(reviews_Arr2);
-        }
+    //         setReviewsArr(reviews_Arr2);
+    //     }
 
-    }
+    // }
 
 
 
-    const addToCart = (item) => {
-        context.addToCart(item);
-        setIsadded(true);
-    }
+    // const addToCart = (item) => {
+    //     context.addToCart(item);
+    //     setIsadded(true);
+    // }
 
 
 
 
 
 
-    const getCartData = async (url) => {
-        try {
-            await axios.get(url).then((response) => {
+    // const getCartData = async (url) => {
+    //     try {
+    //         await axios.get(url).then((response) => {
             
 
-                response.data.length!==0 && response.data.map((item)=>{
+    //             response.data.length!==0 && response.data.map((item)=>{
                     
-                    if(parseInt(item.id)===parseInt(id)){
-                        setisAlreadyAddedInCart(true);
-                    }
-                })
-            })
+    //                 if(parseInt(item.id)===parseInt(id)){
+    //                     setisAlreadyAddedInCart(true);
+    //                 }
+    //             })
+    //         })
 
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
+    //     } catch (error) {
+    //         console.log(error.message);
+    //     }
+    // }
 
     return (
         <>
-
+{/* 
 
 
             {
@@ -321,7 +318,6 @@ const DetailsPage = (props) => {
                 <div className='container detailsContainer pt-3 pb-3'>
                     <div className='row'>
 
-                        {/* productZoom code start here */}
                         <div className='col-md-5'>
                             <div className='productZoom'>
                                 <Slider {...settings2} className='zoomSliderBig' ref={zoomSliderBig}>
@@ -361,10 +357,8 @@ const DetailsPage = (props) => {
                             </Slider>
 
                         </div>
-                        {/* productZoom code ends here */}
 
 
-                        {/* product info code start here */}
                         <div className='col-md-7 productInfo'>
                             <h1>{currentProduct.productName}</h1>
                             <div className='d-flex align-items-center mb-4 mt-3'>
@@ -457,7 +451,6 @@ const DetailsPage = (props) => {
                             </div>
 
                         </div>
-                        {/* product info code ends here */}
                     </div>
 
 
@@ -801,8 +794,9 @@ const DetailsPage = (props) => {
 
                 </div>
 
+            </section> */}
 
-            </section>
+            <div>Details</div>
         </>
     )
 }
