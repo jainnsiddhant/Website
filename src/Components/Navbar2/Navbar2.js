@@ -45,7 +45,8 @@ const Navbar = () => {
                                 <NavLink to={"/unimarketchat"}>Chat</NavLink>
                                 <NavLink to={"/unimarketadmin"}>Admin</NavLink>
                                 <NavLink to={"/unimarketproduct"}>Product</NavLink>
-                                {/* <NavLink to={"/unimarketform"}>Form fill</NavLink> */}
+                                <NavLink to={"/unimarketform"}>Form fill</NavLink>
+                                <NavLink to={"/productdetail"}>ProductDetail</NavLink>
                             </div>
                         </div>
                         {/* secondary nav */}
@@ -89,6 +90,7 @@ const Navbar = () => {
                     <NavLink to={"/unimarketadmin"}>Admin</NavLink>
                     <NavLink to={"/unimarketproduct"}>Product</NavLink>
                     <NavLink to={"/unimarketform"}>Form fill</NavLink>
+                    <NavLink to={"/productdetail"}>Product Detail</NavLink>
                     <NavLink to={"/unimarkethome"}>My Profile</NavLink>
                 </div>
                 <hr className='border-1 border-black' />

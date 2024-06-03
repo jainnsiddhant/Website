@@ -181,10 +181,10 @@ export const Footer = () => {
                                 <div className='mb-2'>
                             <h4 className='pb-4'>Connect</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Student Ambassador</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Template</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>UniBuddy</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/blog" className='hover:text-blue-600'>Blogs</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>Student Ambassador</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>Template</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>UniBuddy</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>Blogs</a></li>
                             </ul>
                         </div>
 

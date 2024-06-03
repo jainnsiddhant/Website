@@ -160,7 +160,7 @@ export default function Cards() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 px-4 lg:px-0 mx-auto">
 
                 {/* Connect Card */}
-                <a href="/blog">
+                <a href="/Connect">
                 <motion.div whileHover={{ scale: 1.25 }}>
                   <div className="relative flex flex-col items-center justify-center rounded-lg overflow-hidden bg-white shadow-md text-center">
                     <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${connecthome})` }}></div>
