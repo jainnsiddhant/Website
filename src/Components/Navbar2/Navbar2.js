@@ -40,13 +40,13 @@ const Navbar = () => {
                                 </Link>
                             </div>
                             {/* primary nav */}
-                            <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
+                            <div className="hidden md:flex items-center flex-nowrap gap-6 text-sm font-semibold my-auto">
                                 <NavLink to={"/unimarkethome"}>Home</NavLink>
                                 <NavLink to={"/unimarketchat"}>Chat</NavLink>
                                 <NavLink to={"/unimarketadmin"}>Admin</NavLink>
                                 <NavLink to={"/unimarketproduct"}>Product</NavLink>
                                 <NavLink to={"/unimarketform"}>Form fill</NavLink>
-                                <NavLink to={"/productdetail"}>ProductDetail</NavLink>
+                                <NavLink to={"/productdetail"}>Product Detail</NavLink>
                             </div>
                         </div>
                         {/* secondary nav */}
@@ -105,7 +105,7 @@ const NavLink = ({ to, children }) => {
     return (
         <Link
             to={to}
-            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black  bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
+            className={`whitespace-nowrap py-5 px-1 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black  bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
         >
             {children}
         </Link>

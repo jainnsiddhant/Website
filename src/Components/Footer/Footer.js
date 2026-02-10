@@ -10,7 +10,7 @@ export const Footer = () => {
             <>
                 {/* component */}
                 <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 mt-5">
-                    <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+                    <div className="max-w-screen-xl px-4 py-10 mx-auto sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             <div>
                             <div className='flex flex-col'>
@@ -135,7 +135,7 @@ export const Footer = () => {
                                     </a> */}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-2 gap-6 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                            <div className="grid grid-cols-2 gap-6 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-5">
                                 <div>
 
 

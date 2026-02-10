@@ -25,43 +25,40 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="p-6">
-                <div className="max-w-7xl mx-auto px-2">
-                    <div className="flex justify-between">
-                        <div className="flex space-x-[1rem]">
-                            <div>
-                                <Link
-                                    to={"/"}
-                                    className="flex items-center py-5 px-2 text-black"
-                                >
-                                    <img
-                                        className="h-12 w-12 mr-1 text-blue-400"
-                                        alt='icon'
-                                        src={logoORG}
-                                    />
-                                    <span className="font-bold text-3xl navfont ">FindMyUni</span>
-                                </Link>
-                            </div>
-                            
-                            {/* primary nav */}
-                            
-                            <div className="hidden md:flex items-center space-x-1 text-sm font-semibold my-auto">
-                                <NavLink to={"/Resume"}>Resume Builder</NavLink>
-                                <NavLink to={"/Ielts-Gre"}>IELTS/GRE</NavLink>
-                                <NavLink to={"/Connect"}>Connect</NavLink>
-                                <NavLink to={"/Scholarship"}>Scholarships</NavLink>
-                                <NavLink to={"/course"}>Courses</NavLink>
-                                <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
-                                <NavLink to={"/findmyfriend"}>FindMyFriend</NavLink>
-                                <NavLink to={"/AlreadyinUk"}>Already in UK</NavLink>
-                                <NavLink to={"/about"}>About Us</NavLink>
-                            </div>
+            <nav className="py-4 px-10">
+                <div className="w-full max-w-[1600px] mx-auto">
+                    <div className="flex justify-between items-center w-full">
+                        {/* Logo left */}
+                        <div className="shrink-0">
+                            <Link
+                                to={"/"}
+                                className="flex items-center py-2 text-black"
+                            >
+                                <img
+                                    className="h-12 w-12 mr-1 text-blue-400"
+                                    alt='icon'
+                                    src={logoORG}
+                                />
+                                <span className="font-bold text-3xl navfont">FindMyUni</span>
+                            </Link>
                         </div>
-                        {/* secondary nav */}
-                        <div className="hidden md:flex items-center space-x-1">
+                        {/* primary nav: fills space between logo and Contact Us, even space between links */}
+                        <div className="hidden md:flex items-center justify-between flex-1 min-w-0 mx-6 flex-nowrap text-sm font-semibold">
+                            <NavLink to={"/Resume"}>Resume Builder</NavLink>
+                            <NavLink to={"/Ielts-Gre"}>IELTS/GRE</NavLink>
+                            <NavLink to={"/Connect"}>Connect</NavLink>
+                            <NavLink to={"/Scholarship"}>Scholarships</NavLink>
+                            <NavLink to={"/course"}>Courses</NavLink>
+                            <NavLink to={"/SettleinUK"}>Settle in UK</NavLink>
+                            <NavLink to={"/findmyfriend"}>FindMyFriend</NavLink>
+                            <NavLink to={"/AlreadyinUk"}>Already in UK</NavLink>
+                            <NavLink to={"/about"}>About Us</NavLink>
+                        </div>
+                        {/* Contact Us right */}
+                        <div className="hidden md:flex items-center shrink-0">
                             <Link
                                 to={"/contact"}
-                                className="py-2 px-2 text-lg font-bold bg-black hover:bg-white text-white hover:text-black rounded-full border-2 border-black transition duration-300 navfont"
+                                className="whitespace-nowrap py-2 px-4 text-lg font-bold bg-gradient-to-r from-black to-black hover:from-green-600 hover:to-blue-600 text-white rounded-full border-2 border-black hover:border-transparent transition duration-300 navfont"
                             >
                                 Contact Us
                             </Link>
@@ -105,7 +102,7 @@ const Navbar = () => {
                     <NavLink to={"/about"}>About Us</NavLink>
                     <NavLink to={"/contact"}>Contact Us</NavLink>
                 </div>
-                <hr className='border-1 border-black' />
+                {/* <hr className='border-1 border-black' /> */}
             </nav>
         </>
     );
@@ -118,7 +115,7 @@ const NavLink = ({ to, children }) => {
     return (
         <Link
             to={to}
-            className={`py-5 px-3 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
+            className={`whitespace-nowrap py-5 px-1 text-black hover:text-gray-900 navfont ${location.pathname === to ? 'text-black bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent' : ''}`}
         >
             {children}
         </Link>
