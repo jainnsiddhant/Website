@@ -10,7 +10,7 @@ export const Footer = () => {
             <>
                 {/* component */}
                 <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 mt-5">
-                    <div className="max-w-screen-xl px-4 py-10 mx-auto sm:px-6 lg:px-8">
+                    <div className="max-w-[1600px] py-10 mx-auto pl-8 pr-8 sm:pl-10 sm:pr-10 lg:pl-12 lg:pr-12">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                             <div>
                             <div className='flex flex-col'>
@@ -181,10 +181,27 @@ export const Footer = () => {
                                 <div className='mb-2'>
                             <h4 className='pb-4'>Connect</h4>
                             <ul className='text-gray-500'>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>Student Ambassador</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600 shrink-0' /><a href="/Connect" className='hover:text-blue-600 whitespace-nowrap'>Student Ambassador</a></li>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>Template</a></li>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>UniBuddy</a></li>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/Connect" className='hover:text-blue-600'>Blogs</a></li>
+                            </ul>
+                        </div>
+
+                        </div>
+                                <div>
+
+
+                                <div className='mb-2'>
+                            <h4 className='pb-4'>Already</h4>
+                            <ul className='text-gray-500'>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Instructions</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Save Money</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Job Portals</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>GP Surgeries</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>NI Number</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>WIFI</a></li>
+                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Tax Calculator</a></li>
                             </ul>
                         </div>
 
@@ -235,23 +252,6 @@ export const Footer = () => {
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/findmyfriend" className='hover:text-blue-600'>Steps</a></li>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/findmyfriend" className='hover:text-blue-600'>Events</a></li>
                                 <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/findmyfriend" className='hover:text-blue-600'>Form</a></li>
-                            </ul>
-                        </div>
-
-                        </div>
-                                <div>
-
-
-                                <div className='mb-2'>
-                            <h4 className='pb-4'>Already</h4>
-                            <ul className='text-gray-500'>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Instructions</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Save Money</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Job Portals</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>GP Surgeries</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>NI Number</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>WIFI</a></li>
-                                <li className='pb-1 flex'><FaChevronRight className='text-blue-600' /><a href="/AlreadyinUk" className='hover:text-blue-600'>Tax Calculator</a></li>
                             </ul>
                         </div>
 

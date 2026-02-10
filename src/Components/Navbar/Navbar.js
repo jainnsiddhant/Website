@@ -25,7 +25,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="py-4 px-10">
+            <nav className="py-4 pl-12 pr-12">
                 <div className="w-full max-w-[1600px] mx-auto">
                     <div className="flex justify-between items-center w-full">
                         {/* Logo left */}
