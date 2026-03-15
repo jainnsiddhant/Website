@@ -1,0 +1,14 @@
+/* Ranking table: headings centered, Name data left-aligned */
+
+.ranking-table .p-datatable .p-datatable-thead > tr > th,
+.ranking-table .p-datatable .p-datatable-thead > tr > th * {
+  text-align: center !important;
+}
+
+.ranking-table .p-datatable .p-datatable-tbody > tr > td:first-child {
+  text-align: left;
+}
+
+.ranking-table .p-datatable .p-datatable-tbody > tr > td:not(:first-child) {
+  text-align: center;
+}
